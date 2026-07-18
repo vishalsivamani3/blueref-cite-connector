@@ -19,6 +19,7 @@ import type {
 } from './types.js';
 import { DEFAULT_STYLE } from './types.js';
 import { caseModule } from './rules/cases.js';
+import { shortformModule } from './rules/shortforms.js';
 
 /**
  * Minimum detection confidence for an input to be treated as a supported type.
@@ -32,7 +33,7 @@ export const DETECT_THRESHOLD = 0.5;
  *   import { caseModule } from './rules/cases.js';
  *   ... and add it to this array.
  */
-const MODULES: RuleModule[] = [caseModule];
+const MODULES: RuleModule[] = [caseModule, shortformModule];
 
 /** All supported citation type ids, derived from the registered modules. */
 export function supportedTypes(): CitationType[] {

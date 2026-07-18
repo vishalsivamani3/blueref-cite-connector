@@ -35,7 +35,7 @@ const reporterSpacing: Mutator = {
   key: 'reporterSpacing',
   code: 'SPACING',
   rule: 'IB R11.6.2',
-  types: ['case'],
+  types: ['case', 'shortform'],
   note: 'erroneous space in reporter series (e.g. F.3d written F. 3d)',
   apply(clean) {
     // Match a letter+period immediately followed by a series number, no space.
@@ -176,8 +176,8 @@ const stripCaseNameItalic: Mutator = {
   key: 'stripCaseNameItalic',
   code: 'TYPEFACE',
   rule: 'IB R2.1',
-  types: ['case'],
-  note: 'case name not italicized (practitioner style)',
+  types: ['case', 'shortform'],
+  note: 'case name / id. not italicized (Indigo R2.1)',
   apply(clean) {
     if (!clean.startsWith('*')) return null;
     return clean.replace(/^\*([^*]+)\*/, '$1');
@@ -242,7 +242,49 @@ const editionOrdinal: Mutator = {
   },
 };
 
+/** Short form missing the required "at" before its pincite (Indigo R15.2.2, R15.3.2). */
+const dropShortAt: Mutator = {
+  key: 'dropShortAt',
+  code: 'PINCITE',
+  rule: 'IB R15.2.2',
+  types: ['shortform'],
+  note: 'short form missing "at" before the pincite',
+  apply(clean) {
+    if (!/\sat\s+\d+\s*$/.test(clean)) return null;
+    return clean.replace(/\sat\s+(\d+)\s*$/, ' $1');
+  },
+};
+
+/** "Id" written without its period (Indigo R15.3). */
+const idNoPeriod: Mutator = {
+  key: 'idNoPeriod',
+  code: 'PUNCTUATION',
+  rule: 'IB R15.3',
+  types: ['shortform'],
+  note: '"Id." written without its period',
+  apply(clean) {
+    if (!/^\*(Id|id)\.\*/.test(clean)) return null;
+    return clean.replace(/^\*(Id|id)\.\*/, '*$1*');
+  },
+};
+
+/** "Ibid." used where the short form is "Id." (Indigo R15.3). */
+const ibidSwap: Mutator = {
+  key: 'ibidSwap',
+  code: 'ABBREV',
+  rule: 'IB R15.3',
+  types: ['shortform'],
+  note: '"Ibid." used instead of "Id."',
+  apply(clean) {
+    if (!/^\*(Id|id)\.\*/.test(clean)) return null;
+    return clean.replace(/^\*(Id|id)\.\*/, (_m, w: string) => (w === 'Id' ? '*Ibid.*' : '*ibid.*'));
+  },
+};
+
 export const MUTATORS: Mutator[] = [
+  dropShortAt,
+  idNoPeriod,
+  ibidSwap,
   reporterSpacing,
   courtSpellOut,
   wordSpellOut,

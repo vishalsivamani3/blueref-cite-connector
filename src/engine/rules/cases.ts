@@ -125,7 +125,7 @@ const NOMINATIVE_ALT = Object.keys(NOMINATIVES)
  *         5 first page, 6 stray "at", 7 pincite.
  */
 const CORE_RE = new RegExp(
-  `(\\d+)\\s+(${REPORTER_ALT})\\s+(?:\\((\\d+)\\s+(${NOMINATIVE_ALT})\\)\\s+)?(\\d+)(?:,\\s*(at\\s+)?(\\d+))?\\s*$`,
+  `(\\d+)\\s+(${REPORTER_ALT})\\s+(?:\\((\\d+)\\s+(${NOMINATIVE_ALT})\\)\\s+)?(\\d+)(?:,\\s*(at\\s+)?(\\d+(?:[-\\u2013]\\d+)?))?\\s*$`,
 );
 
 /** Same core, unanchored — used to detect a *second* citation left in the name. */

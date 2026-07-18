@@ -54,6 +54,9 @@ export interface SupportedOutcome {
 
 const LIMITATIONS: string[] = [
   'Two styles: "practitioner" (standard legal documents; the convention The Indigo Book specifies) and "academic" (law-review). Academic typeface is not fully derivable from the CC0 Indigo Book (Indigo R1.2 puts it out of scope) and is treated as secondary.',
+  'Short forms (id., case short cites) are checked for FORMAT only (Indigo R15). Whether an "id." actually refers to the right authority is a context question (R15.3.3 forbids id. after a string cite or an ambiguous reference) and needs the ordered preceding footnotes — that is check_document, not yet implemented. A short-form format pass does NOT mean the reference is contextually valid.',
+  'Multi-citation input (string cites, subsequent history such as aff\'d or cert. denied) is refused rather than parsed; check each citation separately.',
+  '"supra" short forms are not yet handled (they attach mostly to books/periodicals, which have no module yet).',
   'No foreign, international, or treaty citations.',
   'No legislative history, regulations, or administrative materials beyond basic statutory codes.',
   'Format checking only: does not verify that a source exists, is quoted accurately, or supports the proposition cited.',

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "The Indigo Book 2.0 (CC0), Tables T1 (Federal Materials) and T3 (U.S. States and Other Jurisdictions)",
-    "note": "Seed set for Phase 0. `canonical` is the correct abbreviation; `variants` are common spelled-out or malformed forms. Extended 2026-07-18 by direct extraction from The Indigo Book 2.0 tables T1/T3 (CC0); existing entries and their variants preserved.",
+    "note": "Seed set for Phase 0. `canonical` is the correct abbreviation; `variants` are common spelled-out or malformed forms. Extended 2026-07-18 by direct extraction from The Indigo Book 2.0 tables T1/T3 (CC0); existing entries and their variants preserved. Federal district courts generated 2026-07-18 from the T3-derived state abbreviations x standard district prefixes (D./N.D./S.D./E.D./W.D./M.D./C.D.), after real briefs exposed spurious DATE_COURT flags.",
     "provenance": "indigo-book-derived"
   },
   "courts": {
@@ -749,6 +749,1762 @@
     },
     "P.R. Cir.": {
       "full": "Puerto Rico Circuit Court of Appeals",
+      "variants": []
+    },
+    "D. S.D.N.Y.": {
+      "full": "United States District Court (D. S.D.N.Y.)",
+      "variants": []
+    },
+    "N.D. S.D.N.Y.": {
+      "full": "United States District Court (N.D. S.D.N.Y.)",
+      "variants": []
+    },
+    "S.D. S.D.N.Y.": {
+      "full": "United States District Court (S.D. S.D.N.Y.)",
+      "variants": []
+    },
+    "E.D. S.D.N.Y.": {
+      "full": "United States District Court (E.D. S.D.N.Y.)",
+      "variants": []
+    },
+    "W.D. S.D.N.Y.": {
+      "full": "United States District Court (W.D. S.D.N.Y.)",
+      "variants": []
+    },
+    "M.D. S.D.N.Y.": {
+      "full": "United States District Court (M.D. S.D.N.Y.)",
+      "variants": []
+    },
+    "C.D. S.D.N.Y.": {
+      "full": "United States District Court (C.D. S.D.N.Y.)",
+      "variants": []
+    },
+    "D. N.Y.": {
+      "full": "United States District Court (D. N.Y.)",
+      "variants": []
+    },
+    "N.D. N.Y.": {
+      "full": "United States District Court (N.D. N.Y.)",
+      "variants": []
+    },
+    "S.D. N.Y.": {
+      "full": "United States District Court (S.D. N.Y.)",
+      "variants": []
+    },
+    "E.D. N.Y.": {
+      "full": "United States District Court (E.D. N.Y.)",
+      "variants": []
+    },
+    "W.D. N.Y.": {
+      "full": "United States District Court (W.D. N.Y.)",
+      "variants": []
+    },
+    "M.D. N.Y.": {
+      "full": "United States District Court (M.D. N.Y.)",
+      "variants": []
+    },
+    "C.D. N.Y.": {
+      "full": "United States District Court (C.D. N.Y.)",
+      "variants": []
+    },
+    "S.D. Cal.": {
+      "full": "United States District Court (S.D. Cal.)",
+      "variants": []
+    },
+    "E.D. Cal.": {
+      "full": "United States District Court (E.D. Cal.)",
+      "variants": []
+    },
+    "W.D. Cal.": {
+      "full": "United States District Court (W.D. Cal.)",
+      "variants": []
+    },
+    "M.D. Cal.": {
+      "full": "United States District Court (M.D. Cal.)",
+      "variants": []
+    },
+    "C.D. Cal.": {
+      "full": "United States District Court (C.D. Cal.)",
+      "variants": []
+    },
+    "N.D. Mass.": {
+      "full": "United States District Court (N.D. Mass.)",
+      "variants": []
+    },
+    "S.D. Mass.": {
+      "full": "United States District Court (S.D. Mass.)",
+      "variants": []
+    },
+    "E.D. Mass.": {
+      "full": "United States District Court (E.D. Mass.)",
+      "variants": []
+    },
+    "W.D. Mass.": {
+      "full": "United States District Court (W.D. Mass.)",
+      "variants": []
+    },
+    "M.D. Mass.": {
+      "full": "United States District Court (M.D. Mass.)",
+      "variants": []
+    },
+    "C.D. Mass.": {
+      "full": "United States District Court (C.D. Mass.)",
+      "variants": []
+    },
+    "D. Ill.": {
+      "full": "United States District Court (D. Ill.)",
+      "variants": []
+    },
+    "N.D. Ill.": {
+      "full": "United States District Court (N.D. Ill.)",
+      "variants": []
+    },
+    "S.D. Ill.": {
+      "full": "United States District Court (S.D. Ill.)",
+      "variants": []
+    },
+    "E.D. Ill.": {
+      "full": "United States District Court (E.D. Ill.)",
+      "variants": []
+    },
+    "W.D. Ill.": {
+      "full": "United States District Court (W.D. Ill.)",
+      "variants": []
+    },
+    "M.D. Ill.": {
+      "full": "United States District Court (M.D. Ill.)",
+      "variants": []
+    },
+    "C.D. Ill.": {
+      "full": "United States District Court (C.D. Ill.)",
+      "variants": []
+    },
+    "D. Tex.": {
+      "full": "United States District Court (D. Tex.)",
+      "variants": []
+    },
+    "N.D. Tex.": {
+      "full": "United States District Court (N.D. Tex.)",
+      "variants": []
+    },
+    "S.D. Tex.": {
+      "full": "United States District Court (S.D. Tex.)",
+      "variants": []
+    },
+    "E.D. Tex.": {
+      "full": "United States District Court (E.D. Tex.)",
+      "variants": []
+    },
+    "W.D. Tex.": {
+      "full": "United States District Court (W.D. Tex.)",
+      "variants": []
+    },
+    "M.D. Tex.": {
+      "full": "United States District Court (M.D. Tex.)",
+      "variants": []
+    },
+    "C.D. Tex.": {
+      "full": "United States District Court (C.D. Tex.)",
+      "variants": []
+    },
+    "D. Pa.": {
+      "full": "United States District Court (D. Pa.)",
+      "variants": []
+    },
+    "N.D. Pa.": {
+      "full": "United States District Court (N.D. Pa.)",
+      "variants": []
+    },
+    "S.D. Pa.": {
+      "full": "United States District Court (S.D. Pa.)",
+      "variants": []
+    },
+    "W.D. Pa.": {
+      "full": "United States District Court (W.D. Pa.)",
+      "variants": []
+    },
+    "M.D. Pa.": {
+      "full": "United States District Court (M.D. Pa.)",
+      "variants": []
+    },
+    "C.D. Pa.": {
+      "full": "United States District Court (C.D. Pa.)",
+      "variants": []
+    },
+    "D. Ohio": {
+      "full": "United States District Court (D. Ohio)",
+      "variants": []
+    },
+    "N.D. Ohio": {
+      "full": "United States District Court (N.D. Ohio)",
+      "variants": []
+    },
+    "S.D. Ohio": {
+      "full": "United States District Court (S.D. Ohio)",
+      "variants": []
+    },
+    "E.D. Ohio": {
+      "full": "United States District Court (E.D. Ohio)",
+      "variants": []
+    },
+    "W.D. Ohio": {
+      "full": "United States District Court (W.D. Ohio)",
+      "variants": []
+    },
+    "M.D. Ohio": {
+      "full": "United States District Court (M.D. Ohio)",
+      "variants": []
+    },
+    "C.D. Ohio": {
+      "full": "United States District Court (C.D. Ohio)",
+      "variants": []
+    },
+    "D. Fla.": {
+      "full": "United States District Court (D. Fla.)",
+      "variants": []
+    },
+    "N.D. Fla.": {
+      "full": "United States District Court (N.D. Fla.)",
+      "variants": []
+    },
+    "S.D. Fla.": {
+      "full": "United States District Court (S.D. Fla.)",
+      "variants": []
+    },
+    "E.D. Fla.": {
+      "full": "United States District Court (E.D. Fla.)",
+      "variants": []
+    },
+    "W.D. Fla.": {
+      "full": "United States District Court (W.D. Fla.)",
+      "variants": []
+    },
+    "M.D. Fla.": {
+      "full": "United States District Court (M.D. Fla.)",
+      "variants": []
+    },
+    "C.D. Fla.": {
+      "full": "United States District Court (C.D. Fla.)",
+      "variants": []
+    },
+    "D. N.J.": {
+      "full": "United States District Court (D. N.J.)",
+      "variants": []
+    },
+    "N.D. N.J.": {
+      "full": "United States District Court (N.D. N.J.)",
+      "variants": []
+    },
+    "S.D. N.J.": {
+      "full": "United States District Court (S.D. N.J.)",
+      "variants": []
+    },
+    "E.D. N.J.": {
+      "full": "United States District Court (E.D. N.J.)",
+      "variants": []
+    },
+    "W.D. N.J.": {
+      "full": "United States District Court (W.D. N.J.)",
+      "variants": []
+    },
+    "M.D. N.J.": {
+      "full": "United States District Court (M.D. N.J.)",
+      "variants": []
+    },
+    "C.D. N.J.": {
+      "full": "United States District Court (C.D. N.J.)",
+      "variants": []
+    },
+    "D. Mich.": {
+      "full": "United States District Court (D. Mich.)",
+      "variants": []
+    },
+    "N.D. Mich.": {
+      "full": "United States District Court (N.D. Mich.)",
+      "variants": []
+    },
+    "S.D. Mich.": {
+      "full": "United States District Court (S.D. Mich.)",
+      "variants": []
+    },
+    "E.D. Mich.": {
+      "full": "United States District Court (E.D. Mich.)",
+      "variants": []
+    },
+    "W.D. Mich.": {
+      "full": "United States District Court (W.D. Mich.)",
+      "variants": []
+    },
+    "M.D. Mich.": {
+      "full": "United States District Court (M.D. Mich.)",
+      "variants": []
+    },
+    "C.D. Mich.": {
+      "full": "United States District Court (C.D. Mich.)",
+      "variants": []
+    },
+    "N.D. Wash.": {
+      "full": "United States District Court (N.D. Wash.)",
+      "variants": []
+    },
+    "S.D. Wash.": {
+      "full": "United States District Court (S.D. Wash.)",
+      "variants": []
+    },
+    "E.D. Wash.": {
+      "full": "United States District Court (E.D. Wash.)",
+      "variants": []
+    },
+    "W.D. Wash.": {
+      "full": "United States District Court (W.D. Wash.)",
+      "variants": []
+    },
+    "M.D. Wash.": {
+      "full": "United States District Court (M.D. Wash.)",
+      "variants": []
+    },
+    "C.D. Wash.": {
+      "full": "United States District Court (C.D. Wash.)",
+      "variants": []
+    },
+    "D. Va.": {
+      "full": "United States District Court (D. Va.)",
+      "variants": []
+    },
+    "N.D. Va.": {
+      "full": "United States District Court (N.D. Va.)",
+      "variants": []
+    },
+    "S.D. Va.": {
+      "full": "United States District Court (S.D. Va.)",
+      "variants": []
+    },
+    "E.D. Va.": {
+      "full": "United States District Court (E.D. Va.)",
+      "variants": []
+    },
+    "W.D. Va.": {
+      "full": "United States District Court (W.D. Va.)",
+      "variants": []
+    },
+    "M.D. Va.": {
+      "full": "United States District Court (M.D. Va.)",
+      "variants": []
+    },
+    "C.D. Va.": {
+      "full": "United States District Court (C.D. Va.)",
+      "variants": []
+    },
+    "D. Ala.": {
+      "full": "United States District Court (D. Ala.)",
+      "variants": []
+    },
+    "N.D. Ala.": {
+      "full": "United States District Court (N.D. Ala.)",
+      "variants": []
+    },
+    "S.D. Ala.": {
+      "full": "United States District Court (S.D. Ala.)",
+      "variants": []
+    },
+    "E.D. Ala.": {
+      "full": "United States District Court (E.D. Ala.)",
+      "variants": []
+    },
+    "W.D. Ala.": {
+      "full": "United States District Court (W.D. Ala.)",
+      "variants": []
+    },
+    "M.D. Ala.": {
+      "full": "United States District Court (M.D. Ala.)",
+      "variants": []
+    },
+    "C.D. Ala.": {
+      "full": "United States District Court (C.D. Ala.)",
+      "variants": []
+    },
+    "N.D. Alaska": {
+      "full": "United States District Court (N.D. Alaska)",
+      "variants": []
+    },
+    "S.D. Alaska": {
+      "full": "United States District Court (S.D. Alaska)",
+      "variants": []
+    },
+    "E.D. Alaska": {
+      "full": "United States District Court (E.D. Alaska)",
+      "variants": []
+    },
+    "W.D. Alaska": {
+      "full": "United States District Court (W.D. Alaska)",
+      "variants": []
+    },
+    "M.D. Alaska": {
+      "full": "United States District Court (M.D. Alaska)",
+      "variants": []
+    },
+    "C.D. Alaska": {
+      "full": "United States District Court (C.D. Alaska)",
+      "variants": []
+    },
+    "D. Ariz.": {
+      "full": "United States District Court (D. Ariz.)",
+      "variants": []
+    },
+    "N.D. Ariz.": {
+      "full": "United States District Court (N.D. Ariz.)",
+      "variants": []
+    },
+    "S.D. Ariz.": {
+      "full": "United States District Court (S.D. Ariz.)",
+      "variants": []
+    },
+    "E.D. Ariz.": {
+      "full": "United States District Court (E.D. Ariz.)",
+      "variants": []
+    },
+    "W.D. Ariz.": {
+      "full": "United States District Court (W.D. Ariz.)",
+      "variants": []
+    },
+    "M.D. Ariz.": {
+      "full": "United States District Court (M.D. Ariz.)",
+      "variants": []
+    },
+    "C.D. Ariz.": {
+      "full": "United States District Court (C.D. Ariz.)",
+      "variants": []
+    },
+    "D. Ark.": {
+      "full": "United States District Court (D. Ark.)",
+      "variants": []
+    },
+    "N.D. Ark.": {
+      "full": "United States District Court (N.D. Ark.)",
+      "variants": []
+    },
+    "S.D. Ark.": {
+      "full": "United States District Court (S.D. Ark.)",
+      "variants": []
+    },
+    "E.D. Ark.": {
+      "full": "United States District Court (E.D. Ark.)",
+      "variants": []
+    },
+    "W.D. Ark.": {
+      "full": "United States District Court (W.D. Ark.)",
+      "variants": []
+    },
+    "M.D. Ark.": {
+      "full": "United States District Court (M.D. Ark.)",
+      "variants": []
+    },
+    "C.D. Ark.": {
+      "full": "United States District Court (C.D. Ark.)",
+      "variants": []
+    },
+    "D. Colo.": {
+      "full": "United States District Court (D. Colo.)",
+      "variants": []
+    },
+    "N.D. Colo.": {
+      "full": "United States District Court (N.D. Colo.)",
+      "variants": []
+    },
+    "S.D. Colo.": {
+      "full": "United States District Court (S.D. Colo.)",
+      "variants": []
+    },
+    "E.D. Colo.": {
+      "full": "United States District Court (E.D. Colo.)",
+      "variants": []
+    },
+    "W.D. Colo.": {
+      "full": "United States District Court (W.D. Colo.)",
+      "variants": []
+    },
+    "M.D. Colo.": {
+      "full": "United States District Court (M.D. Colo.)",
+      "variants": []
+    },
+    "C.D. Colo.": {
+      "full": "United States District Court (C.D. Colo.)",
+      "variants": []
+    },
+    "D. Conn.": {
+      "full": "United States District Court (D. Conn.)",
+      "variants": []
+    },
+    "N.D. Conn.": {
+      "full": "United States District Court (N.D. Conn.)",
+      "variants": []
+    },
+    "S.D. Conn.": {
+      "full": "United States District Court (S.D. Conn.)",
+      "variants": []
+    },
+    "E.D. Conn.": {
+      "full": "United States District Court (E.D. Conn.)",
+      "variants": []
+    },
+    "W.D. Conn.": {
+      "full": "United States District Court (W.D. Conn.)",
+      "variants": []
+    },
+    "M.D. Conn.": {
+      "full": "United States District Court (M.D. Conn.)",
+      "variants": []
+    },
+    "C.D. Conn.": {
+      "full": "United States District Court (C.D. Conn.)",
+      "variants": []
+    },
+    "D. Del.": {
+      "full": "United States District Court (D. Del.)",
+      "variants": []
+    },
+    "N.D. Del.": {
+      "full": "United States District Court (N.D. Del.)",
+      "variants": []
+    },
+    "S.D. Del.": {
+      "full": "United States District Court (S.D. Del.)",
+      "variants": []
+    },
+    "E.D. Del.": {
+      "full": "United States District Court (E.D. Del.)",
+      "variants": []
+    },
+    "W.D. Del.": {
+      "full": "United States District Court (W.D. Del.)",
+      "variants": []
+    },
+    "M.D. Del.": {
+      "full": "United States District Court (M.D. Del.)",
+      "variants": []
+    },
+    "C.D. Del.": {
+      "full": "United States District Court (C.D. Del.)",
+      "variants": []
+    },
+    "D. Ga.": {
+      "full": "United States District Court (D. Ga.)",
+      "variants": []
+    },
+    "N.D. Ga.": {
+      "full": "United States District Court (N.D. Ga.)",
+      "variants": []
+    },
+    "S.D. Ga.": {
+      "full": "United States District Court (S.D. Ga.)",
+      "variants": []
+    },
+    "E.D. Ga.": {
+      "full": "United States District Court (E.D. Ga.)",
+      "variants": []
+    },
+    "W.D. Ga.": {
+      "full": "United States District Court (W.D. Ga.)",
+      "variants": []
+    },
+    "M.D. Ga.": {
+      "full": "United States District Court (M.D. Ga.)",
+      "variants": []
+    },
+    "C.D. Ga.": {
+      "full": "United States District Court (C.D. Ga.)",
+      "variants": []
+    },
+    "D. Haw.": {
+      "full": "United States District Court (D. Haw.)",
+      "variants": []
+    },
+    "N.D. Haw.": {
+      "full": "United States District Court (N.D. Haw.)",
+      "variants": []
+    },
+    "S.D. Haw.": {
+      "full": "United States District Court (S.D. Haw.)",
+      "variants": []
+    },
+    "E.D. Haw.": {
+      "full": "United States District Court (E.D. Haw.)",
+      "variants": []
+    },
+    "W.D. Haw.": {
+      "full": "United States District Court (W.D. Haw.)",
+      "variants": []
+    },
+    "M.D. Haw.": {
+      "full": "United States District Court (M.D. Haw.)",
+      "variants": []
+    },
+    "C.D. Haw.": {
+      "full": "United States District Court (C.D. Haw.)",
+      "variants": []
+    },
+    "D. Idaho": {
+      "full": "United States District Court (D. Idaho)",
+      "variants": []
+    },
+    "N.D. Idaho": {
+      "full": "United States District Court (N.D. Idaho)",
+      "variants": []
+    },
+    "S.D. Idaho": {
+      "full": "United States District Court (S.D. Idaho)",
+      "variants": []
+    },
+    "E.D. Idaho": {
+      "full": "United States District Court (E.D. Idaho)",
+      "variants": []
+    },
+    "W.D. Idaho": {
+      "full": "United States District Court (W.D. Idaho)",
+      "variants": []
+    },
+    "M.D. Idaho": {
+      "full": "United States District Court (M.D. Idaho)",
+      "variants": []
+    },
+    "C.D. Idaho": {
+      "full": "United States District Court (C.D. Idaho)",
+      "variants": []
+    },
+    "D. Ind.": {
+      "full": "United States District Court (D. Ind.)",
+      "variants": []
+    },
+    "N.D. Ind.": {
+      "full": "United States District Court (N.D. Ind.)",
+      "variants": []
+    },
+    "S.D. Ind.": {
+      "full": "United States District Court (S.D. Ind.)",
+      "variants": []
+    },
+    "E.D. Ind.": {
+      "full": "United States District Court (E.D. Ind.)",
+      "variants": []
+    },
+    "W.D. Ind.": {
+      "full": "United States District Court (W.D. Ind.)",
+      "variants": []
+    },
+    "M.D. Ind.": {
+      "full": "United States District Court (M.D. Ind.)",
+      "variants": []
+    },
+    "C.D. Ind.": {
+      "full": "United States District Court (C.D. Ind.)",
+      "variants": []
+    },
+    "D. Iowa": {
+      "full": "United States District Court (D. Iowa)",
+      "variants": []
+    },
+    "N.D. Iowa": {
+      "full": "United States District Court (N.D. Iowa)",
+      "variants": []
+    },
+    "S.D. Iowa": {
+      "full": "United States District Court (S.D. Iowa)",
+      "variants": []
+    },
+    "E.D. Iowa": {
+      "full": "United States District Court (E.D. Iowa)",
+      "variants": []
+    },
+    "W.D. Iowa": {
+      "full": "United States District Court (W.D. Iowa)",
+      "variants": []
+    },
+    "M.D. Iowa": {
+      "full": "United States District Court (M.D. Iowa)",
+      "variants": []
+    },
+    "C.D. Iowa": {
+      "full": "United States District Court (C.D. Iowa)",
+      "variants": []
+    },
+    "D. Kan.": {
+      "full": "United States District Court (D. Kan.)",
+      "variants": []
+    },
+    "N.D. Kan.": {
+      "full": "United States District Court (N.D. Kan.)",
+      "variants": []
+    },
+    "S.D. Kan.": {
+      "full": "United States District Court (S.D. Kan.)",
+      "variants": []
+    },
+    "E.D. Kan.": {
+      "full": "United States District Court (E.D. Kan.)",
+      "variants": []
+    },
+    "W.D. Kan.": {
+      "full": "United States District Court (W.D. Kan.)",
+      "variants": []
+    },
+    "M.D. Kan.": {
+      "full": "United States District Court (M.D. Kan.)",
+      "variants": []
+    },
+    "C.D. Kan.": {
+      "full": "United States District Court (C.D. Kan.)",
+      "variants": []
+    },
+    "D. Ky.": {
+      "full": "United States District Court (D. Ky.)",
+      "variants": []
+    },
+    "N.D. Ky.": {
+      "full": "United States District Court (N.D. Ky.)",
+      "variants": []
+    },
+    "S.D. Ky.": {
+      "full": "United States District Court (S.D. Ky.)",
+      "variants": []
+    },
+    "E.D. Ky.": {
+      "full": "United States District Court (E.D. Ky.)",
+      "variants": []
+    },
+    "W.D. Ky.": {
+      "full": "United States District Court (W.D. Ky.)",
+      "variants": []
+    },
+    "M.D. Ky.": {
+      "full": "United States District Court (M.D. Ky.)",
+      "variants": []
+    },
+    "C.D. Ky.": {
+      "full": "United States District Court (C.D. Ky.)",
+      "variants": []
+    },
+    "D. La.": {
+      "full": "United States District Court (D. La.)",
+      "variants": []
+    },
+    "N.D. La.": {
+      "full": "United States District Court (N.D. La.)",
+      "variants": []
+    },
+    "S.D. La.": {
+      "full": "United States District Court (S.D. La.)",
+      "variants": []
+    },
+    "W.D. La.": {
+      "full": "United States District Court (W.D. La.)",
+      "variants": []
+    },
+    "M.D. La.": {
+      "full": "United States District Court (M.D. La.)",
+      "variants": []
+    },
+    "C.D. La.": {
+      "full": "United States District Court (C.D. La.)",
+      "variants": []
+    },
+    "D. Me.": {
+      "full": "United States District Court (D. Me.)",
+      "variants": []
+    },
+    "N.D. Me.": {
+      "full": "United States District Court (N.D. Me.)",
+      "variants": []
+    },
+    "S.D. Me.": {
+      "full": "United States District Court (S.D. Me.)",
+      "variants": []
+    },
+    "E.D. Me.": {
+      "full": "United States District Court (E.D. Me.)",
+      "variants": []
+    },
+    "W.D. Me.": {
+      "full": "United States District Court (W.D. Me.)",
+      "variants": []
+    },
+    "M.D. Me.": {
+      "full": "United States District Court (M.D. Me.)",
+      "variants": []
+    },
+    "C.D. Me.": {
+      "full": "United States District Court (C.D. Me.)",
+      "variants": []
+    },
+    "D. Md.": {
+      "full": "United States District Court (D. Md.)",
+      "variants": []
+    },
+    "N.D. Md.": {
+      "full": "United States District Court (N.D. Md.)",
+      "variants": []
+    },
+    "S.D. Md.": {
+      "full": "United States District Court (S.D. Md.)",
+      "variants": []
+    },
+    "E.D. Md.": {
+      "full": "United States District Court (E.D. Md.)",
+      "variants": []
+    },
+    "W.D. Md.": {
+      "full": "United States District Court (W.D. Md.)",
+      "variants": []
+    },
+    "M.D. Md.": {
+      "full": "United States District Court (M.D. Md.)",
+      "variants": []
+    },
+    "C.D. Md.": {
+      "full": "United States District Court (C.D. Md.)",
+      "variants": []
+    },
+    "D. Minn.": {
+      "full": "United States District Court (D. Minn.)",
+      "variants": []
+    },
+    "N.D. Minn.": {
+      "full": "United States District Court (N.D. Minn.)",
+      "variants": []
+    },
+    "S.D. Minn.": {
+      "full": "United States District Court (S.D. Minn.)",
+      "variants": []
+    },
+    "E.D. Minn.": {
+      "full": "United States District Court (E.D. Minn.)",
+      "variants": []
+    },
+    "W.D. Minn.": {
+      "full": "United States District Court (W.D. Minn.)",
+      "variants": []
+    },
+    "M.D. Minn.": {
+      "full": "United States District Court (M.D. Minn.)",
+      "variants": []
+    },
+    "C.D. Minn.": {
+      "full": "United States District Court (C.D. Minn.)",
+      "variants": []
+    },
+    "D. Miss.": {
+      "full": "United States District Court (D. Miss.)",
+      "variants": []
+    },
+    "N.D. Miss.": {
+      "full": "United States District Court (N.D. Miss.)",
+      "variants": []
+    },
+    "S.D. Miss.": {
+      "full": "United States District Court (S.D. Miss.)",
+      "variants": []
+    },
+    "E.D. Miss.": {
+      "full": "United States District Court (E.D. Miss.)",
+      "variants": []
+    },
+    "W.D. Miss.": {
+      "full": "United States District Court (W.D. Miss.)",
+      "variants": []
+    },
+    "M.D. Miss.": {
+      "full": "United States District Court (M.D. Miss.)",
+      "variants": []
+    },
+    "C.D. Miss.": {
+      "full": "United States District Court (C.D. Miss.)",
+      "variants": []
+    },
+    "D. Mo.": {
+      "full": "United States District Court (D. Mo.)",
+      "variants": []
+    },
+    "N.D. Mo.": {
+      "full": "United States District Court (N.D. Mo.)",
+      "variants": []
+    },
+    "S.D. Mo.": {
+      "full": "United States District Court (S.D. Mo.)",
+      "variants": []
+    },
+    "E.D. Mo.": {
+      "full": "United States District Court (E.D. Mo.)",
+      "variants": []
+    },
+    "W.D. Mo.": {
+      "full": "United States District Court (W.D. Mo.)",
+      "variants": []
+    },
+    "M.D. Mo.": {
+      "full": "United States District Court (M.D. Mo.)",
+      "variants": []
+    },
+    "C.D. Mo.": {
+      "full": "United States District Court (C.D. Mo.)",
+      "variants": []
+    },
+    "D. Mont.": {
+      "full": "United States District Court (D. Mont.)",
+      "variants": []
+    },
+    "N.D. Mont.": {
+      "full": "United States District Court (N.D. Mont.)",
+      "variants": []
+    },
+    "S.D. Mont.": {
+      "full": "United States District Court (S.D. Mont.)",
+      "variants": []
+    },
+    "E.D. Mont.": {
+      "full": "United States District Court (E.D. Mont.)",
+      "variants": []
+    },
+    "W.D. Mont.": {
+      "full": "United States District Court (W.D. Mont.)",
+      "variants": []
+    },
+    "M.D. Mont.": {
+      "full": "United States District Court (M.D. Mont.)",
+      "variants": []
+    },
+    "C.D. Mont.": {
+      "full": "United States District Court (C.D. Mont.)",
+      "variants": []
+    },
+    "D. Neb.": {
+      "full": "United States District Court (D. Neb.)",
+      "variants": []
+    },
+    "N.D. Neb.": {
+      "full": "United States District Court (N.D. Neb.)",
+      "variants": []
+    },
+    "S.D. Neb.": {
+      "full": "United States District Court (S.D. Neb.)",
+      "variants": []
+    },
+    "E.D. Neb.": {
+      "full": "United States District Court (E.D. Neb.)",
+      "variants": []
+    },
+    "W.D. Neb.": {
+      "full": "United States District Court (W.D. Neb.)",
+      "variants": []
+    },
+    "M.D. Neb.": {
+      "full": "United States District Court (M.D. Neb.)",
+      "variants": []
+    },
+    "C.D. Neb.": {
+      "full": "United States District Court (C.D. Neb.)",
+      "variants": []
+    },
+    "D. Nev.": {
+      "full": "United States District Court (D. Nev.)",
+      "variants": []
+    },
+    "N.D. Nev.": {
+      "full": "United States District Court (N.D. Nev.)",
+      "variants": []
+    },
+    "S.D. Nev.": {
+      "full": "United States District Court (S.D. Nev.)",
+      "variants": []
+    },
+    "E.D. Nev.": {
+      "full": "United States District Court (E.D. Nev.)",
+      "variants": []
+    },
+    "W.D. Nev.": {
+      "full": "United States District Court (W.D. Nev.)",
+      "variants": []
+    },
+    "M.D. Nev.": {
+      "full": "United States District Court (M.D. Nev.)",
+      "variants": []
+    },
+    "C.D. Nev.": {
+      "full": "United States District Court (C.D. Nev.)",
+      "variants": []
+    },
+    "D. N.H.": {
+      "full": "United States District Court (D. N.H.)",
+      "variants": []
+    },
+    "N.D. N.H.": {
+      "full": "United States District Court (N.D. N.H.)",
+      "variants": []
+    },
+    "S.D. N.H.": {
+      "full": "United States District Court (S.D. N.H.)",
+      "variants": []
+    },
+    "E.D. N.H.": {
+      "full": "United States District Court (E.D. N.H.)",
+      "variants": []
+    },
+    "W.D. N.H.": {
+      "full": "United States District Court (W.D. N.H.)",
+      "variants": []
+    },
+    "M.D. N.H.": {
+      "full": "United States District Court (M.D. N.H.)",
+      "variants": []
+    },
+    "C.D. N.H.": {
+      "full": "United States District Court (C.D. N.H.)",
+      "variants": []
+    },
+    "D. N.M.": {
+      "full": "United States District Court (D. N.M.)",
+      "variants": []
+    },
+    "N.D. N.M.": {
+      "full": "United States District Court (N.D. N.M.)",
+      "variants": []
+    },
+    "S.D. N.M.": {
+      "full": "United States District Court (S.D. N.M.)",
+      "variants": []
+    },
+    "E.D. N.M.": {
+      "full": "United States District Court (E.D. N.M.)",
+      "variants": []
+    },
+    "W.D. N.M.": {
+      "full": "United States District Court (W.D. N.M.)",
+      "variants": []
+    },
+    "M.D. N.M.": {
+      "full": "United States District Court (M.D. N.M.)",
+      "variants": []
+    },
+    "C.D. N.M.": {
+      "full": "United States District Court (C.D. N.M.)",
+      "variants": []
+    },
+    "D. N.C.": {
+      "full": "United States District Court (D. N.C.)",
+      "variants": []
+    },
+    "N.D. N.C.": {
+      "full": "United States District Court (N.D. N.C.)",
+      "variants": []
+    },
+    "S.D. N.C.": {
+      "full": "United States District Court (S.D. N.C.)",
+      "variants": []
+    },
+    "E.D. N.C.": {
+      "full": "United States District Court (E.D. N.C.)",
+      "variants": []
+    },
+    "W.D. N.C.": {
+      "full": "United States District Court (W.D. N.C.)",
+      "variants": []
+    },
+    "M.D. N.C.": {
+      "full": "United States District Court (M.D. N.C.)",
+      "variants": []
+    },
+    "C.D. N.C.": {
+      "full": "United States District Court (C.D. N.C.)",
+      "variants": []
+    },
+    "D. N.D.": {
+      "full": "United States District Court (D. N.D.)",
+      "variants": []
+    },
+    "N.D. N.D.": {
+      "full": "United States District Court (N.D. N.D.)",
+      "variants": []
+    },
+    "S.D. N.D.": {
+      "full": "United States District Court (S.D. N.D.)",
+      "variants": []
+    },
+    "E.D. N.D.": {
+      "full": "United States District Court (E.D. N.D.)",
+      "variants": []
+    },
+    "W.D. N.D.": {
+      "full": "United States District Court (W.D. N.D.)",
+      "variants": []
+    },
+    "M.D. N.D.": {
+      "full": "United States District Court (M.D. N.D.)",
+      "variants": []
+    },
+    "C.D. N.D.": {
+      "full": "United States District Court (C.D. N.D.)",
+      "variants": []
+    },
+    "D. Okla.": {
+      "full": "United States District Court (D. Okla.)",
+      "variants": []
+    },
+    "N.D. Okla.": {
+      "full": "United States District Court (N.D. Okla.)",
+      "variants": []
+    },
+    "S.D. Okla.": {
+      "full": "United States District Court (S.D. Okla.)",
+      "variants": []
+    },
+    "E.D. Okla.": {
+      "full": "United States District Court (E.D. Okla.)",
+      "variants": []
+    },
+    "W.D. Okla.": {
+      "full": "United States District Court (W.D. Okla.)",
+      "variants": []
+    },
+    "M.D. Okla.": {
+      "full": "United States District Court (M.D. Okla.)",
+      "variants": []
+    },
+    "C.D. Okla.": {
+      "full": "United States District Court (C.D. Okla.)",
+      "variants": []
+    },
+    "D. Or.": {
+      "full": "United States District Court (D. Or.)",
+      "variants": []
+    },
+    "N.D. Or.": {
+      "full": "United States District Court (N.D. Or.)",
+      "variants": []
+    },
+    "S.D. Or.": {
+      "full": "United States District Court (S.D. Or.)",
+      "variants": []
+    },
+    "E.D. Or.": {
+      "full": "United States District Court (E.D. Or.)",
+      "variants": []
+    },
+    "W.D. Or.": {
+      "full": "United States District Court (W.D. Or.)",
+      "variants": []
+    },
+    "M.D. Or.": {
+      "full": "United States District Court (M.D. Or.)",
+      "variants": []
+    },
+    "C.D. Or.": {
+      "full": "United States District Court (C.D. Or.)",
+      "variants": []
+    },
+    "D. R.I.": {
+      "full": "United States District Court (D. R.I.)",
+      "variants": []
+    },
+    "N.D. R.I.": {
+      "full": "United States District Court (N.D. R.I.)",
+      "variants": []
+    },
+    "S.D. R.I.": {
+      "full": "United States District Court (S.D. R.I.)",
+      "variants": []
+    },
+    "E.D. R.I.": {
+      "full": "United States District Court (E.D. R.I.)",
+      "variants": []
+    },
+    "W.D. R.I.": {
+      "full": "United States District Court (W.D. R.I.)",
+      "variants": []
+    },
+    "M.D. R.I.": {
+      "full": "United States District Court (M.D. R.I.)",
+      "variants": []
+    },
+    "C.D. R.I.": {
+      "full": "United States District Court (C.D. R.I.)",
+      "variants": []
+    },
+    "D. S.C.": {
+      "full": "United States District Court (D. S.C.)",
+      "variants": []
+    },
+    "N.D. S.C.": {
+      "full": "United States District Court (N.D. S.C.)",
+      "variants": []
+    },
+    "S.D. S.C.": {
+      "full": "United States District Court (S.D. S.C.)",
+      "variants": []
+    },
+    "E.D. S.C.": {
+      "full": "United States District Court (E.D. S.C.)",
+      "variants": []
+    },
+    "W.D. S.C.": {
+      "full": "United States District Court (W.D. S.C.)",
+      "variants": []
+    },
+    "M.D. S.C.": {
+      "full": "United States District Court (M.D. S.C.)",
+      "variants": []
+    },
+    "C.D. S.C.": {
+      "full": "United States District Court (C.D. S.C.)",
+      "variants": []
+    },
+    "D. S.D.": {
+      "full": "United States District Court (D. S.D.)",
+      "variants": []
+    },
+    "N.D. S.D.": {
+      "full": "United States District Court (N.D. S.D.)",
+      "variants": []
+    },
+    "S.D. S.D.": {
+      "full": "United States District Court (S.D. S.D.)",
+      "variants": []
+    },
+    "E.D. S.D.": {
+      "full": "United States District Court (E.D. S.D.)",
+      "variants": []
+    },
+    "W.D. S.D.": {
+      "full": "United States District Court (W.D. S.D.)",
+      "variants": []
+    },
+    "M.D. S.D.": {
+      "full": "United States District Court (M.D. S.D.)",
+      "variants": []
+    },
+    "C.D. S.D.": {
+      "full": "United States District Court (C.D. S.D.)",
+      "variants": []
+    },
+    "D. Tenn.": {
+      "full": "United States District Court (D. Tenn.)",
+      "variants": []
+    },
+    "N.D. Tenn.": {
+      "full": "United States District Court (N.D. Tenn.)",
+      "variants": []
+    },
+    "S.D. Tenn.": {
+      "full": "United States District Court (S.D. Tenn.)",
+      "variants": []
+    },
+    "E.D. Tenn.": {
+      "full": "United States District Court (E.D. Tenn.)",
+      "variants": []
+    },
+    "W.D. Tenn.": {
+      "full": "United States District Court (W.D. Tenn.)",
+      "variants": []
+    },
+    "M.D. Tenn.": {
+      "full": "United States District Court (M.D. Tenn.)",
+      "variants": []
+    },
+    "C.D. Tenn.": {
+      "full": "United States District Court (C.D. Tenn.)",
+      "variants": []
+    },
+    "D. Utah": {
+      "full": "United States District Court (D. Utah)",
+      "variants": []
+    },
+    "N.D. Utah": {
+      "full": "United States District Court (N.D. Utah)",
+      "variants": []
+    },
+    "S.D. Utah": {
+      "full": "United States District Court (S.D. Utah)",
+      "variants": []
+    },
+    "E.D. Utah": {
+      "full": "United States District Court (E.D. Utah)",
+      "variants": []
+    },
+    "W.D. Utah": {
+      "full": "United States District Court (W.D. Utah)",
+      "variants": []
+    },
+    "M.D. Utah": {
+      "full": "United States District Court (M.D. Utah)",
+      "variants": []
+    },
+    "C.D. Utah": {
+      "full": "United States District Court (C.D. Utah)",
+      "variants": []
+    },
+    "D. Vt.": {
+      "full": "United States District Court (D. Vt.)",
+      "variants": []
+    },
+    "N.D. Vt.": {
+      "full": "United States District Court (N.D. Vt.)",
+      "variants": []
+    },
+    "S.D. Vt.": {
+      "full": "United States District Court (S.D. Vt.)",
+      "variants": []
+    },
+    "E.D. Vt.": {
+      "full": "United States District Court (E.D. Vt.)",
+      "variants": []
+    },
+    "W.D. Vt.": {
+      "full": "United States District Court (W.D. Vt.)",
+      "variants": []
+    },
+    "M.D. Vt.": {
+      "full": "United States District Court (M.D. Vt.)",
+      "variants": []
+    },
+    "C.D. Vt.": {
+      "full": "United States District Court (C.D. Vt.)",
+      "variants": []
+    },
+    "D. Wis.": {
+      "full": "United States District Court (D. Wis.)",
+      "variants": []
+    },
+    "N.D. Wis.": {
+      "full": "United States District Court (N.D. Wis.)",
+      "variants": []
+    },
+    "S.D. Wis.": {
+      "full": "United States District Court (S.D. Wis.)",
+      "variants": []
+    },
+    "E.D. Wis.": {
+      "full": "United States District Court (E.D. Wis.)",
+      "variants": []
+    },
+    "W.D. Wis.": {
+      "full": "United States District Court (W.D. Wis.)",
+      "variants": []
+    },
+    "M.D. Wis.": {
+      "full": "United States District Court (M.D. Wis.)",
+      "variants": []
+    },
+    "C.D. Wis.": {
+      "full": "United States District Court (C.D. Wis.)",
+      "variants": []
+    },
+    "D. Wyo.": {
+      "full": "United States District Court (D. Wyo.)",
+      "variants": []
+    },
+    "N.D. Wyo.": {
+      "full": "United States District Court (N.D. Wyo.)",
+      "variants": []
+    },
+    "S.D. Wyo.": {
+      "full": "United States District Court (S.D. Wyo.)",
+      "variants": []
+    },
+    "E.D. Wyo.": {
+      "full": "United States District Court (E.D. Wyo.)",
+      "variants": []
+    },
+    "W.D. Wyo.": {
+      "full": "United States District Court (W.D. Wyo.)",
+      "variants": []
+    },
+    "M.D. Wyo.": {
+      "full": "United States District Court (M.D. Wyo.)",
+      "variants": []
+    },
+    "C.D. Wyo.": {
+      "full": "United States District Court (C.D. Wyo.)",
+      "variants": []
+    },
+    "D. U.S.": {
+      "full": "United States District Court (D. U.S.)",
+      "variants": []
+    },
+    "N.D. U.S.": {
+      "full": "United States District Court (N.D. U.S.)",
+      "variants": []
+    },
+    "S.D. U.S.": {
+      "full": "United States District Court (S.D. U.S.)",
+      "variants": []
+    },
+    "E.D. U.S.": {
+      "full": "United States District Court (E.D. U.S.)",
+      "variants": []
+    },
+    "W.D. U.S.": {
+      "full": "United States District Court (W.D. U.S.)",
+      "variants": []
+    },
+    "M.D. U.S.": {
+      "full": "United States District Court (M.D. U.S.)",
+      "variants": []
+    },
+    "C.D. U.S.": {
+      "full": "United States District Court (C.D. U.S.)",
+      "variants": []
+    },
+    "D. T.C.": {
+      "full": "United States District Court (D. T.C.)",
+      "variants": []
+    },
+    "N.D. T.C.": {
+      "full": "United States District Court (N.D. T.C.)",
+      "variants": []
+    },
+    "S.D. T.C.": {
+      "full": "United States District Court (S.D. T.C.)",
+      "variants": []
+    },
+    "E.D. T.C.": {
+      "full": "United States District Court (E.D. T.C.)",
+      "variants": []
+    },
+    "W.D. T.C.": {
+      "full": "United States District Court (W.D. T.C.)",
+      "variants": []
+    },
+    "M.D. T.C.": {
+      "full": "United States District Court (M.D. T.C.)",
+      "variants": []
+    },
+    "C.D. T.C.": {
+      "full": "United States District Court (C.D. T.C.)",
+      "variants": []
+    },
+    "D. B.T.A.": {
+      "full": "United States District Court (D. B.T.A.)",
+      "variants": []
+    },
+    "N.D. B.T.A.": {
+      "full": "United States District Court (N.D. B.T.A.)",
+      "variants": []
+    },
+    "S.D. B.T.A.": {
+      "full": "United States District Court (S.D. B.T.A.)",
+      "variants": []
+    },
+    "E.D. B.T.A.": {
+      "full": "United States District Court (E.D. B.T.A.)",
+      "variants": []
+    },
+    "W.D. B.T.A.": {
+      "full": "United States District Court (W.D. B.T.A.)",
+      "variants": []
+    },
+    "M.D. B.T.A.": {
+      "full": "United States District Court (M.D. B.T.A.)",
+      "variants": []
+    },
+    "C.D. B.T.A.": {
+      "full": "United States District Court (C.D. B.T.A.)",
+      "variants": []
+    },
+    "D. C.A.A.F.": {
+      "full": "United States District Court (D. C.A.A.F.)",
+      "variants": []
+    },
+    "N.D. C.A.A.F.": {
+      "full": "United States District Court (N.D. C.A.A.F.)",
+      "variants": []
+    },
+    "S.D. C.A.A.F.": {
+      "full": "United States District Court (S.D. C.A.A.F.)",
+      "variants": []
+    },
+    "E.D. C.A.A.F.": {
+      "full": "United States District Court (E.D. C.A.A.F.)",
+      "variants": []
+    },
+    "W.D. C.A.A.F.": {
+      "full": "United States District Court (W.D. C.A.A.F.)",
+      "variants": []
+    },
+    "M.D. C.A.A.F.": {
+      "full": "United States District Court (M.D. C.A.A.F.)",
+      "variants": []
+    },
+    "C.D. C.A.A.F.": {
+      "full": "United States District Court (C.D. C.A.A.F.)",
+      "variants": []
+    },
+    "D. C.M.A.": {
+      "full": "United States District Court (D. C.M.A.)",
+      "variants": []
+    },
+    "N.D. C.M.A.": {
+      "full": "United States District Court (N.D. C.M.A.)",
+      "variants": []
+    },
+    "S.D. C.M.A.": {
+      "full": "United States District Court (S.D. C.M.A.)",
+      "variants": []
+    },
+    "E.D. C.M.A.": {
+      "full": "United States District Court (E.D. C.M.A.)",
+      "variants": []
+    },
+    "W.D. C.M.A.": {
+      "full": "United States District Court (W.D. C.M.A.)",
+      "variants": []
+    },
+    "M.D. C.M.A.": {
+      "full": "United States District Court (M.D. C.M.A.)",
+      "variants": []
+    },
+    "C.D. C.M.A.": {
+      "full": "United States District Court (C.D. C.M.A.)",
+      "variants": []
+    },
+    "D. A.C.M.R.": {
+      "full": "United States District Court (D. A.C.M.R.)",
+      "variants": []
+    },
+    "N.D. A.C.M.R.": {
+      "full": "United States District Court (N.D. A.C.M.R.)",
+      "variants": []
+    },
+    "S.D. A.C.M.R.": {
+      "full": "United States District Court (S.D. A.C.M.R.)",
+      "variants": []
+    },
+    "E.D. A.C.M.R.": {
+      "full": "United States District Court (E.D. A.C.M.R.)",
+      "variants": []
+    },
+    "W.D. A.C.M.R.": {
+      "full": "United States District Court (W.D. A.C.M.R.)",
+      "variants": []
+    },
+    "M.D. A.C.M.R.": {
+      "full": "United States District Court (M.D. A.C.M.R.)",
+      "variants": []
+    },
+    "C.D. A.C.M.R.": {
+      "full": "United States District Court (C.D. A.C.M.R.)",
+      "variants": []
+    },
+    "D.D.C.": {
+      "full": "United States District Court (D. D.C.)",
+      "variants": []
+    },
+    "N.D. D.C.": {
+      "full": "United States District Court (N.D. D.C.)",
+      "variants": []
+    },
+    "S.D. D.C.": {
+      "full": "United States District Court (S.D. D.C.)",
+      "variants": []
+    },
+    "E.D. D.C.": {
+      "full": "United States District Court (E.D. D.C.)",
+      "variants": []
+    },
+    "W.D. D.C.": {
+      "full": "United States District Court (W.D. D.C.)",
+      "variants": []
+    },
+    "M.D. D.C.": {
+      "full": "United States District Court (M.D. D.C.)",
+      "variants": []
+    },
+    "C.D. D.C.": {
+      "full": "United States District Court (C.D. D.C.)",
+      "variants": []
+    },
+    "D. Orleans": {
+      "full": "United States District Court (D. Orleans)",
+      "variants": []
+    },
+    "N.D. Orleans": {
+      "full": "United States District Court (N.D. Orleans)",
+      "variants": []
+    },
+    "S.D. Orleans": {
+      "full": "United States District Court (S.D. Orleans)",
+      "variants": []
+    },
+    "E.D. Orleans": {
+      "full": "United States District Court (E.D. Orleans)",
+      "variants": []
+    },
+    "W.D. Orleans": {
+      "full": "United States District Court (W.D. Orleans)",
+      "variants": []
+    },
+    "M.D. Orleans": {
+      "full": "United States District Court (M.D. Orleans)",
+      "variants": []
+    },
+    "C.D. Orleans": {
+      "full": "United States District Court (C.D. Orleans)",
+      "variants": []
+    },
+    "D. S.C.L.": {
+      "full": "United States District Court (D. S.C.L.)",
+      "variants": []
+    },
+    "N.D. S.C.L.": {
+      "full": "United States District Court (N.D. S.C.L.)",
+      "variants": []
+    },
+    "S.D. S.C.L.": {
+      "full": "United States District Court (S.D. S.C.L.)",
+      "variants": []
+    },
+    "E.D. S.C.L.": {
+      "full": "United States District Court (E.D. S.C.L.)",
+      "variants": []
+    },
+    "W.D. S.C.L.": {
+      "full": "United States District Court (W.D. S.C.L.)",
+      "variants": []
+    },
+    "M.D. S.C.L.": {
+      "full": "United States District Court (M.D. S.C.L.)",
+      "variants": []
+    },
+    "C.D. S.C.L.": {
+      "full": "United States District Court (C.D. S.C.L.)",
+      "variants": []
+    },
+    "D. D.C.Z.": {
+      "full": "United States District Court (D. D.C.Z.)",
+      "variants": []
+    },
+    "N.D. D.C.Z.": {
+      "full": "United States District Court (N.D. D.C.Z.)",
+      "variants": []
+    },
+    "S.D. D.C.Z.": {
+      "full": "United States District Court (S.D. D.C.Z.)",
+      "variants": []
+    },
+    "E.D. D.C.Z.": {
+      "full": "United States District Court (E.D. D.C.Z.)",
+      "variants": []
+    },
+    "W.D. D.C.Z.": {
+      "full": "United States District Court (W.D. D.C.Z.)",
+      "variants": []
+    },
+    "M.D. D.C.Z.": {
+      "full": "United States District Court (M.D. D.C.Z.)",
+      "variants": []
+    },
+    "C.D. D.C.Z.": {
+      "full": "United States District Court (C.D. D.C.Z.)",
+      "variants": []
+    },
+    "N.D. Guam": {
+      "full": "United States District Court (N.D. Guam)",
+      "variants": []
+    },
+    "S.D. Guam": {
+      "full": "United States District Court (S.D. Guam)",
+      "variants": []
+    },
+    "E.D. Guam": {
+      "full": "United States District Court (E.D. Guam)",
+      "variants": []
+    },
+    "W.D. Guam": {
+      "full": "United States District Court (W.D. Guam)",
+      "variants": []
+    },
+    "M.D. Guam": {
+      "full": "United States District Court (M.D. Guam)",
+      "variants": []
+    },
+    "C.D. Guam": {
+      "full": "United States District Court (C.D. Guam)",
+      "variants": []
+    },
+    "D. Navajo": {
+      "full": "United States District Court (D. Navajo)",
+      "variants": []
+    },
+    "N.D. Navajo": {
+      "full": "United States District Court (N.D. Navajo)",
+      "variants": []
+    },
+    "S.D. Navajo": {
+      "full": "United States District Court (S.D. Navajo)",
+      "variants": []
+    },
+    "E.D. Navajo": {
+      "full": "United States District Court (E.D. Navajo)",
+      "variants": []
+    },
+    "W.D. Navajo": {
+      "full": "United States District Court (W.D. Navajo)",
+      "variants": []
+    },
+    "M.D. Navajo": {
+      "full": "United States District Court (M.D. Navajo)",
+      "variants": []
+    },
+    "C.D. Navajo": {
+      "full": "United States District Court (C.D. Navajo)",
+      "variants": []
+    },
+    "D. P.R.": {
+      "full": "United States District Court (D. P.R.)",
+      "variants": []
+    },
+    "N.D. P.R.": {
+      "full": "United States District Court (N.D. P.R.)",
+      "variants": []
+    },
+    "S.D. P.R.": {
+      "full": "United States District Court (S.D. P.R.)",
+      "variants": []
+    },
+    "E.D. P.R.": {
+      "full": "United States District Court (E.D. P.R.)",
+      "variants": []
+    },
+    "W.D. P.R.": {
+      "full": "United States District Court (W.D. P.R.)",
+      "variants": []
+    },
+    "M.D. P.R.": {
+      "full": "United States District Court (M.D. P.R.)",
+      "variants": []
+    },
+    "C.D. P.R.": {
+      "full": "United States District Court (C.D. P.R.)",
+      "variants": []
+    },
+    "E.D.N.Y.": {
+      "full": "United States District Court (E.D.N.Y.)",
+      "variants": []
+    },
+    "N.D.N.Y.": {
+      "full": "United States District Court (N.D.N.Y.)",
+      "variants": []
+    },
+    "W.D.N.Y.": {
+      "full": "United States District Court (W.D.N.Y.)",
+      "variants": []
+    },
+    "D.N.J.": {
+      "full": "United States District Court (D.N.J.)",
+      "variants": []
+    },
+    "D.P.R.": {
+      "full": "United States District Court (D.P.R.)",
+      "variants": []
+    },
+    "D.V.I.": {
+      "full": "United States District Court (D.V.I.)",
       "variants": []
     }
   }

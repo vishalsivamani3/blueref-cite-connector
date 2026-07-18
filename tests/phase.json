@@ -2,7 +2,8 @@
   "phase": 1,
   "accuracyFloor": 0.0,
   "typeFloors": {
-    "case": 0.995
+    "case": 0.995,
+    "shortform": 0.995
   },
   "note": "Phase 1 (PRD Section 9): the cases module must hold >=99.5% on its corpus slice. `typeFloors` gates each in-scope type independently so unimplemented types (statute/periodical/book, Phases 2-3) do not block CI while the case gate is enforced. `accuracyFloor` is the global floor and stays 0 until all four types are implemented; the v1 release gate is 0.995 over the whole >=1200-entry corpus (PRD Sections 7.1, 7.2). Raise typeFloors as each phase lands.",
   "releaseMinCounts": {

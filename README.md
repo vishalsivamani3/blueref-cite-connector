@@ -22,8 +22,8 @@ Rules and abbreviation tables are derived from **[The Indigo Book](https://indig
 Pass `style` to any tool; it defaults to `practitioner`.
 
 > ⚠️ **Status: pre-release (Phase 1).** The **case** citation type is implemented
-> and passing its corpus slice at 100% (460 entries across both styles, growing
-> toward 500). Statutes, periodicals, and books are not registered yet, so they
+> and passing its corpus slice at 100% (504 entries across both styles), along with
+> **short-form** citations (`id.`, case short cites) at 100% on a 73-entry slice. Statutes, periodicals, and books are not registered yet, so they
 > return `confidence: "unsupported"` by design. See [the roadmap](#roadmap).
 
 ## Disclaimer
@@ -80,7 +80,8 @@ guessed.
 | Statutes | 🚧 Phase 2 | R16, R17 |
 | Periodicals (journal articles) | 🚧 Phase 2 | R30 |
 | Books | 🚧 Phase 3 | R28 |
-| Short forms (id., supra) | 🚧 Phase 3 | R2.1, R11.4 |
+| Short forms — `id.`, case short cites | ✅ Phase 1 (format only) | R15, R2.1 |
+| Short forms — `supra`, `id.` **context** | 🚧 Phase 3 | R15.3.3 |
 
 Both `practitioner` (default) and `academic` styles; see above.
 

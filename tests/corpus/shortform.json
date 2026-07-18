@@ -1,0 +1,1337 @@
+[
+  {
+    "id": "shortform-0001",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Anderson*, 328 U.S. at 687-88",
+    "expected_violations": [],
+    "expected_output": "*Anderson*, 328 U.S. at 687-88",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0002",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Anderson, 328 U.S. at 687-88",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Anderson*, 328 U.S. at 687-88",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0003",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id.*",
+    "expected_violations": [],
+    "expected_output": "*Id.*",
+    "rules": [
+      "IB R15.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0004",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id*",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Id.*",
+    "rules": [
+      "IB R15.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"Id.\" written without its period"
+  },
+  {
+    "id": "shortform-0005",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Ibid.*",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*Id.*",
+    "rules": [
+      "IB R15.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"Ibid.\" used instead of \"Id.\""
+  },
+  {
+    "id": "shortform-0006",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Id.",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Id.*",
+    "rules": [
+      "IB R15.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0007",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Id",
+    "expected_violations": [
+      "PUNCTUATION",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Id.*",
+    "rules": [
+      "IB R15.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: \"Id.\" written without its period; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0008",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id.* at 1200",
+    "expected_violations": [],
+    "expected_output": "*Id.* at 1200",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0009",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id.* 1200",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Id.* at 1200",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0010",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id* at 1200",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Id.* at 1200",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1",
+      "IB R15.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"Id.\" written without its period"
+  },
+  {
+    "id": "shortform-0011",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Ibid.* at 1200",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*Id.* at 1200",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1",
+      "IB R15.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"Ibid.\" used instead of \"Id.\""
+  },
+  {
+    "id": "shortform-0012",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Id. at 1200",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Id.* at 1200",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0013",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id* 1200",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Id.* at 1200",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1",
+      "IB R15.2.2",
+      "IB R15.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; \"Id.\" written without its period"
+  },
+  {
+    "id": "shortform-0014",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id.* at 219",
+    "expected_violations": [],
+    "expected_output": "*Id.* at 219",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0015",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id.* 219",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Id.* at 219",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0016",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id* at 219",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Id.* at 219",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1",
+      "IB R15.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"Id.\" written without its period"
+  },
+  {
+    "id": "shortform-0017",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Ibid.* at 219",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*Id.* at 219",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1",
+      "IB R15.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"Ibid.\" used instead of \"Id.\""
+  },
+  {
+    "id": "shortform-0018",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Id. at 219",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Id.* at 219",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0019",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Id* 219",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Id.* at 219",
+    "rules": [
+      "IB R15.3.2",
+      "IB R2.1",
+      "IB R15.2.2",
+      "IB R15.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; \"Id.\" written without its period"
+  },
+  {
+    "id": "shortform-0020",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Fenton*, 233 N.E.2d at 219",
+    "expected_violations": [],
+    "expected_output": "*Fenton*, 233 N.E.2d at 219",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0021",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Fenton*, 233 N.E.2d 219",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Fenton*, 233 N.E.2d at 219",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0022",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Fenton*, 233 N.E. 2d at 219",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "*Fenton*, 233 N.E.2d at 219",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3",
+      "IB R11.6.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "shortform-0023",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Fenton, 233 N.E.2d at 219",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Fenton*, 233 N.E.2d at 219",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0024",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Fenton*, 233 N.E. 2d 219",
+    "expected_violations": [
+      "PINCITE",
+      "SPACING"
+    ],
+    "expected_output": "*Fenton*, 233 N.E.2d at 219",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3",
+      "IB R11.6.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "shortform-0025",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Malletier*, 500 F. Supp. 2d at 281",
+    "expected_violations": [],
+    "expected_output": "*Malletier*, 500 F. Supp. 2d at 281",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0026",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Malletier*, 500 F. Supp. 2d 281",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Malletier*, 500 F. Supp. 2d at 281",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0027",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Malletier, 500 F. Supp. 2d at 281",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Malletier*, 500 F. Supp. 2d at 281",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0028",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Malletier, 500 F. Supp. 2d 281",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Malletier*, 500 F. Supp. 2d at 281",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0029",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Carmel*, 548 F.3d at 573",
+    "expected_violations": [],
+    "expected_output": "*Carmel*, 548 F.3d at 573",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0030",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Carmel*, 548 F.3d 573",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Carmel*, 548 F.3d at 573",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0031",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Carmel*, 548 F. 3d at 573",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "*Carmel*, 548 F.3d at 573",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1",
+      "IB R11.6.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "shortform-0032",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Carmel, 548 F.3d at 573",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Carmel*, 548 F.3d at 573",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0033",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Carmel*, 548 F. 3d 573",
+    "expected_violations": [
+      "PINCITE",
+      "SPACING"
+    ],
+    "expected_output": "*Carmel*, 548 F.3d at 573",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1",
+      "IB R15.2.2",
+      "IB R11.6.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "shortform-0034",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Raich*, 545 U.S. at 8",
+    "expected_violations": [],
+    "expected_output": "*Raich*, 545 U.S. at 8",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0035",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Raich*, 545 U.S. 8",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Raich*, 545 U.S. at 8",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0036",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Raich, 545 U.S. at 8",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Raich*, 545 U.S. at 8",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0037",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Raich, 545 U.S. 8",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Raich*, 545 U.S. at 8",
+    "rules": [
+      "IB R15.2.3",
+      "IB R2.1",
+      "IB T1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0038",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Home Depot*, 139 S. Ct. at 1744",
+    "expected_violations": [],
+    "expected_output": "*Home Depot*, 139 S. Ct. at 1744",
+    "rules": [
+      "IB R15.2.4",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0039",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Home Depot*, 139 S. Ct. 1744",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Home Depot*, 139 S. Ct. at 1744",
+    "rules": [
+      "IB R15.2.4",
+      "IB R2.1",
+      "IB T1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0040",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Home Depot, 139 S. Ct. at 1744",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Home Depot*, 139 S. Ct. at 1744",
+    "rules": [
+      "IB R15.2.4",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0041",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Home Depot, 139 S. Ct. 1744",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Home Depot*, 139 S. Ct. at 1744",
+    "rules": [
+      "IB R15.2.4",
+      "IB R2.1",
+      "IB T1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0042",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Memoirs*, 383 U.S. at 418",
+    "expected_violations": [],
+    "expected_output": "*Memoirs*, 383 U.S. at 418",
+    "rules": [
+      "IB R15.2.4",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0043",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Memoirs*, 383 U.S. 418",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Memoirs*, 383 U.S. at 418",
+    "rules": [
+      "IB R15.2.4",
+      "IB R2.1",
+      "IB T1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0044",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Memoirs, 383 U.S. at 418",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Memoirs*, 383 U.S. at 418",
+    "rules": [
+      "IB R15.2.4",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0045",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Memoirs, 383 U.S. 418",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Memoirs*, 383 U.S. at 418",
+    "rules": [
+      "IB R15.2.4",
+      "IB R2.1",
+      "IB T1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0046",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Brown*, 347 U.S. at 495",
+    "expected_violations": [],
+    "expected_output": "*Brown*, 347 U.S. at 495",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0047",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Brown*, 347 U.S. 495",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Brown*, 347 U.S. at 495",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0048",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Brown, 347 U.S. at 495",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Brown*, 347 U.S. at 495",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0049",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Brown, 347 U.S. 495",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Brown*, 347 U.S. at 495",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0050",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Miranda*, 384 U.S. at 444",
+    "expected_violations": [],
+    "expected_output": "*Miranda*, 384 U.S. at 444",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0051",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Miranda*, 384 U.S. 444",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Miranda*, 384 U.S. at 444",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0052",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Miranda, 384 U.S. at 444",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Miranda*, 384 U.S. at 444",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0053",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Miranda, 384 U.S. 444",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Miranda*, 384 U.S. at 444",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0054",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Erie*, 304 U.S. at 78",
+    "expected_violations": [],
+    "expected_output": "*Erie*, 304 U.S. at 78",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0055",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Erie*, 304 U.S. 78",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Erie*, 304 U.S. at 78",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0056",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Erie, 304 U.S. at 78",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Erie*, 304 U.S. at 78",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0057",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Erie, 304 U.S. 78",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Erie*, 304 U.S. at 78",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0058",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Palsgraf*, 162 N.E. at 100",
+    "expected_violations": [],
+    "expected_output": "*Palsgraf*, 162 N.E. at 100",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0059",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Palsgraf*, 162 N.E. 100",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Palsgraf*, 162 N.E. at 100",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0060",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Palsgraf, 162 N.E. at 100",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Palsgraf*, 162 N.E. at 100",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0061",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Palsgraf, 162 N.E. 100",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Palsgraf*, 162 N.E. at 100",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0062",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Twombly*, 550 U.S. at 570",
+    "expected_violations": [],
+    "expected_output": "*Twombly*, 550 U.S. at 570",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0063",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Twombly*, 550 U.S. 570",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Twombly*, 550 U.S. at 570",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0064",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Twombly, 550 U.S. at 570",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Twombly*, 550 U.S. at 570",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0065",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Twombly, 550 U.S. 570",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Twombly*, 550 U.S. at 570",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0066",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Iqbal*, 556 U.S. at 678",
+    "expected_violations": [],
+    "expected_output": "*Iqbal*, 556 U.S. at 678",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0067",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Iqbal*, 556 U.S. 678",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Iqbal*, 556 U.S. at 678",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0068",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Iqbal, 556 U.S. at 678",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Iqbal*, 556 U.S. at 678",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0069",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Iqbal, 556 U.S. 678",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*Iqbal*, 556 U.S. at 678",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0070",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Tarasoff*, 551 P.2d at 340",
+    "expected_violations": [],
+    "expected_output": "*Tarasoff*, 551 P.2d at 340",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0071",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Tarasoff*, 551 P.2d 340",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Tarasoff*, 551 P.2d at 340",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0072",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Tarasoff*, 551 P. 2d at 340",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "*Tarasoff*, 551 P.2d at 340",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3",
+      "IB R11.6.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "shortform-0073",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Tarasoff, 551 P.2d at 340",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Tarasoff*, 551 P.2d at 340",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0074",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*Tarasoff*, 551 P. 2d 340",
+    "expected_violations": [
+      "PINCITE",
+      "SPACING"
+    ],
+    "expected_output": "*Tarasoff*, 551 P.2d at 340",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1",
+      "IB T3",
+      "IB R11.6.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: short form missing \"at\" before the pincite; erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "shortform-0075",
+    "type": "shortform",
+    "mode": "check",
+    "input": "*United States v. Carmel*, 548 F.3d at 573",
+    "expected_violations": [
+      "ORDERING"
+    ],
+    "expected_output": "*United States v. Carmel*, 548 F.3d at 573",
+    "rules": [
+      "IB R15.2.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "adversarial: governmental first party: flag, do not auto-shorten (R15.2.3)"
+  }
+]

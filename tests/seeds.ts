@@ -68,6 +68,16 @@ export const ADVERSARIAL: Adversarial[] = [
     rules: ['IB R11'],
     notes: 'string cite (two citations): refuse, check each separately',
   },
+  // R15.2.3: the first party is a governmental unit, so the correct short form uses
+  // the OTHER party. We flag the structural error but refuse to fabricate the fix.
+  {
+    type: 'shortform',
+    input: '*United States v. Carmel*, 548 F.3d at 573',
+    expected_violations: ['ORDERING'],
+    expected_output: '*United States v. Carmel*, 548 F.3d at 573',
+    rules: ['IB R15.2.3'],
+    notes: 'governmental first party: flag, do not auto-shorten (R15.2.3)',
+  },
   {
     type: 'case',
     input: "United States v. Doe, 123 F.3d 456, 460 (7th Cir. 1999), rev'd, 530 U.S. 100 (2000)",
@@ -176,6 +186,18 @@ export const SEEDS: Seed[] = [
   { type: 'case', citation: 'Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
   { type: 'case', citation: 'In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
 
+  // Regression seeds from the real-document benchmark (2026-07-18). Captured from
+  // pre-AI published sources; both defects below were invisible to the synthetic
+  // corpus and showed up immediately in real citations.
+  //   - pincite RANGES ("239-40") failed to parse at all
+  //   - federal district courts were missing, causing spurious DATE_COURT flags
+  { type: 'case', citation: 'Washington v. Davis, 426 U.S. 229, 239-40 (1976)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Hansberry v. Lee, 311 U.S. 32, 42-43 (1940)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Heap v. Carter, 112 F. Supp. 3d 402, 418 (E.D. Va. 2015)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'Calabrese v. Chiumento, 3 F.R.D. 435, 437 (D.N.J. 1944)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'Cumpiano v. Banco Santander P.R., 902 F.2d 148, 158-59 (1st Cir. 1990)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'shortform', citation: '*Anderson*, 328 U.S. at 687-88', rules: ['IB R15.2.2', 'IB R2.1'] },
+
   // Nominative reporters (Indigo T1.1): pre-1875 U.S. Reports carry the nominative
   // volume + reporter parenthetically between the reporter and the first page.
   { type: 'case', citation: 'Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)', rules: ['IB R11', 'IB T1'] },
@@ -199,6 +221,27 @@ export const SEEDS: Seed[] = [
   { type: 'case', style: 'practitioner', citation: '*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)', rules: ['IB R2.1', 'IB R11'] },
   { type: 'case', style: 'practitioner', citation: '*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)', rules: ['IB R2.1', 'IB R11'] },
   { type: 'case', style: 'practitioner', citation: '*Katz v. United States*, 389 U.S. 347, 351 (1967)', rules: ['IB R2.1', 'IB R11'] },
+
+  // ------------------------------------------------------------ short forms
+  // Indigo R15: case short forms (R15.2.2) and id. (R15.3). The case name is
+  // italicized but the comma after it is not; id. is italicized per R2.1.
+  // Several are the Indigo Book's own worked examples.
+  { type: 'shortform', citation: '*Id.*', rules: ['IB R15.3', 'IB R2.1'] },
+  { type: 'shortform', citation: '*Id.* at 1200', rules: ['IB R15.3.2', 'IB R2.1'] },
+  { type: 'shortform', citation: '*Id.* at 219', rules: ['IB R15.3.2', 'IB R2.1'] },
+  { type: 'shortform', citation: '*Fenton*, 233 N.E.2d at 219', rules: ['IB R15.2.2', 'IB R2.1', 'IB T3'] },
+  { type: 'shortform', citation: '*Malletier*, 500 F. Supp. 2d at 281', rules: ['IB R15.2.2', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Carmel*, 548 F.3d at 573', rules: ['IB R15.2.3', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Raich*, 545 U.S. at 8', rules: ['IB R15.2.3', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Home Depot*, 139 S. Ct. at 1744', rules: ['IB R15.2.4', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Memoirs*, 383 U.S. at 418', rules: ['IB R15.2.4', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Brown*, 347 U.S. at 495', rules: ['IB R15.2.2', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Miranda*, 384 U.S. at 444', rules: ['IB R15.2.2', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Erie*, 304 U.S. at 78', rules: ['IB R15.2.2', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Palsgraf*, 162 N.E. at 100', rules: ['IB R15.2.2', 'IB R2.1', 'IB T3'] },
+  { type: 'shortform', citation: '*Twombly*, 550 U.S. at 570', rules: ['IB R15.2.2', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Iqbal*, 556 U.S. at 678', rules: ['IB R15.2.2', 'IB R2.1', 'IB T1'] },
+  { type: 'shortform', citation: '*Tarasoff*, 551 P.2d at 340', rules: ['IB R15.2.2', 'IB R2.1', 'IB T3'] },
 
   // --------------------------------------------------------------- statutes
   { type: 'statute', citation: '42 U.S.C. § 1983 (2018)', rules: ['IB R16', 'IB T1'] },
