@@ -6539,5 +6539,1293 @@
     ],
     "provenance": "synthetic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+  },
+  {
+    "id": "case-0391",
+    "type": "case",
+    "mode": "check",
+    "input": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "expected_violations": [],
+    "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0392",
+    "type": "case",
+    "mode": "check",
+    "input": "*Smith v. Jones*, 123 F. 3d 456, 460 (7th Cir. 1999)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "case-0393",
+    "type": "case",
+    "mode": "check",
+    "input": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Circuit 1999)",
+    "expected_violations": [
+      "DATE_COURT"
+    ],
+    "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "court name not abbreviated per table T7"
+  },
+  {
+    "id": "case-0394",
+    "type": "case",
+    "mode": "check",
+    "input": "*Smith v. Jones*, 123 F.3d 456, at 460 (7th Cir. 1999)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0395",
+    "type": "case",
+    "mode": "check",
+    "input": "*Smith vs. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0396",
+    "type": "case",
+    "mode": "check",
+    "input": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0397",
+    "type": "case",
+    "mode": "check",
+    "input": "*Smith v. Jones*, 123 F. 3d 456, 460 (7th Circuit 1999)",
+    "expected_violations": [
+      "SPACING",
+      "DATE_COURT"
+    ],
+    "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R11.2",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+  },
+  {
+    "id": "case-0398",
+    "type": "case",
+    "mode": "check",
+    "input": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
+    "expected_violations": [],
+    "expected_output": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0399",
+    "type": "case",
+    "mode": "check",
+    "input": "*Brown v. Board of Educ.*, 347 U.S. 483, 495 (1954)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0400",
+    "type": "case",
+    "mode": "check",
+    "input": "*Brown v. Bd. of Educ.*, 347 U.S. 483, at 495 (1954)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0401",
+    "type": "case",
+    "mode": "check",
+    "input": "*Brown vs. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0402",
+    "type": "case",
+    "mode": "check",
+    "input": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0403",
+    "type": "case",
+    "mode": "check",
+    "input": "*Brown v. Board of Educ.*, 347 U.S. 483, at 495 (1954)",
+    "expected_violations": [
+      "ABBREV",
+      "PINCITE"
+    ],
+    "expected_output": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0404",
+    "type": "case",
+    "mode": "check",
+    "input": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "expected_violations": [],
+    "expected_output": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0405",
+    "type": "case",
+    "mode": "check",
+    "input": "*Erie R.R. Company v. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0406",
+    "type": "case",
+    "mode": "check",
+    "input": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, at 78 (1938)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0407",
+    "type": "case",
+    "mode": "check",
+    "input": "*Erie R.R. Co. vs. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0408",
+    "type": "case",
+    "mode": "check",
+    "input": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0409",
+    "type": "case",
+    "mode": "check",
+    "input": "*Erie R.R. Company v. Tompkins*, 304 U.S. 64, at 78 (1938)",
+    "expected_violations": [
+      "ABBREV",
+      "PINCITE"
+    ],
+    "expected_output": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0410",
+    "type": "case",
+    "mode": "check",
+    "input": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "expected_violations": [],
+    "expected_output": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0411",
+    "type": "case",
+    "mode": "check",
+    "input": "*Palsgraf v. Long Island R.R. Company*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0412",
+    "type": "case",
+    "mode": "check",
+    "input": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, at 100 (N.Y. 1928)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0413",
+    "type": "case",
+    "mode": "check",
+    "input": "*Palsgraf vs. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0414",
+    "type": "case",
+    "mode": "check",
+    "input": "Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0415",
+    "type": "case",
+    "mode": "check",
+    "input": "*Palsgraf v. Long Island R.R. Company*, 162 N.E. 99, at 100 (N.Y. 1928)",
+    "expected_violations": [
+      "ABBREV",
+      "PINCITE"
+    ],
+    "expected_output": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0416",
+    "type": "case",
+    "mode": "check",
+    "input": "*In re Winship*, 397 U.S. 358, 364 (1970)",
+    "expected_violations": [],
+    "expected_output": "*In re Winship*, 397 U.S. 358, 364 (1970)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0417",
+    "type": "case",
+    "mode": "check",
+    "input": "*In re Winship*, 397 U.S. 358, at 364 (1970)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*In re Winship*, 397 U.S. 358, 364 (1970)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0418",
+    "type": "case",
+    "mode": "check",
+    "input": "In re Winship, 397 U.S. 358, 364 (1970)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*In re Winship*, 397 U.S. 358, 364 (1970)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0419",
+    "type": "case",
+    "mode": "check",
+    "input": "In re Winship, 397 U.S. 358, at 364 (1970)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "*In re Winship*, 397 U.S. 358, 364 (1970)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0420",
+    "type": "case",
+    "mode": "check",
+    "input": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "expected_violations": [],
+    "expected_output": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0421",
+    "type": "case",
+    "mode": "check",
+    "input": "*Youngstown Sheet & Tube Company v. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0422",
+    "type": "case",
+    "mode": "check",
+    "input": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, at 587 (1952)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0423",
+    "type": "case",
+    "mode": "check",
+    "input": "*Youngstown Sheet & Tube Co. vs. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0424",
+    "type": "case",
+    "mode": "check",
+    "input": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579, 587 (1952)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0425",
+    "type": "case",
+    "mode": "check",
+    "input": "*Youngstown Sheet & Tube Company v. Sawyer*, 343 U.S. 579, at 587 (1952)",
+    "expected_violations": [
+      "ABBREV",
+      "PINCITE"
+    ],
+    "expected_output": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0426",
+    "type": "case",
+    "mode": "check",
+    "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "expected_violations": [],
+    "expected_output": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0427",
+    "type": "case",
+    "mode": "check",
+    "input": "*United States v. Microsoft Corp.*, 253 F. 3d 34, 46 (D.C. Cir. 2001)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "case-0428",
+    "type": "case",
+    "mode": "check",
+    "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Circuit 2001)",
+    "expected_violations": [
+      "DATE_COURT"
+    ],
+    "expected_output": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "court name not abbreviated per table T7"
+  },
+  {
+    "id": "case-0429",
+    "type": "case",
+    "mode": "check",
+    "input": "*United States v. Microsoft Corporation*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0430",
+    "type": "case",
+    "mode": "check",
+    "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, at 46 (D.C. Cir. 2001)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0431",
+    "type": "case",
+    "mode": "check",
+    "input": "*United States vs. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0432",
+    "type": "case",
+    "mode": "check",
+    "input": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0433",
+    "type": "case",
+    "mode": "check",
+    "input": "*United States v. Microsoft Corp.*, 253 F. 3d 34, 46 (D.C. Circuit 2001)",
+    "expected_violations": [
+      "SPACING",
+      "DATE_COURT"
+    ],
+    "expected_output": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+  },
+  {
+    "id": "case-0434",
+    "type": "case",
+    "mode": "check",
+    "input": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
+    "expected_violations": [],
+    "expected_output": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0435",
+    "type": "case",
+    "mode": "check",
+    "input": "*Miranda v. Arizona*, 384 U.S. 436, at 444 (1966)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0436",
+    "type": "case",
+    "mode": "check",
+    "input": "*Miranda vs. Arizona*, 384 U.S. 436, 444 (1966)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0437",
+    "type": "case",
+    "mode": "check",
+    "input": "Miranda v. Arizona, 384 U.S. 436, 444 (1966)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0438",
+    "type": "case",
+    "mode": "check",
+    "input": "*Miranda vs. Arizona*, 384 U.S. 436, at 444 (1966)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0439",
+    "type": "case",
+    "mode": "check",
+    "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "expected_violations": [],
+    "expected_output": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0440",
+    "type": "case",
+    "mode": "check",
+    "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P. 2d 334, 340 (Cal. 1976)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "case-0441",
+    "type": "case",
+    "mode": "check",
+    "input": "*Tarasoff v. Regents of University of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0442",
+    "type": "case",
+    "mode": "check",
+    "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, at 340 (Cal. 1976)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0443",
+    "type": "case",
+    "mode": "check",
+    "input": "*Tarasoff vs. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0444",
+    "type": "case",
+    "mode": "check",
+    "input": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0445",
+    "type": "case",
+    "mode": "check",
+    "input": "*Tarasoff v. Regents of University of Cal.*, 551 P. 2d 334, 340 (Cal. 1976)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R11.2",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0446",
+    "type": "case",
+    "mode": "check",
+    "input": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
+    "expected_violations": [],
+    "expected_output": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0447",
+    "type": "case",
+    "mode": "check",
+    "input": "*Ashcroft v. Iqbal*, 556 U.S. 662, at 678 (2009)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0448",
+    "type": "case",
+    "mode": "check",
+    "input": "*Ashcroft vs. Iqbal*, 556 U.S. 662, 678 (2009)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0449",
+    "type": "case",
+    "mode": "check",
+    "input": "Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0450",
+    "type": "case",
+    "mode": "check",
+    "input": "*Ashcroft vs. Iqbal*, 556 U.S. 662, at 678 (2009)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0451",
+    "type": "case",
+    "mode": "check",
+    "input": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
+    "expected_violations": [],
+    "expected_output": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0452",
+    "type": "case",
+    "mode": "check",
+    "input": "*Gideon v. Wainwright*, 372 U.S. 335, at 344 (1963)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0453",
+    "type": "case",
+    "mode": "check",
+    "input": "*Gideon vs. Wainwright*, 372 U.S. 335, 344 (1963)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0454",
+    "type": "case",
+    "mode": "check",
+    "input": "Gideon v. Wainwright, 372 U.S. 335, 344 (1963)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0455",
+    "type": "case",
+    "mode": "check",
+    "input": "*Gideon vs. Wainwright*, 372 U.S. 335, at 344 (1963)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0456",
+    "type": "case",
+    "mode": "check",
+    "input": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
+    "expected_violations": [],
+    "expected_output": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0457",
+    "type": "case",
+    "mode": "check",
+    "input": "*Katz v. United States*, 389 U.S. 347, at 351 (1967)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0458",
+    "type": "case",
+    "mode": "check",
+    "input": "*Katz vs. United States*, 389 U.S. 347, 351 (1967)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0459",
+    "type": "case",
+    "mode": "check",
+    "input": "Katz v. United States, 389 U.S. 347, 351 (1967)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
+    "rules": [
+      "IB R2.1",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "case name not italicized (practitioner style)"
+  },
+  {
+    "id": "case-0460",
+    "type": "case",
+    "mode": "check",
+    "input": "*Katz vs. United States*, 389 U.S. 347, at 351 (1967)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
+    "rules": [
+      "IB R2.1",
+      "IB R11",
+      "IB R10"
+    ],
+    "provenance": "synthetic",
+    "style": "practitioner",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   }
 ]

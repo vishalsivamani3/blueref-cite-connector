@@ -8,7 +8,7 @@
  *
  * Typeface markers: `*italic*`, `%small caps%` (PRD Section 7.4).
  */
-import type { CitationType } from '../src/engine/types.js';
+import type { CitationType, Style } from '../src/engine/types.js';
 
 export interface Seed {
   type: CitationType;
@@ -16,6 +16,8 @@ export interface Seed {
   citation: string;
   /** Indigo Book rule reference(s) the clean form exercises. */
   rules: string[];
+  /** Citation style. Omitted = academic (the current default). */
+  style?: Style;
   notes?: string;
 }
 
@@ -109,6 +111,20 @@ export const SEEDS: Seed[] = [
   { type: 'case', citation: 'Comm\'r v. Duberstein, 363 U.S. 278, 285 (1960)', rules: ['IB R10', 'IB T6'] },
   { type: 'case', citation: 'Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)', rules: ['IB R10', 'IB T1', 'IB T7'] },
   { type: 'case', citation: 'Gov\'t of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)', rules: ['IB R10', 'IB T6', 'IB T7'] },
+
+  // --- Practitioner style (Indigo R2.1): case name italicized ---
+  { type: 'case', style: 'practitioner', citation: '*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)', rules: ['IB R2.1', 'IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', style: 'practitioner', citation: '*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)', rules: ['IB R2.1', 'IB R11', 'IB R11.3.1'] },
+  { type: 'case', style: 'practitioner', citation: '*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)', rules: ['IB R2.1', 'IB R11', 'IB R11.3.1'] },
+  { type: 'case', style: 'practitioner', citation: '*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)', rules: ['IB R2.1', 'IB R11', 'IB R11.3.1', 'IB R12.2'] },
+  { type: 'case', style: 'practitioner', citation: '*In re Winship*, 397 U.S. 358, 364 (1970)', rules: ['IB R2.1', 'IB R11'] },
+  { type: 'case', style: 'practitioner', citation: '*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)', rules: ['IB R2.1', 'IB R11', 'IB R11.3.1'] },
+  { type: 'case', style: 'practitioner', citation: '*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)', rules: ['IB R2.1', 'IB R11', 'IB R11.3.1', 'IB R12.2'] },
+  { type: 'case', style: 'practitioner', citation: '*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)', rules: ['IB R2.1', 'IB R11'] },
+  { type: 'case', style: 'practitioner', citation: '*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)', rules: ['IB R2.1', 'IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', style: 'practitioner', citation: '*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)', rules: ['IB R2.1', 'IB R11'] },
+  { type: 'case', style: 'practitioner', citation: '*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)', rules: ['IB R2.1', 'IB R11'] },
+  { type: 'case', style: 'practitioner', citation: '*Katz v. United States*, 389 U.S. 347, 351 (1967)', rules: ['IB R2.1', 'IB R11'] },
 
   // --------------------------------------------------------------- statutes
   { type: 'statute', citation: '42 U.S.C. § 1983 (2018)', rules: ['IB R12', 'IB T1'] },

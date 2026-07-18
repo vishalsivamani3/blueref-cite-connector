@@ -167,6 +167,23 @@ const codeSpellOut: Mutator = {
   },
 };
 
+/**
+ * Remove the italic markers around a case name (practitioner style, Indigo R2.1).
+ * Only applies when the name is italicized (i.e. practitioner-style seeds); a
+ * no-op for academic seeds, which have no leading marker.
+ */
+const stripCaseNameItalic: Mutator = {
+  key: 'stripCaseNameItalic',
+  code: 'TYPEFACE',
+  rule: 'IB R2.1',
+  types: ['case'],
+  note: 'case name not italicized (practitioner style)',
+  apply(clean) {
+    if (!clean.startsWith('*')) return null;
+    return clean.replace(/^\*([^*]+)\*/, '$1');
+  },
+};
+
 /** Strip italics markers from the article title (missing required typeface). */
 const stripItalics: Mutator = {
   key: 'stripItalics',
@@ -231,6 +248,7 @@ export const MUTATORS: Mutator[] = [
   wordSpellOut,
   pinciteAt,
   vsPunctuation,
+  stripCaseNameItalic,
   sectionSpacing,
   codeSpellOut,
   stripItalics,

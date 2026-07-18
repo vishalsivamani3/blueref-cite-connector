@@ -1,18 +1,24 @@
 /**
- * Case citation rule module (PRD Phase 1; Indigo Book R10, T1, T6, T7).
+ * Case citation rule module (Indigo Book 2.0: R11 cases, R11.3.1 common-word
+ * abbreviations, R12.2 court abbreviations, T1/T3 reporters, R2.1 typeface).
  *
- * Handles academic long-form case citations of the shape:
+ * Handles long-form case citations of the shape:
  *   <name>, <vol> <reporter> <page>[, <pincite>] (<court>? <year>)
  * e.g. "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)".
+ *
+ * Style-aware (Indigo R2.1): under the "practitioner" style the case name is
+ * italicized ("*Smith v. Jones*"); under "academic" (law-review full cites) it
+ * is roman. The Indigo Book specifies the practitioner convention; academic
+ * typeface is out of Indigo scope (R1.2) and treated as secondary.
  *
  * Self-contained per PRD Section 12: imports only shared types and data tables.
  * Pure and deterministic — no LLM, no network, no randomness.
  *
  * Scope note (honest incompleteness, flagged for the pre-AI back-test): the
  * institutional-word abbreviations here are a verified *subset* of Indigo Book
- * T6 (the six common ones the corpus exercises), not the full table. Each is
- * verifiable against T6; the held-out back-test (tests/corpus/backtest/) is what
- * grows this toward completeness, rather than trusting a large synthetic table.
+ * R11.3.1, not the full table. Each is verifiable against R11.3.1; the held-out
+ * back-test grows it toward completeness, rather than trusting a large synthetic
+ * table.
  */
 import type {
   Citation,
@@ -20,6 +26,7 @@ import type {
   CitationInput,
   ParseResult,
   RuleModule,
+  Style,
   Violation,
 } from '../types.js';
 import reportersData from '../../data/reporters.json' with { type: 'json' };
@@ -151,18 +158,23 @@ function parse(input: string): ParseResult {
   }
   const [, volume, reporter, page, , pincite] = core;
   const hasAt = Boolean(core[4]);
-  const name = prefix.slice(0, core.index).replace(/,\s*$/, '').trim();
+  let name = prefix.slice(0, core.index).replace(/,\s*$/, '').trim();
+  // Strip italic typeface markers around the whole case name (Indigo R2.1); the
+  // style-check below verifies whether they should be present.
+  const nameItalic = /^\*.+\*$/.test(name);
+  if (nameItalic) name = name.slice(1, -1).trim();
   if (!name) {
     return { ok: false, code: 'PARSE_FAIL', message: 'Empty case name.' };
   }
 
-  const components: CaseComponents & { pinciteHasAt: boolean } = {
+  const components: CaseComponents & { pinciteHasAt: boolean; nameItalic: boolean } = {
     name,
     volume: volume!,
     reporter: reporter!,
     page: page!,
     year,
     pinciteHasAt: hasAt,
+    nameItalic,
     ...(pincite ? { pincite } : {}),
     ...(court ? { court } : {}),
   };
@@ -179,8 +191,11 @@ function assemble(c: CaseComponents): string {
   return `${c.name}, ${c.volume} ${c.reporter} ${c.page}${pin} ${paren}`;
 }
 
-function check(parsed: Citation): CheckResult {
-  const c = parsed.components as unknown as CaseComponents & { pinciteHasAt?: boolean };
+function check(parsed: Citation, style: Style): CheckResult {
+  const c = parsed.components as unknown as CaseComponents & {
+    pinciteHasAt?: boolean;
+    nameItalic?: boolean;
+  };
   const violations: Violation[] = [];
 
   // --- case name: "vs." -> "v." (punctuation) ---
@@ -189,20 +204,20 @@ function check(parsed: Citation): CheckResult {
     violations.push({
       code: 'PUNCTUATION',
       message: 'Use "v." (not "vs.") between parties.',
-      rule: 'IB R10',
+      rule: 'IB R11.2',
       fix: name.replace(/\svs\.\s/g, ' v. '),
     });
     name = name.replace(/\svs\.\s/g, ' v. ');
   }
 
-  // --- case name: institutional-word abbreviations (subset of T6) ---
+  // --- case name: institutional-word abbreviations (subset of R11.3.1) ---
   for (const { full, abbrev } of WORD_ABBREV) {
     if (full.test(name)) {
       const fixed = name.replace(full, abbrev);
       violations.push({
         code: 'ABBREV',
-        message: 'Abbreviate the institutional word in the case name per table T6.',
-        rule: 'IB T6',
+        message: 'Abbreviate the institutional word in the case name per Indigo R11.3.1.',
+        rule: 'IB R11.3.1',
         fix: fixed,
       });
       name = fixed;
@@ -220,7 +235,7 @@ function check(parsed: Citation): CheckResult {
         message: spacingOnly
           ? `Reporter spacing: "${reporter}" should be "${canonical}".`
           : `Reporter abbreviation: "${reporter}" should be "${canonical}".`,
-        rule: spacingOnly ? 'IB R11.2' : 'IB T1',
+        rule: spacingOnly ? 'IB R11.6.2' : 'IB T1',
         fix: canonical,
       });
       reporter = canonical;
@@ -228,7 +243,7 @@ function check(parsed: Citation): CheckResult {
       // Unrecognized reporter: flag, do not guess (PRD Section 11.2).
       violations.push({
         code: 'ABBREV',
-        message: `Unrecognized reporter "${reporter}"; cannot verify against table T1.`,
+        message: `Unrecognized reporter "${reporter}"; cannot verify against tables T1/T3.`,
         rule: 'IB T1',
         fix: reporter,
       });
@@ -240,7 +255,7 @@ function check(parsed: Citation): CheckResult {
     violations.push({
       code: 'PINCITE',
       message: 'Drop "at" before the pincite in a full citation.',
-      rule: 'IB R11',
+      rule: 'IB R11.6',
       fix: c.pincite ?? '',
     });
   }
@@ -253,22 +268,38 @@ function check(parsed: Citation): CheckResult {
       violations.push({
         code: 'DATE_COURT',
         message: `Court abbreviation: "${court}" should be "${canonical}".`,
-        rule: 'IB T7',
+        rule: 'IB R12.2',
         fix: canonical,
       });
       court = canonical;
     } else {
       violations.push({
         code: 'DATE_COURT',
-        message: `Unrecognized court "${court}"; cannot verify against table T7.`,
-        rule: 'IB T7',
+        message: `Unrecognized court "${court}"; cannot verify against Indigo R12.2.`,
+        rule: 'IB R12.2',
         fix: court,
       });
     }
   }
 
+  // --- case-name typeface (Indigo R2.1): practitioner italicizes the case name;
+  //     academic full cites keep it roman. ---
+  const requiredItalic = style === 'practitioner';
+  const currentItalic = Boolean(c.nameItalic);
+  if (currentItalic !== requiredItalic) {
+    violations.push({
+      code: 'TYPEFACE',
+      message: requiredItalic
+        ? 'Italicize the case name (practitioner style, Indigo R2.1).'
+        : 'Case name should be roman in an academic full citation, not italicized.',
+      rule: 'IB R2.1',
+      fix: requiredItalic ? `*${name}*` : name,
+    });
+  }
+  const styledName = requiredItalic ? `*${name}*` : name;
+
   const corrected = assemble({
-    name,
+    name: styledName,
     volume: c.volume,
     reporter,
     page: c.page,
@@ -280,10 +311,12 @@ function check(parsed: Citation): CheckResult {
   return { pass: violations.length === 0, violations, corrected };
 }
 
-function format(components: CitationInput): string {
+function format(components: CitationInput, style: Style): string {
   const c = components as Partial<CaseComponents>;
+  const bare = String(c.name ?? '').replace(/^\*(.+)\*$/, '$1');
+  const name = style === 'practitioner' ? `*${bare}*` : bare;
   return assemble({
-    name: String(c.name ?? ''),
+    name,
     volume: String(c.volume ?? ''),
     reporter: String(c.reporter ?? ''),
     page: String(c.page ?? ''),

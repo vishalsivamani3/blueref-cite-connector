@@ -15,7 +15,9 @@ import type {
   CheckResult,
   ParseResult,
   RuleModule,
+  Style,
 } from './types.js';
+import { DEFAULT_STYLE } from './types.js';
 import { caseModule } from './rules/cases.js';
 
 /**
@@ -90,7 +92,7 @@ export function parse(input: string): ParseResult {
   return d.module.parse(input);
 }
 
-export function check(citation: Citation): CheckResult {
+export function check(citation: Citation, style: Style = DEFAULT_STYLE): CheckResult {
   const m = moduleFor(citation.type);
   if (!m) {
     return {
@@ -106,10 +108,14 @@ export function check(citation: Citation): CheckResult {
       corrected: citation.raw,
     };
   }
-  return m.check(citation);
+  return m.check(citation, style);
 }
 
-export function format(type: CitationType, components: CitationInput): string | null {
+export function format(
+  type: CitationType,
+  components: CitationInput,
+  style: Style = DEFAULT_STYLE,
+): string | null {
   const m = moduleFor(type);
-  return m ? m.format(components) : null;
+  return m ? m.format(components, style) : null;
 }

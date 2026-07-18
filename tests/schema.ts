@@ -4,7 +4,7 @@
  * Shared by the generator (tests/generate.ts) and the harness (tests/harness.ts)
  * so the corpus can never drift from the schema or the §7.5 error taxonomy.
  */
-import { ERROR_CODES, type ErrorCode, type CitationType } from '../src/engine/types.js';
+import { ERROR_CODES, STYLES, type ErrorCode, type CitationType, type Style } from '../src/engine/types.js';
 
 export type Provenance = 'hand-verified' | 'synthetic';
 export type Mode = 'check' | 'format';
@@ -19,6 +19,8 @@ export interface CorpusEntry {
   components?: Record<string, unknown>;
   /** Exact expected error-code set for `check` mode. Empty for a clean citation. */
   expected_violations: ErrorCode[];
+  /** Citation style for this entry. Omitted = the engine default (academic). */
+  style?: Style;
   /** Exact expected canonical citation (with typeface markers). */
   expected_output: string;
   /** Indigo Book rule reference(s), e.g. ["IB R11.2", "IB T7"]. */
@@ -83,6 +85,9 @@ export function validateEntry(e: CorpusEntry): string[] {
   }
   if (e.provenance === 'hand-verified' && (typeof e.source !== 'string' || e.source.length === 0)) {
     problems.push('hand-verified entries require a non-empty `source` (where it was verified)');
+  }
+  if (e.style !== undefined && !(STYLES as readonly string[]).includes(e.style)) {
+    problems.push(`style "${e.style}" must be one of ${STYLES.join(', ')}`);
   }
   return problems;
 }

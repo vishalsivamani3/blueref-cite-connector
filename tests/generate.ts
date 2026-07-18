@@ -51,6 +51,7 @@ function generateForType(type: CitationType): CorpusEntry[] {
       expected_output: clean,
       rules: seed.rules,
       provenance: 'synthetic',
+      ...(seed.style && seed.style !== 'academic' ? { style: seed.style } : {}),
       notes: 'clean canonical',
     });
 
@@ -70,6 +71,7 @@ function generateForType(type: CitationType): CorpusEntry[] {
         expected_output: clean,
         rules: mergeRules(seed.rules, mut.rule),
         provenance: 'synthetic',
+      ...(seed.style && seed.style !== 'academic' ? { style: seed.style } : {}),
         notes: mut.note,
       });
     }
@@ -94,6 +96,7 @@ function generateForType(type: CitationType): CorpusEntry[] {
           expected_output: clean,
           rules: mergeRules(mergeRules(seed.rules, muts[i]!.rule), muts[j]!.rule),
           provenance: 'synthetic',
+      ...(seed.style && seed.style !== 'academic' ? { style: seed.style } : {}),
           notes: `multi-error: ${muts[i]!.note}; ${muts[j]!.note}`,
         };
         break outer;

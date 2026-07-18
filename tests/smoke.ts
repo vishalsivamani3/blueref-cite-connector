@@ -83,6 +83,17 @@ async function main(): Promise<void> {
   const codes = bad.violations.map((v) => v.code).sort();
   assert(codes.join(',') === 'DATE_COURT,SPACING', `expected SPACING+DATE_COURT, got ${codes.join(',')}`);
 
+  // Practitioner style (Indigo R2.1): a roman case name is flagged TYPEFACE and italicized.
+  const prac = textOf(
+    await client.callTool({
+      name: 'check_citation',
+      arguments: { input: 'Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)', style: 'practitioner' },
+    }),
+  ) as { style: string; pass: boolean; corrected: string; violations: Array<{ code: string }> };
+  assert(prac.style === 'practitioner', 'style echoed as practitioner');
+  assert(prac.corrected === '*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)', 'practitioner italicizes the case name');
+  assert(prac.violations.some((v) => v.code === 'TYPEFACE'), 'practitioner flags TYPEFACE on a roman case name');
+
   // An out-of-scope input (a statute — no module yet) is refused, not guessed.
   const unsupported = textOf(
     await client.callTool({ name: 'check_citation', arguments: { input: '42 U.S.C. § 1983 (2018)' } }),

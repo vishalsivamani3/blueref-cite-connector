@@ -82,7 +82,7 @@ function runEntry(entry: CorpusEntry): Result {
   const expectedOut = normalizeWhitespace(entry.expected_output);
 
   if (entry.mode === 'format') {
-    const out = formatCitation(entry.components ?? {}, entry.type);
+    const out = formatCitation(entry.components ?? {}, entry.type, entry.style);
     if (out.confidence === 'unsupported' || out.output === null) {
       return { entry, passed: false, reason: 'unsupported (no module registered)' };
     }
@@ -93,7 +93,7 @@ function runEntry(entry: CorpusEntry): Result {
   }
 
   // check mode
-  const res = checkCitation(entry.input ?? '');
+  const res = checkCitation(entry.input ?? '', undefined, entry.style);
   if (res.confidence === 'unsupported') {
     // Refusing on an in-scope corpus entry is a failure, not a pass. This keeps
     // Phase 0 honest: clean entries do not "pass" just because the engine punted.
