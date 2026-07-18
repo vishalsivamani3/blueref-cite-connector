@@ -9,11 +9,10 @@ connect to it for citation ground truth.
 
 Rules and abbreviation tables are derived from **[The Indigo Book](https://law.resource.org/pub/us/code/blue/IndigoBook.html)** (CC0, public domain).
 
-> ⚠️ **Status: pre-release (Phase 0 foundations).** The engine has no citation
-> rule modules registered yet, so every citation currently returns
-> `confidence: "unsupported"` by design. This scaffold ships the MCP server, the
-> corpus + harness, and CI. Rule modules land in Phases 1–3. See
-> [the roadmap](#roadmap).
+> ⚠️ **Status: pre-release (Phase 1).** The **case** citation type is implemented
+> and passing its corpus slice at 100% (367 entries, growing toward 500). Statutes,
+> periodicals, and books are not registered yet, so they return
+> `confidence: "unsupported"` by design. See [the roadmap](#roadmap).
 
 ## Disclaimer
 
@@ -65,7 +64,7 @@ guessed.
 
 | Type | Status | Indigo Book |
 |---|---|---|
-| Cases | 🚧 Phase 1 | R10, T1, T6, T7 |
+| Cases | ✅ Phase 1 (100% on slice) | R10, T1, T6, T7 |
 | Statutes | 🚧 Phase 2 | R12, T1 |
 | Periodicals (law review articles) | 🚧 Phase 2 | R13, T13 |
 | Books | 🚧 Phase 3 | R15 |
@@ -113,8 +112,8 @@ as one PR. The hard part should be knowing the citation rules, not the codebase.
 
 | Phase | Scope |
 |---|---|
-| 0 | Foundations: MCP server, corpus schema, harness, CI. ✅ **(this build)** |
-| 1 | Cases (incl. short forms) at 99.5%. |
+| 0 | Foundations: MCP server, corpus schema, harness, CI. ✅ |
+| 1 | Cases at 99.5%. ✅ module done (367-entry slice at 100%; growing to 500, short forms pending). |
 | 2 | Statutes + periodicals at 99.5%. |
 | 3 | Books + `check_document` id./supra resolution. |
 | 4 | Field test on real law-review footnotes; harden. |
