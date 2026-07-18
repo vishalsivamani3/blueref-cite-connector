@@ -30,7 +30,7 @@ export const SEEDS: Seed[] = [
   { type: 'case', citation: 'Doe v. Roe, 123 F. Supp. 2d 456, 460 (S.D.N.Y. 2000)', rules: ['IB R10', 'IB T1', 'IB T7'] },
   { type: 'case', citation: 'Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)', rules: ['IB R10', 'IB T6', 'IB T7'] },
   { type: 'case', citation: 'MacPherson v. Buick Motor Co., 111 N.E. 1050, 1053 (N.Y. 1916)', rules: ['IB R10', 'IB T6'] },
-  { type: 'case', citation: 'Brown v. Board of Education, 347 U.S. 483, 495 (1954)', rules: ['IB R10', 'IB T1'] },
+  { type: 'case', citation: 'Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)', rules: ['IB R10', 'IB T1', 'IB T6'] },
   { type: 'case', citation: 'Miranda v. Arizona, 384 U.S. 436, 444 (1966)', rules: ['IB R10', 'IB T1'] },
   { type: 'case', citation: 'United States v. Nixon, 418 U.S. 683, 705 (1974)', rules: ['IB R10', 'IB T1'] },
   { type: 'case', citation: 'Gideon v. Wainwright, 372 U.S. 335, 344 (1963)', rules: ['IB R10', 'IB T1'] },
@@ -85,7 +85,7 @@ export const SEEDS: Seed[] = [
   { type: 'case', citation: 'District of Columbia v. Heller, 554 U.S. 570, 595 (2008)', rules: ['IB R10', 'IB T1'] },
   { type: 'case', citation: 'McDonald v. City of Chicago, 561 U.S. 742, 750 (2010)', rules: ['IB R10', 'IB T1'] },
   { type: 'case', citation: 'Citizens United v. FEC, 558 U.S. 310, 339 (2010)', rules: ['IB R10', 'IB T1'] },
-  { type: 'case', citation: 'Shelby County v. Holder, 570 U.S. 529, 540 (2013)', rules: ['IB R10', 'IB T1'] },
+  { type: 'case', citation: 'Shelby Cnty. v. Holder, 570 U.S. 529, 540 (2013)', rules: ['IB R10', 'IB T1', 'IB T6'] },
   { type: 'case', citation: 'King v. Burwell, 576 U.S. 473, 485 (2015)', rules: ['IB R10', 'IB T1'] },
   { type: 'case', citation: 'Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338, 350 (2011)', rules: ['IB R10', 'IB T1'] },
   // U.S. Supreme Court (S. Ct. reporter)

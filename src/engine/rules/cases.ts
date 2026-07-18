@@ -89,6 +89,22 @@ const WORD_ABBREV: Array<{ full: RegExp; abbrev: string }> = [
   { full: /\bSocial\b/g, abbrev: 'Soc.' },
   { full: /\bCommissioner(s?)\b/g, abbrev: "Comm'r$1" },
   { full: /\bGovernment(s?)\b/g, abbrev: "Gov't$1" },
+  // Owner-directed strict-T6 pass (2026-07-18). Standard Indigo/Bluebook T6
+  // case-name abbreviations; each is verifiable against T6 and awaits back-test
+  // confirmation. NOTE: "District" is intentionally omitted — "District of
+  // Columbia" is conventionally left unabbreviated.
+  { full: /\bBoard(s?)\b/g, abbrev: 'Bd.$1' },
+  { full: /\bEducation\b/g, abbrev: 'Educ.' },
+  { full: /\bCounty(s?)\b/g, abbrev: 'Cnty.$1' },
+  { full: /\bAuthority(s?)\b/g, abbrev: 'Auth.$1' },
+  { full: /\bCommittee(s?)\b/g, abbrev: 'Comm.$1' },
+  { full: /\bMunicipal\b/g, abbrev: 'Mun.' },
+  { full: /\bManufacturing\b/g, abbrev: 'Mfg.' },
+  { full: /\bBrothers\b/g, abbrev: 'Bros.' },
+  { full: /\bInsurance\b/g, abbrev: 'Ins.' },
+  { full: /\bSystems?\b/g, abbrev: 'Sys.' },
+  { full: /\bDevelopment\b/g, abbrev: 'Dev.' },
+  { full: /\bNational\b/g, abbrev: "Nat'l" },
 ];
 
 interface CaseComponents {

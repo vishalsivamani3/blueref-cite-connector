@@ -46,8 +46,10 @@ const ERROR_CODE_SET = new Set<string>(ERROR_CODES);
 /** Validate a single entry. Returns a list of human-readable problems (empty = valid). */
 export function validateEntry(e: CorpusEntry): string[] {
   const problems: string[] = [];
-  if (!e.id || !/^[a-z]+-\d{4}$/.test(e.id)) {
-    problems.push(`id "${e.id}" must match <type>-<4 digits>`);
+  // <type>-<4 digits>, with an optional single-letter track prefix on the number
+  // (e.g. "case-0001" dev, "case-b0001" back-test).
+  if (!e.id || !/^[a-z]+-[a-z]?\d{4}$/.test(e.id)) {
+    problems.push(`id "${e.id}" must match <type>-[<letter>]<4 digits>`);
   }
   if (!CITATION_TYPES.includes(e.type)) {
     problems.push(`type "${e.type}" is not a supported citation type`);

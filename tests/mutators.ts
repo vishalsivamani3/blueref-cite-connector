@@ -79,6 +79,18 @@ const WORD_EXPANSIONS: Record<string, string> = {
   'Soc.': 'Social',
   "Comm'r": 'Commissioner',
   "Gov't": 'Government',
+  'Bd.': 'Board',
+  'Educ.': 'Education',
+  'Cnty.': 'County',
+  'Auth.': 'Authority',
+  'Comm.': 'Committee',
+  'Mun.': 'Municipal',
+  'Mfg.': 'Manufacturing',
+  'Bros.': 'Brothers',
+  'Ins.': 'Insurance',
+  'Sys.': 'System',
+  'Dev.': 'Development',
+  "Nat'l": 'National',
 };
 const wordSpellOut: Mutator = {
   key: 'wordSpellOut',

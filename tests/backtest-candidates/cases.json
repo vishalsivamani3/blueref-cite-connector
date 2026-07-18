@@ -4,13 +4,13 @@
     "type": "case",
     "mode": "check",
     "input": "Brown v. Board of Education, 347 U.S. 483, 495 (1954)",
-    "expected_violations": [],
-    "expected_output": "Brown v. Board of Education, 347 U.S. 483, 495 (1954)",
-    "rules": ["IB R10", "IB T1"],
+    "expected_violations": ["ABBREV"],
+    "expected_output": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
+    "rules": ["IB R10", "IB T1", "IB T6"],
     "provenance": "synthetic",
     "candidate_for": "hand-verified",
-    "source": "347 U.S. 483 (1954) — verify pincite against U.S. Reports",
-    "notes": "probe: clean SCOTUS control. Confidence: high. Expect module PASS."
+    "source": "347 U.S. 483 (1954) — owner-verified canonical form: Brown v. Bd. of Educ.",
+    "notes": "probe: Board->Bd., Education->Educ. (T6). Confidence: high (owner-verified). Expect module MATCH."
   },
   {
     "id": "case-c0002",
