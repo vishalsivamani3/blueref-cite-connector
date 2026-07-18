@@ -186,13 +186,13 @@
     "type": "case",
     "mode": "check",
     "input": "Brown, 347 U.S. at 495",
-    "expected_violations": [],
-    "expected_output": "Brown, 347 U.S. at 495",
-    "rules": ["IB R10.9"],
+    "expected_violations": ["TYPEFACE"],
+    "expected_output": "*Brown*, 347 U.S. at 495",
+    "rules": ["IB R15.2.2", "IB R2.1"],
     "provenance": "synthetic",
     "candidate_for": "hand-verified",
-    "source": "case short form of Brown v. Board of Education",
-    "notes": "probe: case SHORT FORM. Confidence: high it is valid. Expect module REFUSE (unsupported) — known Phase 3 gap."
+    "source": "Indigo R15.2.2: '<First Party>, <volume> <Reporter> at <pincite>'; the case name is italicized but the comma after it is not",
+    "notes": "probe: case SHORT FORM. CORRECTED 2026-07-18 — this draft originally expected a roman case name; Indigo R15.2.2/R2.1 require it italicized in short citations. Now supported by the shortforms module."
   },
   {
     "id": "case-c0016",

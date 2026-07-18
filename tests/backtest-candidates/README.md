@@ -115,13 +115,45 @@ Ex parte Milligan, Chisholm).
 Candidates: `15 MATCH / 0 DIVERGE / 1 REFUSED` (only case short forms remain,
 which are Phase 3).
 
+### Fixed: c0015 — short forms (2026-07-18)
+
+A `shortforms` rule module now covers the two short forms that attach to cases,
+grounded in **Indigo R15**:
+
+- **`id.`** (R15.3) — `*Id.*`, `*Id.* at 1200`. Checks italics (R2.1), the period,
+  `Ibid.` → `Id.`, and the required `at` before a pincite (R15.3.2).
+- **case short cites** (R15.2.2) — `*Fenton*, 233 N.E.2d at 219`. Per R15.2.2 the
+  case name is italicized **but the comma after it is not**, the `v.` and second
+  party are dropped, the first page is omitted, and the pincite takes `at`.
+
+The draft was wrong again, in the same instructive way as c0014: c0015 originally
+expected a **roman** short-form case name. R15.2.2/R2.1 require it *italicized* in
+short citations, so the corrected expectation is `*Brown*, 347 U.S. at 495`.
+
+**R15.2.3 is respected rather than guessed at.** When the first party is a
+governmental or geographical unit (`United States v. Carmel`), the correct short
+form uses the *other* party — a judgment call we will not fabricate. The module
+flags `ORDERING` and leaves the citation uncorrected, pinned by an adversarial
+corpus entry.
+
+**Scope is format only.** Whether an `id.` refers to the right authority is a
+*context* question (R15.3.3 forbids `id.` after a string cite or an ambiguous
+reference) and needs the ordered preceding footnotes. That is Phase 3
+(`check_document`); `SHORTFORM_CONTEXT` stays reserved for it, and
+`list_supported` states plainly that a format pass is not a contextual guarantee.
+`supra` is likewise deferred — it attaches mostly to books/periodicals, which have
+no module yet.
+
+Short-form slice `73/73 = 100%`, with its own 99.5% CI floor.
+**Candidates: `16 MATCH / 0 DIVERGE / 0 REFUSED` — every finding closed.**
+
 ### Open (triaged, not yet fixed)
 
 | ID | Probe | Code | Disposition |
 |---|---|---|---|
 | ~~c0010~~ | ~~Nominative reporter `5 U.S. (1 Cranch) 137`~~ | ~~`PARSE_FAIL`~~ | **FIXED 2026-07-18** — see below. |
 | ~~c0014~~ | ~~`N.Y.S.2d` reporter + `App. Div.` court~~ | ~~`PARSE_FAIL`~~ | **FIXED 2026-07-18** — see below. |
-| c0015 | Case short form `Brown, 347 U.S. at 495` | `SHORTFORM_CONTEXT` | Phase 3 (short-forms module). Correctly refused (unsupported) rather than guessed. |
+| ~~c0015~~ | ~~Case short form `Brown, 347 U.S. at 495`~~ | ~~`SHORTFORM_CONTEXT`~~ | **FIXED 2026-07-18** — see below. |
 | ~~c0016~~ | ~~Subsequent history (multiple parentheticals)~~ | ~~parse structure~~ | **FIXED 2026-07-18** — see below. |
 
 ### Flagged for human review (do not silently resolve, §12)

@@ -22,7 +22,7 @@ import { validateEntry, type CorpusEntry } from './schema.js';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const CORPUS_DIR = join(HERE, 'corpus');
 
-const TYPES: CitationType[] = ['case', 'statute', 'periodical', 'book'];
+const TYPES: CitationType[] = ['case', 'shortform', 'statute', 'periodical', 'book'];
 
 function uniqueCodes(codes: ErrorCode[]): ErrorCode[] {
   return [...new Set(codes)];
