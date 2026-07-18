@@ -5607,7 +5607,7 @@
     "expected_output": "People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -5625,7 +5625,7 @@
     "expected_output": "People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -5644,7 +5644,7 @@
     "expected_output": "People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -5664,7 +5664,7 @@
     "expected_output": "People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6",
       "IB R11.2"
@@ -5682,7 +5682,7 @@
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -5700,7 +5700,7 @@
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -5719,7 +5719,7 @@
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.3.1"
     ],
@@ -5738,7 +5738,7 @@
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -5757,7 +5757,7 @@
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -5777,7 +5777,7 @@
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.3.1"
@@ -5906,7 +5906,7 @@
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -5924,7 +5924,7 @@
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -5943,7 +5943,7 @@
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -5962,7 +5962,7 @@
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -5982,7 +5982,7 @@
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.6"
@@ -6111,7 +6111,7 @@
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -6129,7 +6129,7 @@
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -6148,7 +6148,7 @@
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -6167,7 +6167,7 @@
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -6187,7 +6187,7 @@
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.6"
@@ -6205,7 +6205,7 @@
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -6223,7 +6223,7 @@
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -6242,7 +6242,7 @@
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -6261,7 +6261,7 @@
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -6281,7 +6281,7 @@
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.6"
@@ -6299,7 +6299,7 @@
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -6317,7 +6317,7 @@
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -6336,7 +6336,7 @@
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -6355,7 +6355,7 @@
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -6375,7 +6375,7 @@
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.6"
@@ -6393,7 +6393,7 @@
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -6411,7 +6411,7 @@
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -6430,7 +6430,7 @@
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -6449,7 +6449,7 @@
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -6469,7 +6469,7 @@
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.6"
@@ -6487,7 +6487,7 @@
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -6505,7 +6505,7 @@
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -6524,7 +6524,7 @@
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -6543,7 +6543,7 @@
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -6563,7 +6563,7 @@
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.6"
@@ -6581,7 +6581,7 @@
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -6599,7 +6599,7 @@
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -6618,7 +6618,7 @@
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -6637,7 +6637,7 @@
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -6657,7 +6657,7 @@
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.6"
@@ -6849,7 +6849,7 @@
     "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
@@ -6867,7 +6867,7 @@
     "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -6886,7 +6886,7 @@
     "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -6906,7 +6906,7 @@
     "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
     "rules": [
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6",
       "IB R11.2"
@@ -7048,6 +7048,267 @@
     "id": "case-0391",
     "type": "case",
     "mode": "check",
+    "input": "People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
+    "expected_violations": [],
+    "expected_output": "People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0392",
+    "type": "case",
+    "mode": "check",
+    "input": "People v. Smith, 470 N.Y.S. 2d 987, 990 (N.Y. App. Div. 1984)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2",
+      "IB R11.6.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "case-0393",
+    "type": "case",
+    "mode": "check",
+    "input": "People v. Smith, 470 N.Y.S.2d 987, at 990 (N.Y. App. Div. 1984)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0394",
+    "type": "case",
+    "mode": "check",
+    "input": "People vs. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0395",
+    "type": "case",
+    "mode": "check",
+    "input": "People v. Smith, 470 N.Y.S. 2d 987, at 990 (N.Y. App. Div. 1984)",
+    "expected_violations": [
+      "SPACING",
+      "PINCITE"
+    ],
+    "expected_output": "People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0396",
+    "type": "case",
+    "mode": "check",
+    "input": "Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)",
+    "expected_violations": [],
+    "expected_output": "Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0397",
+    "type": "case",
+    "mode": "check",
+    "input": "Garcia v. Doe, 11 F.4th 1113, 1118 (9th Circuit 2021)",
+    "expected_violations": [
+      "DATE_COURT"
+    ],
+    "expected_output": "Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
+  },
+  {
+    "id": "case-0398",
+    "type": "case",
+    "mode": "check",
+    "input": "Garcia v. Doe, 11 F.4th 1113, at 1118 (9th Cir. 2021)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0399",
+    "type": "case",
+    "mode": "check",
+    "input": "Garcia vs. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0400",
+    "type": "case",
+    "mode": "check",
+    "input": "Garcia v. Doe, 11 F.4th 1113, at 1118 (9th Circuit 2021)",
+    "expected_violations": [
+      "DATE_COURT",
+      "PINCITE"
+    ],
+    "expected_output": "Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: court name not abbreviated per Indigo R12.2; superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0401",
+    "type": "case",
+    "mode": "check",
+    "input": "In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)",
+    "expected_violations": [],
+    "expected_output": "In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0402",
+    "type": "case",
+    "mode": "check",
+    "input": "In re Estate of Doe, 123 A.D. 2d 456, 460 (N.Y. App. Div. 1986)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2",
+      "IB R11.6.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "case-0403",
+    "type": "case",
+    "mode": "check",
+    "input": "In re Estate of Doe, 123 A.D.2d 456, at 460 (N.Y. App. Div. 1986)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0404",
+    "type": "case",
+    "mode": "check",
+    "input": "In re Estate of Doe, 123 A.D. 2d 456, at 460 (N.Y. App. Div. 1986)",
+    "expected_violations": [
+      "SPACING",
+      "PINCITE"
+    ],
+    "expected_output": "In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0405",
+    "type": "case",
+    "mode": "check",
     "input": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
     "expected_violations": [],
     "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
@@ -7061,7 +7322,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0392",
+    "id": "case-0406",
     "type": "case",
     "mode": "check",
     "input": "*Smith v. Jones*, 123 F. 3d 456, 460 (7th Cir. 1999)",
@@ -7080,7 +7341,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "case-0393",
+    "id": "case-0407",
     "type": "case",
     "mode": "check",
     "input": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Circuit 1999)",
@@ -7098,7 +7359,7 @@
     "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
-    "id": "case-0394",
+    "id": "case-0408",
     "type": "case",
     "mode": "check",
     "input": "*Smith v. Jones*, 123 F.3d 456, at 460 (7th Cir. 1999)",
@@ -7117,7 +7378,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0395",
+    "id": "case-0409",
     "type": "case",
     "mode": "check",
     "input": "*Smith vs. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
@@ -7136,7 +7397,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0396",
+    "id": "case-0410",
     "type": "case",
     "mode": "check",
     "input": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
@@ -7154,7 +7415,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0397",
+    "id": "case-0411",
     "type": "case",
     "mode": "check",
     "input": "*Smith v. Jones*, 123 F. 3d 456, 460 (7th Circuit 1999)",
@@ -7174,7 +7435,7 @@
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
-    "id": "case-0398",
+    "id": "case-0412",
     "type": "case",
     "mode": "check",
     "input": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
@@ -7189,7 +7450,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0399",
+    "id": "case-0413",
     "type": "case",
     "mode": "check",
     "input": "*Brown v. Board of Educ.*, 347 U.S. 483, 495 (1954)",
@@ -7206,7 +7467,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0400",
+    "id": "case-0414",
     "type": "case",
     "mode": "check",
     "input": "*Brown v. Bd. of Educ.*, 347 U.S. 483, at 495 (1954)",
@@ -7224,7 +7485,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0401",
+    "id": "case-0415",
     "type": "case",
     "mode": "check",
     "input": "*Brown vs. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
@@ -7242,7 +7503,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0402",
+    "id": "case-0416",
     "type": "case",
     "mode": "check",
     "input": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
@@ -7259,7 +7520,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0403",
+    "id": "case-0417",
     "type": "case",
     "mode": "check",
     "input": "*Brown v. Board of Educ.*, 347 U.S. 483, at 495 (1954)",
@@ -7278,7 +7539,7 @@
     "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0404",
+    "id": "case-0418",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
@@ -7293,7 +7554,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0405",
+    "id": "case-0419",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Company v. Tompkins*, 304 U.S. 64, 78 (1938)",
@@ -7310,7 +7571,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0406",
+    "id": "case-0420",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, at 78 (1938)",
@@ -7328,7 +7589,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0407",
+    "id": "case-0421",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Co. vs. Tompkins*, 304 U.S. 64, 78 (1938)",
@@ -7346,7 +7607,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0408",
+    "id": "case-0422",
     "type": "case",
     "mode": "check",
     "input": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
@@ -7363,7 +7624,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0409",
+    "id": "case-0423",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Company v. Tompkins*, 304 U.S. 64, at 78 (1938)",
@@ -7382,7 +7643,7 @@
     "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0410",
+    "id": "case-0424",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
@@ -7398,7 +7659,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0411",
+    "id": "case-0425",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf v. Long Island R.R. Company*, 162 N.E. 99, 100 (N.Y. 1928)",
@@ -7416,7 +7677,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0412",
+    "id": "case-0426",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, at 100 (N.Y. 1928)",
@@ -7435,7 +7696,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0413",
+    "id": "case-0427",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf vs. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
@@ -7454,7 +7715,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0414",
+    "id": "case-0428",
     "type": "case",
     "mode": "check",
     "input": "Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)",
@@ -7472,7 +7733,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0415",
+    "id": "case-0429",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf v. Long Island R.R. Company*, 162 N.E. 99, at 100 (N.Y. 1928)",
@@ -7492,7 +7753,7 @@
     "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0416",
+    "id": "case-0430",
     "type": "case",
     "mode": "check",
     "input": "*In re Winship*, 397 U.S. 358, 364 (1970)",
@@ -7506,7 +7767,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0417",
+    "id": "case-0431",
     "type": "case",
     "mode": "check",
     "input": "*In re Winship*, 397 U.S. 358, at 364 (1970)",
@@ -7523,7 +7784,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0418",
+    "id": "case-0432",
     "type": "case",
     "mode": "check",
     "input": "In re Winship, 397 U.S. 358, 364 (1970)",
@@ -7539,7 +7800,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0419",
+    "id": "case-0433",
     "type": "case",
     "mode": "check",
     "input": "In re Winship, 397 U.S. 358, at 364 (1970)",
@@ -7557,7 +7818,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0420",
+    "id": "case-0434",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
@@ -7572,7 +7833,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0421",
+    "id": "case-0435",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Company v. Sawyer*, 343 U.S. 579, 587 (1952)",
@@ -7589,7 +7850,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0422",
+    "id": "case-0436",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, at 587 (1952)",
@@ -7607,7 +7868,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0423",
+    "id": "case-0437",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Co. vs. Sawyer*, 343 U.S. 579, 587 (1952)",
@@ -7625,7 +7886,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0424",
+    "id": "case-0438",
     "type": "case",
     "mode": "check",
     "input": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579, 587 (1952)",
@@ -7642,7 +7903,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0425",
+    "id": "case-0439",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Company v. Sawyer*, 343 U.S. 579, at 587 (1952)",
@@ -7661,7 +7922,7 @@
     "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0426",
+    "id": "case-0440",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
@@ -7677,7 +7938,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0427",
+    "id": "case-0441",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F. 3d 34, 46 (D.C. Cir. 2001)",
@@ -7696,7 +7957,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "case-0428",
+    "id": "case-0442",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Circuit 2001)",
@@ -7714,7 +7975,7 @@
     "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
-    "id": "case-0429",
+    "id": "case-0443",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corporation*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
@@ -7732,7 +7993,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0430",
+    "id": "case-0444",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, at 46 (D.C. Cir. 2001)",
@@ -7751,7 +8012,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0431",
+    "id": "case-0445",
     "type": "case",
     "mode": "check",
     "input": "*United States vs. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
@@ -7770,7 +8031,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0432",
+    "id": "case-0446",
     "type": "case",
     "mode": "check",
     "input": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
@@ -7788,7 +8049,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0433",
+    "id": "case-0447",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F. 3d 34, 46 (D.C. Circuit 2001)",
@@ -7808,7 +8069,7 @@
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
-    "id": "case-0434",
+    "id": "case-0448",
     "type": "case",
     "mode": "check",
     "input": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
@@ -7822,7 +8083,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0435",
+    "id": "case-0449",
     "type": "case",
     "mode": "check",
     "input": "*Miranda v. Arizona*, 384 U.S. 436, at 444 (1966)",
@@ -7839,7 +8100,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0436",
+    "id": "case-0450",
     "type": "case",
     "mode": "check",
     "input": "*Miranda vs. Arizona*, 384 U.S. 436, 444 (1966)",
@@ -7856,7 +8117,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0437",
+    "id": "case-0451",
     "type": "case",
     "mode": "check",
     "input": "Miranda v. Arizona, 384 U.S. 436, 444 (1966)",
@@ -7872,7 +8133,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0438",
+    "id": "case-0452",
     "type": "case",
     "mode": "check",
     "input": "*Miranda vs. Arizona*, 384 U.S. 436, at 444 (1966)",
@@ -7891,7 +8152,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0439",
+    "id": "case-0453",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
@@ -7900,14 +8161,14 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
     "notes": "clean canonical"
   },
   {
-    "id": "case-0440",
+    "id": "case-0454",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P. 2d 334, 340 (Cal. 1976)",
@@ -7918,7 +8179,7 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2"
     ],
@@ -7926,7 +8187,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "case-0441",
+    "id": "case-0455",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of University of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
@@ -7937,7 +8198,7 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.3.1"
     ],
@@ -7945,7 +8206,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0442",
+    "id": "case-0456",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, at 340 (Cal. 1976)",
@@ -7956,7 +8217,7 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6"
     ],
@@ -7964,7 +8225,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0443",
+    "id": "case-0457",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff vs. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
@@ -7975,7 +8236,7 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.2"
     ],
@@ -7983,7 +8244,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0444",
+    "id": "case-0458",
     "type": "case",
     "mode": "check",
     "input": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
@@ -7994,14 +8255,14 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2"
     ],
     "provenance": "synthetic",
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0445",
+    "id": "case-0459",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of University of Cal.*, 551 P. 2d 334, 340 (Cal. 1976)",
@@ -8013,7 +8274,7 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB T1",
+      "IB T3",
       "IB R12.2",
       "IB R11.6.2",
       "IB R11.3.1"
@@ -8022,7 +8283,7 @@
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0446",
+    "id": "case-0460",
     "type": "case",
     "mode": "check",
     "input": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
@@ -8036,7 +8297,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0447",
+    "id": "case-0461",
     "type": "case",
     "mode": "check",
     "input": "*Ashcroft v. Iqbal*, 556 U.S. 662, at 678 (2009)",
@@ -8053,7 +8314,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0448",
+    "id": "case-0462",
     "type": "case",
     "mode": "check",
     "input": "*Ashcroft vs. Iqbal*, 556 U.S. 662, 678 (2009)",
@@ -8070,7 +8331,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0449",
+    "id": "case-0463",
     "type": "case",
     "mode": "check",
     "input": "Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)",
@@ -8086,7 +8347,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0450",
+    "id": "case-0464",
     "type": "case",
     "mode": "check",
     "input": "*Ashcroft vs. Iqbal*, 556 U.S. 662, at 678 (2009)",
@@ -8105,7 +8366,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0451",
+    "id": "case-0465",
     "type": "case",
     "mode": "check",
     "input": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
@@ -8119,7 +8380,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0452",
+    "id": "case-0466",
     "type": "case",
     "mode": "check",
     "input": "*Gideon v. Wainwright*, 372 U.S. 335, at 344 (1963)",
@@ -8136,7 +8397,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0453",
+    "id": "case-0467",
     "type": "case",
     "mode": "check",
     "input": "*Gideon vs. Wainwright*, 372 U.S. 335, 344 (1963)",
@@ -8153,7 +8414,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0454",
+    "id": "case-0468",
     "type": "case",
     "mode": "check",
     "input": "Gideon v. Wainwright, 372 U.S. 335, 344 (1963)",
@@ -8169,7 +8430,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0455",
+    "id": "case-0469",
     "type": "case",
     "mode": "check",
     "input": "*Gideon vs. Wainwright*, 372 U.S. 335, at 344 (1963)",
@@ -8188,7 +8449,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0456",
+    "id": "case-0470",
     "type": "case",
     "mode": "check",
     "input": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
@@ -8202,7 +8463,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0457",
+    "id": "case-0471",
     "type": "case",
     "mode": "check",
     "input": "*Katz v. United States*, 389 U.S. 347, at 351 (1967)",
@@ -8219,7 +8480,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0458",
+    "id": "case-0472",
     "type": "case",
     "mode": "check",
     "input": "*Katz vs. United States*, 389 U.S. 347, 351 (1967)",
@@ -8236,7 +8497,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0459",
+    "id": "case-0473",
     "type": "case",
     "mode": "check",
     "input": "Katz v. United States, 389 U.S. 347, 351 (1967)",
@@ -8252,7 +8513,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0460",
+    "id": "case-0474",
     "type": "case",
     "mode": "check",
     "input": "*Katz vs. United States*, 389 U.S. 347, at 351 (1967)",

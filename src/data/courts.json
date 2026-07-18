@@ -1,77 +1,755 @@
 {
   "_meta": {
-    "source": "The Indigo Book (CC0), Table T7-style court abbreviations",
-    "note": "Seed set for Phase 0. `canonical` is the correct abbreviation; `variants` are common spelled-out or malformed forms.",
+    "source": "The Indigo Book 2.0 (CC0), Tables T1 (Federal Materials) and T3 (U.S. States and Other Jurisdictions)",
+    "note": "Seed set for Phase 0. `canonical` is the correct abbreviation; `variants` are common spelled-out or malformed forms. Extended 2026-07-18 by direct extraction from The Indigo Book 2.0 tables T1/T3 (CC0); existing entries and their variants preserved.",
     "provenance": "indigo-book-derived"
   },
   "courts": {
-    "1st Cir.": { "full": "United States Court of Appeals for the First Circuit", "variants": ["1st Circuit", "1 Cir.", "First Cir."] },
-    "2d Cir.": { "full": "United States Court of Appeals for the Second Circuit", "variants": ["2nd Cir.", "2d Circuit", "2nd Circuit", "Second Cir."] },
-    "3d Cir.": { "full": "United States Court of Appeals for the Third Circuit", "variants": ["3rd Cir.", "3d Circuit", "3rd Circuit", "Third Cir."] },
-    "4th Cir.": { "full": "United States Court of Appeals for the Fourth Circuit", "variants": ["4th Circuit", "Fourth Cir."] },
-    "5th Cir.": { "full": "United States Court of Appeals for the Fifth Circuit", "variants": ["5th Circuit", "Fifth Cir."] },
-    "6th Cir.": { "full": "United States Court of Appeals for the Sixth Circuit", "variants": ["6th Circuit", "Sixth Cir."] },
-    "7th Cir.": { "full": "United States Court of Appeals for the Seventh Circuit", "variants": ["7th Circuit", "Seventh Cir."] },
-    "8th Cir.": { "full": "United States Court of Appeals for the Eighth Circuit", "variants": ["8th Circuit", "Eighth Cir."] },
-    "9th Cir.": { "full": "United States Court of Appeals for the Ninth Circuit", "variants": ["9th Circuit", "Ninth Cir."] },
-    "10th Cir.": { "full": "United States Court of Appeals for the Tenth Circuit", "variants": ["10th Circuit", "Tenth Cir."] },
-    "11th Cir.": { "full": "United States Court of Appeals for the Eleventh Circuit", "variants": ["11th Circuit", "Eleventh Cir."] },
-    "D.C. Cir.": { "full": "United States Court of Appeals for the D.C. Circuit", "variants": ["DC Cir.", "D.C. Circuit", "D. C. Cir."] },
-    "Fed. Cir.": { "full": "United States Court of Appeals for the Federal Circuit", "variants": ["Federal Cir.", "Fed. Circuit"] },
-    "S.D.N.Y.": { "full": "United States District Court for the Southern District of New York", "variants": ["SDNY", "S.D. N.Y.", "S.D.N.Y"] },
-    "E.D. Pa.": { "full": "United States District Court for the Eastern District of Pennsylvania", "variants": ["E.D.Pa.", "E.D. Penn."] },
-    "N.D. Cal.": { "full": "United States District Court for the Northern District of California", "variants": ["N.D.Cal.", "N.D. Calif."] },
-    "D. Mass.": { "full": "United States District Court for the District of Massachusetts", "variants": ["D.Mass.", "D. Mass"] },
-
-    "N.Y.": { "full": "New York Court of Appeals", "variants": [] },
-    "Cal.": { "full": "Supreme Court of California", "variants": [] },
-    "Mass.": { "full": "Supreme Judicial Court of Massachusetts", "variants": [] },
-    "Ill.": { "full": "Supreme Court of Illinois", "variants": [] },
-    "Tex.": { "full": "Supreme Court of Texas", "variants": [] },
-    "Pa.": { "full": "Supreme Court of Pennsylvania", "variants": [] },
-    "Ohio": { "full": "Supreme Court of Ohio", "variants": [] },
-    "Fla.": { "full": "Supreme Court of Florida", "variants": [] },
-    "N.J.": { "full": "Supreme Court of New Jersey", "variants": [] },
-    "Mich.": { "full": "Supreme Court of Michigan", "variants": [] },
-    "Wash.": { "full": "Supreme Court of Washington", "variants": [] },
-    "Va.": { "full": "Supreme Court of Virginia", "variants": [] },
-    "Ala.": { "full": "Supreme Court of Alabama", "variants": [] },
-    "Alaska": { "full": "Supreme Court of Alaska", "variants": [] },
-    "Ariz.": { "full": "Supreme Court of Arizona", "variants": [] },
-    "Ark.": { "full": "Supreme Court of Arkansas", "variants": [] },
-    "Colo.": { "full": "Supreme Court of Colorado", "variants": [] },
-    "Conn.": { "full": "Supreme Court of Connecticut", "variants": [] },
-    "Del.": { "full": "Supreme Court of Delaware", "variants": [] },
-    "Ga.": { "full": "Supreme Court of Georgia", "variants": [] },
-    "Haw.": { "full": "Supreme Court of Hawaii", "variants": [] },
-    "Idaho": { "full": "Supreme Court of Idaho", "variants": [] },
-    "Ind.": { "full": "Supreme Court of Indiana", "variants": [] },
-    "Iowa": { "full": "Supreme Court of Iowa", "variants": [] },
-    "Kan.": { "full": "Supreme Court of Kansas", "variants": [] },
-    "Ky.": { "full": "Supreme Court of Kentucky", "variants": [] },
-    "La.": { "full": "Supreme Court of Louisiana", "variants": [] },
-    "Me.": { "full": "Supreme Judicial Court of Maine", "variants": [] },
-    "Md.": { "full": "Court of Appeals of Maryland", "variants": [] },
-    "Minn.": { "full": "Supreme Court of Minnesota", "variants": [] },
-    "Miss.": { "full": "Supreme Court of Mississippi", "variants": [] },
-    "Mo.": { "full": "Supreme Court of Missouri", "variants": [] },
-    "Mont.": { "full": "Supreme Court of Montana", "variants": [] },
-    "Neb.": { "full": "Supreme Court of Nebraska", "variants": [] },
-    "Nev.": { "full": "Supreme Court of Nevada", "variants": [] },
-    "N.H.": { "full": "Supreme Court of New Hampshire", "variants": [] },
-    "N.M.": { "full": "Supreme Court of New Mexico", "variants": [] },
-    "N.C.": { "full": "Supreme Court of North Carolina", "variants": [] },
-    "N.D.": { "full": "Supreme Court of North Dakota", "variants": [] },
-    "Okla.": { "full": "Supreme Court of Oklahoma", "variants": [] },
-    "Or.": { "full": "Supreme Court of Oregon", "variants": [] },
-    "R.I.": { "full": "Supreme Court of Rhode Island", "variants": [] },
-    "S.C.": { "full": "Supreme Court of South Carolina", "variants": [] },
-    "S.D.": { "full": "Supreme Court of South Dakota", "variants": [] },
-    "Tenn.": { "full": "Supreme Court of Tennessee", "variants": [] },
-    "Utah": { "full": "Supreme Court of Utah", "variants": [] },
-    "Vt.": { "full": "Supreme Court of Vermont", "variants": [] },
-    "W. Va.": { "full": "Supreme Court of Appeals of West Virginia", "variants": [] },
-    "Wis.": { "full": "Supreme Court of Wisconsin", "variants": [] },
-    "Wyo.": { "full": "Supreme Court of Wyoming", "variants": [] }
+    "1st Cir.": {
+      "full": "United States Court of Appeals for the First Circuit",
+      "variants": [
+        "1st Circuit",
+        "1 Cir.",
+        "First Cir."
+      ]
+    },
+    "2d Cir.": {
+      "full": "United States Court of Appeals for the Second Circuit",
+      "variants": [
+        "2nd Cir.",
+        "2d Circuit",
+        "2nd Circuit",
+        "Second Cir."
+      ]
+    },
+    "3d Cir.": {
+      "full": "United States Court of Appeals for the Third Circuit",
+      "variants": [
+        "3rd Cir.",
+        "3d Circuit",
+        "3rd Circuit",
+        "Third Cir."
+      ]
+    },
+    "4th Cir.": {
+      "full": "United States Court of Appeals for the Fourth Circuit",
+      "variants": [
+        "4th Circuit",
+        "Fourth Cir."
+      ]
+    },
+    "5th Cir.": {
+      "full": "United States Court of Appeals for the Fifth Circuit",
+      "variants": [
+        "5th Circuit",
+        "Fifth Cir."
+      ]
+    },
+    "6th Cir.": {
+      "full": "United States Court of Appeals for the Sixth Circuit",
+      "variants": [
+        "6th Circuit",
+        "Sixth Cir."
+      ]
+    },
+    "7th Cir.": {
+      "full": "United States Court of Appeals for the Seventh Circuit",
+      "variants": [
+        "7th Circuit",
+        "Seventh Cir."
+      ]
+    },
+    "8th Cir.": {
+      "full": "United States Court of Appeals for the Eighth Circuit",
+      "variants": [
+        "8th Circuit",
+        "Eighth Cir."
+      ]
+    },
+    "9th Cir.": {
+      "full": "United States Court of Appeals for the Ninth Circuit",
+      "variants": [
+        "9th Circuit",
+        "Ninth Cir."
+      ]
+    },
+    "10th Cir.": {
+      "full": "United States Court of Appeals for the Tenth Circuit",
+      "variants": [
+        "10th Circuit",
+        "Tenth Cir."
+      ]
+    },
+    "11th Cir.": {
+      "full": "United States Court of Appeals for the Eleventh Circuit",
+      "variants": [
+        "11th Circuit",
+        "Eleventh Cir."
+      ]
+    },
+    "D.C. Cir.": {
+      "full": "United States Court of Appeals for the D.C. Circuit",
+      "variants": [
+        "DC Cir.",
+        "D.C. Circuit",
+        "D. C. Cir."
+      ]
+    },
+    "Fed. Cir.": {
+      "full": "United States Court of Appeals for the Federal Circuit",
+      "variants": [
+        "Federal Cir.",
+        "Fed. Circuit"
+      ]
+    },
+    "S.D.N.Y.": {
+      "full": "United States District Court for the Southern District of New York",
+      "variants": [
+        "SDNY",
+        "S.D. N.Y.",
+        "S.D.N.Y"
+      ]
+    },
+    "E.D. Pa.": {
+      "full": "United States District Court for the Eastern District of Pennsylvania",
+      "variants": [
+        "E.D.Pa.",
+        "E.D. Penn."
+      ]
+    },
+    "N.D. Cal.": {
+      "full": "United States District Court for the Northern District of California",
+      "variants": [
+        "N.D.Cal.",
+        "N.D. Calif."
+      ]
+    },
+    "D. Mass.": {
+      "full": "United States District Court for the District of Massachusetts",
+      "variants": [
+        "D.Mass.",
+        "D. Mass"
+      ]
+    },
+    "N.Y.": {
+      "full": "New York Court of Appeals",
+      "variants": []
+    },
+    "Cal.": {
+      "full": "Supreme Court of California",
+      "variants": []
+    },
+    "Mass.": {
+      "full": "Supreme Judicial Court of Massachusetts",
+      "variants": []
+    },
+    "Ill.": {
+      "full": "Supreme Court of Illinois",
+      "variants": []
+    },
+    "Tex.": {
+      "full": "Supreme Court of Texas",
+      "variants": []
+    },
+    "Pa.": {
+      "full": "Supreme Court of Pennsylvania",
+      "variants": []
+    },
+    "Ohio": {
+      "full": "Supreme Court of Ohio",
+      "variants": []
+    },
+    "Fla.": {
+      "full": "Supreme Court of Florida",
+      "variants": []
+    },
+    "N.J.": {
+      "full": "Supreme Court of New Jersey",
+      "variants": []
+    },
+    "Mich.": {
+      "full": "Supreme Court of Michigan",
+      "variants": []
+    },
+    "Wash.": {
+      "full": "Supreme Court of Washington",
+      "variants": []
+    },
+    "Va.": {
+      "full": "Supreme Court of Virginia",
+      "variants": []
+    },
+    "Ala.": {
+      "full": "Supreme Court of Alabama",
+      "variants": []
+    },
+    "Alaska": {
+      "full": "Supreme Court of Alaska",
+      "variants": []
+    },
+    "Ariz.": {
+      "full": "Supreme Court of Arizona",
+      "variants": []
+    },
+    "Ark.": {
+      "full": "Supreme Court of Arkansas",
+      "variants": []
+    },
+    "Colo.": {
+      "full": "Supreme Court of Colorado",
+      "variants": []
+    },
+    "Conn.": {
+      "full": "Supreme Court of Connecticut",
+      "variants": []
+    },
+    "Del.": {
+      "full": "Supreme Court of Delaware",
+      "variants": []
+    },
+    "Ga.": {
+      "full": "Supreme Court of Georgia",
+      "variants": []
+    },
+    "Haw.": {
+      "full": "Supreme Court of Hawaii",
+      "variants": []
+    },
+    "Idaho": {
+      "full": "Supreme Court of Idaho",
+      "variants": []
+    },
+    "Ind.": {
+      "full": "Supreme Court of Indiana",
+      "variants": []
+    },
+    "Iowa": {
+      "full": "Supreme Court of Iowa",
+      "variants": []
+    },
+    "Kan.": {
+      "full": "Supreme Court of Kansas",
+      "variants": []
+    },
+    "Ky.": {
+      "full": "Supreme Court of Kentucky",
+      "variants": []
+    },
+    "La.": {
+      "full": "Supreme Court of Louisiana",
+      "variants": []
+    },
+    "Me.": {
+      "full": "Supreme Judicial Court of Maine",
+      "variants": []
+    },
+    "Md.": {
+      "full": "Court of Appeals of Maryland",
+      "variants": []
+    },
+    "Minn.": {
+      "full": "Supreme Court of Minnesota",
+      "variants": []
+    },
+    "Miss.": {
+      "full": "Supreme Court of Mississippi",
+      "variants": []
+    },
+    "Mo.": {
+      "full": "Supreme Court of Missouri",
+      "variants": []
+    },
+    "Mont.": {
+      "full": "Supreme Court of Montana",
+      "variants": []
+    },
+    "Neb.": {
+      "full": "Supreme Court of Nebraska",
+      "variants": []
+    },
+    "Nev.": {
+      "full": "Supreme Court of Nevada",
+      "variants": []
+    },
+    "N.H.": {
+      "full": "Supreme Court of New Hampshire",
+      "variants": []
+    },
+    "N.M.": {
+      "full": "Supreme Court of New Mexico",
+      "variants": []
+    },
+    "N.C.": {
+      "full": "Supreme Court of North Carolina",
+      "variants": []
+    },
+    "N.D.": {
+      "full": "Supreme Court of North Dakota",
+      "variants": []
+    },
+    "Okla.": {
+      "full": "Supreme Court of Oklahoma",
+      "variants": []
+    },
+    "Or.": {
+      "full": "Supreme Court of Oregon",
+      "variants": []
+    },
+    "R.I.": {
+      "full": "Supreme Court of Rhode Island",
+      "variants": []
+    },
+    "S.C.": {
+      "full": "Supreme Court of South Carolina",
+      "variants": []
+    },
+    "S.D.": {
+      "full": "Supreme Court of South Dakota",
+      "variants": []
+    },
+    "Tenn.": {
+      "full": "Supreme Court of Tennessee",
+      "variants": []
+    },
+    "Utah": {
+      "full": "Supreme Court of Utah",
+      "variants": []
+    },
+    "Vt.": {
+      "full": "Supreme Court of Vermont",
+      "variants": []
+    },
+    "W. Va.": {
+      "full": "Supreme Court of Appeals of West Virginia",
+      "variants": []
+    },
+    "Wis.": {
+      "full": "Supreme Court of Wisconsin",
+      "variants": []
+    },
+    "Wyo.": {
+      "full": "Supreme Court of Wyoming",
+      "variants": []
+    },
+    "U.S.": {
+      "full": "United States Supreme Court",
+      "variants": []
+    },
+    "C.C.S.D.N.Y.": {
+      "full": "Circuit Courts",
+      "variants": []
+    },
+    "C.C.D. Cal.": {
+      "full": "Circuit Courts",
+      "variants": []
+    },
+    "Temp. Emer. Ct. App.": {
+      "full": "Temporary Emergency Court of Appeals",
+      "variants": []
+    },
+    "Emer. Ct. App.": {
+      "full": "Court of Appeals",
+      "variants": []
+    },
+    "Comm. Ct.": {
+      "full": "Comm. Ct.",
+      "variants": []
+    },
+    "Ct. Cl.": {
+      "full": "Claims",
+      "variants": []
+    },
+    "Fed. Cl.": {
+      "full": "United States Court of Federal Claims",
+      "variants": []
+    },
+    "Cl. Ct.": {
+      "full": "Claims Court",
+      "variants": []
+    },
+    "Ct. Int'l Trade": {
+      "full": "United States Court of International Trade",
+      "variants": []
+    },
+    "Cust. Ct.": {
+      "full": "United States Customs Court",
+      "variants": []
+    },
+    "Reg'l Rail Reorg. Ct.": {
+      "full": "Regional Rail Reorganization Act",
+      "variants": []
+    },
+    "T.C.": {
+      "full": "Tax Court",
+      "variants": []
+    },
+    "B.T.A.": {
+      "full": "Tax Court",
+      "variants": []
+    },
+    "Vet. App.": {
+      "full": "United States Court of Appeals for Veterans Claims",
+      "variants": []
+    },
+    "C.A.A.F.": {
+      "full": "United States Court of Appeals for the Armed Forces",
+      "variants": []
+    },
+    "C.M.A.": {
+      "full": "States Court of Military Appeals",
+      "variants": []
+    },
+    "A.C.M.R.": {
+      "full": "Ct. Crim. App., N-M. Ct. Crim. App.), previously Courts of Military Review",
+      "variants": []
+    },
+    "Ala. Ct. App.": {
+      "full": "Alabama App.), before 1969 Court of Appeals",
+      "variants": []
+    },
+    "Alaska Ct. App.": {
+      "full": "Alaska Court of Appeals",
+      "variants": []
+    },
+    "D. Alaska": {
+      "full": "Alaska District Courts of Alaska",
+      "variants": []
+    },
+    "D. Cal.": {
+      "full": "Alaska Washington",
+      "variants": []
+    },
+    "D. Wash.": {
+      "full": "Alaska Washington",
+      "variants": []
+    },
+    "Ariz. Ct. App.": {
+      "full": "Arizona Court of Appeals",
+      "variants": []
+    },
+    "Ariz. Tax Ct.": {
+      "full": "Arizona Tax Court",
+      "variants": []
+    },
+    "Ark. Ct. App.": {
+      "full": "Arkansas Court of Appeals",
+      "variants": []
+    },
+    "Cal. Ct. App.": {
+      "full": "California Court of Appeal",
+      "variants": []
+    },
+    "Colo. App.": {
+      "full": "Colorado Court of Appeals",
+      "variants": []
+    },
+    "Conn. App. Ct.": {
+      "full": "Connecticut Appellate Court",
+      "variants": []
+    },
+    "Conn. Super. Ct.": {
+      "full": "Connecticut Superior Court",
+      "variants": []
+    },
+    "Conn. C.P.": {
+      "full": "Connecticut Superior Court",
+      "variants": []
+    },
+    "Conn. Cir. Ct.": {
+      "full": "Connecticut Circuit Court",
+      "variants": []
+    },
+    "Del. Ch.": {
+      "full": "Delaware Court of Chancery",
+      "variants": []
+    },
+    "Del. Super. Ct.": {
+      "full": "Delaware Superior Court",
+      "variants": []
+    },
+    "Del. Fam. Ct.": {
+      "full": "Delaware Family Court",
+      "variants": []
+    },
+    "D.C.": {
+      "full": "District of Columbia Court of Appeals",
+      "variants": []
+    },
+    "D.C. Super. Ct.": {
+      "full": "District of Columbia Superior Court",
+      "variants": []
+    },
+    "D.C. Mun. Ct.": {
+      "full": "District of Columbia Superior Court",
+      "variants": []
+    },
+    "Fla. Dist. Ct. App.": {
+      "full": "Florida District Court of Appeal",
+      "variants": []
+    },
+    "Fla. Cir. Ct.": {
+      "full": "Florida Circuit Court",
+      "variants": []
+    },
+    "Fla. Orange Cnty. Ct.": {
+      "full": "Florida Circuit Court",
+      "variants": []
+    },
+    "Fla. P.S.C.": {
+      "full": "Florida Service Commission",
+      "variants": []
+    },
+    "Ga. Ct. App.": {
+      "full": "Georgia Court of Appeals",
+      "variants": []
+    },
+    "Haw. Ct. App.": {
+      "full": "Hawaii Intermediate Court of Appeals",
+      "variants": []
+    },
+    "Idaho Ct. App.": {
+      "full": "Idaho Court of Appeals",
+      "variants": []
+    },
+    "Ill. App. Ct.": {
+      "full": "Illinois Appellate Court",
+      "variants": []
+    },
+    "Ill. Cir. Ct.": {
+      "full": "Illinois Illinois Circuit Court",
+      "variants": []
+    },
+    "Ill. Ct. Cl.": {
+      "full": "Illinois Illinois Circuit Court",
+      "variants": []
+    },
+    "Ind. Ct. App.": {
+      "full": "Indiana Court of Appeals",
+      "variants": []
+    },
+    "Ind. App.": {
+      "full": "Indiana Court of Appeals",
+      "variants": []
+    },
+    "Ind. T.C.": {
+      "full": "Indiana Tax Court",
+      "variants": []
+    },
+    "Iowa Ct. App.": {
+      "full": "Iowa Court of Appeals",
+      "variants": []
+    },
+    "Kan. Ct. App.": {
+      "full": "Kansas Court of Appeals",
+      "variants": []
+    },
+    "Orleans": {
+      "full": "Louisiana Superior Court of the Territory of Orleans",
+      "variants": []
+    },
+    "La. Ct. App.": {
+      "full": "Louisiana Court of Appeal",
+      "variants": []
+    },
+    "Md. Ct. Spec. App.": {
+      "full": "Maryland Court of Special Appeals",
+      "variants": []
+    },
+    "Mass. App. Ct.": {
+      "full": "Massachusetts Appeals Court",
+      "variants": []
+    },
+    "Mass. Dist. Ct.": {
+      "full": "Massachusetts Lower Courts",
+      "variants": []
+    },
+    "Bos. Mun. Ct.": {
+      "full": "Massachusetts Lower Courts",
+      "variants": []
+    },
+    "Mich. Ct. App.": {
+      "full": "Michigan Court of Appeals",
+      "variants": []
+    },
+    "Mich. Ct. Cl.": {
+      "full": "Michigan Court of Claims",
+      "variants": []
+    },
+    "Minn. Ct. App.": {
+      "full": "Minnesota Court of Appeals",
+      "variants": []
+    },
+    "Miss. Ct. App.": {
+      "full": "Mississippi Court of Appeals",
+      "variants": []
+    },
+    "Mo. Ct. App.": {
+      "full": "Missouri Court of Appeals",
+      "variants": []
+    },
+    "Neb. Ct. App.": {
+      "full": "Nebraska Court of Appeals",
+      "variants": []
+    },
+    "N.J. Ch.": {
+      "full": "New Jersey Law Div.), previously Court of Chancery",
+      "variants": []
+    },
+    "N.J. Prerog. Ct.": {
+      "full": "New Jersey Ct.), and Prerogative Court",
+      "variants": []
+    },
+    "Essex Cnty. Ct.": {
+      "full": "New Jersey County Court",
+      "variants": []
+    },
+    "N.J. Tax Ct.": {
+      "full": "New Jersey Tax Court",
+      "variants": []
+    },
+    "N.M. Ct. App.": {
+      "full": "New Mexico Court of Appeals",
+      "variants": []
+    },
+    "N.Y. Ch.": {
+      "full": "New York Court of Chancery",
+      "variants": []
+    },
+    "N.Y. App. Div.": {
+      "full": "New York Supreme Court, Appellate Division",
+      "variants": []
+    },
+    "N.Y. Gen. Term": {
+      "full": "New York General Term",
+      "variants": []
+    },
+    "N.C. Ct. App.": {
+      "full": "North Carolina Court of Appeals",
+      "variants": []
+    },
+    "N.D. Ct. App.": {
+      "full": "North Dakota Court of Appeals of North Dakota",
+      "variants": []
+    },
+    "Ohio Ct. App.": {
+      "full": "Ohio Court of Appeals",
+      "variants": []
+    },
+    "Indian Terr.": {
+      "full": "Oklahoma Court of Appeals of Indian Territory",
+      "variants": []
+    },
+    "Okla. Crim. App.": {
+      "full": "Oklahoma Court of Criminal Appeals",
+      "variants": []
+    },
+    "Okla. Civ. App.": {
+      "full": "Oklahoma Court of Civil Appeals",
+      "variants": []
+    },
+    "Pa. Super. Ct.": {
+      "full": "Pennsylvania Superior Court",
+      "variants": []
+    },
+    "Pa. Commw. Ct.": {
+      "full": "Pennsylvania Commonwealth Court",
+      "variants": []
+    },
+    "S.C. Ct. App.": {
+      "full": "South Carolina Court of Appeals",
+      "variants": []
+    },
+    "S.C.L.": {
+      "full": "South Carolina Courts of law before 1868: Cite to South Carolina Law Reports",
+      "variants": []
+    },
+    "S.C. Eq.": {
+      "full": "South Carolina Courts of equity before 1868: Cite to South Carolina Equity Reports",
+      "variants": []
+    },
+    "Tenn. Ct. App.": {
+      "full": "Tennessee Court of Appeals",
+      "variants": []
+    },
+    "Tenn. Crim. App.": {
+      "full": "Tennessee Court of Criminal Appeals",
+      "variants": []
+    },
+    "Tex. Crim. App.": {
+      "full": "Texas Court of Criminal Appeals",
+      "variants": []
+    },
+    "Tex. Comm'n App.": {
+      "full": "Texas Commission of Appeals",
+      "variants": []
+    },
+    "Tex. App.": {
+      "full": "Texas Courts of Appeals",
+      "variants": []
+    },
+    "Tex. Civ. App.": {
+      "full": "Texas Courts of Appeals",
+      "variants": []
+    },
+    "Utah Ct. App.": {
+      "full": "Utah Court of Appeals",
+      "variants": []
+    },
+    "Va. Ct. App.": {
+      "full": "Virginia Court of Appeals",
+      "variants": []
+    },
+    "Va. Cir. Ct.": {
+      "full": "Virginia Circuit Court",
+      "variants": []
+    },
+    "Wash. Ct. App.": {
+      "full": "Washington Court of Appeals",
+      "variants": []
+    },
+    "Wis. Ct. App.": {
+      "full": "Wisconsin Court of Appeals",
+      "variants": []
+    },
+    "Am. Samoa": {
+      "full": "American Samoa High Court of American Samoa",
+      "variants": []
+    },
+    "E.D. La.": {
+      "full": "American Samoa United States District Court for the Eastern District of Louisiana",
+      "variants": []
+    },
+    "D.C.Z.": {
+      "full": "American Samoa United States District Court for the District of the Canal Zone",
+      "variants": []
+    },
+    "Guam": {
+      "full": "Guam Supreme Court of Guam",
+      "variants": []
+    },
+    "D. Guam": {
+      "full": "Guam District Court of Guam",
+      "variants": []
+    },
+    "Navajo": {
+      "full": "Navajo Nation Supreme Court",
+      "variants": []
+    },
+    "Navajo D. Ct.": {
+      "full": "Navajo Nation District Court",
+      "variants": []
+    },
+    "N. Mar. I.": {
+      "full": "Northern Mariana Islands Supreme Court",
+      "variants": []
+    },
+    "P.R.": {
+      "full": "Puerto Rico Supreme Court",
+      "variants": []
+    },
+    "P.R. Cir.": {
+      "full": "Puerto Rico Circuit Court of Appeals",
+      "variants": []
+    }
   }
 }

@@ -94,23 +94,30 @@ export const SEEDS: Seed[] = [
   { type: 'case', citation: 'Trump v. Hawaii, 138 S. Ct. 2392, 2403 (2018)', rules: ['IB R11', 'IB T1'] },
   { type: 'case', citation: 'Masterpiece Cakeshop, Ltd. v. Colo. C.R. Comm\'n, 138 S. Ct. 1719, 1723 (2018)', rules: ['IB R11', 'IB T1'] },
   // State high courts (regional reporters)
-  { type: 'case', citation: 'People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
-  { type: 'case', citation: 'Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
+  { type: 'case', citation: 'Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
   { type: 'case', citation: 'Li v. Yellow Cab Co., 532 P.2d 1226, 1230 (Cal. 1975)', rules: ['IB R11', 'IB R11.3.1', 'IB R12.2'] },
-  { type: 'case', citation: 'Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
   { type: 'case', citation: 'Escola v. Coca Cola Bottling Co., 150 P.2d 436, 440 (Cal. 1944)', rules: ['IB R11', 'IB R11.3.1', 'IB R12.2'] },
-  { type: 'case', citation: 'Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
-  { type: 'case', citation: 'Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
-  { type: 'case', citation: 'Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
-  { type: 'case', citation: 'People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
-  { type: 'case', citation: 'Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
-  { type: 'case', citation: 'Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
+  { type: 'case', citation: 'Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
+  { type: 'case', citation: 'Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
+  { type: 'case', citation: 'People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
+  { type: 'case', citation: 'Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
+  { type: 'case', citation: 'Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
   // Regression seeds from pre-AI back-test findings (c0011, c0012, c0013): T6 words
   // beyond the original subset, and a state high court that was missing from T7.
   { type: 'case', citation: 'Monell v. Dep\'t of Soc. Servs., 436 U.S. 658, 690 (1978)', rules: ['IB R11', 'IB R11.3.1'] },
   { type: 'case', citation: 'Comm\'r v. Duberstein, 363 U.S. 278, 285 (1960)', rules: ['IB R11', 'IB R11.3.1'] },
-  { type: 'case', citation: 'Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
   { type: 'case', citation: 'Gov\'t of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)', rules: ['IB R11', 'IB R11.3.1', 'IB R12.2'] },
+
+  // Regression seeds from the Indigo T1/T3 table expansion (2026-07-18): state
+  // reporters + state intermediate courts, and the F.4th series, all previously
+  // unparseable (back-test candidate c0014).
+  { type: 'case', citation: 'People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
+  { type: 'case', citation: 'Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
 
   // --- Practitioner style (Indigo R2.1): case name italicized ---
   { type: 'case', style: 'practitioner', citation: '*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)', rules: ['IB R2.1', 'IB R11', 'IB T1', 'IB R12.2'] },
@@ -121,7 +128,7 @@ export const SEEDS: Seed[] = [
   { type: 'case', style: 'practitioner', citation: '*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)', rules: ['IB R2.1', 'IB R11', 'IB R11.3.1'] },
   { type: 'case', style: 'practitioner', citation: '*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)', rules: ['IB R2.1', 'IB R11', 'IB R11.3.1', 'IB R12.2'] },
   { type: 'case', style: 'practitioner', citation: '*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)', rules: ['IB R2.1', 'IB R11'] },
-  { type: 'case', style: 'practitioner', citation: '*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)', rules: ['IB R2.1', 'IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', style: 'practitioner', citation: '*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)', rules: ['IB R2.1', 'IB R11', 'IB T3', 'IB R12.2'] },
   { type: 'case', style: 'practitioner', citation: '*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)', rules: ['IB R2.1', 'IB R11'] },
   { type: 'case', style: 'practitioner', citation: '*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)', rules: ['IB R2.1', 'IB R11'] },
   { type: 'case', style: 'practitioner', citation: '*Katz v. United States*, 389 U.S. 347, 351 (1967)', rules: ['IB R2.1', 'IB R11'] },

@@ -1,38 +1,1310 @@
 {
   "_meta": {
-    "source": "The Indigo Book (CC0), Table T1-style reporter abbreviations",
-    "note": "Seed set for Phase 0. The long tail of reporters is filled in per-phase, pinned by corpus entries (PRD Section 11.2). Keys are canonical reporter abbreviations; `full` is the reporter name; `variants` are common malformed/spelled-out forms that should be normalized to the key.",
+    "source": "The Indigo Book 2.0 (CC0), Tables T1 (Federal Materials) and T3 (U.S. States and Other Jurisdictions)",
+    "note": "Seed set for Phase 0. The long tail of reporters is filled in per-phase, pinned by corpus entries (PRD Section 11.2). Keys are canonical reporter abbreviations; `full` is the reporter name; `variants` are common malformed/spelled-out forms that should be normalized to the key. Extended 2026-07-18 by direct extraction from The Indigo Book 2.0 tables T1/T3 (CC0); existing entries and their variants preserved.",
     "provenance": "indigo-book-derived"
   },
   "reporters": {
-    "U.S.": { "full": "United States Reports", "variants": ["US", "U. S.", "U.S"] },
-    "S. Ct.": { "full": "Supreme Court Reporter", "variants": ["S.Ct.", "S. Ct", "Sup. Ct."] },
-    "L. Ed.": { "full": "Lawyers' Edition", "variants": ["L.Ed.", "L. Ed"] },
-    "L. Ed. 2d": { "full": "Lawyers' Edition, Second Series", "variants": ["L.Ed.2d", "L. Ed. 2d.", "L.Ed. 2d"] },
-    "F.": { "full": "Federal Reporter", "variants": ["Fed.", "F"] },
-    "F.2d": { "full": "Federal Reporter, Second Series", "variants": ["F. 2d", "F.2d.", "F 2d"] },
-    "F.3d": { "full": "Federal Reporter, Third Series", "variants": ["F. 3d", "F.3d.", "F 3d"] },
-    "F. Supp.": { "full": "Federal Supplement", "variants": ["F.Supp.", "F. Supp"] },
-    "F. Supp. 2d": { "full": "Federal Supplement, Second Series", "variants": ["F.Supp.2d", "F. Supp. 2d."] },
-    "F. Supp. 3d": { "full": "Federal Supplement, Third Series", "variants": ["F.Supp.3d", "F. Supp. 3d."] },
-    "A.": { "full": "Atlantic Reporter", "variants": ["A"] },
-    "A.2d": { "full": "Atlantic Reporter, Second Series", "variants": ["A. 2d", "A.2d."] },
-    "A.3d": { "full": "Atlantic Reporter, Third Series", "variants": ["A. 3d", "A.3d."] },
-    "N.E.": { "full": "North Eastern Reporter", "variants": ["N. E.", "NE"] },
-    "N.E.2d": { "full": "North Eastern Reporter, Second Series", "variants": ["N.E. 2d", "N. E. 2d"] },
-    "N.E.3d": { "full": "North Eastern Reporter, Third Series", "variants": ["N.E. 3d", "N. E. 3d"] },
-    "N.W.": { "full": "North Western Reporter", "variants": ["N. W.", "NW"] },
-    "N.W.2d": { "full": "North Western Reporter, Second Series", "variants": ["N.W. 2d", "N. W. 2d"] },
-    "P.": { "full": "Pacific Reporter", "variants": ["P"] },
-    "P.2d": { "full": "Pacific Reporter, Second Series", "variants": ["P. 2d", "P.2d."] },
-    "P.3d": { "full": "Pacific Reporter, Third Series", "variants": ["P. 3d", "P.3d."] },
-    "S.E.": { "full": "South Eastern Reporter", "variants": ["S. E.", "SE"] },
-    "S.E.2d": { "full": "South Eastern Reporter, Second Series", "variants": ["S.E. 2d", "S. E. 2d"] },
-    "S.W.": { "full": "South Western Reporter", "variants": ["S. W.", "SW"] },
-    "S.W.2d": { "full": "South Western Reporter, Second Series", "variants": ["S.W. 2d", "S. W. 2d"] },
-    "S.W.3d": { "full": "South Western Reporter, Third Series", "variants": ["S.W. 3d", "S. W. 3d"] },
-    "So.": { "full": "Southern Reporter", "variants": ["So"] },
-    "So. 2d": { "full": "Southern Reporter, Second Series", "variants": ["So.2d", "So. 2d."] },
-    "So. 3d": { "full": "Southern Reporter, Third Series", "variants": ["So.3d", "So. 3d."] }
+    "U.S.": {
+      "full": "United States Reports",
+      "variants": [
+        "US",
+        "U. S.",
+        "U.S"
+      ]
+    },
+    "S. Ct.": {
+      "full": "Supreme Court Reporter",
+      "variants": [
+        "S.Ct.",
+        "S. Ct",
+        "Sup. Ct."
+      ]
+    },
+    "L. Ed.": {
+      "full": "Lawyers' Edition",
+      "variants": [
+        "L.Ed.",
+        "L. Ed"
+      ]
+    },
+    "L. Ed. 2d": {
+      "full": "Lawyers' Edition, Second Series",
+      "variants": [
+        "L.Ed.2d",
+        "L. Ed. 2d.",
+        "L.Ed. 2d"
+      ]
+    },
+    "F.": {
+      "full": "Federal Reporter",
+      "variants": [
+        "Fed.",
+        "F"
+      ]
+    },
+    "F.2d": {
+      "full": "Federal Reporter, Second Series",
+      "variants": [
+        "F. 2d",
+        "F.2d.",
+        "F 2d"
+      ]
+    },
+    "F.3d": {
+      "full": "Federal Reporter, Third Series",
+      "variants": [
+        "F. 3d",
+        "F.3d.",
+        "F 3d"
+      ]
+    },
+    "F. Supp.": {
+      "full": "Federal Supplement",
+      "variants": [
+        "F.Supp.",
+        "F. Supp"
+      ]
+    },
+    "F. Supp. 2d": {
+      "full": "Federal Supplement, Second Series",
+      "variants": [
+        "F.Supp.2d",
+        "F. Supp. 2d."
+      ]
+    },
+    "F. Supp. 3d": {
+      "full": "Federal Supplement, Third Series",
+      "variants": [
+        "F.Supp.3d",
+        "F. Supp. 3d."
+      ]
+    },
+    "A.": {
+      "full": "Atlantic Reporter",
+      "variants": [
+        "A"
+      ]
+    },
+    "A.2d": {
+      "full": "Atlantic Reporter, Second Series",
+      "variants": [
+        "A. 2d",
+        "A.2d."
+      ]
+    },
+    "A.3d": {
+      "full": "Atlantic Reporter, Third Series",
+      "variants": [
+        "A. 3d",
+        "A.3d."
+      ]
+    },
+    "N.E.": {
+      "full": "North Eastern Reporter",
+      "variants": [
+        "N. E.",
+        "NE"
+      ]
+    },
+    "N.E.2d": {
+      "full": "North Eastern Reporter, Second Series",
+      "variants": [
+        "N.E. 2d",
+        "N. E. 2d"
+      ]
+    },
+    "N.E.3d": {
+      "full": "North Eastern Reporter, Third Series",
+      "variants": [
+        "N.E. 3d",
+        "N. E. 3d"
+      ]
+    },
+    "N.W.": {
+      "full": "North Western Reporter",
+      "variants": [
+        "N. W.",
+        "NW"
+      ]
+    },
+    "N.W.2d": {
+      "full": "North Western Reporter, Second Series",
+      "variants": [
+        "N.W. 2d",
+        "N. W. 2d"
+      ]
+    },
+    "P.": {
+      "full": "Pacific Reporter",
+      "variants": [
+        "P"
+      ]
+    },
+    "P.2d": {
+      "full": "Pacific Reporter, Second Series",
+      "variants": [
+        "P. 2d",
+        "P.2d."
+      ]
+    },
+    "P.3d": {
+      "full": "Pacific Reporter, Third Series",
+      "variants": [
+        "P. 3d",
+        "P.3d."
+      ]
+    },
+    "S.E.": {
+      "full": "South Eastern Reporter",
+      "variants": [
+        "S. E.",
+        "SE"
+      ]
+    },
+    "S.E.2d": {
+      "full": "South Eastern Reporter, Second Series",
+      "variants": [
+        "S.E. 2d",
+        "S. E. 2d"
+      ]
+    },
+    "S.W.": {
+      "full": "South Western Reporter",
+      "variants": [
+        "S. W.",
+        "SW"
+      ]
+    },
+    "S.W.2d": {
+      "full": "South Western Reporter, Second Series",
+      "variants": [
+        "S.W. 2d",
+        "S. W. 2d"
+      ]
+    },
+    "S.W.3d": {
+      "full": "South Western Reporter, Third Series",
+      "variants": [
+        "S.W. 3d",
+        "S. W. 3d"
+      ]
+    },
+    "So.": {
+      "full": "Southern Reporter",
+      "variants": [
+        "So"
+      ]
+    },
+    "So. 2d": {
+      "full": "Southern Reporter, Second Series",
+      "variants": [
+        "So.2d",
+        "So. 2d."
+      ]
+    },
+    "So. 3d": {
+      "full": "Southern Reporter, Third Series",
+      "variants": [
+        "So.3d",
+        "So. 3d."
+      ]
+    },
+    "U.S.L.W.": {
+      "full": "United States Law Week",
+      "variants": []
+    },
+    "F.4th": {
+      "full": "Federal Reporter",
+      "variants": []
+    },
+    "F. App'x": {
+      "full": "Federal Appendix",
+      "variants": []
+    },
+    "F. Cas.": {
+      "full": "Federal Cases",
+      "variants": []
+    },
+    "Ct. Cl.": {
+      "full": "Court of Claims Reports",
+      "variants": []
+    },
+    "C.C.P.A.": {
+      "full": "C.C.P.A.",
+      "variants": []
+    },
+    "Ct. Cust.": {
+      "full": "Court of Customs Appeals Reports",
+      "variants": []
+    },
+    "Fed. Cl.": {
+      "full": "Federal Claims Reporter",
+      "variants": []
+    },
+    "Cl. Ct.": {
+      "full": "United States Claims Court",
+      "variants": []
+    },
+    "Ct. Int'l Trade": {
+      "full": "Ct. Int'l Trade",
+      "variants": []
+    },
+    "Cust. Ct.": {
+      "full": "Customs Court Reports",
+      "variants": []
+    },
+    "Cust. B. & Dec.": {
+      "full": "Customs Bulletin and Decisions",
+      "variants": []
+    },
+    "F.R.D.": {
+      "full": "Federal Rules Decisions",
+      "variants": []
+    },
+    "B.R.": {
+      "full": "West's Bankruptcy Reporter",
+      "variants": []
+    },
+    "Fed. R. Serv. 2d": {
+      "full": "Federal Rules Service",
+      "variants": []
+    },
+    "T.C.": {
+      "full": "United States Tax Court Reports",
+      "variants": []
+    },
+    "B.T.A.": {
+      "full": "B.T.A.",
+      "variants": []
+    },
+    "Vet. App.": {
+      "full": "West's Veterans Appeals Reporter",
+      "variants": []
+    },
+    "C.M.A.": {
+      "full": "Decisions of the United States",
+      "variants": []
+    },
+    "M.J.": {
+      "full": "West's Military Justice Reporter",
+      "variants": []
+    },
+    "C.M.R.": {
+      "full": "Court Martial Reports",
+      "variants": []
+    },
+    "Ala.": {
+      "full": "Alabama Reports",
+      "variants": []
+    },
+    "Port.": {
+      "full": "Porter",
+      "variants": []
+    },
+    "Stew. & P.": {
+      "full": "Stewart and Porter",
+      "variants": []
+    },
+    "Stew.": {
+      "full": "Stewart",
+      "variants": []
+    },
+    "Minor": {
+      "full": "Minor",
+      "variants": []
+    },
+    "Ala. App.": {
+      "full": "Alabama Appellate Courts Reports",
+      "variants": []
+    },
+    "Alaska": {
+      "full": "Alaska Reports",
+      "variants": []
+    },
+    "Alaska Fed.": {
+      "full": "Alaska Federal Reports",
+      "variants": []
+    },
+    "Ariz.": {
+      "full": "Arizona Reports",
+      "variants": []
+    },
+    "Ariz. App.": {
+      "full": "Arizona Appeals Reports",
+      "variants": []
+    },
+    "Ark.": {
+      "full": "Arkansas Reports",
+      "variants": []
+    },
+    "Ark. App.": {
+      "full": "Arkansas Appellate Reports",
+      "variants": []
+    },
+    "Cal.": {
+      "full": "California Reports",
+      "variants": []
+    },
+    "Cal. 2d": {
+      "full": "California Reports",
+      "variants": []
+    },
+    "Cal. 3d": {
+      "full": "California Reports",
+      "variants": []
+    },
+    "Cal. Rptr.": {
+      "full": "West's California Reporter",
+      "variants": []
+    },
+    "Cal. Rptr. 2d": {
+      "full": "West's California Reporter",
+      "variants": []
+    },
+    "Cal. Unrep.": {
+      "full": "California Unreported Cases",
+      "variants": []
+    },
+    "Cal. App.": {
+      "full": "California Appellate Reports",
+      "variants": []
+    },
+    "Cal. App. 2d": {
+      "full": "California Appellate Reports",
+      "variants": []
+    },
+    "Cal. App. Supp.": {
+      "full": "Cal. App. Supp.",
+      "variants": []
+    },
+    "Colo.": {
+      "full": "Colorado Reports",
+      "variants": []
+    },
+    "Brief Times Rptr.": {
+      "full": "Brief Times Reporter",
+      "variants": []
+    },
+    "Colo. J.": {
+      "full": "Colorado Journal",
+      "variants": []
+    },
+    "L. Week Colo.": {
+      "full": "Law Week Colorado",
+      "variants": []
+    },
+    "Colo. App.": {
+      "full": "Colorado Court of Appeals Reports",
+      "variants": []
+    },
+    "Conn.": {
+      "full": "Connecticut Reports",
+      "variants": []
+    },
+    "Day": {
+      "full": "Day",
+      "variants": []
+    },
+    "Root": {
+      "full": "Root",
+      "variants": []
+    },
+    "Kirby": {
+      "full": "Kirby",
+      "variants": []
+    },
+    "Conn. App.": {
+      "full": "Connecticut Appellate Reports",
+      "variants": []
+    },
+    "Conn. Supp.": {
+      "full": "Connecticut Supplement",
+      "variants": []
+    },
+    "Conn. L. Rptr.": {
+      "full": "Connecticut Law Reporter",
+      "variants": []
+    },
+    "Conn. Super. Ct.": {
+      "full": "Connecticut Superior Court Reports",
+      "variants": []
+    },
+    "Conn. Cir. Ct.": {
+      "full": "Connecticut Circuit Court Reports",
+      "variants": []
+    },
+    "Del.": {
+      "full": "31 Del. to 59 Del.",
+      "variants": []
+    },
+    "Del. Cas.": {
+      "full": "Delaware Cases",
+      "variants": []
+    },
+    "Del. Ch.": {
+      "full": "Delaware Chancery Reports",
+      "variants": []
+    },
+    "U.S. App. D.C.": {
+      "full": "United States Court of Appeals Reports",
+      "variants": []
+    },
+    "App. D.C.": {
+      "full": "Appeal Cases, District of Columbia",
+      "variants": []
+    },
+    "Daily Wash. L. Rptr.": {
+      "full": "Daily Washington Law Reporter",
+      "variants": []
+    },
+    "Fla.": {
+      "full": "Florida Reports",
+      "variants": []
+    },
+    "Fla. L. Weekly": {
+      "full": "Florida Law Weekly",
+      "variants": []
+    },
+    "Fla. Supp.": {
+      "full": "Florida Supplement",
+      "variants": []
+    },
+    "Fla. Supp. 2d": {
+      "full": "Florida Supplement",
+      "variants": []
+    },
+    "Fla. L. Weekly Supp.": {
+      "full": "Florida Law Weekly Supplement",
+      "variants": []
+    },
+    "Ga.": {
+      "full": "Georgia Reports",
+      "variants": []
+    },
+    "Ga. App.": {
+      "full": "Georgia Appeals Reports",
+      "variants": []
+    },
+    "Haw.": {
+      "full": "West's Hawaii Reports (begins with vol. 76",
+      "variants": []
+    },
+    "Haw. App.": {
+      "full": "Hawaii Appellate Reports",
+      "variants": []
+    },
+    "Idaho": {
+      "full": "Idaho Reports",
+      "variants": []
+    },
+    "Ill.": {
+      "full": "11 Ill. to date",
+      "variants": []
+    },
+    "Ill. 2d": {
+      "full": "11 Ill. to date",
+      "variants": []
+    },
+    "Ill. Dec.": {
+      "full": "West's Illinois Decisions",
+      "variants": []
+    },
+    "Ill. App.": {
+      "full": "Illinois Appellate Court Reports",
+      "variants": []
+    },
+    "Ill. App. 2d": {
+      "full": "Illinois Appellate Court Reports",
+      "variants": []
+    },
+    "Ill. Ct. Cl.": {
+      "full": "Illinois Court of Claims Reports",
+      "variants": []
+    },
+    "Ind.": {
+      "full": "Indiana Reports",
+      "variants": []
+    },
+    "Blackf.": {
+      "full": "Blackford",
+      "variants": []
+    },
+    "Ind. App.": {
+      "full": "Ind. App.",
+      "variants": []
+    },
+    "Iowa": {
+      "full": "Iowa",
+      "variants": []
+    },
+    "Greene": {
+      "full": "Greene",
+      "variants": []
+    },
+    "Morris": {
+      "full": "Morris",
+      "variants": []
+    },
+    "Bradf.": {
+      "full": "Bradford",
+      "variants": []
+    },
+    "Kan.": {
+      "full": "Kansas Reports",
+      "variants": []
+    },
+    "Kan. App.": {
+      "full": "Kansas Court of Appeals Reports",
+      "variants": []
+    },
+    "Kan. App. 2d": {
+      "full": "Kan. App. 2d",
+      "variants": []
+    },
+    "Ky.": {
+      "full": "78 Ky. to 314 Ky.",
+      "variants": []
+    },
+    "Ky. Op.": {
+      "full": "Kentucky Opinions",
+      "variants": []
+    },
+    "Ky. L. Rptr.": {
+      "full": "Kentucky Law Reporter",
+      "variants": []
+    },
+    "Ky. App.": {
+      "full": "Kentucky Appellate Reporter",
+      "variants": []
+    },
+    "Ky. Att'y Memo": {
+      "full": "Kentucky Attorneys Memo",
+      "variants": []
+    },
+    "Ky. L. Summ.": {
+      "full": "Kentucky Law Summary",
+      "variants": []
+    },
+    "La.": {
+      "full": "Louisiana Reports",
+      "variants": []
+    },
+    "La. Ann.": {
+      "full": "Louisiana Annual Reports",
+      "variants": []
+    },
+    "Rob.": {
+      "full": "Robinson",
+      "variants": []
+    },
+    "La. App.": {
+      "full": "Louisiana Court of Appeals Reports",
+      "variants": []
+    },
+    "Pelt.": {
+      "full": "Peltier's Decisions, Parish at Orleans",
+      "variants": []
+    },
+    "Teiss.": {
+      "full": "Teissier, Orleans Court of Appeals",
+      "variants": []
+    },
+    "McGl.": {
+      "full": "McGloin",
+      "variants": []
+    },
+    "Me.": {
+      "full": "Maine Reports",
+      "variants": []
+    },
+    "Md.": {
+      "full": "Maryland Reports",
+      "variants": []
+    },
+    "Gill": {
+      "full": "Gill",
+      "variants": []
+    },
+    "G. & J.": {
+      "full": "Gill and Johnson",
+      "variants": []
+    },
+    "H. & G.": {
+      "full": "Harris and Gill",
+      "variants": []
+    },
+    "H. & J.": {
+      "full": "Harris and Johnson",
+      "variants": []
+    },
+    "Md. App.": {
+      "full": "Maryland Appellate Reports",
+      "variants": []
+    },
+    "Mass.": {
+      "full": "97 Mass. to date",
+      "variants": []
+    },
+    "Mass. App. Ct.": {
+      "full": "Massachusetts Appeals Court Reports",
+      "variants": []
+    },
+    "Mass. App. Div.": {
+      "full": "Reports of Massachusetts",
+      "variants": []
+    },
+    "Mass. Supp.": {
+      "full": "Massachusetts Reports Supplement",
+      "variants": []
+    },
+    "Mass. App. Dec.": {
+      "full": "Massachusetts Appellate Decisions",
+      "variants": []
+    },
+    "Mich.": {
+      "full": "Michigan Reports",
+      "variants": []
+    },
+    "Doug.": {
+      "full": "Douglass",
+      "variants": []
+    },
+    "Blume Unrep. Op.": {
+      "full": "Blume, Unreported Opinions",
+      "variants": []
+    },
+    "Blume Sup. Ct. Trans.": {
+      "full": "Blume, Supreme Court Transactions",
+      "variants": []
+    },
+    "Mich. App.": {
+      "full": "Michigan Appeals Reports",
+      "variants": []
+    },
+    "Mich. Ct. Cl.": {
+      "full": "Michigan Court of Claims Reports",
+      "variants": []
+    },
+    "Minn.": {
+      "full": "Minnesota Reports",
+      "variants": []
+    },
+    "Miss.": {
+      "full": "23 Miss. to 254 Miss.",
+      "variants": []
+    },
+    "Miss. Dec.": {
+      "full": "Mississippi Decisions",
+      "variants": []
+    },
+    "Mo.": {
+      "full": "Missouri Reports",
+      "variants": []
+    },
+    "Mo. App.": {
+      "full": "Missouri Appeals Reports",
+      "variants": []
+    },
+    "Mont.": {
+      "full": "Montana Reports",
+      "variants": []
+    },
+    "Neb.": {
+      "full": "Nebraska Reports",
+      "variants": []
+    },
+    "Neb. App.": {
+      "full": "Nebraska Appellate Reports",
+      "variants": []
+    },
+    "Nev.": {
+      "full": "Nevada Reports",
+      "variants": []
+    },
+    "N.H.": {
+      "full": "New Hampshire Reports",
+      "variants": []
+    },
+    "N.J.": {
+      "full": "New Jersey Reports",
+      "variants": []
+    },
+    "N.J.L.": {
+      "full": "New Jersey Law Reports",
+      "variants": []
+    },
+    "N.J. Eq.": {
+      "full": "New Jersey Equity Reports",
+      "variants": []
+    },
+    "N.J. Misc.": {
+      "full": "New Jersey Miscellaneous Reports",
+      "variants": []
+    },
+    "N.J. Super.": {
+      "full": "New Jersey Superior Court Reports",
+      "variants": []
+    },
+    "N.J. Tax": {
+      "full": "New Jersey Tax Court Reports",
+      "variants": []
+    },
+    "N.J. Admin.": {
+      "full": "New Jersey Administrative Reports",
+      "variants": []
+    },
+    "N.M.": {
+      "full": "New Mexico Reports",
+      "variants": []
+    },
+    "N.Y.": {
+      "full": "N.Y.",
+      "variants": []
+    },
+    "N.Y.2d": {
+      "full": "N.Y.2d",
+      "variants": []
+    },
+    "N.Y.S.2d": {
+      "full": "West's New York Supplement",
+      "variants": []
+    },
+    "N.Y.S.3d": {
+      "full": "West's New York Supplement",
+      "variants": []
+    },
+    "Lock. Rev. Cas.": {
+      "full": "Lockwood's Reversed Cases",
+      "variants": []
+    },
+    "Denio": {
+      "full": "Denio's Reports",
+      "variants": []
+    },
+    "Hill & Den.": {
+      "full": "Hill and Denio Supplement (Lalor",
+      "variants": []
+    },
+    "Hill": {
+      "full": "Hill's Reports",
+      "variants": []
+    },
+    "Edm. Sel. Cas.": {
+      "full": "Edmond's Select Cases",
+      "variants": []
+    },
+    "Ant. N.P. Cas.": {
+      "full": "Anthon's Nisi Prius Cases",
+      "variants": []
+    },
+    "Wend.": {
+      "full": "Wendell's Reports",
+      "variants": []
+    },
+    "Cow.": {
+      "full": "Cowen's Reports",
+      "variants": []
+    },
+    "Johns.": {
+      "full": "Johnson's Reports",
+      "variants": []
+    },
+    "Cai.": {
+      "full": "Caines' Reports",
+      "variants": []
+    },
+    "Cai. Cas.": {
+      "full": "Caines' Cases",
+      "variants": []
+    },
+    "Cole. & Cai. Cas.": {
+      "full": "Coleman & Caines' Cases",
+      "variants": []
+    },
+    "Johns. Cas.": {
+      "full": "Johnson's Cases",
+      "variants": []
+    },
+    "Cole. Cas.": {
+      "full": "Coleman's Cases",
+      "variants": []
+    },
+    "Edw. Ch.": {
+      "full": "Edwards' Chancery Reports",
+      "variants": []
+    },
+    "Barb. Ch.": {
+      "full": "Barbour's Chancery Reports",
+      "variants": []
+    },
+    "Sand. Ch.": {
+      "full": "Sandford's Chancery Reports",
+      "variants": []
+    },
+    "Sarat. Ch. Sent.": {
+      "full": "Saratoga Chancery Sentinel",
+      "variants": []
+    },
+    "Paige Ch.": {
+      "full": "Paige's Chancery Reports",
+      "variants": []
+    },
+    "Cl. Ch.": {
+      "full": "Clarke's Chancery Reports",
+      "variants": []
+    },
+    "Hoff. Ch.": {
+      "full": "Hoffman's Chancery Reports",
+      "variants": []
+    },
+    "Hopk. Ch.": {
+      "full": "Hopkins' Chancery Reports",
+      "variants": []
+    },
+    "Lans. Ch.": {
+      "full": "Lansing's Chancery Reports",
+      "variants": []
+    },
+    "Johns. Ch.": {
+      "full": "Johnson's Chancery Reports",
+      "variants": []
+    },
+    "N.Y. Ch. Ann.": {
+      "full": "New York Chancery Reports Annotated",
+      "variants": []
+    },
+    "N.Y.S.": {
+      "full": "West's New York Supplement",
+      "variants": []
+    },
+    "A.D.": {
+      "full": "Appellate Division Reports",
+      "variants": []
+    },
+    "A.D.2d": {
+      "full": "Appellate Division Reports",
+      "variants": []
+    },
+    "A.D.3d": {
+      "full": "Appellate Division Reports",
+      "variants": []
+    },
+    "N.Y. Sup. Ct.": {
+      "full": "Supreme Court Reports",
+      "variants": []
+    },
+    "Lans.": {
+      "full": "Lansing's Reports",
+      "variants": []
+    },
+    "Barb.": {
+      "full": "Barbour's Supreme Court Reports",
+      "variants": []
+    },
+    "Misc.": {
+      "full": "New York Miscellaneous Reports",
+      "variants": []
+    },
+    "Misc. 2d": {
+      "full": "New York Miscellaneous Reports",
+      "variants": []
+    },
+    "Abb. N. Cas.": {
+      "full": "Abbott's New Cases",
+      "variants": []
+    },
+    "Abb. Pr.": {
+      "full": "Abbott's Practice Reports",
+      "variants": []
+    },
+    "How. Pr.": {
+      "full": "Howard's Practice Reports",
+      "variants": []
+    },
+    "N.C.": {
+      "full": "63 N.C. to date",
+      "variants": []
+    },
+    "N.C. App.": {
+      "full": "North Carolina Court of Appeals Reports",
+      "variants": []
+    },
+    "N.D.": {
+      "full": "North Dakota Reports",
+      "variants": []
+    },
+    "Ohio St.": {
+      "full": "Ohio State Reports",
+      "variants": []
+    },
+    "Ohio St. 2d": {
+      "full": "Ohio State Reports",
+      "variants": []
+    },
+    "Ohio": {
+      "full": "Ohio Reports",
+      "variants": []
+    },
+    "Wilc. Cond. Rep.": {
+      "full": "Wilcox's Condensed Reports",
+      "variants": []
+    },
+    "Wright": {
+      "full": "Wright",
+      "variants": []
+    },
+    "Ohio Unrep. Cas.": {
+      "full": "Ohio Unreported Cases",
+      "variants": []
+    },
+    "Ohio App.": {
+      "full": "Ohio Appellate Reports",
+      "variants": []
+    },
+    "Ohio C.C.": {
+      "full": "Ohio Circuit Court Reports",
+      "variants": []
+    },
+    "Ohio Ct. App.": {
+      "full": "Ohio Courts of Appeals Reports",
+      "variants": []
+    },
+    "Ohio Misc.": {
+      "full": "Ohio Miscellaneous Reports",
+      "variants": []
+    },
+    "Ohio B.": {
+      "full": "Ohio Bar Reports",
+      "variants": []
+    },
+    "Ohio Op.": {
+      "full": "Ohio Opinions",
+      "variants": []
+    },
+    "Ohio Op. 2d": {
+      "full": "Ohio Opinions",
+      "variants": []
+    },
+    "Ohio N.P.": {
+      "full": "Ohio Nisi Prius Reports",
+      "variants": []
+    },
+    "Ohio Dec.": {
+      "full": "Ohio Decisions",
+      "variants": []
+    },
+    "Ohio Dec. Reprint": {
+      "full": "Ohio Decisions, Reprint",
+      "variants": []
+    },
+    "Ohio Cir. Dec.": {
+      "full": "Ohio Circuit Decisions",
+      "variants": []
+    },
+    "Ohio L. Bull.": {
+      "full": "Ohio Law Bulletin",
+      "variants": []
+    },
+    "Ohio L.R.": {
+      "full": "Ohio Law Reporter",
+      "variants": []
+    },
+    "Tapp. Rep.": {
+      "full": "Tappen's Reports",
+      "variants": []
+    },
+    "Ohio Monthly Rec.": {
+      "full": "Baldwin's Ohio Monthly Record",
+      "variants": []
+    },
+    "Okla.": {
+      "full": "Oklahoma Reports",
+      "variants": []
+    },
+    "Indian Terr.": {
+      "full": "Indian Territory Reports",
+      "variants": []
+    },
+    "Okla. Crim.": {
+      "full": "Oklahoma Criminal Reports",
+      "variants": []
+    },
+    "Or.": {
+      "full": "Oregon Reports",
+      "variants": []
+    },
+    "Pa.": {
+      "full": "Pennsylvania State Reports",
+      "variants": []
+    },
+    "Monag.": {
+      "full": "Monaghan",
+      "variants": []
+    },
+    "Sadler": {
+      "full": "Sadler",
+      "variants": []
+    },
+    "Walk.": {
+      "full": "Walker",
+      "variants": []
+    },
+    "Pennyp.": {
+      "full": "Pennypacker",
+      "variants": []
+    },
+    "Grant": {
+      "full": "Grant",
+      "variants": []
+    },
+    "Watts & Serg.": {
+      "full": "Watts and Sergeant",
+      "variants": []
+    },
+    "Whart.": {
+      "full": "Wharton",
+      "variants": []
+    },
+    "Watts": {
+      "full": "Watts",
+      "variants": []
+    },
+    "Rawle": {
+      "full": "Rawle",
+      "variants": []
+    },
+    "Pen. & W.": {
+      "full": "Penrose and Watts",
+      "variants": []
+    },
+    "Serg. & Rawle": {
+      "full": "Sergeant and Rawle",
+      "variants": []
+    },
+    "Binn.": {
+      "full": "Binney",
+      "variants": []
+    },
+    "Yeates": {
+      "full": "Yeates",
+      "variants": []
+    },
+    "Add.": {
+      "full": "Addison",
+      "variants": []
+    },
+    "Dall.": {
+      "full": "Dallas",
+      "variants": []
+    },
+    "Ald.": {
+      "full": "Alden",
+      "variants": []
+    },
+    "Pa. Super.": {
+      "full": "Pennsylvania Superior Court Reports",
+      "variants": []
+    },
+    "Pa. Commw.": {
+      "full": "Pennsylvania Commonwealth Court Reports",
+      "variants": []
+    },
+    "Pa. D. & C.": {
+      "full": "Pennsylvania District and County Reports",
+      "variants": []
+    },
+    "Pa. D.": {
+      "full": "Pennsylvania District Reports",
+      "variants": []
+    },
+    "Pa. C.": {
+      "full": "Pennsylvania County Court Reports",
+      "variants": []
+    },
+    "R.I.": {
+      "full": "Rhode Island Reports",
+      "variants": []
+    },
+    "S.C.": {
+      "full": "South Carolina Reports",
+      "variants": []
+    },
+    "S.D.": {
+      "full": "South Dakota Reports",
+      "variants": []
+    },
+    "Tenn.": {
+      "full": "60 Tenn. to 225 Tenn.",
+      "variants": []
+    },
+    "Tenn. App.": {
+      "full": "Tennessee Appeals Reports",
+      "variants": []
+    },
+    "Tenn. Crim. App.": {
+      "full": "Tennessee Criminal Appeals Reports",
+      "variants": []
+    },
+    "Tex.": {
+      "full": "Texas Reports",
+      "variants": []
+    },
+    "Tex. Sup. Ct. J.": {
+      "full": "Texas Supreme Court Journal",
+      "variants": []
+    },
+    "Tex. Crim.": {
+      "full": "Texas Criminal Reports",
+      "variants": []
+    },
+    "Tex. Ct. App.": {
+      "full": "Texas Court of Appeals Reports",
+      "variants": []
+    },
+    "Posey": {
+      "full": "Texas Unreported Cases (Posey",
+      "variants": []
+    },
+    "White & W.": {
+      "full": "White & W.",
+      "variants": []
+    },
+    "Tex. Civ. App.": {
+      "full": "Texas Civil Appeals Reports",
+      "variants": []
+    },
+    "Utah": {
+      "full": "Utah Reports",
+      "variants": []
+    },
+    "Vt.": {
+      "full": "Vermont Reports",
+      "variants": []
+    },
+    "Aik.": {
+      "full": "Aikens",
+      "variants": []
+    },
+    "D. Chip.": {
+      "full": "Chipman, D.",
+      "variants": []
+    },
+    "Brayt.": {
+      "full": "Brayton",
+      "variants": []
+    },
+    "Tyl.": {
+      "full": "Tyler",
+      "variants": []
+    },
+    "N. Chip.": {
+      "full": "Chipman, N.",
+      "variants": []
+    },
+    "Va.": {
+      "full": "75 Va. to date",
+      "variants": []
+    },
+    "Va. App.": {
+      "full": "Virginia Court of Appeals Reports",
+      "variants": []
+    },
+    "Va. Cir.": {
+      "full": "Virginia Circuit Court Opinions",
+      "variants": []
+    },
+    "Wash.": {
+      "full": "Washington Reports",
+      "variants": []
+    },
+    "Wash. 2d": {
+      "full": "Washington Reports",
+      "variants": []
+    },
+    "Wash. Terr.": {
+      "full": "Washington Territory Reports",
+      "variants": []
+    },
+    "Wash. App.": {
+      "full": "Washington Appellate Reports",
+      "variants": []
+    },
+    "W. Va.": {
+      "full": "West Virginia Reports",
+      "variants": []
+    },
+    "Wis.": {
+      "full": "Wisconsin Reports",
+      "variants": []
+    },
+    "Wis. 2d": {
+      "full": "Wisconsin Reports",
+      "variants": []
+    },
+    "Pin.": {
+      "full": "Pinney",
+      "variants": []
+    },
+    "Chand.": {
+      "full": "Chandler",
+      "variants": []
+    },
+    "Bur.": {
+      "full": "Burnett",
+      "variants": []
+    },
+    "Wyo.": {
+      "full": "Wyoming Reports",
+      "variants": []
+    },
+    "Am. Samoa": {
+      "full": "American Samoa Reports",
+      "variants": []
+    },
+    "Guam": {
+      "full": "Guam Reports",
+      "variants": []
+    },
+    "Navajo Rptr.": {
+      "full": "Navajo Reporter",
+      "variants": []
+    },
+    "N. Mar. I.": {
+      "full": "Northern Mariana Islands Reporter",
+      "variants": []
+    },
+    "N. Mar. I. Commw.": {
+      "full": "Northern Mariana Islands Commonwealth Reporter",
+      "variants": []
+    },
+    "Okla. Trib.": {
+      "full": "Oklahoma Tribal Court Reports",
+      "variants": []
+    },
+    "P.R.": {
+      "full": "Puerto Rico Reports",
+      "variants": []
+    },
+    "P.R. Offic. Trans.": {
+      "full": "P.R. Offic. Trans.",
+      "variants": []
+    },
+    "P.R. Dec.": {
+      "full": "Decisiones de Puerto Rico",
+      "variants": []
+    },
+    "P.R. Sent.": {
+      "full": "Sentencias del Tribunal Supremo de Puerto Rico",
+      "variants": []
+    },
+    "T.C.A.": {
+      "full": "T.C.A.",
+      "variants": []
+    },
+    "V.I.": {
+      "full": "Virgin Islands Reports",
+      "variants": []
+    }
   }
 }
