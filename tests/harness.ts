@@ -32,6 +32,7 @@ const CORPUS_DIR = join(HERE, 'corpus');
 const PHASE = JSON.parse(readFileSync(join(HERE, 'phase.json'), 'utf8')) as {
   phase: number;
   accuracyFloor: number;
+  typeFloors?: Record<string, number>;
   releaseMinCounts: Record<string, number>;
   releaseTotal: number;
   releaseAccuracyFloor: number;
@@ -43,13 +44,18 @@ interface Result {
   reason: string;
 }
 
-function loadCorpus(): { entries: CorpusEntry[]; problems: string[] } {
+function loadCorpus(dir: string): { entries: CorpusEntry[]; problems: string[] } {
   const entries: CorpusEntry[] = [];
   const problems: string[] = [];
-  const files = readdirSync(CORPUS_DIR).filter((f) => f.endsWith('.json'));
+  let files: string[];
+  try {
+    files = readdirSync(dir).filter((f) => f.endsWith('.json'));
+  } catch {
+    return { entries, problems };
+  }
   const seenIds = new Set<string>();
   for (const file of files) {
-    const raw = readFileSync(join(CORPUS_DIR, file), 'utf8');
+    const raw = readFileSync(join(dir, file), 'utf8');
     let parsed: unknown;
     try {
       parsed = JSON.parse(raw);
@@ -110,7 +116,9 @@ function pct(n: number, d: number): string {
 
 function main(): void {
   const ci = process.argv.includes('--ci');
-  const { entries, problems } = loadCorpus();
+  const backtest = process.argv.includes('--backtest');
+  const dir = backtest ? join(CORPUS_DIR, 'backtest') : CORPUS_DIR;
+  const { entries, problems } = loadCorpus(dir);
 
   const results = entries.map(runEntry);
   const total = results.length;
@@ -137,7 +145,13 @@ function main(): void {
     }
   }
 
-  console.log(`BlueRef corpus harness — phase ${PHASE.phase}\n`);
+  const track = backtest ? 'PRE-AI BACK-TEST (held-out, hand-verified)' : 'development (synthetic)';
+  console.log(`BlueRef corpus harness — phase ${PHASE.phase} — ${track} track\n`);
+  if (backtest && total === 0) {
+    console.log('No back-test entries yet. Curate hand-verified pre-AI citations into');
+    console.log('tests/corpus/backtest/ (see tests/corpus/backtest/README.md), then re-run.');
+    return;
+  }
   if (problems.length) {
     console.log(`Schema problems (${problems.length}):`);
     for (const p of problems.slice(0, 40)) console.log('  ! ' + p);
@@ -169,9 +183,37 @@ function main(): void {
   const failedFloor = accuracy < PHASE.accuracyFloor;
   const hasStructuralProblems = problems.length > 0;
 
+  // Per-type floors gate each in-scope type independently (PRD Section 9).
+  const typeFloors = PHASE.typeFloors ?? {};
+  const typeFailures: string[] = [];
+  if (!backtest) {
+    for (const [t, floor] of Object.entries(typeFloors)) {
+      const s = perType.get(t);
+      if (!s || s.total === 0) continue;
+      const acc = s.passed / s.total;
+      if (acc < floor) {
+        typeFailures.push(`${t}: ${pct(s.passed, s.total)} < floor ${(floor * 100).toFixed(2)}%`);
+      }
+    }
+    if (Object.keys(typeFloors).length) {
+      console.log('\nType floors:');
+      for (const [t, floor] of Object.entries(typeFloors)) {
+        const s = perType.get(t);
+        const acc = s && s.total ? s.passed / s.total : 0;
+        const ok = s && s.total ? acc >= floor : true;
+        console.log(`  ${t.padEnd(12)} floor ${(floor * 100).toFixed(2)}%  ${ok ? 'PASS' : 'FAIL'}`);
+      }
+    }
+  }
+
   if (ci) {
     if (hasStructuralProblems) {
       console.error('\nCI FAIL: corpus has schema problems (see above).');
+      process.exit(1);
+    }
+    if (typeFailures.length) {
+      console.error('\nCI FAIL: type floor(s) not met:');
+      for (const f of typeFailures) console.error('  - ' + f);
       process.exit(1);
     }
     if (failedFloor) {

@@ -91,17 +91,23 @@ const wordSpellOut: Mutator = {
   },
 };
 
-/** Drop the required pincite: "456, 460 (" -> "456 (", or book "% 11 (" -> "% (". */
-const dropPincite: Mutator = {
-  key: 'dropPincite',
+/**
+ * Superfluous "at" before a pincite: "456, 460" -> "456, at 460".
+ *
+ * In a full citation the pincite follows the first page with just a comma; "at"
+ * is used only in short forms (id. at 460) and page-only sources. This is a pure,
+ * reversible format error (unlike a dropped pincite, which loses information the
+ * checker cannot reconstruct and is not always required — see SCHEMA.md).
+ */
+const pinciteAt: Mutator = {
+  key: 'pinciteAt',
   code: 'PINCITE',
   rule: 'IB R11',
-  types: ['case', 'periodical', 'book'],
-  note: 'required pincite dropped',
+  types: ['case', 'periodical'],
+  note: 'superfluous "at" before pincite in a full citation',
   apply(clean) {
-    if (/, \d+ \(/.test(clean)) return clean.replace(/, \d+ \(/, ' (');
-    if (/% \d+ \(/.test(clean)) return clean.replace(/% \d+ \(/, '% (');
-    return null;
+    if (!/, \d+ \(/.test(clean)) return null;
+    return clean.replace(/, (\d+) \(/, ', at $1 (');
   },
 };
 
@@ -206,7 +212,7 @@ export const MUTATORS: Mutator[] = [
   reporterSpacing,
   courtSpellOut,
   wordSpellOut,
-  dropPincite,
+  pinciteAt,
   vsPunctuation,
   sectionSpacing,
   codeSpellOut,

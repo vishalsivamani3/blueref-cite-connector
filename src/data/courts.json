@@ -21,6 +21,19 @@
     "S.D.N.Y.": { "full": "United States District Court for the Southern District of New York", "variants": ["SDNY", "S.D. N.Y.", "S.D.N.Y"] },
     "E.D. Pa.": { "full": "United States District Court for the Eastern District of Pennsylvania", "variants": ["E.D.Pa.", "E.D. Penn."] },
     "N.D. Cal.": { "full": "United States District Court for the Northern District of California", "variants": ["N.D.Cal.", "N.D. Calif."] },
-    "D. Mass.": { "full": "United States District Court for the District of Massachusetts", "variants": ["D.Mass.", "D. Mass"] }
+    "D. Mass.": { "full": "United States District Court for the District of Massachusetts", "variants": ["D.Mass.", "D. Mass"] },
+
+    "N.Y.": { "full": "New York Court of Appeals", "variants": [] },
+    "Cal.": { "full": "Supreme Court of California", "variants": [] },
+    "Mass.": { "full": "Supreme Judicial Court of Massachusetts", "variants": [] },
+    "Ill.": { "full": "Supreme Court of Illinois", "variants": [] },
+    "Tex.": { "full": "Supreme Court of Texas", "variants": [] },
+    "Pa.": { "full": "Supreme Court of Pennsylvania", "variants": [] },
+    "Ohio": { "full": "Supreme Court of Ohio", "variants": [] },
+    "Fla.": { "full": "Supreme Court of Florida", "variants": [] },
+    "N.J.": { "full": "Supreme Court of New Jersey", "variants": [] },
+    "Mich.": { "full": "Supreme Court of Michigan", "variants": [] },
+    "Wash.": { "full": "Supreme Court of Washington", "variants": [] },
+    "Va.": { "full": "Supreme Court of Virginia", "variants": [] }
   }
 }

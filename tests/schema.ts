@@ -24,6 +24,12 @@ export interface CorpusEntry {
   /** Indigo Book rule reference(s), e.g. ["IB R11.2", "IB T7"]. */
   rules: string[];
   provenance: Provenance;
+  /**
+   * Required for `hand-verified` entries: where the citation was verified against
+   * (e.g. "89 Harv. L. Rev. 1685 (1976), fn. 12"). Anchors the pre-AI back-test
+   * (PRD Section 7.3; see tests/corpus/backtest/README.md).
+   */
+  source?: string;
   notes?: string;
 }
 
@@ -72,6 +78,9 @@ export function validateEntry(e: CorpusEntry): string[] {
   }
   if (e.provenance !== 'hand-verified' && e.provenance !== 'synthetic') {
     problems.push(`provenance "${e.provenance}" must be "hand-verified" or "synthetic"`);
+  }
+  if (e.provenance === 'hand-verified' && (typeof e.source !== 'string' || e.source.length === 0)) {
+    problems.push('hand-verified entries require a non-empty `source` (where it was verified)');
   }
   return problems;
 }
