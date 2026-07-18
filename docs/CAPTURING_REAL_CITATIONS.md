@@ -40,6 +40,14 @@ Two further traps found in practice:
    `Co.`, `Inc.`, `Mt.`, `St.`, initials, …).
 6. **Strip leading citation signals.** `See`, `See, e.g.,`, `overruled by`, `quoting`
    belong to the citation *sentence*, not the citation.
+7. **Cut at a closing quotation mark.** Briefs frequently place a citation directly
+   after quoted material — `…place of public accommodation.” Camarillo v. Carrols
+   Corp., 518 F.3d 153, 156 (2d Cir. 2008)`. Without a guard the quoted prose is
+   captured as part of the case name. Cut everything through a trailing `."` / `.”`.
+8. **Reject nested citations.** `Calcano, 36 F.4th at 74 (citing Kreisler v. Second
+   Ave. Diner Corp., 731 F.3d 184, 187–88 (2d Cir. 2013))` contains a citation inside
+   an explanatory parenthetical. Capture the outer cite or skip; never capture the
+   unbalanced fragment.
 
 ## Recovering typeface
 
