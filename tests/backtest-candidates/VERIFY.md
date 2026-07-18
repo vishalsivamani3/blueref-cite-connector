@@ -1,0 +1,68 @@
+# Candidate verification checklist
+
+Confirm each against the source + Indigo Book. Correct any `expected` you disagree with; I'll promote the confirmed ones into `tests/corpus/backtest/` as `hand-verified`. Run `npm run candidates` for live module verdicts.
+
+- [ ] **case-c0001** — Board->Bd
+  - in:  `Brown v. Board of Education, 347 U.S. 483, 495 (1954)`
+  - exp: `Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)`  →  [ABBREV]
+  - src: 347 U.S. 483 (1954) — owner-verified canonical form: Brown v. Bd. of Educ.
+- [ ] **case-c0002** — clean 19th-c
+  - in:  `Pennoyer v. Neff, 95 U.S. 714, 720 (1878)`
+  - exp: `Pennoyer v. Neff, 95 U.S. 714, 720 (1878)`  →  [(clean)]
+  - src: 95 U.S. 714 (1878) — verify pincite
+- [ ] **case-c0003** — clean control
+  - in:  `Goldberg v. Kelly, 397 U.S. 254, 262 (1970)`
+  - exp: `Goldberg v. Kelly, 397 U.S. 254, 262 (1970)`  →  [(clean)]
+  - src: 397 U.S. 254 (1970) — verify pincite
+- [ ] **case-c0004** — clean circuit cite (F
+  - in:  `Helvering v. Gregory, 69 F.2d 809, 810 (2d Cir. 1934)`
+  - exp: `Helvering v. Gregory, 69 F.2d 809, 810 (2d Cir. 1934)`  →  [(clean)]
+  - src: 69 F.2d 809 (2d Cir. 1934) — verify pincite
+- [ ] **case-c0005** — 'United States' stays spelled out (not abbreviated)
+  - in:  `United States v. Kagama, 118 U.S. 375, 383 (1886)`
+  - exp: `United States v. Kagama, 118 U.S. 375, 383 (1886)`  →  [(clean)]
+  - src: 118 U.S. 375 (1886) — verify pincite
+- [ ] **case-c0006** — NO pincite (a pincite is not always required)
+  - in:  `Lochner v. New York, 198 U.S. 45 (1905)`
+  - exp: `Lochner v. New York, 198 U.S. 45 (1905)`  →  [(clean)]
+  - src: 198 U.S. 45 (1905)
+- [ ] **case-c0007** — Railroad -> R
+  - in:  `Erie Railroad Co. v. Tompkins, 304 U.S. 64, 78 (1938)`
+  - exp: `Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)`  →  [ABBREV]
+  - src: 304 U.S. 64 (1938) — canonical short name uses 'R.R.'
+- [ ] **case-c0008** — 'vs
+  - in:  `Katz vs. United States, 389 U.S. 347, 351 (1967)`
+  - exp: `Katz v. United States, 389 U.S. 347, 351 (1967)`  →  [PUNCTUATION]
+  - src: 389 U.S. 347 (1967)
+- [ ] **case-c0009** — reporter spacing + court abbrev together
+  - in:  `Smith v. Jones, 123 F. 3d 456, 460 (7th Circuit 1999)`
+  - exp: `Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)`  →  [SPACING, DATE_COURT]
+  - src: constructed canonical two-error example
+- [ ] **case-c0010** — NOMINATIVE reporter '(1 Cranch)'
+  - in:  `Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)`
+  - exp: `Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)`  →  [(clean)]
+  - src: 5 U.S. (1 Cranch) 137 (1803) — nominative reporter
+- [ ] **case-c0011** — T6 words BEYOND module's 6-word subset (Department, Social, Services)
+  - in:  `Monell v. Department of Social Services, 436 U.S. 658, 690 (1978)`
+  - exp: `Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)`  →  [ABBREV]
+  - src: 436 U.S. 658 (1978) — verify Dep't/Soc./Servs. abbreviations against T6
+- [ ] **case-c0012** — Commissioner -> Comm'r (party abbreviation)
+  - in:  `Commissioner v. Duberstein, 363 U.S. 278, 285 (1960)`
+  - exp: `Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)`  →  [ABBREV]
+  - src: 363 U.S. 278 (1960) — verify 'Commissioner' -> 'Comm'r' against T6/T11
+- [ ] **case-c0013** — 'Wis
+  - in:  `Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)`
+  - exp: `Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)`  →  [(clean)]
+  - src: 50 N.W. 403 (Wis. 1891) — verify pincite
+- [ ] **case-c0014** — reporter N
+  - in:  `People v. Smith, 470 N.Y.S.2d 987, 990 (App. Div. 1984)`
+  - exp: `People v. Smith, 470 N.Y.S.2d 987, 990 (App. Div. 1984)`  →  [(clean)]
+  - src: constructed; verify N.Y.S.2d + App. Div. conventions
+- [ ] **case-c0015** — case SHORT FORM
+  - in:  `Brown, 347 U.S. at 495`
+  - exp: `Brown, 347 U.S. at 495`  →  [(clean)]
+  - src: case short form of Brown v. Board of Education
+- [ ] **case-c0016** — SUBSEQUENT HISTORY (multiple parentheticals)
+  - in:  `Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)`
+  - exp: `Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)`  →  [(clean)]
+  - src: 288 F.3d 732 (6th Cir. 2002), aff'd 539 U.S. 306 (2003) — subsequent history
