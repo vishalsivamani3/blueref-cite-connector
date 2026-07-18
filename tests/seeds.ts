@@ -301,6 +301,18 @@ export const SEEDS: Seed[] = [
   { type: 'periodical', citation: 'Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241, 1250 (1991)', rules: ['IB R30', 'IB R30.3'] },
   { type: 'periodical', citation: 'Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401, 410 (1958)', rules: ['IB R30', 'IB R30.3'] },
 
+  // --- Indigo R30 worked examples + practitioner style (journal ROMAN, R30.1.1).
+  // The pre-existing periodical seeds above are academic (small caps) and are
+  // tagged style:"academic" by the generator, since practitioner is the default.
+  { type: 'periodical', style: 'practitioner', citation: 'Liz Brown, *Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, 351 (2014)', rules: ['IB R30.1.1', 'IB R2.1'] },
+  { type: 'periodical', style: 'practitioner', citation: 'Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harv. L. Rev. 540, 544 (2014)', rules: ['IB R30.1.1', 'IB R2.1'] },
+  { type: 'periodical', style: 'practitioner', citation: 'Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422 (2014)', rules: ['IB R30.1.3', 'IB R2.1'] },
+  { type: 'periodical', style: 'practitioner', citation: 'Victoria Nemiah, Note, *License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, 361 (2014)', rules: ['IB R30.1.3', 'IB R2.1'] },
+  { type: 'periodical', style: 'practitioner', citation: 'Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harv. L. Rev. 1733, 1745 (1995)', rules: ['IB R30.1.1', 'IB R2.1'] },
+  { type: 'periodical', style: 'practitioner', citation: 'Charles A. Reich, *The New Property*, 73 Yale L.J. 733, 737 (1964)', rules: ['IB R30.1.1', 'IB R2.1'] },
+  { type: 'periodical', style: 'practitioner', citation: 'Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harv. L. Rev. 193, 195 (1890)', rules: ['IB R30.1.1', 'IB R2.1'] },
+  { type: 'periodical', style: 'practitioner', citation: 'Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 U. Chi. L. Rev. 1175, 1180 (1989)', rules: ['IB R30.1.1', 'IB R2.1'] },
+
   // ----------------------------------------------------------------- books
   { type: 'book', citation: '%John Rawls, A Theory of Justice% 11 (1971)', rules: ['IB R28'] },
   { type: 'book', citation: '%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)', rules: ['IB R28'] },

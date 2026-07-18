@@ -57,6 +57,8 @@ const LIMITATIONS: string[] = [
   'Short forms (id., case short cites) are checked for FORMAT only (Indigo R15). Whether an "id." actually refers to the right authority is a context question (R15.3.3 forbids id. after a string cite or an ambiguous reference) and needs the ordered preceding footnotes — that is check_document, not yet implemented. A short-form format pass does NOT mean the reference is contextually valid.',
   'Multi-citation input (string cites, subsequent history such as aff\'d or cert. denied) is refused rather than parsed; check each citation separately.',
   '"supra" short forms are not yet handled (they attach mostly to books/periodicals, which have no module yet).',
+  'Journal-article support covers consecutively paginated journals (Indigo R30.1.1) and student-written material (R30.1.3). Magazines and newspapers with standard pagination (R30.1.2 — full date and "at <page>" instead of a volume) are not yet handled.',
+  'Journal title abbreviations are open-ended: R30.3.1 abbreviates by rule and R30.2.2 allows discretion where a journal names its own abbreviation, so an unrecognized journal abbreviation is accepted rather than flagged. Only a known spelled-out title is flagged.',
   'No foreign, international, or treaty citations.',
   'No legislative history, regulations, or administrative materials beyond basic statutory codes.',
   'Format checking only: does not verify that a source exists, is quoted accurately, or supports the proposition cited.',
