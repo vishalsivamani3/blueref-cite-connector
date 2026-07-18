@@ -40,6 +40,14 @@ Two further traps found in practice:
    `Co.`, `Inc.`, `Mt.`, `St.`, initials, …).
 6. **Strip leading citation signals.** `See`, `See, e.g.,`, `overruled by`, `quoting`
    belong to the citation *sentence*, not the citation.
+7. **Cut at a closing quotation mark.** Briefs frequently place a citation directly
+   after quoted material — `…place of public accommodation.” Camarillo v. Carrols
+   Corp., 518 F.3d 153, 156 (2d Cir. 2008)`. Without a guard the quoted prose is
+   captured as part of the case name. Cut everything through a trailing `."` / `.”`.
+8. **Reject nested citations.** `Calcano, 36 F.4th at 74 (citing Kreisler v. Second
+   Ave. Diner Corp., 731 F.3d 184, 187–88 (2d Cir. 2013))` contains a citation inside
+   an explanatory parenthetical. Capture the outer cite or skip; never capture the
+   unbalanced fragment.
 
 ## Recovering typeface
 
@@ -88,6 +96,31 @@ After fixing both: 34/74 → **49/74**, and excluding the typeface-unrecoverable
 opinion, only **3** divergences remained — one missing historical state court
 (`Cal. Dist. Ct. App.`), and two where the **source** does not follow strict Bluebook
 abbreviation (`University of California`, `Board of Education`) and BlueRef is right.
+
+## Published ≠ strict Bluebook: do not promote deviations
+
+A trusted, well-drafted source is still not a conformity oracle. Three citations in
+these documents deviate from strict Indigo T6/R11.3.1:
+
+| As published | Indigo R11.3.1 requires |
+|---|---|
+| `Regents of the University of California v. Bakke` (1st Cir.) | `Regents of the Univ. of Cal. v. Bakke` |
+| `Mills v. Board of Education` (Stan. L. Rev.) | `Mills v. Bd. of Educ.` |
+| `Alston v. School Board` (Stan. L. Rev.) | `Alston v. Sch. Bd.` |
+
+This is not poor drafting — **courts routinely spell out party names in their own
+opinions**, and law reviews carry house styles. But it means a capture must clear
+*two* gates before becoming ground truth:
+
+1. the **source** is trustworthy (provenance), and
+2. the citation **agrees with the Indigo rule** (conformity).
+
+Promote only citations that clear both. Encoding a deviation as `expected_output`
+would teach the checker to stop flagging a real error — the same failure §12 forbids
+("never weaken a test to make it pass"). Deviations are still useful, as evidence of
+what real practice looks like, but they are recorded here, not in the corpus.
+
+Of 74 captures, **49 cleared both gates** and were promoted to `hand-verified`.
 
 It also **corroborated the academic typeface model**, which the Indigo Book explicitly
 does not cover: 46 of 56 academic full-cite case names were roman, with italics
