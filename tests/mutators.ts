@@ -74,6 +74,11 @@ const WORD_EXPANSIONS: Record<string, string> = {
   'R.R.': 'Railroad',
   "Ass'n": 'Association',
   "Int'l": 'International',
+  "Dep't": 'Department',
+  'Servs.': 'Services',
+  'Soc.': 'Social',
+  "Comm'r": 'Commissioner',
+  "Gov't": 'Government',
 };
 const wordSpellOut: Mutator = {
   key: 'wordSpellOut',

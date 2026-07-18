@@ -80,6 +80,15 @@ const WORD_ABBREV: Array<{ full: RegExp; abbrev: string }> = [
   { full: /\bUniversity(s?)\b/g, abbrev: 'Univ.$1' },
   { full: /\bRailroad(s?)\b/g, abbrev: 'R.R.$1' },
   { full: /\bInternational(s?)\b/g, abbrev: "Int'l$1" },
+  // Added after the pre-AI back-test surfaced c0011/c0012 as false negatives.
+  // "Services" is listed before "Service" so the plural matches first (the plural
+  // of "Serv." is "Servs.", not "Serv.s", so it can't use the (s?) form).
+  { full: /\bDepartment(s?)\b/g, abbrev: "Dep't$1" },
+  { full: /\bServices\b/g, abbrev: 'Servs.' },
+  { full: /\bService\b/g, abbrev: 'Serv.' },
+  { full: /\bSocial\b/g, abbrev: 'Soc.' },
+  { full: /\bCommissioner(s?)\b/g, abbrev: "Comm'r$1" },
+  { full: /\bGovernment(s?)\b/g, abbrev: "Gov't$1" },
 ];
 
 interface CaseComponents {

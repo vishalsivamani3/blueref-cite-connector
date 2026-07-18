@@ -103,6 +103,12 @@ export const SEEDS: Seed[] = [
   { type: 'case', citation: 'People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)', rules: ['IB R10', 'IB T1', 'IB T7'] },
   { type: 'case', citation: 'Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)', rules: ['IB R10', 'IB T1', 'IB T7'] },
   { type: 'case', citation: 'Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)', rules: ['IB R10', 'IB T1', 'IB T7'] },
+  // Regression seeds from pre-AI back-test findings (c0011, c0012, c0013): T6 words
+  // beyond the original subset, and a state high court that was missing from T7.
+  { type: 'case', citation: 'Monell v. Dep\'t of Soc. Servs., 436 U.S. 658, 690 (1978)', rules: ['IB R10', 'IB T6'] },
+  { type: 'case', citation: 'Comm\'r v. Duberstein, 363 U.S. 278, 285 (1960)', rules: ['IB R10', 'IB T6'] },
+  { type: 'case', citation: 'Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)', rules: ['IB R10', 'IB T1', 'IB T7'] },
+  { type: 'case', citation: 'Gov\'t of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)', rules: ['IB R10', 'IB T6', 'IB T7'] },
 
   // --------------------------------------------------------------- statutes
   { type: 'statute', citation: '42 U.S.C. § 1983 (2018)', rules: ['IB R12', 'IB T1'] },

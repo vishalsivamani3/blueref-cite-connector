@@ -6145,5 +6145,357 @@
     ],
     "provenance": "synthetic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0368",
+    "type": "case",
+    "mode": "check",
+    "input": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
+    "expected_violations": [],
+    "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
+    "rules": [
+      "IB R10",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0369",
+    "type": "case",
+    "mode": "check",
+    "input": "Monell v. Department of Soc. Servs., 436 U.S. 658, 690 (1978)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
+    "rules": [
+      "IB R10",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0370",
+    "type": "case",
+    "mode": "check",
+    "input": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, at 690 (1978)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0371",
+    "type": "case",
+    "mode": "check",
+    "input": "Monell vs. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
+    "rules": [
+      "IB R10",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0372",
+    "type": "case",
+    "mode": "check",
+    "input": "Monell v. Department of Soc. Servs., 436 U.S. 658, at 690 (1978)",
+    "expected_violations": [
+      "ABBREV",
+      "PINCITE"
+    ],
+    "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0373",
+    "type": "case",
+    "mode": "check",
+    "input": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
+    "expected_violations": [],
+    "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
+    "rules": [
+      "IB R10",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0374",
+    "type": "case",
+    "mode": "check",
+    "input": "Commissioner v. Duberstein, 363 U.S. 278, 285 (1960)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
+    "rules": [
+      "IB R10",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0375",
+    "type": "case",
+    "mode": "check",
+    "input": "Comm'r v. Duberstein, 363 U.S. 278, at 285 (1960)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0376",
+    "type": "case",
+    "mode": "check",
+    "input": "Comm'r vs. Duberstein, 363 U.S. 278, 285 (1960)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
+    "rules": [
+      "IB R10",
+      "IB T6"
+    ],
+    "provenance": "synthetic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0377",
+    "type": "case",
+    "mode": "check",
+    "input": "Commissioner v. Duberstein, 363 U.S. 278, at 285 (1960)",
+    "expected_violations": [
+      "ABBREV",
+      "PINCITE"
+    ],
+    "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0378",
+    "type": "case",
+    "mode": "check",
+    "input": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
+    "expected_violations": [],
+    "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
+    "rules": [
+      "IB R10",
+      "IB T1",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0379",
+    "type": "case",
+    "mode": "check",
+    "input": "Vosburg v. Putney, 50 N.W. 403, at 404 (Wis. 1891)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
+    "rules": [
+      "IB R10",
+      "IB T1",
+      "IB T7",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0380",
+    "type": "case",
+    "mode": "check",
+    "input": "Vosburg vs. Putney, 50 N.W. 403, 404 (Wis. 1891)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
+    "rules": [
+      "IB R10",
+      "IB T1",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0381",
+    "type": "case",
+    "mode": "check",
+    "input": "Vosburg vs. Putney, 50 N.W. 403, at 404 (Wis. 1891)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
+    "rules": [
+      "IB R10",
+      "IB T1",
+      "IB T7",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0382",
+    "type": "case",
+    "mode": "check",
+    "input": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "expected_violations": [],
+    "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0383",
+    "type": "case",
+    "mode": "check",
+    "input": "Gov't of V.I. v. Knight, 989 F. 2d 619, 623 (3d Cir. 1993)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB T7",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
+  },
+  {
+    "id": "case-0384",
+    "type": "case",
+    "mode": "check",
+    "input": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Circuit 1993)",
+    "expected_violations": [
+      "DATE_COURT"
+    ],
+    "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "notes": "court name not abbreviated per table T7"
+  },
+  {
+    "id": "case-0385",
+    "type": "case",
+    "mode": "check",
+    "input": "Government of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "notes": "institutional word not abbreviated per table T6"
+  },
+  {
+    "id": "case-0386",
+    "type": "case",
+    "mode": "check",
+    "input": "Gov't of V.I. v. Knight, 989 F.2d 619, at 623 (3d Cir. 1993)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB T7",
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0387",
+    "type": "case",
+    "mode": "check",
+    "input": "Gov't of V.I. vs. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB T7"
+    ],
+    "provenance": "synthetic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0388",
+    "type": "case",
+    "mode": "check",
+    "input": "Gov't of V.I. v. Knight, 989 F. 2d 619, 623 (3d Circuit 1993)",
+    "expected_violations": [
+      "SPACING",
+      "DATE_COURT"
+    ],
+    "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
+    "rules": [
+      "IB R10",
+      "IB T6",
+      "IB T7",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
   }
 ]
