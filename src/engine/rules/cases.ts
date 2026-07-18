@@ -111,6 +111,19 @@ const CORE_RE = new RegExp(
   `(\\d+)\\s+(${REPORTER_ALT})\\s+(\\d+)(?:,\\s*(at\\s+)?(\\d+))?\\s*$`,
 );
 
+/** Same core, unanchored — used to detect a *second* citation left in the name. */
+const CORE_ANYWHERE_RE = new RegExp(`(\\d+)\\s+(${REPORTER_ALT})\\s+(\\d+)`);
+
+/**
+ * Explanatory phrases introducing subsequent history (Indigo R2.1). Their presence
+ * means the input carries more than the primary citation.
+ */
+const HISTORY_RE =
+  /\b(aff'd|aff'g|rev'd|rev'g|cert\.\s+denied|cert\.\s+granted|vacated|remanded|overruled|superseded|abrogated|modified|reh'g\s+denied)\b/i;
+
+/** A parenthetical containing a year — a court/date parenthetical we did not consume. */
+const STRAY_YEAR_PAREN_RE = /\([^)]*\b\d{4}\b[^)]*\)/;
+
 /**
  * Institutional-word abbreviations (verified subset of Indigo Book T6). Applied
  * to the case name. Keys are the unabbreviated form; the `(s?)` handles regular
@@ -201,6 +214,32 @@ function parse(input: string): ParseResult {
   if (nameItalic) name = name.slice(1, -1).trim();
   if (!name) {
     return { ok: false, code: 'PARSE_FAIL', message: 'Empty case name.' };
+  }
+
+  // --- Strict validation: refuse loudly, never silently mis-parse (PRD 6.5, 11.1).
+  //
+  // The parser anchors the citation core at the END of the input, so anything it
+  // could not account for gets absorbed into the case name. Left unchecked, a
+  // subsequent-history or string cite reassembles to the identical string and
+  // reports a confident pass on a citation we structurally misread — the exact
+  // "silent wrongness" the project ranks as risk #1. Detect leftovers and refuse.
+  if (HISTORY_RE.test(name)) {
+    return {
+      ok: false,
+      code: 'PARSE_FAIL',
+      message:
+        'Input includes subsequent history (e.g. aff\'d, cert. denied). Only a single ' +
+        'primary citation is supported; check the primary citation on its own.',
+    };
+  }
+  if (CORE_ANYWHERE_RE.test(name) || STRAY_YEAR_PAREN_RE.test(name)) {
+    return {
+      ok: false,
+      code: 'PARSE_FAIL',
+      message:
+        'Input appears to contain more than one citation (string cite or subsequent ' +
+        'history). Check each citation separately.',
+    };
   }
 
   const components: CaseComponents & { pinciteHasAt: boolean; nameItalic: boolean } = {

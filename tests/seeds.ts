@@ -8,7 +8,7 @@
  *
  * Typeface markers: `*italic*`, `%small caps%` (PRD Section 7.4).
  */
-import type { CitationType, Style } from '../src/engine/types.js';
+import type { CitationType, ErrorCode, Style } from '../src/engine/types.js';
 
 export interface Seed {
   type: CitationType;
@@ -20,6 +20,63 @@ export interface Seed {
   style?: Style;
   notes?: string;
 }
+
+/**
+ * Adversarial entries (PRD Section 7.3's 15% bucket): inputs stated outright with
+ * their expected outcome, rather than derived from a clean seed by mutation.
+ *
+ * These pin behaviour that is not a "correct this citation" case — chiefly that
+ * BlueRef *refuses loudly* on constructs it does not model, instead of silently
+ * mis-parsing them and reporting a confident pass (PRD Sections 6.5, 11.1).
+ */
+export interface Adversarial {
+  type: CitationType;
+  input: string;
+  expected_violations: ErrorCode[];
+  /** What the tool should return; for a refusal this is the input, uncorrected. */
+  expected_output: string;
+  rules: string[];
+  style?: Style;
+  notes: string;
+}
+
+export const ADVERSARIAL: Adversarial[] = [
+  // Subsequent history / string cites. Before the strict-parse fix these all
+  // reassembled to the identical string and reported pass:true with zero
+  // violations, having swallowed a whole citation into the "case name".
+  {
+    type: 'case',
+    input: "Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)",
+    expected_violations: ['PARSE_FAIL'],
+    expected_output: "Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)",
+    rules: ['IB R11', 'IB R2.1'],
+    notes: 'subsequent history (aff\'d): refuse, do not silently mis-parse',
+  },
+  {
+    type: 'case',
+    input: 'Doe v. Roe, 123 F.3d 456, 460 (7th Cir. 1999), cert. denied, 528 U.S. 1002 (1999)',
+    expected_violations: ['PARSE_FAIL'],
+    expected_output: 'Doe v. Roe, 123 F.3d 456, 460 (7th Cir. 1999), cert. denied, 528 U.S. 1002 (1999)',
+    rules: ['IB R11', 'IB R2.1'],
+    notes: 'subsequent history (cert. denied): refuse, do not silently mis-parse',
+  },
+  {
+    type: 'case',
+    input: 'Smith v. Jones, 123 F.3d 456 (7th Cir. 1999); Doe v. Roe, 456 F.3d 789 (8th Cir. 2000)',
+    expected_violations: ['PARSE_FAIL'],
+    expected_output: 'Smith v. Jones, 123 F.3d 456 (7th Cir. 1999); Doe v. Roe, 456 F.3d 789 (8th Cir. 2000)',
+    rules: ['IB R11'],
+    notes: 'string cite (two citations): refuse, check each separately',
+  },
+  {
+    type: 'case',
+    input: "United States v. Doe, 123 F.3d 456, 460 (7th Cir. 1999), rev'd, 530 U.S. 100 (2000)",
+    expected_violations: ['PARSE_FAIL'],
+    expected_output: "United States v. Doe, 123 F.3d 456, 460 (7th Cir. 1999), rev'd, 530 U.S. 100 (2000)",
+    rules: ['IB R11', 'IB R2.1'],
+    notes: 'subsequent history (rev\'d): refuse, do not silently mis-parse',
+  },
+];
 
 export const SEEDS: Seed[] = [
   // ------------------------------------------------------------------ cases

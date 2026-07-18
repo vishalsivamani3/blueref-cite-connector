@@ -61,6 +61,32 @@ Regression seeds added (`N.Y.S.2d` + `N.Y. App. Div.`, `A.D.2d`, `F.4th`). State
 reporter entries now cite **T3**; federal stay **T1**. After: dev case slice
 `474/474 = 100%`, candidates `14 MATCH / 0 DIVERGE / 2 REFUSED`.
 
+### Fixed: c0016 — the silent mis-parse (2026-07-18)
+
+The most dangerous finding, because it presented as a *success*. The parser
+anchors the citation core at the END of the input, so anything it could not
+account for was absorbed into the case name. A subsequent-history or string cite
+then reassembled to the identical string and reported **`pass: true` with zero
+violations** — a confident green light on a citation it had structurally misread:
+
+```
+"Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)"
+  before →  pass: true, no violations
+            parsed case name: "Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd"
+  after  →  pass: false, PARSE_FAIL ("subsequent history … check the primary citation on its own")
+```
+
+That is precisely the "silent wrongness is worse than no tool" risk (PRD §11.1)
+and the "refuse loudly, never guess" rule (§6.5). The parser now validates that
+nothing was left over — rejecting leftover history phrases (`aff'd`, `cert.
+denied`, `rev'd`, …), a second reporter core, or an unconsumed year parenthetical
+— and refuses instead of guessing. Note this is a **refusal, not support**:
+subsequent-history citations are valid, and modelling them properly is future work.
+
+Locked in by four **adversarial** corpus entries (PRD §7.3's 15% bucket), a new
+generator bucket for inputs stated outright with their expected outcome. Dev case
+slice `478/478 = 100%`.
+
 ### Open (triaged, not yet fixed)
 
 | ID | Probe | Code | Disposition |
@@ -68,7 +94,7 @@ reporter entries now cite **T3**; federal stay **T1**. After: dev case slice
 | c0010 | Nominative reporter `5 U.S. (1 Cranch) 137` | `PARSE_FAIL` | Phase 1 hardening: parser must accept an optional nominative-reporter parenthetical. Affects pre-1875 U.S. Reports cites. |
 | ~~c0014~~ | ~~`N.Y.S.2d` reporter + `App. Div.` court~~ | ~~`PARSE_FAIL`~~ | **FIXED 2026-07-18** — see below. |
 | c0015 | Case short form `Brown, 347 U.S. at 495` | `SHORTFORM_CONTEXT` | Phase 3 (short-forms module). Correctly refused (unsupported) rather than guessed. |
-| c0016 | Subsequent history (multiple parentheticals) | `ORDERING` / parse structure | Latent: the parser treats everything before the last parenthetical as the case name, so a clean history cite round-trips (looks like a pass) but is mis-structured and would mishandle an error inside the history. Phase 1 hardening or a documented limitation. |
+| ~~c0016~~ | ~~Subsequent history (multiple parentheticals)~~ | ~~parse structure~~ | **FIXED 2026-07-18** — see below. |
 
 ### Flagged for human review (do not silently resolve, §12)
 
