@@ -87,11 +87,39 @@ Locked in by four **adversarial** corpus entries (PRD §7.3's 15% bucket), a new
 generator bucket for inputs stated outright with their expected outcome. Dev case
 slice `478/478 = 100%`.
 
+### Fixed: c0010 — nominative reporters (2026-07-18)
+
+Pre-1875 U.S. Reports carry the nominative volume and reporter parenthetically
+between the official reporter and the first page (Indigo **T1.1**):
+
+```
+Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)
+```
+
+The seven nominatives are taken verbatim from T1.1 — `Wall.` (Wallace), `Black`,
+`How.` (Howard), `Pet.` (Peters), `Wheat.` (Wheaton), `Cranch`, `Dall.` (Dallas) —
+and live in a `nominatives` table in `reporters.json`. The citation core now
+accepts an optional `(<vol> <nominative>)` group, which is parsed, validated, and
+preserved through correction, so errors elsewhere in the cite are still caught:
+
+```
+"Marbury v. Madison, 5 U.S. (1 Cranch) 137, at 177 (1803)"
+  → PINCITE; corrected to "…5 U.S. (1 Cranch) 137, 177 (1803)"
+```
+
+An *unknown* nominative still fails to parse rather than being guessed at.
+Seven nominative seeds added (Marbury, McCulloch, Gibbons, Martin, Dred Scott,
+Ex parte Milligan, Chisholm).
+
+**Dev case slice `504/504 = 100%` — past the 500-entry Phase 1 release target.**
+Candidates: `15 MATCH / 0 DIVERGE / 1 REFUSED` (only case short forms remain,
+which are Phase 3).
+
 ### Open (triaged, not yet fixed)
 
 | ID | Probe | Code | Disposition |
 |---|---|---|---|
-| c0010 | Nominative reporter `5 U.S. (1 Cranch) 137` | `PARSE_FAIL` | Phase 1 hardening: parser must accept an optional nominative-reporter parenthetical. Affects pre-1875 U.S. Reports cites. |
+| ~~c0010~~ | ~~Nominative reporter `5 U.S. (1 Cranch) 137`~~ | ~~`PARSE_FAIL`~~ | **FIXED 2026-07-18** — see below. |
 | ~~c0014~~ | ~~`N.Y.S.2d` reporter + `App. Div.` court~~ | ~~`PARSE_FAIL`~~ | **FIXED 2026-07-18** — see below. |
 | c0015 | Case short form `Brown, 347 U.S. at 495` | `SHORTFORM_CONTEXT` | Phase 3 (short-forms module). Correctly refused (unsupported) rather than guessed. |
 | ~~c0016~~ | ~~Subsequent history (multiple parentheticals)~~ | ~~parse structure~~ | **FIXED 2026-07-18** — see below. |

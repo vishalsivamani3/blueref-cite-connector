@@ -176,6 +176,16 @@ export const SEEDS: Seed[] = [
   { type: 'case', citation: 'Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
   { type: 'case', citation: 'In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
 
+  // Nominative reporters (Indigo T1.1): pre-1875 U.S. Reports carry the nominative
+  // volume + reporter parenthetically between the reporter and the first page.
+  { type: 'case', citation: 'Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316, 407 (1819)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1, 189 (1824)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Martin v. Hunter\'s Lessee, 14 U.S. (1 Wheat.) 304, 324 (1816)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Dred Scott v. Sandford, 60 U.S. (19 How.) 393, 404 (1857)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Ex parte Milligan, 71 U.S. (4 Wall.) 2, 120 (1866)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Chisholm v. Georgia, 2 U.S. (2 Dall.) 419, 429 (1793)', rules: ['IB R11', 'IB T1'] },
+
   // --- Practitioner style (Indigo R2.1): case name italicized ---
   { type: 'case', style: 'practitioner', citation: '*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)', rules: ['IB R2.1', 'IB R11', 'IB T1', 'IB R12.2'] },
   { type: 'case', style: 'practitioner', citation: '*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)', rules: ['IB R2.1', 'IB R11', 'IB R11.3.1'] },
