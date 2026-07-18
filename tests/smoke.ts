@@ -94,9 +94,16 @@ async function main(): Promise<void> {
   const codes = bad.violations.map((v) => v.code).sort();
   assert(codes.join(',') === 'DATE_COURT,SPACING,TYPEFACE', `expected DATE_COURT,SPACING,TYPEFACE, got ${codes.join(',')}`);
 
-  // An out-of-scope input (a statute — no module yet) is refused, not guessed.
+  // A supported statute is handled (Phase 2), including the Indigo yearless form.
+  const stat = textOf(
+    await client.callTool({ name: 'check_citation', arguments: { input: '17 U.S.C. § 107' } }),
+  ) as { confidence: string; pass: boolean };
+  assert(stat.confidence === 'deterministic', 'check_citation handles a statute (Phase 2)');
+  assert(stat.pass === true, 'a yearless U.S.C. cite passes (Indigo R16.1.2: year optional)');
+
+  // An out-of-scope input (a book — no module yet) is refused, not guessed.
   const unsupported = textOf(
-    await client.callTool({ name: 'check_citation', arguments: { input: '42 U.S.C. § 1983 (2018)' } }),
+    await client.callTool({ name: 'check_citation', arguments: { input: '%John Rawls, A Theory of Justice% 11 (1971)' } }),
   ) as { confidence: string };
   assert(unsupported.confidence === 'unsupported', 'out-of-scope input is refused (unsupported)');
 

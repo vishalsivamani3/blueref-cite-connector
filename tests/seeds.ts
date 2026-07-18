@@ -265,6 +265,22 @@ export const SEEDS: Seed[] = [
   { type: 'statute', citation: '12 U.S.C. § 5301 (2018)', rules: ['IB R16', 'IB T1'] },
   { type: 'statute', citation: 'Fla. Stat. § 768.81 (2020)', rules: ['IB R16', 'IB T1'] },
 
+  // --- Indigo R16/R17 worked examples, verbatim. Note R16.1.2: the year is
+  // OPTIONAL for current U.S.C. sections, so the yearless forms below are correct.
+  { type: 'statute', citation: '17 U.S.C. § 107', rules: ['IB R16.1.1'] },
+  { type: 'statute', citation: '18 U.S.C. § 1030', rules: ['IB R16.1.1'] },
+  { type: 'statute', citation: 'Federal Food, Drug, and Cosmetic Act, 21 U.S.C. §§ 301-399i', rules: ['IB R16.1.1'] },
+  { type: 'statute', citation: '47 U.S.C. § 223 (2012 & Supp. I 2013)', rules: ['IB R16.1.3'] },
+  { type: 'statute', citation: '15 U.S.C.A. § 78j (West)', rules: ['IB R16.1.4'] },
+  { type: 'statute', citation: '15 U.S.C.S. § 78j (LexisNexis)', rules: ['IB R16.1.4'] },
+  { type: 'statute', citation: 'Fla. Stat. § 90.506 (2020)', rules: ['IB R17.2.1'] },
+  { type: 'statute', citation: 'O.C.G.A. § 51-3-22 (2020)', rules: ['IB R17.2.1'] },
+  { type: 'statute', citation: '18 Pa. Cons. Stat. § 30.3 (2020)', rules: ['IB R17.2.1'] },
+  { type: 'statute', citation: 'Tex. Est. Code Ann. § 251.107 (West 2019)', rules: ['IB R17.2.2'] },
+  { type: 'statute', citation: 'N.Y. Arts & Cult. Aff. Law § 60.03 (McKinney 2020)', rules: ['IB R17.2.2'] },
+  { type: 'statute', citation: '29 U.S.C. § 158', rules: ['IB R16.1.1'] },
+  { type: 'statute', citation: '28 U.S.C. § 1331', rules: ['IB R16.1.1'] },
+
   // ------------------------------------------------------------ periodicals
   { type: 'periodical', citation: 'Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, 1745 (1995)', rules: ['IB R30', 'IB R30.3'] },
   { type: 'periodical', citation: 'Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, 20 (1984)', rules: ['IB R30', 'IB R30.3'] },

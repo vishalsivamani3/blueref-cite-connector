@@ -77,7 +77,7 @@ guessed.
 | Type | Status | Indigo Book |
 |---|---|---|
 | Cases | ✅ Phase 1 (100% on slice) | R2.1, R11, R11.3.1, R12.2, T1/T3 |
-| Statutes | 🚧 Phase 2 | R16, R17 |
+| Statutes (U.S.C. + state codes) | ✅ Phase 2 | R16, R17 |
 | Periodicals (journal articles) | 🚧 Phase 2 | R30 |
 | Books | 🚧 Phase 3 | R28 |
 | Short forms — `id.`, case short cites | ✅ Phase 1 (format only) | R15, R2.1 |
