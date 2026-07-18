@@ -7,10 +7,11 @@
     "expected_violations": [],
     "expected_output": "42 U.S.C. § 1983 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -23,10 +24,11 @@
     ],
     "expected_output": "42 U.S.C. § 1983 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -39,10 +41,12 @@
     ],
     "expected_output": "42 U.S.C. § 1983 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -56,10 +60,12 @@
     ],
     "expected_output": "42 U.S.C. § 1983 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -70,10 +76,11 @@
     "expected_violations": [],
     "expected_output": "15 U.S.C. § 78j(b) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -86,10 +93,11 @@
     ],
     "expected_output": "15 U.S.C. § 78j(b) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -102,10 +110,12 @@
     ],
     "expected_output": "15 U.S.C. § 78j(b) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -119,10 +129,12 @@
     ],
     "expected_output": "15 U.S.C. § 78j(b) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -133,10 +145,11 @@
     "expected_violations": [],
     "expected_output": "17 U.S.C. § 107 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -149,10 +162,11 @@
     ],
     "expected_output": "17 U.S.C. § 107 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -165,10 +179,12 @@
     ],
     "expected_output": "17 U.S.C. § 107 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -182,10 +198,12 @@
     ],
     "expected_output": "17 U.S.C. § 107 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -196,10 +214,11 @@
     "expected_violations": [],
     "expected_output": "28 U.S.C. § 1331 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -212,10 +231,11 @@
     ],
     "expected_output": "28 U.S.C. § 1331 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -228,10 +248,12 @@
     ],
     "expected_output": "28 U.S.C. § 1331 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -245,10 +267,12 @@
     ],
     "expected_output": "28 U.S.C. § 1331 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -259,10 +283,11 @@
     "expected_violations": [],
     "expected_output": "18 U.S.C. § 1030(a)(2) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -275,10 +300,11 @@
     ],
     "expected_output": "18 U.S.C. § 1030(a)(2) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -291,10 +317,12 @@
     ],
     "expected_output": "18 U.S.C. § 1030(a)(2) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -308,10 +336,12 @@
     ],
     "expected_output": "18 U.S.C. § 1030(a)(2) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -322,10 +352,11 @@
     "expected_violations": [],
     "expected_output": "26 U.S.C. § 501(c)(3) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -338,10 +369,11 @@
     ],
     "expected_output": "26 U.S.C. § 501(c)(3) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -354,10 +386,12 @@
     ],
     "expected_output": "26 U.S.C. § 501(c)(3) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -371,10 +405,12 @@
     ],
     "expected_output": "26 U.S.C. § 501(c)(3) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -385,10 +421,11 @@
     "expected_violations": [],
     "expected_output": "29 U.S.C. § 158(a)(1) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -401,10 +438,11 @@
     ],
     "expected_output": "29 U.S.C. § 158(a)(1) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -417,10 +455,12 @@
     ],
     "expected_output": "29 U.S.C. § 158(a)(1) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -434,10 +474,12 @@
     ],
     "expected_output": "29 U.S.C. § 158(a)(1) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -448,10 +490,11 @@
     "expected_violations": [],
     "expected_output": "35 U.S.C. § 101 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -464,10 +507,11 @@
     ],
     "expected_output": "35 U.S.C. § 101 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -480,10 +524,12 @@
     ],
     "expected_output": "35 U.S.C. § 101 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -497,10 +543,12 @@
     ],
     "expected_output": "35 U.S.C. § 101 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -511,9 +559,10 @@
     "expected_violations": [],
     "expected_output": "42 U.S.C. §§ 2000e to 2000e-17 (2018)",
     "rules": [
-      "IB R12.3"
+      "IB R16"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -526,10 +575,10 @@
     ],
     "expected_output": "42 U.S.C. §§ 2000e to 2000e-17 (2018)",
     "rules": [
-      "IB R12.3",
-      "IB R12"
+      "IB R16"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -542,10 +591,11 @@
     ],
     "expected_output": "42 U.S.C. §§ 2000e to 2000e-17 (2018)",
     "rules": [
-      "IB R12.3",
-      "IB T1"
+      "IB R16",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -559,11 +609,11 @@
     ],
     "expected_output": "42 U.S.C. §§ 2000e to 2000e-17 (2018)",
     "rules": [
-      "IB R12.3",
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -574,10 +624,11 @@
     "expected_violations": [],
     "expected_output": "Cal. Civ. Code § 1550 (West 2020)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -590,10 +641,11 @@
     ],
     "expected_output": "Cal. Civ. Code § 1550 (West 2020)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -604,10 +656,11 @@
     "expected_violations": [],
     "expected_output": "N.Y. Gen. Bus. Law § 349 (McKinney 2019)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -620,10 +673,11 @@
     ],
     "expected_output": "N.Y. Gen. Bus. Law § 349 (McKinney 2019)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -634,10 +688,11 @@
     "expected_violations": [],
     "expected_output": "Tex. Penal Code Ann. § 22.01 (West 2019)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -650,10 +705,11 @@
     ],
     "expected_output": "Tex. Penal Code Ann. § 22.01 (West 2019)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -664,10 +720,11 @@
     "expected_violations": [],
     "expected_output": "5 U.S.C. § 552(b)(4) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -680,10 +737,11 @@
     ],
     "expected_output": "5 U.S.C. § 552(b)(4) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -696,10 +754,12 @@
     ],
     "expected_output": "5 U.S.C. § 552(b)(4) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -713,10 +773,12 @@
     ],
     "expected_output": "5 U.S.C. § 552(b)(4) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -727,10 +789,11 @@
     "expected_violations": [],
     "expected_output": "11 U.S.C. § 362(a) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -743,10 +806,11 @@
     ],
     "expected_output": "11 U.S.C. § 362(a) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -759,10 +823,12 @@
     ],
     "expected_output": "11 U.S.C. § 362(a) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -776,10 +842,12 @@
     ],
     "expected_output": "11 U.S.C. § 362(a) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -790,10 +858,11 @@
     "expected_violations": [],
     "expected_output": "20 U.S.C. § 1681(a) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -806,10 +875,11 @@
     ],
     "expected_output": "20 U.S.C. § 1681(a) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -822,10 +892,12 @@
     ],
     "expected_output": "20 U.S.C. § 1681(a) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -839,10 +911,12 @@
     ],
     "expected_output": "20 U.S.C. § 1681(a) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -853,10 +927,11 @@
     "expected_violations": [],
     "expected_output": "8 U.S.C. § 1101(a)(15) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -869,10 +944,11 @@
     ],
     "expected_output": "8 U.S.C. § 1101(a)(15) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -885,10 +961,12 @@
     ],
     "expected_output": "8 U.S.C. § 1101(a)(15) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -902,10 +980,12 @@
     ],
     "expected_output": "8 U.S.C. § 1101(a)(15) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -916,10 +996,11 @@
     "expected_violations": [],
     "expected_output": "21 U.S.C. § 841(a)(1) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -932,10 +1013,11 @@
     ],
     "expected_output": "21 U.S.C. § 841(a)(1) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -948,10 +1030,12 @@
     ],
     "expected_output": "21 U.S.C. § 841(a)(1) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -965,10 +1049,12 @@
     ],
     "expected_output": "21 U.S.C. § 841(a)(1) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -979,10 +1065,11 @@
     "expected_violations": [],
     "expected_output": "47 U.S.C. § 230(c)(1) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -995,10 +1082,11 @@
     ],
     "expected_output": "47 U.S.C. § 230(c)(1) (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -1011,10 +1099,12 @@
     ],
     "expected_output": "47 U.S.C. § 230(c)(1) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -1028,10 +1118,12 @@
     ],
     "expected_output": "47 U.S.C. § 230(c)(1) (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -1042,10 +1134,11 @@
     "expected_violations": [],
     "expected_output": "12 U.S.C. § 5301 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1058,10 +1151,11 @@
     ],
     "expected_output": "12 U.S.C. § 5301 (2018)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   },
   {
@@ -1074,10 +1168,12 @@
     ],
     "expected_output": "12 U.S.C. § 5301 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "code name not abbreviated (U.S.C.)"
   },
   {
@@ -1091,10 +1187,12 @@
     ],
     "expected_output": "12 U.S.C. § 5301 (2018)",
     "rules": [
-      "IB R12",
-      "IB T1"
+      "IB R16",
+      "IB T1",
+      "IB R16.1.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
   },
   {
@@ -1105,10 +1203,11 @@
     "expected_violations": [],
     "expected_output": "Fla. Stat. § 768.81 (2020)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1121,10 +1220,11 @@
     ],
     "expected_output": "Fla. Stat. § 768.81 (2020)",
     "rules": [
-      "IB R12",
+      "IB R16",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "missing space after section symbol"
   }
 ]

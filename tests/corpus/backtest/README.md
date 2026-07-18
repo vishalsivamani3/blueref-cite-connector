@@ -51,7 +51,7 @@ Example (a human authors this after verifying the source):
     "input": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
     "expected_violations": [],
     "expected_output": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
-    "rules": ["IB R10", "IB T1", "IB T6"],
+    "rules": ["IB R11", "IB T1", "IB R11.3.1"],
     "provenance": "hand-verified",
     "source": "verified against the U.S. Reports citation, pre-AI; used in <journal>, <year>, fn. <n>",
     "notes": "clean canonical, held-out"

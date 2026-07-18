@@ -19,11 +19,11 @@ export interface CorpusEntry {
   components?: Record<string, unknown>;
   /** Exact expected error-code set for `check` mode. Empty for a clean citation. */
   expected_violations: ErrorCode[];
-  /** Citation style for this entry. Omitted = the engine default (academic). */
+  /** Citation style for this entry. Omitted = the engine default (practitioner). */
   style?: Style;
   /** Exact expected canonical citation (with typeface markers). */
   expected_output: string;
-  /** Indigo Book rule reference(s), e.g. ["IB R11.2", "IB T7"]. */
+  /** Indigo Book rule reference(s), e.g. ["IB R11.6.2", "IB R12.2"]. */
   rules: string[];
   provenance: Provenance;
   /**

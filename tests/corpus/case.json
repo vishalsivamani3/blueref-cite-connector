@@ -7,11 +7,12 @@
     "expected_violations": [],
     "expected_output": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -24,12 +25,13 @@
     ],
     "expected_output": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -42,12 +44,13 @@
     ],
     "expected_output": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0004",
@@ -59,12 +62,13 @@
     ],
     "expected_output": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -77,11 +81,13 @@
     ],
     "expected_output": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -95,13 +101,14 @@
     ],
     "expected_output": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0007",
@@ -111,11 +118,12 @@
     "expected_violations": [],
     "expected_output": "United States v. Hayes, 219 F.3d 449, 452 (5th Cir. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -128,12 +136,13 @@
     ],
     "expected_output": "United States v. Hayes, 219 F.3d 449, 452 (5th Cir. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -146,12 +155,13 @@
     ],
     "expected_output": "United States v. Hayes, 219 F.3d 449, 452 (5th Cir. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0010",
@@ -163,12 +173,13 @@
     ],
     "expected_output": "United States v. Hayes, 219 F.3d 449, 452 (5th Cir. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -181,11 +192,13 @@
     ],
     "expected_output": "United States v. Hayes, 219 F.3d 449, 452 (5th Cir. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -199,13 +212,14 @@
     ],
     "expected_output": "United States v. Hayes, 219 F.3d 449, 452 (5th Cir. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0013",
@@ -215,11 +229,12 @@
     "expected_violations": [],
     "expected_output": "Doe v. Univ. of Mich., 78 F.3d 1113, 1120 (6th Cir. 1996)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -232,12 +247,13 @@
     ],
     "expected_output": "Doe v. Univ. of Mich., 78 F.3d 1113, 1120 (6th Cir. 1996)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -250,12 +266,13 @@
     ],
     "expected_output": "Doe v. Univ. of Mich., 78 F.3d 1113, 1120 (6th Cir. 1996)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0016",
@@ -267,12 +284,13 @@
     ],
     "expected_output": "Doe v. Univ. of Mich., 78 F.3d 1113, 1120 (6th Cir. 1996)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0017",
@@ -284,12 +302,13 @@
     ],
     "expected_output": "Doe v. Univ. of Mich., 78 F.3d 1113, 1120 (6th Cir. 1996)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -302,11 +321,13 @@
     ],
     "expected_output": "Doe v. Univ. of Mich., 78 F.3d 1113, 1120 (6th Cir. 1996)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -320,13 +341,14 @@
     ],
     "expected_output": "Doe v. Univ. of Mich., 78 F.3d 1113, 1120 (6th Cir. 1996)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0020",
@@ -336,10 +358,11 @@
     "expected_violations": [],
     "expected_output": "ACLU v. Reno, 217 F.3d 162, 173 (3d Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7"
+      "IB R11",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -352,11 +375,12 @@
     ],
     "expected_output": "ACLU v. Reno, 217 F.3d 162, 173 (3d Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -369,11 +393,12 @@
     ],
     "expected_output": "ACLU v. Reno, 217 F.3d 162, 173 (3d Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7"
+      "IB R11",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0023",
@@ -385,11 +410,12 @@
     ],
     "expected_output": "ACLU v. Reno, 217 F.3d 162, 173 (3d Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -402,10 +428,12 @@
     ],
     "expected_output": "ACLU v. Reno, 217 F.3d 162, 173 (3d Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -419,12 +447,13 @@
     ],
     "expected_output": "ACLU v. Reno, 217 F.3d 162, 173 (3d Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0026",
@@ -434,10 +463,11 @@
     "expected_violations": [],
     "expected_output": "Nken v. Holder, 556 F.3d 1028, 1032 (D.C. Cir. 2009)",
     "rules": [
-      "IB R10",
-      "IB T7"
+      "IB R11",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -450,11 +480,12 @@
     ],
     "expected_output": "Nken v. Holder, 556 F.3d 1028, 1032 (D.C. Cir. 2009)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -467,11 +498,12 @@
     ],
     "expected_output": "Nken v. Holder, 556 F.3d 1028, 1032 (D.C. Cir. 2009)",
     "rules": [
-      "IB R10",
-      "IB T7"
+      "IB R11",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0029",
@@ -483,11 +515,12 @@
     ],
     "expected_output": "Nken v. Holder, 556 F.3d 1028, 1032 (D.C. Cir. 2009)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -500,10 +533,12 @@
     ],
     "expected_output": "Nken v. Holder, 556 F.3d 1028, 1032 (D.C. Cir. 2009)",
     "rules": [
-      "IB R10",
-      "IB T7"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -517,12 +552,13 @@
     ],
     "expected_output": "Nken v. Holder, 556 F.3d 1028, 1032 (D.C. Cir. 2009)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0032",
@@ -532,11 +568,12 @@
     "expected_violations": [],
     "expected_output": "Garcia v. City of L.A., 213 F.3d 1113, 1118 (9th Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB T10"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.3.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -549,12 +586,13 @@
     ],
     "expected_output": "Garcia v. City of L.A., 213 F.3d 1113, 1118 (9th Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB T10",
-      "IB R11.2"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.3.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -567,12 +605,13 @@
     ],
     "expected_output": "Garcia v. City of L.A., 213 F.3d 1113, 1118 (9th Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB T10"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.3.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0035",
@@ -584,12 +623,13 @@
     ],
     "expected_output": "Garcia v. City of L.A., 213 F.3d 1113, 1118 (9th Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB T10",
-      "IB R11"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.3.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -602,11 +642,13 @@
     ],
     "expected_output": "Garcia v. City of L.A., 213 F.3d 1113, 1118 (9th Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB T10"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.3.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -620,13 +662,14 @@
     ],
     "expected_output": "Garcia v. City of L.A., 213 F.3d 1113, 1118 (9th Cir. 2000)",
     "rules": [
-      "IB R10",
-      "IB T7",
-      "IB T10",
-      "IB R11.2"
+      "IB R11",
+      "IB R12.2",
+      "IB R11.3.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0038",
@@ -636,11 +679,12 @@
     "expected_violations": [],
     "expected_output": "Doe v. Roe, 123 F. Supp. 2d 456, 460 (S.D.N.Y. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -653,12 +697,13 @@
     ],
     "expected_output": "Doe v. Roe, 123 F. Supp. 2d 456, 460 (S.D.N.Y. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0040",
@@ -670,12 +715,13 @@
     ],
     "expected_output": "Doe v. Roe, 123 F. Supp. 2d 456, 460 (S.D.N.Y. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -688,11 +734,13 @@
     ],
     "expected_output": "Doe v. Roe, 123 F. Supp. 2d 456, 460 (S.D.N.Y. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -706,13 +754,14 @@
     ],
     "expected_output": "Doe v. Roe, 123 F. Supp. 2d 456, 460 (S.D.N.Y. 2000)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: court name not abbreviated per table T7; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: court name not abbreviated per Indigo R12.2; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0043",
@@ -722,11 +771,12 @@
     "expected_violations": [],
     "expected_output": "Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -739,12 +789,13 @@
     ],
     "expected_output": "Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0045",
@@ -756,12 +807,13 @@
     ],
     "expected_output": "Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -774,11 +826,13 @@
     ],
     "expected_output": "Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -792,13 +846,14 @@
     ],
     "expected_output": "Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0048",
@@ -808,10 +863,11 @@
     "expected_violations": [],
     "expected_output": "MacPherson v. Buick Motor Co., 111 N.E. 1050, 1053 (N.Y. 1916)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -824,11 +880,12 @@
     ],
     "expected_output": "MacPherson v. Buick Motor Co., 111 N.E. 1050, 1053 (N.Y. 1916)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0050",
@@ -840,11 +897,12 @@
     ],
     "expected_output": "MacPherson v. Buick Motor Co., 111 N.E. 1050, 1053 (N.Y. 1916)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -857,10 +915,12 @@
     ],
     "expected_output": "MacPherson v. Buick Motor Co., 111 N.E. 1050, 1053 (N.Y. 1916)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -874,12 +934,13 @@
     ],
     "expected_output": "MacPherson v. Buick Motor Co., 111 N.E. 1050, 1053 (N.Y. 1916)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0053",
@@ -889,11 +950,12 @@
     "expected_violations": [],
     "expected_output": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6"
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -906,12 +968,13 @@
     ],
     "expected_output": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6"
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0055",
@@ -923,12 +986,13 @@
     ],
     "expected_output": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB R11"
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -941,11 +1005,13 @@
     ],
     "expected_output": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6"
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -959,13 +1025,14 @@
     ],
     "expected_output": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB R11"
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0058",
@@ -975,10 +1042,11 @@
     "expected_violations": [],
     "expected_output": "Miranda v. Arizona, 384 U.S. 436, 444 (1966)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -991,11 +1059,12 @@
     ],
     "expected_output": "Miranda v. Arizona, 384 U.S. 436, 444 (1966)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1008,10 +1077,12 @@
     ],
     "expected_output": "Miranda v. Arizona, 384 U.S. 436, 444 (1966)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1025,11 +1096,13 @@
     ],
     "expected_output": "Miranda v. Arizona, 384 U.S. 436, 444 (1966)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1040,10 +1113,11 @@
     "expected_violations": [],
     "expected_output": "United States v. Nixon, 418 U.S. 683, 705 (1974)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1056,11 +1130,12 @@
     ],
     "expected_output": "United States v. Nixon, 418 U.S. 683, 705 (1974)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1073,10 +1148,12 @@
     ],
     "expected_output": "United States v. Nixon, 418 U.S. 683, 705 (1974)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1090,11 +1167,13 @@
     ],
     "expected_output": "United States v. Nixon, 418 U.S. 683, 705 (1974)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1105,10 +1184,11 @@
     "expected_violations": [],
     "expected_output": "Gideon v. Wainwright, 372 U.S. 335, 344 (1963)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1121,11 +1201,12 @@
     ],
     "expected_output": "Gideon v. Wainwright, 372 U.S. 335, 344 (1963)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1138,10 +1219,12 @@
     ],
     "expected_output": "Gideon v. Wainwright, 372 U.S. 335, 344 (1963)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1155,11 +1238,13 @@
     ],
     "expected_output": "Gideon v. Wainwright, 372 U.S. 335, 344 (1963)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1170,10 +1255,11 @@
     "expected_violations": [],
     "expected_output": "Mapp v. Ohio, 367 U.S. 643, 655 (1961)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1186,11 +1272,12 @@
     ],
     "expected_output": "Mapp v. Ohio, 367 U.S. 643, 655 (1961)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1203,10 +1290,12 @@
     ],
     "expected_output": "Mapp v. Ohio, 367 U.S. 643, 655 (1961)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1220,11 +1309,13 @@
     ],
     "expected_output": "Mapp v. Ohio, 367 U.S. 643, 655 (1961)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1235,10 +1326,11 @@
     "expected_violations": [],
     "expected_output": "Katz v. United States, 389 U.S. 347, 351 (1967)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1251,11 +1343,12 @@
     ],
     "expected_output": "Katz v. United States, 389 U.S. 347, 351 (1967)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1268,10 +1361,12 @@
     ],
     "expected_output": "Katz v. United States, 389 U.S. 347, 351 (1967)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1285,11 +1380,13 @@
     ],
     "expected_output": "Katz v. United States, 389 U.S. 347, 351 (1967)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1300,10 +1397,11 @@
     "expected_violations": [],
     "expected_output": "Terry v. Ohio, 392 U.S. 1, 20 (1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1316,11 +1414,12 @@
     ],
     "expected_output": "Terry v. Ohio, 392 U.S. 1, 20 (1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1333,10 +1432,12 @@
     ],
     "expected_output": "Terry v. Ohio, 392 U.S. 1, 20 (1968)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1350,11 +1451,13 @@
     ],
     "expected_output": "Terry v. Ohio, 392 U.S. 1, 20 (1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1365,10 +1468,11 @@
     "expected_violations": [],
     "expected_output": "Grutter v. Bollinger, 539 U.S. 306, 325 (2003)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1381,11 +1485,12 @@
     ],
     "expected_output": "Grutter v. Bollinger, 539 U.S. 306, 325 (2003)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1398,10 +1503,12 @@
     ],
     "expected_output": "Grutter v. Bollinger, 539 U.S. 306, 325 (2003)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1415,11 +1522,13 @@
     ],
     "expected_output": "Grutter v. Bollinger, 539 U.S. 306, 325 (2003)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1430,10 +1539,11 @@
     "expected_violations": [],
     "expected_output": "Int'l Shoe Co. v. Washington, 326 U.S. 310, 316 (1945)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1446,11 +1556,12 @@
     ],
     "expected_output": "Int'l Shoe Co. v. Washington, 326 U.S. 310, 316 (1945)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0088",
@@ -1462,11 +1573,12 @@
     ],
     "expected_output": "Int'l Shoe Co. v. Washington, 326 U.S. 310, 316 (1945)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1479,10 +1591,12 @@
     ],
     "expected_output": "Int'l Shoe Co. v. Washington, 326 U.S. 310, 316 (1945)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1496,12 +1610,13 @@
     ],
     "expected_output": "Int'l Shoe Co. v. Washington, 326 U.S. 310, 316 (1945)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0091",
@@ -1511,10 +1626,11 @@
     "expected_violations": [],
     "expected_output": "Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1527,11 +1643,12 @@
     ],
     "expected_output": "Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1544,10 +1661,12 @@
     ],
     "expected_output": "Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1561,11 +1680,13 @@
     ],
     "expected_output": "Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1576,10 +1697,11 @@
     "expected_violations": [],
     "expected_output": "Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1592,11 +1714,12 @@
     ],
     "expected_output": "Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0097",
@@ -1608,11 +1731,12 @@
     ],
     "expected_output": "Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1625,10 +1749,12 @@
     ],
     "expected_output": "Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1642,12 +1768,13 @@
     ],
     "expected_output": "Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0100",
@@ -1657,10 +1784,11 @@
     "expected_violations": [],
     "expected_output": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1673,11 +1801,12 @@
     ],
     "expected_output": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0102",
@@ -1689,11 +1818,12 @@
     ],
     "expected_output": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1706,10 +1836,12 @@
     ],
     "expected_output": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1723,12 +1855,13 @@
     ],
     "expected_output": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0105",
@@ -1738,10 +1871,11 @@
     "expected_violations": [],
     "expected_output": "Lochner v. New York, 198 U.S. 45, 53 (1905)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1754,11 +1888,12 @@
     ],
     "expected_output": "Lochner v. New York, 198 U.S. 45, 53 (1905)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1771,10 +1906,12 @@
     ],
     "expected_output": "Lochner v. New York, 198 U.S. 45, 53 (1905)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1788,11 +1925,13 @@
     ],
     "expected_output": "Lochner v. New York, 198 U.S. 45, 53 (1905)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -1803,12 +1942,13 @@
     "expected_violations": [],
     "expected_output": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB T7"
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1821,13 +1961,14 @@
     ],
     "expected_output": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -1840,13 +1981,14 @@
     ],
     "expected_output": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB T7"
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0112",
@@ -1858,13 +2000,14 @@
     ],
     "expected_output": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB T7"
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0113",
@@ -1876,13 +2019,14 @@
     ],
     "expected_output": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1895,12 +2039,14 @@
     ],
     "expected_output": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB T7"
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1914,14 +2060,15 @@
     ],
     "expected_output": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0116",
@@ -1931,10 +2078,11 @@
     "expected_violations": [],
     "expected_output": "Whitman v. Am. Trucking Ass'ns, 531 U.S. 457, 465 (2001)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -1947,11 +2095,12 @@
     ],
     "expected_output": "Whitman v. Am. Trucking Ass'ns, 531 U.S. 457, 465 (2001)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0118",
@@ -1963,11 +2112,12 @@
     ],
     "expected_output": "Whitman v. Am. Trucking Ass'ns, 531 U.S. 457, 465 (2001)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -1980,10 +2130,12 @@
     ],
     "expected_output": "Whitman v. Am. Trucking Ass'ns, 531 U.S. 457, 465 (2001)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -1997,12 +2149,13 @@
     ],
     "expected_output": "Whitman v. Am. Trucking Ass'ns, 531 U.S. 457, 465 (2001)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0121",
@@ -2012,10 +2165,11 @@
     "expected_violations": [],
     "expected_output": "NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1, 30 (1937)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2028,11 +2182,12 @@
     ],
     "expected_output": "NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1, 30 (1937)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0123",
@@ -2044,11 +2199,12 @@
     ],
     "expected_output": "NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1, 30 (1937)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2061,10 +2217,12 @@
     ],
     "expected_output": "NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1, 30 (1937)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2078,12 +2236,13 @@
     ],
     "expected_output": "NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1, 30 (1937)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0126",
@@ -2093,10 +2252,11 @@
     "expected_violations": [],
     "expected_output": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579, 587 (1952)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2109,11 +2269,12 @@
     ],
     "expected_output": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579, 587 (1952)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0128",
@@ -2125,11 +2286,12 @@
     ],
     "expected_output": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579, 587 (1952)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2142,10 +2304,12 @@
     ],
     "expected_output": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579, 587 (1952)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2159,12 +2323,13 @@
     ],
     "expected_output": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579, 587 (1952)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0131",
@@ -2174,10 +2339,11 @@
     "expected_violations": [],
     "expected_output": "SEC v. W.J. Howey Co., 328 U.S. 293, 298 (1946)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2190,11 +2356,12 @@
     ],
     "expected_output": "SEC v. W.J. Howey Co., 328 U.S. 293, 298 (1946)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0133",
@@ -2206,11 +2373,12 @@
     ],
     "expected_output": "SEC v. W.J. Howey Co., 328 U.S. 293, 298 (1946)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2223,10 +2391,12 @@
     ],
     "expected_output": "SEC v. W.J. Howey Co., 328 U.S. 293, 298 (1946)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2240,12 +2410,13 @@
     ],
     "expected_output": "SEC v. W.J. Howey Co., 328 U.S. 293, 298 (1946)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0136",
@@ -2255,10 +2426,11 @@
     "expected_violations": [],
     "expected_output": "Feist Publ'ns, Inc. v. Rural Tel. Serv. Co., 499 U.S. 340, 345 (1991)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2271,11 +2443,12 @@
     ],
     "expected_output": "Feist Publ'ns, Inc. v. Rural Tel. Serv. Co., 499 U.S. 340, 345 (1991)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0138",
@@ -2287,11 +2460,12 @@
     ],
     "expected_output": "Feist Publ'ns, Inc. v. Rural Tel. Serv. Co., 499 U.S. 340, 345 (1991)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2304,10 +2478,12 @@
     ],
     "expected_output": "Feist Publ'ns, Inc. v. Rural Tel. Serv. Co., 499 U.S. 340, 345 (1991)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2321,12 +2497,13 @@
     ],
     "expected_output": "Feist Publ'ns, Inc. v. Rural Tel. Serv. Co., 499 U.S. 340, 345 (1991)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0141",
@@ -2336,10 +2513,11 @@
     "expected_violations": [],
     "expected_output": "Sony Corp. of Am. v. Universal City Studios, Inc., 464 U.S. 417, 420 (1984)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2352,11 +2530,12 @@
     ],
     "expected_output": "Sony Corp. of Am. v. Universal City Studios, Inc., 464 U.S. 417, 420 (1984)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0143",
@@ -2368,11 +2547,12 @@
     ],
     "expected_output": "Sony Corp. of Am. v. Universal City Studios, Inc., 464 U.S. 417, 420 (1984)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2385,10 +2565,12 @@
     ],
     "expected_output": "Sony Corp. of Am. v. Universal City Studios, Inc., 464 U.S. 417, 420 (1984)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2402,12 +2584,13 @@
     ],
     "expected_output": "Sony Corp. of Am. v. Universal City Studios, Inc., 464 U.S. 417, 420 (1984)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0146",
@@ -2417,10 +2600,11 @@
     "expected_violations": [],
     "expected_output": "Perez v. Mortg. Bankers Ass'n, 575 U.S. 92, 96 (2015)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2433,11 +2617,12 @@
     ],
     "expected_output": "Perez v. Mortg. Bankers Ass'n, 575 U.S. 92, 96 (2015)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0148",
@@ -2449,11 +2634,12 @@
     ],
     "expected_output": "Perez v. Mortg. Bankers Ass'n, 575 U.S. 92, 96 (2015)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2466,10 +2652,12 @@
     ],
     "expected_output": "Perez v. Mortg. Bankers Ass'n, 575 U.S. 92, 96 (2015)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2483,12 +2671,13 @@
     ],
     "expected_output": "Perez v. Mortg. Bankers Ass'n, 575 U.S. 92, 96 (2015)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0151",
@@ -2498,10 +2687,11 @@
     "expected_violations": [],
     "expected_output": "United States v. Jones, 565 U.S. 400, 404 (2012)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2514,11 +2704,12 @@
     ],
     "expected_output": "United States v. Jones, 565 U.S. 400, 404 (2012)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2531,10 +2722,12 @@
     ],
     "expected_output": "United States v. Jones, 565 U.S. 400, 404 (2012)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2548,11 +2741,13 @@
     ],
     "expected_output": "United States v. Jones, 565 U.S. 400, 404 (2012)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -2563,10 +2758,11 @@
     "expected_violations": [],
     "expected_output": "Riley v. California, 573 U.S. 373, 385 (2014)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2579,11 +2775,12 @@
     ],
     "expected_output": "Riley v. California, 573 U.S. 373, 385 (2014)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2596,10 +2793,12 @@
     ],
     "expected_output": "Riley v. California, 573 U.S. 373, 385 (2014)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2613,11 +2812,13 @@
     ],
     "expected_output": "Riley v. California, 573 U.S. 373, 385 (2014)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -2628,10 +2829,11 @@
     "expected_violations": [],
     "expected_output": "Obergefell v. Hodges, 576 U.S. 644, 675 (2015)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2644,11 +2846,12 @@
     ],
     "expected_output": "Obergefell v. Hodges, 576 U.S. 644, 675 (2015)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2661,10 +2864,12 @@
     ],
     "expected_output": "Obergefell v. Hodges, 576 U.S. 644, 675 (2015)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2678,11 +2883,13 @@
     ],
     "expected_output": "Obergefell v. Hodges, 576 U.S. 644, 675 (2015)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -2693,10 +2900,11 @@
     "expected_violations": [],
     "expected_output": "Katzenbach v. McClung, 379 U.S. 294, 300 (1964)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2709,11 +2917,12 @@
     ],
     "expected_output": "Katzenbach v. McClung, 379 U.S. 294, 300 (1964)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2726,10 +2935,12 @@
     ],
     "expected_output": "Katzenbach v. McClung, 379 U.S. 294, 300 (1964)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2743,11 +2954,13 @@
     ],
     "expected_output": "Katzenbach v. McClung, 379 U.S. 294, 300 (1964)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -2758,10 +2971,11 @@
     "expected_violations": [],
     "expected_output": "Johnson v. Transp. Agency, 480 U.S. 616, 620 (1987)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2774,11 +2988,12 @@
     ],
     "expected_output": "Johnson v. Transp. Agency, 480 U.S. 616, 620 (1987)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2791,10 +3006,12 @@
     ],
     "expected_output": "Johnson v. Transp. Agency, 480 U.S. 616, 620 (1987)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2808,11 +3025,13 @@
     ],
     "expected_output": "Johnson v. Transp. Agency, 480 U.S. 616, 620 (1987)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -2823,10 +3042,11 @@
     "expected_violations": [],
     "expected_output": "Van Orden v. Perry, 545 U.S. 677, 690 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2839,11 +3059,12 @@
     ],
     "expected_output": "Van Orden v. Perry, 545 U.S. 677, 690 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2856,10 +3077,12 @@
     ],
     "expected_output": "Van Orden v. Perry, 545 U.S. 677, 690 (2005)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2873,11 +3096,13 @@
     ],
     "expected_output": "Van Orden v. Perry, 545 U.S. 677, 690 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -2888,10 +3113,11 @@
     "expected_violations": [],
     "expected_output": "Hurley v. Irish-Am. Grp., 515 U.S. 557, 560 (1995)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2904,11 +3130,12 @@
     ],
     "expected_output": "Hurley v. Irish-Am. Grp., 515 U.S. 557, 560 (1995)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2921,10 +3148,12 @@
     ],
     "expected_output": "Hurley v. Irish-Am. Grp., 515 U.S. 557, 560 (1995)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -2938,11 +3167,13 @@
     ],
     "expected_output": "Hurley v. Irish-Am. Grp., 515 U.S. 557, 560 (1995)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -2953,10 +3184,11 @@
     "expected_violations": [],
     "expected_output": "United States v. Va., 518 U.S. 515, 531 (1996)",
     "rules": [
-      "IB R10",
-      "IB T10"
+      "IB R11",
+      "IB R11.3.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -2969,11 +3201,12 @@
     ],
     "expected_output": "United States v. Va., 518 U.S. 515, 531 (1996)",
     "rules": [
-      "IB R10",
-      "IB T10",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -2986,10 +3219,12 @@
     ],
     "expected_output": "United States v. Va., 518 U.S. 515, 531 (1996)",
     "rules": [
-      "IB R10",
-      "IB T10"
+      "IB R11",
+      "IB R11.3.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3003,11 +3238,13 @@
     ],
     "expected_output": "United States v. Va., 518 U.S. 515, 531 (1996)",
     "rules": [
-      "IB R10",
-      "IB T10",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.2",
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -3018,10 +3255,11 @@
     "expected_violations": [],
     "expected_output": "Kelo v. City of New London, 545 U.S. 469, 477 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3034,11 +3272,12 @@
     ],
     "expected_output": "Kelo v. City of New London, 545 U.S. 469, 477 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3051,10 +3290,12 @@
     ],
     "expected_output": "Kelo v. City of New London, 545 U.S. 469, 477 (2005)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3068,11 +3309,13 @@
     ],
     "expected_output": "Kelo v. City of New London, 545 U.S. 469, 477 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -3083,11 +3326,12 @@
     "expected_violations": [],
     "expected_output": "Hickman v. Taylor, 153 F.2d 212, 223 (3d Cir. 1945)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3100,12 +3344,13 @@
     ],
     "expected_output": "Hickman v. Taylor, 153 F.2d 212, 223 (3d Cir. 1945)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -3118,12 +3363,13 @@
     ],
     "expected_output": "Hickman v. Taylor, 153 F.2d 212, 223 (3d Cir. 1945)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0190",
@@ -3135,12 +3381,13 @@
     ],
     "expected_output": "Hickman v. Taylor, 153 F.2d 212, 223 (3d Cir. 1945)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3153,11 +3400,13 @@
     ],
     "expected_output": "Hickman v. Taylor, 153 F.2d 212, 223 (3d Cir. 1945)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3171,13 +3420,14 @@
     ],
     "expected_output": "Hickman v. Taylor, 153 F.2d 212, 223 (3d Cir. 1945)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0193",
@@ -3187,11 +3437,12 @@
     "expected_violations": [],
     "expected_output": "United States v. Carroll Towing Co., 159 F.2d 169, 173 (2d Cir. 1947)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3204,12 +3455,13 @@
     ],
     "expected_output": "United States v. Carroll Towing Co., 159 F.2d 169, 173 (2d Cir. 1947)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -3222,12 +3474,13 @@
     ],
     "expected_output": "United States v. Carroll Towing Co., 159 F.2d 169, 173 (2d Cir. 1947)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0196",
@@ -3239,12 +3492,13 @@
     ],
     "expected_output": "United States v. Carroll Towing Co., 159 F.2d 169, 173 (2d Cir. 1947)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0197",
@@ -3256,12 +3510,13 @@
     ],
     "expected_output": "United States v. Carroll Towing Co., 159 F.2d 169, 173 (2d Cir. 1947)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3274,11 +3529,13 @@
     ],
     "expected_output": "United States v. Carroll Towing Co., 159 F.2d 169, 173 (2d Cir. 1947)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3292,13 +3549,14 @@
     ],
     "expected_output": "United States v. Carroll Towing Co., 159 F.2d 169, 173 (2d Cir. 1947)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0200",
@@ -3308,11 +3566,12 @@
     "expected_violations": [],
     "expected_output": "Bivens v. Six Unknown Named Agents, 456 F.2d 1339, 1343 (2d Cir. 1972)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3325,12 +3584,13 @@
     ],
     "expected_output": "Bivens v. Six Unknown Named Agents, 456 F.2d 1339, 1343 (2d Cir. 1972)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -3343,12 +3603,13 @@
     ],
     "expected_output": "Bivens v. Six Unknown Named Agents, 456 F.2d 1339, 1343 (2d Cir. 1972)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0203",
@@ -3360,12 +3621,13 @@
     ],
     "expected_output": "Bivens v. Six Unknown Named Agents, 456 F.2d 1339, 1343 (2d Cir. 1972)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3378,11 +3640,13 @@
     ],
     "expected_output": "Bivens v. Six Unknown Named Agents, 456 F.2d 1339, 1343 (2d Cir. 1972)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3396,13 +3660,14 @@
     ],
     "expected_output": "Bivens v. Six Unknown Named Agents, 456 F.2d 1339, 1343 (2d Cir. 1972)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0206",
@@ -3412,11 +3677,12 @@
     "expected_violations": [],
     "expected_output": "Frye v. United States, 293 F. 1013, 1014 (D.C. Cir. 1923)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3429,12 +3695,13 @@
     ],
     "expected_output": "Frye v. United States, 293 F. 1013, 1014 (D.C. Cir. 1923)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0208",
@@ -3446,12 +3713,13 @@
     ],
     "expected_output": "Frye v. United States, 293 F. 1013, 1014 (D.C. Cir. 1923)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3464,11 +3732,13 @@
     ],
     "expected_output": "Frye v. United States, 293 F. 1013, 1014 (D.C. Cir. 1923)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3482,13 +3752,14 @@
     ],
     "expected_output": "Frye v. United States, 293 F. 1013, 1014 (D.C. Cir. 1923)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: court name not abbreviated per table T7; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: court name not abbreviated per Indigo R12.2; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0211",
@@ -3498,11 +3769,12 @@
     "expected_violations": [],
     "expected_output": "United States v. Alvarez, 638 F.3d 666, 670 (9th Cir. 2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3515,12 +3787,13 @@
     ],
     "expected_output": "United States v. Alvarez, 638 F.3d 666, 670 (9th Cir. 2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -3533,12 +3806,13 @@
     ],
     "expected_output": "United States v. Alvarez, 638 F.3d 666, 670 (9th Cir. 2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0214",
@@ -3550,12 +3824,13 @@
     ],
     "expected_output": "United States v. Alvarez, 638 F.3d 666, 670 (9th Cir. 2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3568,11 +3843,13 @@
     ],
     "expected_output": "United States v. Alvarez, 638 F.3d 666, 670 (9th Cir. 2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3586,13 +3863,14 @@
     ],
     "expected_output": "United States v. Alvarez, 638 F.3d 666, 670 (9th Cir. 2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0217",
@@ -3602,11 +3880,12 @@
     "expected_violations": [],
     "expected_output": "Katz v. Dole, 709 F.2d 251, 254 (4th Cir. 1983)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3619,12 +3898,13 @@
     ],
     "expected_output": "Katz v. Dole, 709 F.2d 251, 254 (4th Cir. 1983)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -3637,12 +3917,13 @@
     ],
     "expected_output": "Katz v. Dole, 709 F.2d 251, 254 (4th Cir. 1983)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0220",
@@ -3654,12 +3935,13 @@
     ],
     "expected_output": "Katz v. Dole, 709 F.2d 251, 254 (4th Cir. 1983)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3672,11 +3954,13 @@
     ],
     "expected_output": "Katz v. Dole, 709 F.2d 251, 254 (4th Cir. 1983)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3690,13 +3974,14 @@
     ],
     "expected_output": "Katz v. Dole, 709 F.2d 251, 254 (4th Cir. 1983)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0223",
@@ -3706,11 +3991,12 @@
     "expected_violations": [],
     "expected_output": "United States v. Dennis, 183 F.2d 201, 207 (2d Cir. 1950)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3723,12 +4009,13 @@
     ],
     "expected_output": "United States v. Dennis, 183 F.2d 201, 207 (2d Cir. 1950)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -3741,12 +4028,13 @@
     ],
     "expected_output": "United States v. Dennis, 183 F.2d 201, 207 (2d Cir. 1950)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0226",
@@ -3758,12 +4046,13 @@
     ],
     "expected_output": "United States v. Dennis, 183 F.2d 201, 207 (2d Cir. 1950)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3776,11 +4065,13 @@
     ],
     "expected_output": "United States v. Dennis, 183 F.2d 201, 207 (2d Cir. 1950)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3794,13 +4085,14 @@
     ],
     "expected_output": "United States v. Dennis, 183 F.2d 201, 207 (2d Cir. 1950)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0229",
@@ -3810,11 +4102,12 @@
     "expected_violations": [],
     "expected_output": "United States v. Doe, 465 F. Supp. 2d 100, 105 (S.D.N.Y. 2006)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3827,12 +4120,13 @@
     ],
     "expected_output": "United States v. Doe, 465 F. Supp. 2d 100, 105 (S.D.N.Y. 2006)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0231",
@@ -3844,12 +4138,13 @@
     ],
     "expected_output": "United States v. Doe, 465 F. Supp. 2d 100, 105 (S.D.N.Y. 2006)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3862,11 +4157,13 @@
     ],
     "expected_output": "United States v. Doe, 465 F. Supp. 2d 100, 105 (S.D.N.Y. 2006)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3880,13 +4177,14 @@
     ],
     "expected_output": "United States v. Doe, 465 F. Supp. 2d 100, 105 (S.D.N.Y. 2006)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: court name not abbreviated per table T7; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: court name not abbreviated per Indigo R12.2; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0234",
@@ -3896,11 +4194,12 @@
     "expected_violations": [],
     "expected_output": "Roe v. Doe Corp., 321 F. Supp. 2d 456, 460 (D. Mass. 2004)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -3913,12 +4212,13 @@
     ],
     "expected_output": "Roe v. Doe Corp., 321 F. Supp. 2d 456, 460 (D. Mass. 2004)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0236",
@@ -3930,12 +4230,13 @@
     ],
     "expected_output": "Roe v. Doe Corp., 321 F. Supp. 2d 456, 460 (D. Mass. 2004)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0237",
@@ -3947,12 +4248,13 @@
     ],
     "expected_output": "Roe v. Doe Corp., 321 F. Supp. 2d 456, 460 (D. Mass. 2004)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -3965,11 +4267,13 @@
     ],
     "expected_output": "Roe v. Doe Corp., 321 F. Supp. 2d 456, 460 (D. Mass. 2004)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -3983,12 +4287,13 @@
     ],
     "expected_output": "Roe v. Doe Corp., 321 F. Supp. 2d 456, 460 (D. Mass. 2004)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: court name not abbreviated per table T7; institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "multi-error: court name not abbreviated per Indigo R12.2; institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0240",
@@ -3998,11 +4303,12 @@
     "expected_violations": [],
     "expected_output": "Smith v. Barnhart, 293 F. Supp. 2d 252, 256 (E.D. Pa. 2003)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4015,12 +4321,13 @@
     ],
     "expected_output": "Smith v. Barnhart, 293 F. Supp. 2d 252, 256 (E.D. Pa. 2003)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0242",
@@ -4032,12 +4339,13 @@
     ],
     "expected_output": "Smith v. Barnhart, 293 F. Supp. 2d 252, 256 (E.D. Pa. 2003)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4050,11 +4358,13 @@
     ],
     "expected_output": "Smith v. Barnhart, 293 F. Supp. 2d 252, 256 (E.D. Pa. 2003)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4068,13 +4378,14 @@
     ],
     "expected_output": "Smith v. Barnhart, 293 F. Supp. 2d 252, 256 (E.D. Pa. 2003)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: court name not abbreviated per table T7; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: court name not abbreviated per Indigo R12.2; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0245",
@@ -4084,11 +4395,12 @@
     "expected_violations": [],
     "expected_output": "Doe v. Reno, 78 F. Supp. 1113, 1120 (N.D. Cal. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4101,12 +4413,13 @@
     ],
     "expected_output": "Doe v. Reno, 78 F. Supp. 1113, 1120 (N.D. Cal. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0247",
@@ -4118,12 +4431,13 @@
     ],
     "expected_output": "Doe v. Reno, 78 F. Supp. 1113, 1120 (N.D. Cal. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4136,11 +4450,13 @@
     ],
     "expected_output": "Doe v. Reno, 78 F. Supp. 1113, 1120 (N.D. Cal. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4154,13 +4470,14 @@
     ],
     "expected_output": "Doe v. Reno, 78 F. Supp. 1113, 1120 (N.D. Cal. 1999)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: court name not abbreviated per table T7; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: court name not abbreviated per Indigo R12.2; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0250",
@@ -4170,10 +4487,11 @@
     "expected_violations": [],
     "expected_output": "In re Winship, 397 U.S. 358, 364 (1970)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4186,11 +4504,12 @@
     ],
     "expected_output": "In re Winship, 397 U.S. 358, 364 (1970)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4201,10 +4520,11 @@
     "expected_violations": [],
     "expected_output": "United States v. Leon, 468 U.S. 897, 906 (1984)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4217,11 +4537,12 @@
     ],
     "expected_output": "United States v. Leon, 468 U.S. 897, 906 (1984)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4234,10 +4555,12 @@
     ],
     "expected_output": "United States v. Leon, 468 U.S. 897, 906 (1984)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4251,11 +4574,13 @@
     ],
     "expected_output": "United States v. Leon, 468 U.S. 897, 906 (1984)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4266,10 +4591,11 @@
     "expected_violations": [],
     "expected_output": "Chimel v. California, 395 U.S. 752, 762 (1969)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4282,11 +4608,12 @@
     ],
     "expected_output": "Chimel v. California, 395 U.S. 752, 762 (1969)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4299,10 +4626,12 @@
     ],
     "expected_output": "Chimel v. California, 395 U.S. 752, 762 (1969)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4316,11 +4645,13 @@
     ],
     "expected_output": "Chimel v. California, 395 U.S. 752, 762 (1969)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4331,10 +4662,11 @@
     "expected_violations": [],
     "expected_output": "Gregg v. Georgia, 428 U.S. 153, 169 (1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4347,11 +4679,12 @@
     ],
     "expected_output": "Gregg v. Georgia, 428 U.S. 153, 169 (1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4364,10 +4697,12 @@
     ],
     "expected_output": "Gregg v. Georgia, 428 U.S. 153, 169 (1976)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4381,11 +4716,13 @@
     ],
     "expected_output": "Gregg v. Georgia, 428 U.S. 153, 169 (1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4396,10 +4733,11 @@
     "expected_violations": [],
     "expected_output": "Batson v. Kentucky, 476 U.S. 79, 89 (1986)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4412,11 +4750,12 @@
     ],
     "expected_output": "Batson v. Kentucky, 476 U.S. 79, 89 (1986)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4429,10 +4768,12 @@
     ],
     "expected_output": "Batson v. Kentucky, 476 U.S. 79, 89 (1986)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4446,11 +4787,13 @@
     ],
     "expected_output": "Batson v. Kentucky, 476 U.S. 79, 89 (1986)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4461,10 +4804,11 @@
     "expected_violations": [],
     "expected_output": "Gonzales v. Raich, 545 U.S. 1, 9 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4477,11 +4821,12 @@
     ],
     "expected_output": "Gonzales v. Raich, 545 U.S. 1, 9 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4494,10 +4839,12 @@
     ],
     "expected_output": "Gonzales v. Raich, 545 U.S. 1, 9 (2005)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4511,11 +4858,13 @@
     ],
     "expected_output": "Gonzales v. Raich, 545 U.S. 1, 9 (2005)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4526,10 +4875,11 @@
     "expected_violations": [],
     "expected_output": "Wickard v. Filburn, 317 U.S. 111, 128 (1942)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4542,11 +4892,12 @@
     ],
     "expected_output": "Wickard v. Filburn, 317 U.S. 111, 128 (1942)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4559,10 +4910,12 @@
     ],
     "expected_output": "Wickard v. Filburn, 317 U.S. 111, 128 (1942)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4576,11 +4929,13 @@
     ],
     "expected_output": "Wickard v. Filburn, 317 U.S. 111, 128 (1942)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4591,10 +4946,11 @@
     "expected_violations": [],
     "expected_output": "Heart of Atlanta Motel, Inc. v. United States, 379 U.S. 241, 258 (1964)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4607,11 +4963,12 @@
     ],
     "expected_output": "Heart of Atlanta Motel, Inc. v. United States, 379 U.S. 241, 258 (1964)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4624,10 +4981,12 @@
     ],
     "expected_output": "Heart of Atlanta Motel, Inc. v. United States, 379 U.S. 241, 258 (1964)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4641,11 +5000,13 @@
     ],
     "expected_output": "Heart of Atlanta Motel, Inc. v. United States, 379 U.S. 241, 258 (1964)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4656,10 +5017,11 @@
     "expected_violations": [],
     "expected_output": "District of Columbia v. Heller, 554 U.S. 570, 595 (2008)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4672,11 +5034,12 @@
     ],
     "expected_output": "District of Columbia v. Heller, 554 U.S. 570, 595 (2008)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4689,10 +5052,12 @@
     ],
     "expected_output": "District of Columbia v. Heller, 554 U.S. 570, 595 (2008)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4706,11 +5071,13 @@
     ],
     "expected_output": "District of Columbia v. Heller, 554 U.S. 570, 595 (2008)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4721,10 +5088,11 @@
     "expected_violations": [],
     "expected_output": "McDonald v. City of Chicago, 561 U.S. 742, 750 (2010)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4737,11 +5105,12 @@
     ],
     "expected_output": "McDonald v. City of Chicago, 561 U.S. 742, 750 (2010)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4754,10 +5123,12 @@
     ],
     "expected_output": "McDonald v. City of Chicago, 561 U.S. 742, 750 (2010)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4771,11 +5142,13 @@
     ],
     "expected_output": "McDonald v. City of Chicago, 561 U.S. 742, 750 (2010)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4786,10 +5159,11 @@
     "expected_violations": [],
     "expected_output": "Citizens United v. FEC, 558 U.S. 310, 339 (2010)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4802,11 +5176,12 @@
     ],
     "expected_output": "Citizens United v. FEC, 558 U.S. 310, 339 (2010)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4819,10 +5194,12 @@
     ],
     "expected_output": "Citizens United v. FEC, 558 U.S. 310, 339 (2010)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4836,11 +5213,13 @@
     ],
     "expected_output": "Citizens United v. FEC, 558 U.S. 310, 339 (2010)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -4851,11 +5230,12 @@
     "expected_violations": [],
     "expected_output": "Shelby Cnty. v. Holder, 570 U.S. 529, 540 (2013)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6"
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4868,12 +5248,13 @@
     ],
     "expected_output": "Shelby Cnty. v. Holder, 570 U.S. 529, 540 (2013)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6"
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0294",
@@ -4885,12 +5266,13 @@
     ],
     "expected_output": "Shelby Cnty. v. Holder, 570 U.S. 529, 540 (2013)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB R11"
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4903,11 +5285,13 @@
     ],
     "expected_output": "Shelby Cnty. v. Holder, 570 U.S. 529, 540 (2013)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6"
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4921,13 +5305,14 @@
     ],
     "expected_output": "Shelby Cnty. v. Holder, 570 U.S. 529, 540 (2013)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T6",
-      "IB R11"
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0297",
@@ -4937,10 +5322,11 @@
     "expected_violations": [],
     "expected_output": "King v. Burwell, 576 U.S. 473, 485 (2015)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -4953,11 +5339,12 @@
     ],
     "expected_output": "King v. Burwell, 576 U.S. 473, 485 (2015)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -4970,10 +5357,12 @@
     ],
     "expected_output": "King v. Burwell, 576 U.S. 473, 485 (2015)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -4987,11 +5376,13 @@
     ],
     "expected_output": "King v. Burwell, 576 U.S. 473, 485 (2015)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -5002,10 +5393,11 @@
     "expected_violations": [],
     "expected_output": "Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338, 350 (2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5018,11 +5410,12 @@
     ],
     "expected_output": "Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338, 350 (2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5035,10 +5428,12 @@
     ],
     "expected_output": "Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338, 350 (2011)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5052,11 +5447,13 @@
     ],
     "expected_output": "Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338, 350 (2011)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -5067,10 +5464,11 @@
     "expected_violations": [],
     "expected_output": "Trump v. Hawaii, 138 S. Ct. 2392, 2403 (2018)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5083,11 +5481,12 @@
     ],
     "expected_output": "Trump v. Hawaii, 138 S. Ct. 2392, 2403 (2018)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5100,10 +5499,12 @@
     ],
     "expected_output": "Trump v. Hawaii, 138 S. Ct. 2392, 2403 (2018)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5117,11 +5518,13 @@
     ],
     "expected_output": "Trump v. Hawaii, 138 S. Ct. 2392, 2403 (2018)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -5132,10 +5535,11 @@
     "expected_violations": [],
     "expected_output": "Masterpiece Cakeshop, Ltd. v. Colo. C.R. Comm'n, 138 S. Ct. 1719, 1723 (2018)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5148,11 +5552,12 @@
     ],
     "expected_output": "Masterpiece Cakeshop, Ltd. v. Colo. C.R. Comm'n, 138 S. Ct. 1719, 1723 (2018)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5165,10 +5570,12 @@
     ],
     "expected_output": "Masterpiece Cakeshop, Ltd. v. Colo. C.R. Comm'n, 138 S. Ct. 1719, 1723 (2018)",
     "rules": [
-      "IB R10",
-      "IB T1"
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5182,11 +5589,13 @@
     ],
     "expected_output": "Masterpiece Cakeshop, Ltd. v. Colo. C.R. Comm'n, 138 S. Ct. 1719, 1723 (2018)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB R11"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -5197,11 +5606,12 @@
     "expected_violations": [],
     "expected_output": "People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5214,12 +5624,13 @@
     ],
     "expected_output": "People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5232,11 +5643,13 @@
     ],
     "expected_output": "People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5250,12 +5663,14 @@
     ],
     "expected_output": "People v. Defore, 150 N.E. 585, 587 (N.Y. 1926)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -5266,11 +5681,12 @@
     "expected_violations": [],
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5283,12 +5699,13 @@
     ],
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -5301,13 +5718,14 @@
     ],
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB T6"
+      "IB R12.2",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0320",
@@ -5319,12 +5737,13 @@
     ],
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5337,11 +5756,13 @@
     ],
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5355,14 +5776,15 @@
     ],
     "expected_output": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2",
-      "IB T6"
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0323",
@@ -5372,11 +5794,12 @@
     "expected_violations": [],
     "expected_output": "Li v. Yellow Cab Co., 532 P.2d 1226, 1230 (Cal. 1975)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5389,12 +5812,13 @@
     ],
     "expected_output": "Li v. Yellow Cab Co., 532 P.2d 1226, 1230 (Cal. 1975)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -5407,12 +5831,13 @@
     ],
     "expected_output": "Li v. Yellow Cab Co., 532 P.2d 1226, 1230 (Cal. 1975)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0326",
@@ -5424,12 +5849,13 @@
     ],
     "expected_output": "Li v. Yellow Cab Co., 532 P.2d 1226, 1230 (Cal. 1975)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5442,11 +5868,13 @@
     ],
     "expected_output": "Li v. Yellow Cab Co., 532 P.2d 1226, 1230 (Cal. 1975)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5460,13 +5888,14 @@
     ],
     "expected_output": "Li v. Yellow Cab Co., 532 P.2d 1226, 1230 (Cal. 1975)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0329",
@@ -5476,11 +5905,12 @@
     "expected_violations": [],
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5493,12 +5923,13 @@
     ],
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -5511,12 +5942,13 @@
     ],
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5529,11 +5961,13 @@
     ],
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5547,13 +5981,14 @@
     ],
     "expected_output": "Greenman v. Yuba Power Prods., Inc., 377 P.2d 897, 900 (Cal. 1963)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5564,11 +5999,12 @@
     "expected_violations": [],
     "expected_output": "Escola v. Coca Cola Bottling Co., 150 P.2d 436, 440 (Cal. 1944)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5581,12 +6017,13 @@
     ],
     "expected_output": "Escola v. Coca Cola Bottling Co., 150 P.2d 436, 440 (Cal. 1944)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -5599,12 +6036,13 @@
     ],
     "expected_output": "Escola v. Coca Cola Bottling Co., 150 P.2d 436, 440 (Cal. 1944)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0337",
@@ -5616,12 +6054,13 @@
     ],
     "expected_output": "Escola v. Coca Cola Bottling Co., 150 P.2d 436, 440 (Cal. 1944)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5634,11 +6073,13 @@
     ],
     "expected_output": "Escola v. Coca Cola Bottling Co., 150 P.2d 436, 440 (Cal. 1944)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5652,13 +6093,14 @@
     ],
     "expected_output": "Escola v. Coca Cola Bottling Co., 150 P.2d 436, 440 (Cal. 1944)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0340",
@@ -5668,11 +6110,12 @@
     "expected_violations": [],
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5685,12 +6128,13 @@
     ],
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -5703,12 +6147,13 @@
     ],
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5721,11 +6166,13 @@
     ],
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5739,13 +6186,14 @@
     ],
     "expected_output": "Dillon v. Legg, 441 P.2d 912, 916 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5756,11 +6204,12 @@
     "expected_violations": [],
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5773,12 +6222,13 @@
     ],
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -5791,12 +6241,13 @@
     ],
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5809,11 +6260,13 @@
     ],
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5827,13 +6280,14 @@
     ],
     "expected_output": "Henningsen v. Bloomfield Motors, Inc., 161 A.2d 69, 75 (N.J. 1960)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5844,11 +6298,12 @@
     "expected_violations": [],
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5861,12 +6316,13 @@
     ],
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -5879,12 +6335,13 @@
     ],
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5897,11 +6354,13 @@
     ],
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -5915,13 +6374,14 @@
     ],
     "expected_output": "Commonwealth v. Johnson, 515 N.E.2d 811, 815 (Mass. 1987)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5932,11 +6392,12 @@
     "expected_violations": [],
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -5949,12 +6410,13 @@
     ],
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -5967,12 +6429,13 @@
     ],
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -5985,11 +6448,13 @@
     ],
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6003,13 +6468,14 @@
     ],
     "expected_output": "People v. Johnson, 552 N.E.2d 950, 954 (Ill. 1990)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6020,11 +6486,12 @@
     "expected_violations": [],
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -6037,12 +6504,13 @@
     ],
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -6055,12 +6523,13 @@
     ],
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6073,11 +6542,13 @@
     ],
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6091,13 +6562,14 @@
     ],
     "expected_output": "Sindell v. Abbott Labs., 607 P.2d 924, 928 (Cal. 1980)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6108,11 +6580,12 @@
     "expected_violations": [],
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -6125,12 +6598,13 @@
     ],
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2"
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -6143,12 +6617,13 @@
     ],
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6161,11 +6636,13 @@
     ],
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6179,13 +6656,14 @@
     ],
     "expected_output": "Rowland v. Christian, 443 P.2d 561, 564 (Cal. 1968)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11.2",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6196,10 +6674,11 @@
     "expected_violations": [],
     "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -6212,11 +6691,12 @@
     ],
     "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0372",
@@ -6228,11 +6708,12 @@
     ],
     "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6245,10 +6726,12 @@
     ],
     "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6262,12 +6745,13 @@
     ],
     "expected_output": "Monell v. Dep't of Soc. Servs., 436 U.S. 658, 690 (1978)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0375",
@@ -6277,10 +6761,11 @@
     "expected_violations": [],
     "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -6293,11 +6778,12 @@
     ],
     "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0377",
@@ -6309,11 +6795,12 @@
     ],
     "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6326,10 +6813,12 @@
     ],
     "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
     "rules": [
-      "IB R10",
-      "IB T6"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6343,12 +6832,13 @@
     ],
     "expected_output": "Comm'r v. Duberstein, 363 U.S. 278, 285 (1960)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "style": "academic",
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0380",
@@ -6358,11 +6848,12 @@
     "expected_violations": [],
     "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -6375,12 +6866,13 @@
     ],
     "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6393,11 +6885,13 @@
     ],
     "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7"
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6411,12 +6905,14 @@
     ],
     "expected_output": "Vosburg v. Putney, 50 N.W. 403, 404 (Wis. 1891)",
     "rules": [
-      "IB R10",
+      "IB R11",
       "IB T1",
-      "IB T7",
-      "IB R11"
+      "IB R12.2",
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -6427,11 +6923,12 @@
     "expected_violations": [],
     "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -6444,12 +6941,13 @@
     ],
     "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -6462,12 +6960,13 @@
     ],
     "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0387",
@@ -6479,12 +6978,13 @@
     ],
     "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "notes": "institutional word not abbreviated per table T6"
+    "style": "academic",
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0388",
@@ -6496,12 +6996,13 @@
     ],
     "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6514,11 +7015,13 @@
     ],
     "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6532,13 +7035,14 @@
     ],
     "expected_output": "Gov't of V.I. v. Knight, 989 F.2d 619, 623 (3d Cir. 1993)",
     "rules": [
-      "IB R10",
-      "IB T6",
-      "IB T7",
-      "IB R11.2"
+      "IB R11",
+      "IB R11.3.1",
+      "IB R12.2",
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "style": "academic",
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0391",
@@ -6554,7 +7058,6 @@
       "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -6571,10 +7074,9 @@
       "IB R11",
       "IB T1",
       "IB R12.2",
-      "IB R11.2"
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -6590,12 +7092,10 @@
       "IB R2.1",
       "IB R11",
       "IB T1",
-      "IB R12.2",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "court name not abbreviated per table T7"
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0394",
@@ -6610,10 +7110,10 @@
       "IB R2.1",
       "IB R11",
       "IB T1",
-      "IB R12.2"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6630,10 +7130,9 @@
       "IB R11",
       "IB T1",
       "IB R12.2",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6652,7 +7151,6 @@
       "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -6670,12 +7168,10 @@
       "IB R11",
       "IB T1",
       "IB R12.2",
-      "IB R11.2",
-      "IB T7"
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0398",
@@ -6690,7 +7186,6 @@
       "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -6705,12 +7200,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R11.3.1",
-      "IB T6"
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "institutional word not abbreviated per table T6"
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0400",
@@ -6724,10 +7217,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R11.3.1"
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6743,10 +7236,9 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6764,7 +7256,6 @@
       "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -6781,11 +7272,10 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB T6"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0404",
@@ -6800,7 +7290,6 @@
       "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -6815,12 +7304,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R11.3.1",
-      "IB T6"
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "institutional word not abbreviated per table T6"
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0406",
@@ -6834,10 +7321,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R11.3.1"
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6853,10 +7340,9 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6874,7 +7360,6 @@
       "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -6891,11 +7376,10 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB T6"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0410",
@@ -6911,7 +7395,6 @@
       "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -6927,12 +7410,10 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB R12.2",
-      "IB T6"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "institutional word not abbreviated per table T6"
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0412",
@@ -6947,10 +7428,10 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB R12.2"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -6967,10 +7448,9 @@
       "IB R11",
       "IB R11.3.1",
       "IB R12.2",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -6989,7 +7469,6 @@
       "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7007,11 +7486,10 @@
       "IB R11",
       "IB R11.3.1",
       "IB R12.2",
-      "IB T6"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0416",
@@ -7025,7 +7503,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -7039,10 +7516,10 @@
     "expected_output": "*In re Winship*, 397 U.S. 358, 364 (1970)",
     "rules": [
       "IB R2.1",
-      "IB R11"
+      "IB R11",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -7059,7 +7536,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7074,10 +7550,10 @@
     "expected_output": "*In re Winship*, 397 U.S. 358, 364 (1970)",
     "rules": [
       "IB R2.1",
-      "IB R11"
+      "IB R11",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; case name not italicized (practitioner style)"
   },
   {
@@ -7093,7 +7569,6 @@
       "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -7108,12 +7583,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R11.3.1",
-      "IB T6"
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "institutional word not abbreviated per table T6"
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0422",
@@ -7127,10 +7600,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R11.3.1"
+      "IB R11.3.1",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -7146,10 +7619,9 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -7167,7 +7639,6 @@
       "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7184,11 +7655,10 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB T6"
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "multi-error: institutional word not abbreviated per table T6; superfluous \"at\" before pincite in a full citation"
+    "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "case-0426",
@@ -7204,7 +7674,6 @@
       "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -7221,10 +7690,9 @@
       "IB R11",
       "IB R11.3.1",
       "IB R12.2",
-      "IB R11.2"
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -7240,12 +7708,10 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB R12.2",
-      "IB T7"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "court name not abbreviated per table T7"
+    "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0429",
@@ -7260,12 +7726,10 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB R12.2",
-      "IB T6"
+      "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "institutional word not abbreviated per table T6"
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0430",
@@ -7280,10 +7744,10 @@
       "IB R2.1",
       "IB R11",
       "IB R11.3.1",
-      "IB R12.2"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -7300,10 +7764,9 @@
       "IB R11",
       "IB R11.3.1",
       "IB R12.2",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -7322,7 +7785,6 @@
       "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7340,12 +7802,10 @@
       "IB R11",
       "IB R11.3.1",
       "IB R12.2",
-      "IB R11.2",
-      "IB T7"
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per table T7"
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
     "id": "case-0434",
@@ -7359,7 +7819,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -7373,10 +7832,10 @@
     "expected_output": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
     "rules": [
       "IB R2.1",
-      "IB R11"
+      "IB R11",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -7391,10 +7850,9 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -7411,7 +7869,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7427,10 +7884,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R10"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -7447,7 +7904,6 @@
       "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -7464,10 +7920,9 @@
       "IB R11",
       "IB T1",
       "IB R12.2",
-      "IB R11.2"
+      "IB R11.6.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
@@ -7484,11 +7939,10 @@
       "IB R11",
       "IB T1",
       "IB R12.2",
-      "IB T6"
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "institutional word not abbreviated per table T6"
+    "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0442",
@@ -7503,10 +7957,10 @@
       "IB R2.1",
       "IB R11",
       "IB T1",
-      "IB R12.2"
+      "IB R12.2",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -7523,10 +7977,9 @@
       "IB R11",
       "IB T1",
       "IB R12.2",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -7545,7 +7998,6 @@
       "IB R12.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7563,12 +8015,11 @@
       "IB R11",
       "IB T1",
       "IB R12.2",
-      "IB R11.2",
-      "IB T6"
+      "IB R11.6.2",
+      "IB R11.3.1"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
-    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per table T6"
+    "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per Indigo R11.3.1"
   },
   {
     "id": "case-0446",
@@ -7582,7 +8033,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -7596,10 +8046,10 @@
     "expected_output": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
     "rules": [
       "IB R2.1",
-      "IB R11"
+      "IB R11",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -7614,10 +8064,9 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -7634,7 +8083,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7650,10 +8098,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R10"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -7668,7 +8116,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -7682,10 +8129,10 @@
     "expected_output": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
     "rules": [
       "IB R2.1",
-      "IB R11"
+      "IB R11",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -7700,10 +8147,9 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -7720,7 +8166,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7736,10 +8181,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R10"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
@@ -7754,7 +8199,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "clean canonical"
   },
   {
@@ -7768,10 +8212,10 @@
     "expected_output": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
     "rules": [
       "IB R2.1",
-      "IB R11"
+      "IB R11",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
@@ -7786,10 +8230,9 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R10"
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "\"v.\" written as \"vs.\""
   },
   {
@@ -7806,7 +8249,6 @@
       "IB R11"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "case name not italicized (practitioner style)"
   },
   {
@@ -7822,10 +8264,10 @@
     "rules": [
       "IB R2.1",
       "IB R11",
-      "IB R10"
+      "IB R11.6",
+      "IB R11.2"
     ],
     "provenance": "synthetic",
-    "style": "practitioner",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   }
 ]

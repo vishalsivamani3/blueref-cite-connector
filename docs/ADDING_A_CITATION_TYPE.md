@@ -95,7 +95,7 @@ npm run typecheck && npm run lint && npm run corpus:gen && npm run test:ci && np
   "input": "Smith v. Jones, 123 F. 3d 456, 460 (7th Circuit 1999)",
   "expected_violations": ["SPACING", "DATE_COURT"],
   "expected_output": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
-  "rules": ["IB R11.2", "IB T7"],
+  "rules": ["IB R11.6.2", "IB R12.2"],
   "provenance": "synthetic",
   "notes": "spacing in F.3d; court abbreviation"
 }

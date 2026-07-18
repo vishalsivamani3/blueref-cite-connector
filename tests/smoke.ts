@@ -60,39 +60,39 @@ async function main(): Promise<void> {
   assert(Array.isArray(listed.limitations) && listed.limitations.length > 0, 'list_supported reports limitations');
   assert(listed.supportedTypes.includes('case'), 'list_supported reports "case" as supported (Phase 1)');
 
-  // A clean case passes deterministically.
+  // Default style is practitioner (Indigo R2.1): a clean italicized case passes.
   const clean = textOf(
     await client.callTool({
       name: 'check_citation',
-      arguments: { input: 'Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)' },
+      arguments: { input: '*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)' },
     }),
-  ) as { confidence: string; pass: boolean; disclaimer: string };
+  ) as { confidence: string; style: string; pass: boolean; disclaimer: string };
   assert(clean.confidence === 'deterministic', 'check_citation handles a case deterministically');
-  assert(clean.pass === true, 'a clean case passes');
+  assert(clean.style === 'practitioner', 'default style is practitioner');
+  assert(clean.pass === true, 'a clean practitioner case passes');
   assert(clean.disclaimer === DISCLAIMER, 'check_citation includes the exact disclaimer');
 
-  // A malformed case is corrected with the right violation codes.
+  // Academic style: the roman (non-italicized) case name is correct.
+  const acad = textOf(
+    await client.callTool({
+      name: 'check_citation',
+      arguments: { input: 'Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)', style: 'academic' },
+    }),
+  ) as { style: string; pass: boolean };
+  assert(acad.style === 'academic', 'style echoed as academic');
+  assert(acad.pass === true, 'a clean academic (roman) case passes');
+
+  // Default (practitioner): a roman + malformed case is fully corrected, incl. TYPEFACE.
   const bad = textOf(
     await client.callTool({
       name: 'check_citation',
       arguments: { input: 'Smith v. Jones, 123 F. 3d 456, 460 (7th Circuit 1999)' },
     }),
-  ) as { confidence: string; pass: boolean; corrected: string; violations: Array<{ code: string }> };
+  ) as { pass: boolean; corrected: string; violations: Array<{ code: string }> };
   assert(bad.pass === false, 'a malformed case fails');
-  assert(bad.corrected === 'Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)', 'malformed case is corrected exactly');
+  assert(bad.corrected === '*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)', 'practitioner default corrects + italicizes');
   const codes = bad.violations.map((v) => v.code).sort();
-  assert(codes.join(',') === 'DATE_COURT,SPACING', `expected SPACING+DATE_COURT, got ${codes.join(',')}`);
-
-  // Practitioner style (Indigo R2.1): a roman case name is flagged TYPEFACE and italicized.
-  const prac = textOf(
-    await client.callTool({
-      name: 'check_citation',
-      arguments: { input: 'Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)', style: 'practitioner' },
-    }),
-  ) as { style: string; pass: boolean; corrected: string; violations: Array<{ code: string }> };
-  assert(prac.style === 'practitioner', 'style echoed as practitioner');
-  assert(prac.corrected === '*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)', 'practitioner italicizes the case name');
-  assert(prac.violations.some((v) => v.code === 'TYPEFACE'), 'practitioner flags TYPEFACE on a roman case name');
+  assert(codes.join(',') === 'DATE_COURT,SPACING,TYPEFACE', `expected DATE_COURT,SPACING,TYPEFACE, got ${codes.join(',')}`);
 
   // An out-of-scope input (a statute — no module yet) is refused, not guessed.
   const unsupported = textOf(

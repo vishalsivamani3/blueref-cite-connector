@@ -38,7 +38,9 @@ const rows: Row[] = [];
 
 for (const c of candidates) {
   const probe = (c.notes ?? '').replace(/^probe:\s*/, '').split('.')[0] ?? '';
-  const res = checkCitation(c.input ?? '');
+  // Candidates are written in roman (academic) form; check them as such so the
+  // worksheet stays meaningful under the practitioner default.
+  const res = checkCitation(c.input ?? '', undefined, c.style ?? 'academic');
 
   if (res.confidence === 'unsupported') {
     rows.push({ id: c.id, verdict: 'REFUSED', probe, detail: 'module returned unsupported' });

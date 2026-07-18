@@ -2,17 +2,29 @@
 
 **A deterministic legal citation checker and formatter, exposed over [MCP](https://modelcontextprotocol.io).**
 
-BlueRef checks and formats legal citations under academic conventions using a
-pure, deterministic engine — no LLM in the parse/check/format path, so it does
-not hallucinate. Any MCP client (Claude Desktop, Claude Code, other agents) can
-connect to it for citation ground truth.
+BlueRef checks and formats legal citations using a pure, deterministic engine —
+no LLM in the parse/check/format path, so it does not hallucinate. Any MCP client
+(Claude Desktop, Claude Code, other agents) can connect to it for citation ground
+truth.
 
-Rules and abbreviation tables are derived from **[The Indigo Book](https://law.resource.org/pub/us/code/blue/IndigoBook.html)** (CC0, public domain).
+Rules and abbreviation tables are derived from **[The Indigo Book](https://indigobook.github.io)** (CC0, public domain).
+
+**Two styles.** BlueRef supports the two typeface conventions:
+
+- **`practitioner`** (default) — standard legal documents: briefs, motions,
+  memoranda. This is the convention The Indigo Book actually specifies (case names
+  and titles italicized, journals roman; Indigo R2.1), so it is fully derivable
+  from our CC0 source.
+- **`academic`** — law-review articles (large-and-small caps). The Indigo Book
+  puts a full treatment of academic typeface **out of scope** (Indigo R1.2), so
+  this style is secondary and its typeface details are not Indigo-derived.
+
+Pass `style` to any tool; it defaults to `practitioner`.
 
 > ⚠️ **Status: pre-release (Phase 1).** The **case** citation type is implemented
-> and passing its corpus slice at 100% (367 entries, growing toward 500). Statutes,
-> periodicals, and books are not registered yet, so they return
-> `confidence: "unsupported"` by design. See [the roadmap](#roadmap).
+> and passing its corpus slice at 100% (460 entries across both styles, growing
+> toward 500). Statutes, periodicals, and books are not registered yet, so they
+> return `confidence: "unsupported"` by design. See [the roadmap](#roadmap).
 
 ## Disclaimer
 
@@ -64,17 +76,16 @@ guessed.
 
 | Type | Status | Indigo Book |
 |---|---|---|
-| Cases | ✅ Phase 1 (100% on slice) | R10, T1, T6, T7 |
-| Statutes | 🚧 Phase 2 | R12, T1 |
-| Periodicals (law review articles) | 🚧 Phase 2 | R13, T13 |
-| Books | 🚧 Phase 3 | R15 |
-| Short forms (id., supra) | 🚧 Phase 3 | R11, R16 |
+| Cases | ✅ Phase 1 (100% on slice) | R2.1, R11, R11.3.1, R12.2, T1/T3 |
+| Statutes | 🚧 Phase 2 | R16, R17 |
+| Periodicals (journal articles) | 🚧 Phase 2 | R30 |
+| Books | 🚧 Phase 3 | R28 |
+| Short forms (id., supra) | 🚧 Phase 3 | R2.1, R11.4 |
 
-Academic (Whitepages-style) format only.
+Both `practitioner` (default) and `academic` styles; see above.
 
 ## Limitations (v1 non-goals)
 
-- Bluepages / court-document formatting (v2 candidate).
 - Foreign, international, and treaty citations.
 - Legislative history, regulations, and administrative materials beyond basic statutory codes.
 - **Format only.** Does not verify a source exists, is quoted accurately, or supports the proposition cited.
@@ -113,7 +124,7 @@ as one PR. The hard part should be knowing the citation rules, not the codebase.
 | Phase | Scope |
 |---|---|
 | 0 | Foundations: MCP server, corpus schema, harness, CI. ✅ |
-| 1 | Cases at 99.5%. ✅ module done (367-entry slice at 100%; growing to 500, short forms pending). |
+| 1 | Cases at 99.5%. ✅ module done (460-entry slice at 100%, both styles; growing to 500, short forms pending). |
 | 2 | Statutes + periodicals at 99.5%. |
 | 3 | Books + `check_document` id./supra resolution. |
 | 4 | Field test on real law-review footnotes; harden. |

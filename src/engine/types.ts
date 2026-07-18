@@ -58,8 +58,12 @@ export type Style = 'academic' | 'practitioner';
 
 export const STYLES: readonly Style[] = ['academic', 'practitioner'];
 
-/** Default style until the primary-style decision is finalized. */
-export const DEFAULT_STYLE: Style = 'academic';
+/**
+ * Default style. Practitioner is the primary style: it is the convention The
+ * Indigo Book (our CC0 source) actually specifies (R2.1), and academic typeface
+ * is out of Indigo scope (R1.2). Owner-confirmed 2026-07-18.
+ */
+export const DEFAULT_STYLE: Style = 'practitioner';
 
 /**
  * A structured citation. Component fields are type-specific and intentionally
@@ -84,7 +88,7 @@ export interface Violation {
   code: ErrorCode;
   /** Human-readable explanation of what is wrong. */
   message: string;
-  /** Indigo Book rule reference(s), e.g. "IB R11.2", "IB T7". */
+  /** Indigo Book rule reference(s), e.g. "IB R11", "IB R12.2". */
   rule: string;
   /** The corrected fragment for this specific violation. */
   fix: string;

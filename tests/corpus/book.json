@@ -7,9 +7,10 @@
     "expected_violations": [],
     "expected_output": "%John Rawls, A Theory of Justice% 11 (1971)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -22,10 +23,11 @@
     ],
     "expected_output": "%John Rawls, A Theory of Justice% 11 (1971)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -36,9 +38,10 @@
     "expected_violations": [],
     "expected_output": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -51,10 +54,11 @@
     ],
     "expected_output": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -67,9 +71,10 @@
     ],
     "expected_output": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
   },
   {
@@ -83,10 +88,11 @@
     ],
     "expected_output": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: journal/book text not in large-and-small caps; ordinal edition abbreviation not in academic form (2d/3d)"
   },
   {
@@ -97,9 +103,10 @@
     "expected_violations": [],
     "expected_output": "%Ronald Dworkin, Taking Rights Seriously% 22 (1977)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -112,10 +119,11 @@
     ],
     "expected_output": "%Ronald Dworkin, Taking Rights Seriously% 22 (1977)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -126,9 +134,10 @@
     "expected_violations": [],
     "expected_output": "%Richard A. Posner, Economic Analysis of Law% 45 (9th ed. 2014)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -141,10 +150,11 @@
     ],
     "expected_output": "%Richard A. Posner, Economic Analysis of Law% 45 (9th ed. 2014)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -155,9 +165,10 @@
     "expected_violations": [],
     "expected_output": "%Oliver Wendell Holmes, The Common Law% 5 (1881)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -170,10 +181,11 @@
     ],
     "expected_output": "%Oliver Wendell Holmes, The Common Law% 5 (1881)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -184,9 +196,10 @@
     "expected_violations": [],
     "expected_output": "%Guido Calabresi, The Costs of Accidents% 24 (1970)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -199,10 +212,11 @@
     ],
     "expected_output": "%Guido Calabresi, The Costs of Accidents% 24 (1970)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -213,9 +227,10 @@
     "expected_violations": [],
     "expected_output": "%Antonin Scalia & Bryan A. Garner, Reading Law% 56 (2012)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -228,10 +243,11 @@
     ],
     "expected_output": "%Antonin Scalia & Bryan A. Garner, Reading Law% 56 (2012)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -242,9 +258,10 @@
     "expected_violations": [],
     "expected_output": "%Benjamin N. Cardozo, The Nature of the Judicial Process% 51 (1921)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -257,10 +274,11 @@
     ],
     "expected_output": "%Benjamin N. Cardozo, The Nature of the Judicial Process% 51 (1921)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -271,9 +289,10 @@
     "expected_violations": [],
     "expected_output": "%Lawrence Lessig, Code and Other Laws of Cyberspace% 30 (1999)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -286,10 +305,11 @@
     ],
     "expected_output": "%Lawrence Lessig, Code and Other Laws of Cyberspace% 30 (1999)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -300,9 +320,10 @@
     "expected_violations": [],
     "expected_output": "%Bruce Ackerman, We the People% 40 (1991)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -315,10 +336,11 @@
     ],
     "expected_output": "%Bruce Ackerman, We the People% 40 (1991)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -329,9 +351,10 @@
     "expected_violations": [],
     "expected_output": "%Henry M. Hart & Albert M. Sacks, The Legal Process% 100 (1994)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -344,10 +367,11 @@
     ],
     "expected_output": "%Henry M. Hart & Albert M. Sacks, The Legal Process% 100 (1994)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -358,9 +382,10 @@
     "expected_violations": [],
     "expected_output": "%Karl N. Llewellyn, The Bramble Bush% 12 (1930)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -373,10 +398,11 @@
     ],
     "expected_output": "%Karl N. Llewellyn, The Bramble Bush% 12 (1930)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -387,9 +413,10 @@
     "expected_violations": [],
     "expected_output": "%Roscoe Pound, An Introduction to the Philosophy of Law% 47 (1922)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -402,10 +429,11 @@
     ],
     "expected_output": "%Roscoe Pound, An Introduction to the Philosophy of Law% 47 (1922)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -416,9 +444,10 @@
     "expected_violations": [],
     "expected_output": "%John Hart Ely, Democracy and Distrust% 87 (1980)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -431,10 +460,11 @@
     ],
     "expected_output": "%John Hart Ely, Democracy and Distrust% 87 (1980)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -445,9 +475,10 @@
     "expected_violations": [],
     "expected_output": "%Grant Gilmore, The Death of Contract% 55 (2d ed. 1995)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -460,10 +491,11 @@
     ],
     "expected_output": "%Grant Gilmore, The Death of Contract% 55 (2d ed. 1995)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -476,9 +508,10 @@
     ],
     "expected_output": "%Grant Gilmore, The Death of Contract% 55 (2d ed. 1995)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
   },
   {
@@ -492,10 +525,11 @@
     ],
     "expected_output": "%Grant Gilmore, The Death of Contract% 55 (2d ed. 1995)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "multi-error: journal/book text not in large-and-small caps; ordinal edition abbreviation not in academic form (2d/3d)"
   },
   {
@@ -506,9 +540,10 @@
     "expected_violations": [],
     "expected_output": "%Melvin A. Eisenberg, The Nature of the Common Law% 14 (1988)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -521,10 +556,11 @@
     ],
     "expected_output": "%Melvin A. Eisenberg, The Nature of the Common Law% 14 (1988)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -535,9 +571,10 @@
     "expected_violations": [],
     "expected_output": "%Frederick Schauer, Playing by the Rules% 38 (1991)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -550,10 +587,11 @@
     ],
     "expected_output": "%Frederick Schauer, Playing by the Rules% 38 (1991)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -564,9 +602,10 @@
     "expected_violations": [],
     "expected_output": "%Cass R. Sunstein, Legal Reasoning and Political Conflict% 62 (1996)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -579,10 +618,11 @@
     ],
     "expected_output": "%Cass R. Sunstein, Legal Reasoning and Political Conflict% 62 (1996)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -593,9 +633,10 @@
     "expected_violations": [],
     "expected_output": "%William L. Prosser, Handbook of the Law of Torts% 145 (4th ed. 1971)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -608,10 +649,11 @@
     ],
     "expected_output": "%William L. Prosser, Handbook of the Law of Torts% 145 (4th ed. 1971)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -622,9 +664,10 @@
     "expected_violations": [],
     "expected_output": "%Wesley Newcomb Hohfeld, Fundamental Legal Conceptions% 23 (1919)",
     "rules": [
-      "IB R15"
+      "IB R28"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
@@ -637,10 +680,11 @@
     ],
     "expected_output": "%Wesley Newcomb Hohfeld, Fundamental Legal Conceptions% 23 (1919)",
     "rules": [
-      "IB R15",
-      "IB R13"
+      "IB R28",
+      "IB R30"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   }
 ]
