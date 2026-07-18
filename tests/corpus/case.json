@@ -8530,5 +8530,72 @@
     ],
     "provenance": "synthetic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0475",
+    "type": "case",
+    "mode": "check",
+    "input": "Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)",
+    "expected_violations": [
+      "PARSE_FAIL"
+    ],
+    "expected_output": "Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)",
+    "rules": [
+      "IB R11",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "adversarial: subsequent history (aff'd): refuse, do not silently mis-parse"
+  },
+  {
+    "id": "case-0476",
+    "type": "case",
+    "mode": "check",
+    "input": "Doe v. Roe, 123 F.3d 456, 460 (7th Cir. 1999), cert. denied, 528 U.S. 1002 (1999)",
+    "expected_violations": [
+      "PARSE_FAIL"
+    ],
+    "expected_output": "Doe v. Roe, 123 F.3d 456, 460 (7th Cir. 1999), cert. denied, 528 U.S. 1002 (1999)",
+    "rules": [
+      "IB R11",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "adversarial: subsequent history (cert. denied): refuse, do not silently mis-parse"
+  },
+  {
+    "id": "case-0477",
+    "type": "case",
+    "mode": "check",
+    "input": "Smith v. Jones, 123 F.3d 456 (7th Cir. 1999); Doe v. Roe, 456 F.3d 789 (8th Cir. 2000)",
+    "expected_violations": [
+      "PARSE_FAIL"
+    ],
+    "expected_output": "Smith v. Jones, 123 F.3d 456 (7th Cir. 1999); Doe v. Roe, 456 F.3d 789 (8th Cir. 2000)",
+    "rules": [
+      "IB R11"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "adversarial: string cite (two citations): refuse, check each separately"
+  },
+  {
+    "id": "case-0478",
+    "type": "case",
+    "mode": "check",
+    "input": "United States v. Doe, 123 F.3d 456, 460 (7th Cir. 1999), rev'd, 530 U.S. 100 (2000)",
+    "expected_violations": [
+      "PARSE_FAIL"
+    ],
+    "expected_output": "United States v. Doe, 123 F.3d 456, 460 (7th Cir. 1999), rev'd, 530 U.S. 100 (2000)",
+    "rules": [
+      "IB R11",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "adversarial: subsequent history (rev'd): refuse, do not silently mis-parse"
   }
 ]

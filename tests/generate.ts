@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import type { CitationType, ErrorCode, Style } from '../src/engine/types.js';
 import { DEFAULT_STYLE } from '../src/engine/types.js';
-import { SEEDS, type Seed } from './seeds.js';
+import { ADVERSARIAL, SEEDS, type Seed } from './seeds.js';
 import { mutatorsFor } from './mutators.js';
 import { validateEntry, type CorpusEntry } from './schema.js';
 
@@ -108,6 +108,24 @@ function generateForType(type: CitationType): CorpusEntry[] {
       }
     }
     if (multi) entries.push(multi);
+  }
+
+  // Adversarial bucket: inputs stated outright with their expected outcome
+  // (chiefly loud refusals on constructs we do not model). PRD Section 7.3.
+  for (const adv of ADVERSARIAL.filter((a) => a.type === type)) {
+    const advStyle: Style = adv.style ?? 'academic';
+    entries.push({
+      id: nextId(),
+      type,
+      mode: 'check',
+      input: adv.input,
+      expected_violations: adv.expected_violations,
+      expected_output: adv.expected_output,
+      rules: adv.rules,
+      provenance: 'synthetic',
+      ...(advStyle !== DEFAULT_STYLE ? { style: advStyle } : {}),
+      notes: `adversarial: ${adv.notes}`,
+    });
   }
 
   return entries;

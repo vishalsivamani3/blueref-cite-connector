@@ -199,12 +199,12 @@
     "type": "case",
     "mode": "check",
     "input": "Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)",
-    "expected_violations": [],
+    "expected_violations": ["PARSE_FAIL"],
     "expected_output": "Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)",
-    "rules": ["IB R10", "IB R10.8"],
+    "rules": ["IB R11", "IB R2.1"],
     "provenance": "synthetic",
     "candidate_for": "hand-verified",
     "source": "288 F.3d 732 (6th Cir. 2002), aff'd 539 U.S. 306 (2003) — subsequent history",
-    "notes": "probe: SUBSEQUENT HISTORY (multiple parentheticals). Confidence: med. Expect module DIVERGE (parses only the last paren)."
+    "notes": "probe: SUBSEQUENT HISTORY (multiple parentheticals). The citation is VALID; full subsequent-history support is a future item. Correct behaviour for now is a LOUD REFUSAL (PARSE_FAIL), not a silent mis-parse. Before 2026-07-18 this returned pass:true having swallowed an entire citation into the case name."
   }
 ]
