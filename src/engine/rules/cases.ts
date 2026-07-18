@@ -104,11 +104,28 @@ REPORTER_LOOKUP.tokens.sort((a, b) => b.length - a.length);
 const REPORTER_ALT = REPORTER_LOOKUP.tokens.map(escapeRegExp).join('|');
 
 /**
+ * Nominative reporters (Indigo T1.1): pre-1875 U.S. Reports are cited with the
+ * nominative volume and reporter parenthetically between the official reporter
+ * and the first page — "5 U.S. (1 Cranch) 137".
+ */
+const NOMINATIVES = (reportersData as { nominatives?: Record<string, TableEntry> }).nominatives ?? {};
+const NOMINATIVE_ALT = Object.keys(NOMINATIVES)
+  .sort((a, b) => b.length - a.length)
+  .map(escapeRegExp)
+  .join('|');
+
+/**
  * The citation "core" at the end of the pre-parenthetical segment:
  * <vol> <reporter> <page>[, [at ]<pincite>]
  */
+/**
+ * The citation core at the end of the pre-parenthetical segment:
+ *   <vol> <reporter> [(<nomVol> <nominative>)] <page>[, [at ]<pincite>]
+ * Groups: 1 volume, 2 reporter, 3 nominative volume, 4 nominative reporter,
+ *         5 first page, 6 stray "at", 7 pincite.
+ */
 const CORE_RE = new RegExp(
-  `(\\d+)\\s+(${REPORTER_ALT})\\s+(\\d+)(?:,\\s*(at\\s+)?(\\d+))?\\s*$`,
+  `(\\d+)\\s+(${REPORTER_ALT})\\s+(?:\\((\\d+)\\s+(${NOMINATIVE_ALT})\\)\\s+)?(\\d+)(?:,\\s*(at\\s+)?(\\d+))?\\s*$`,
 );
 
 /** Same core, unanchored — used to detect a *second* citation left in the name. */
@@ -167,6 +184,9 @@ interface CaseComponents {
   name: string;
   volume: string;
   reporter: string;
+  /** Nominative reporter volume + name, for pre-1875 U.S. Reports (Indigo T1.1). */
+  nomVolume?: string;
+  nomReporter?: string;
   page: string;
   pincite?: string;
   court?: string;
@@ -205,8 +225,8 @@ function parse(input: string): ParseResult {
   if (!core) {
     return { ok: false, code: 'PARSE_FAIL', message: 'Could not locate <vol> <reporter> <page> before the parenthetical.' };
   }
-  const [, volume, reporter, page, , pincite] = core;
-  const hasAt = Boolean(core[4]);
+  const [, volume, reporter, nomVolume, nomReporter, page, , pincite] = core;
+  const hasAt = Boolean(core[6]);
   let name = prefix.slice(0, core.index).replace(/,\s*$/, '').trim();
   // Strip italic typeface markers around the whole case name (Indigo R2.1); the
   // style-check below verifies whether they should be present.
@@ -252,6 +272,7 @@ function parse(input: string): ParseResult {
     nameItalic,
     ...(pincite ? { pincite } : {}),
     ...(court ? { court } : {}),
+    ...(nomReporter && nomVolume ? { nomVolume, nomReporter } : {}),
   };
   return {
     ok: true,
@@ -263,7 +284,8 @@ function parse(input: string): ParseResult {
 function assemble(c: CaseComponents): string {
   const pin = c.pincite ? `, ${c.pincite}` : '';
   const paren = c.court ? `(${c.court} ${c.year})` : `(${c.year})`;
-  return `${c.name}, ${c.volume} ${c.reporter} ${c.page}${pin} ${paren}`;
+  const nom = c.nomReporter && c.nomVolume ? ` (${c.nomVolume} ${c.nomReporter})` : '';
+  return `${c.name}, ${c.volume} ${c.reporter}${nom} ${c.page}${pin} ${paren}`;
 }
 
 function check(parsed: Citation, style: Style): CheckResult {
@@ -393,6 +415,9 @@ function check(parsed: Citation, style: Style): CheckResult {
     year: c.year,
     ...(c.pincite ? { pincite: c.pincite } : {}),
     ...(court ? { court } : {}),
+    ...(c.nomReporter && c.nomVolume
+      ? { nomVolume: c.nomVolume, nomReporter: c.nomReporter }
+      : {}),
   });
 
   return { pass: violations.length === 0, violations, corrected };
@@ -410,6 +435,9 @@ function format(components: CitationInput, style: Style): string {
     year: String(c.year ?? ''),
     ...(c.pincite ? { pincite: String(c.pincite) } : {}),
     ...(c.court ? { court: String(c.court) } : {}),
+    ...(c.nomReporter && c.nomVolume
+      ? { nomVolume: String(c.nomVolume), nomReporter: String(c.nomReporter) }
+      : {}),
   });
 }
 

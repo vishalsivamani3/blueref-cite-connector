@@ -4,6 +4,20 @@
     "note": "Seed set for Phase 0. The long tail of reporters is filled in per-phase, pinned by corpus entries (PRD Section 11.2). Keys are canonical reporter abbreviations; `full` is the reporter name; `variants` are common malformed/spelled-out forms that should be normalized to the key. Extended 2026-07-18 by direct extraction from The Indigo Book 2.0 tables T1/T3 (CC0); existing entries and their variants preserved.",
     "provenance": "indigo-book-derived"
   },
+  "_nominatives_meta": {
+    "source": "The Indigo Book 2.0 (CC0), Table T1.1 (United States Reports)",
+    "note": "Nominative reporters for pre-1875 U.S. Reports, cited parenthetically between the official reporter and the first page, e.g. 'Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)'. Dates are the volumes each nominative covers, per T1.",
+    "provenance": "indigo-book-derived"
+  },
+  "nominatives": {
+    "Wall.": { "full": "Wallace", "dates": "1863-1874", "variants": [] },
+    "Black": { "full": "Black", "dates": "1861-1862", "variants": [] },
+    "How.": { "full": "Howard", "dates": "1843-1860", "variants": [] },
+    "Pet.": { "full": "Peters", "dates": "1828-1842", "variants": [] },
+    "Wheat.": { "full": "Wheaton", "dates": "1816-1827", "variants": [] },
+    "Cranch": { "full": "Cranch", "dates": "1801-1815", "variants": [] },
+    "Dall.": { "full": "Dallas", "dates": "1790-1800", "variants": [] }
+  },
   "reporters": {
     "U.S.": {
       "full": "United States Reports",

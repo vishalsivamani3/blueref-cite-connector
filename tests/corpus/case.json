@@ -7309,6 +7309,465 @@
     "id": "case-0405",
     "type": "case",
     "mode": "check",
+    "input": "Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)",
+    "expected_violations": [],
+    "expected_output": "Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0406",
+    "type": "case",
+    "mode": "check",
+    "input": "Marbury v. Madison, 5 U.S. (1 Cranch) 137, at 177 (1803)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0407",
+    "type": "case",
+    "mode": "check",
+    "input": "Marbury vs. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0408",
+    "type": "case",
+    "mode": "check",
+    "input": "Marbury vs. Madison, 5 U.S. (1 Cranch) 137, at 177 (1803)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0409",
+    "type": "case",
+    "mode": "check",
+    "input": "McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316, 407 (1819)",
+    "expected_violations": [],
+    "expected_output": "McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316, 407 (1819)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0410",
+    "type": "case",
+    "mode": "check",
+    "input": "McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316, at 407 (1819)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316, 407 (1819)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0411",
+    "type": "case",
+    "mode": "check",
+    "input": "McCulloch vs. Maryland, 17 U.S. (4 Wheat.) 316, 407 (1819)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316, 407 (1819)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0412",
+    "type": "case",
+    "mode": "check",
+    "input": "McCulloch vs. Maryland, 17 U.S. (4 Wheat.) 316, at 407 (1819)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316, 407 (1819)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0413",
+    "type": "case",
+    "mode": "check",
+    "input": "Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1, 189 (1824)",
+    "expected_violations": [],
+    "expected_output": "Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1, 189 (1824)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0414",
+    "type": "case",
+    "mode": "check",
+    "input": "Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1, at 189 (1824)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1, 189 (1824)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0415",
+    "type": "case",
+    "mode": "check",
+    "input": "Gibbons vs. Ogden, 22 U.S. (9 Wheat.) 1, 189 (1824)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1, 189 (1824)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0416",
+    "type": "case",
+    "mode": "check",
+    "input": "Gibbons vs. Ogden, 22 U.S. (9 Wheat.) 1, at 189 (1824)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1, 189 (1824)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0417",
+    "type": "case",
+    "mode": "check",
+    "input": "Martin v. Hunter's Lessee, 14 U.S. (1 Wheat.) 304, 324 (1816)",
+    "expected_violations": [],
+    "expected_output": "Martin v. Hunter's Lessee, 14 U.S. (1 Wheat.) 304, 324 (1816)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0418",
+    "type": "case",
+    "mode": "check",
+    "input": "Martin v. Hunter's Lessee, 14 U.S. (1 Wheat.) 304, at 324 (1816)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Martin v. Hunter's Lessee, 14 U.S. (1 Wheat.) 304, 324 (1816)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0419",
+    "type": "case",
+    "mode": "check",
+    "input": "Martin vs. Hunter's Lessee, 14 U.S. (1 Wheat.) 304, 324 (1816)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Martin v. Hunter's Lessee, 14 U.S. (1 Wheat.) 304, 324 (1816)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0420",
+    "type": "case",
+    "mode": "check",
+    "input": "Martin vs. Hunter's Lessee, 14 U.S. (1 Wheat.) 304, at 324 (1816)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "Martin v. Hunter's Lessee, 14 U.S. (1 Wheat.) 304, 324 (1816)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0421",
+    "type": "case",
+    "mode": "check",
+    "input": "Dred Scott v. Sandford, 60 U.S. (19 How.) 393, 404 (1857)",
+    "expected_violations": [],
+    "expected_output": "Dred Scott v. Sandford, 60 U.S. (19 How.) 393, 404 (1857)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0422",
+    "type": "case",
+    "mode": "check",
+    "input": "Dred Scott v. Sandford, 60 U.S. (19 How.) 393, at 404 (1857)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Dred Scott v. Sandford, 60 U.S. (19 How.) 393, 404 (1857)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0423",
+    "type": "case",
+    "mode": "check",
+    "input": "Dred Scott vs. Sandford, 60 U.S. (19 How.) 393, 404 (1857)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Dred Scott v. Sandford, 60 U.S. (19 How.) 393, 404 (1857)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0424",
+    "type": "case",
+    "mode": "check",
+    "input": "Dred Scott vs. Sandford, 60 U.S. (19 How.) 393, at 404 (1857)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "Dred Scott v. Sandford, 60 U.S. (19 How.) 393, 404 (1857)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0425",
+    "type": "case",
+    "mode": "check",
+    "input": "Ex parte Milligan, 71 U.S. (4 Wall.) 2, 120 (1866)",
+    "expected_violations": [],
+    "expected_output": "Ex parte Milligan, 71 U.S. (4 Wall.) 2, 120 (1866)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0426",
+    "type": "case",
+    "mode": "check",
+    "input": "Ex parte Milligan, 71 U.S. (4 Wall.) 2, at 120 (1866)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Ex parte Milligan, 71 U.S. (4 Wall.) 2, 120 (1866)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0427",
+    "type": "case",
+    "mode": "check",
+    "input": "Chisholm v. Georgia, 2 U.S. (2 Dall.) 419, 429 (1793)",
+    "expected_violations": [],
+    "expected_output": "Chisholm v. Georgia, 2 U.S. (2 Dall.) 419, 429 (1793)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "case-0428",
+    "type": "case",
+    "mode": "check",
+    "input": "Chisholm v. Georgia, 2 U.S. (2 Dall.) 419, at 429 (1793)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Chisholm v. Georgia, 2 U.S. (2 Dall.) 419, 429 (1793)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "case-0429",
+    "type": "case",
+    "mode": "check",
+    "input": "Chisholm vs. Georgia, 2 U.S. (2 Dall.) 419, 429 (1793)",
+    "expected_violations": [
+      "PUNCTUATION"
+    ],
+    "expected_output": "Chisholm v. Georgia, 2 U.S. (2 Dall.) 419, 429 (1793)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "\"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0430",
+    "type": "case",
+    "mode": "check",
+    "input": "Chisholm vs. Georgia, 2 U.S. (2 Dall.) 419, at 429 (1793)",
+    "expected_violations": [
+      "PINCITE",
+      "PUNCTUATION"
+    ],
+    "expected_output": "Chisholm v. Georgia, 2 U.S. (2 Dall.) 419, 429 (1793)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.6",
+      "IB R11.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
+  },
+  {
+    "id": "case-0431",
+    "type": "case",
+    "mode": "check",
     "input": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
     "expected_violations": [],
     "expected_output": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
@@ -7322,7 +7781,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0406",
+    "id": "case-0432",
     "type": "case",
     "mode": "check",
     "input": "*Smith v. Jones*, 123 F. 3d 456, 460 (7th Cir. 1999)",
@@ -7341,7 +7800,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "case-0407",
+    "id": "case-0433",
     "type": "case",
     "mode": "check",
     "input": "*Smith v. Jones*, 123 F.3d 456, 460 (7th Circuit 1999)",
@@ -7359,7 +7818,7 @@
     "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
-    "id": "case-0408",
+    "id": "case-0434",
     "type": "case",
     "mode": "check",
     "input": "*Smith v. Jones*, 123 F.3d 456, at 460 (7th Cir. 1999)",
@@ -7378,7 +7837,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0409",
+    "id": "case-0435",
     "type": "case",
     "mode": "check",
     "input": "*Smith vs. Jones*, 123 F.3d 456, 460 (7th Cir. 1999)",
@@ -7397,7 +7856,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0410",
+    "id": "case-0436",
     "type": "case",
     "mode": "check",
     "input": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
@@ -7415,7 +7874,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0411",
+    "id": "case-0437",
     "type": "case",
     "mode": "check",
     "input": "*Smith v. Jones*, 123 F. 3d 456, 460 (7th Circuit 1999)",
@@ -7435,7 +7894,7 @@
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
-    "id": "case-0412",
+    "id": "case-0438",
     "type": "case",
     "mode": "check",
     "input": "*Brown v. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
@@ -7450,7 +7909,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0413",
+    "id": "case-0439",
     "type": "case",
     "mode": "check",
     "input": "*Brown v. Board of Educ.*, 347 U.S. 483, 495 (1954)",
@@ -7467,7 +7926,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0414",
+    "id": "case-0440",
     "type": "case",
     "mode": "check",
     "input": "*Brown v. Bd. of Educ.*, 347 U.S. 483, at 495 (1954)",
@@ -7485,7 +7944,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0415",
+    "id": "case-0441",
     "type": "case",
     "mode": "check",
     "input": "*Brown vs. Bd. of Educ.*, 347 U.S. 483, 495 (1954)",
@@ -7503,7 +7962,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0416",
+    "id": "case-0442",
     "type": "case",
     "mode": "check",
     "input": "Brown v. Bd. of Educ., 347 U.S. 483, 495 (1954)",
@@ -7520,7 +7979,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0417",
+    "id": "case-0443",
     "type": "case",
     "mode": "check",
     "input": "*Brown v. Board of Educ.*, 347 U.S. 483, at 495 (1954)",
@@ -7539,7 +7998,7 @@
     "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0418",
+    "id": "case-0444",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, 78 (1938)",
@@ -7554,7 +8013,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0419",
+    "id": "case-0445",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Company v. Tompkins*, 304 U.S. 64, 78 (1938)",
@@ -7571,7 +8030,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0420",
+    "id": "case-0446",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Co. v. Tompkins*, 304 U.S. 64, at 78 (1938)",
@@ -7589,7 +8048,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0421",
+    "id": "case-0447",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Co. vs. Tompkins*, 304 U.S. 64, 78 (1938)",
@@ -7607,7 +8066,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0422",
+    "id": "case-0448",
     "type": "case",
     "mode": "check",
     "input": "Erie R.R. Co. v. Tompkins, 304 U.S. 64, 78 (1938)",
@@ -7624,7 +8083,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0423",
+    "id": "case-0449",
     "type": "case",
     "mode": "check",
     "input": "*Erie R.R. Company v. Tompkins*, 304 U.S. 64, at 78 (1938)",
@@ -7643,7 +8102,7 @@
     "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0424",
+    "id": "case-0450",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
@@ -7659,7 +8118,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0425",
+    "id": "case-0451",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf v. Long Island R.R. Company*, 162 N.E. 99, 100 (N.Y. 1928)",
@@ -7677,7 +8136,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0426",
+    "id": "case-0452",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf v. Long Island R.R. Co.*, 162 N.E. 99, at 100 (N.Y. 1928)",
@@ -7696,7 +8155,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0427",
+    "id": "case-0453",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf vs. Long Island R.R. Co.*, 162 N.E. 99, 100 (N.Y. 1928)",
@@ -7715,7 +8174,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0428",
+    "id": "case-0454",
     "type": "case",
     "mode": "check",
     "input": "Palsgraf v. Long Island R.R. Co., 162 N.E. 99, 100 (N.Y. 1928)",
@@ -7733,7 +8192,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0429",
+    "id": "case-0455",
     "type": "case",
     "mode": "check",
     "input": "*Palsgraf v. Long Island R.R. Company*, 162 N.E. 99, at 100 (N.Y. 1928)",
@@ -7753,7 +8212,7 @@
     "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0430",
+    "id": "case-0456",
     "type": "case",
     "mode": "check",
     "input": "*In re Winship*, 397 U.S. 358, 364 (1970)",
@@ -7767,7 +8226,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0431",
+    "id": "case-0457",
     "type": "case",
     "mode": "check",
     "input": "*In re Winship*, 397 U.S. 358, at 364 (1970)",
@@ -7784,7 +8243,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0432",
+    "id": "case-0458",
     "type": "case",
     "mode": "check",
     "input": "In re Winship, 397 U.S. 358, 364 (1970)",
@@ -7800,7 +8259,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0433",
+    "id": "case-0459",
     "type": "case",
     "mode": "check",
     "input": "In re Winship, 397 U.S. 358, at 364 (1970)",
@@ -7818,7 +8277,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0434",
+    "id": "case-0460",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, 587 (1952)",
@@ -7833,7 +8292,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0435",
+    "id": "case-0461",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Company v. Sawyer*, 343 U.S. 579, 587 (1952)",
@@ -7850,7 +8309,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0436",
+    "id": "case-0462",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Co. v. Sawyer*, 343 U.S. 579, at 587 (1952)",
@@ -7868,7 +8327,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0437",
+    "id": "case-0463",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Co. vs. Sawyer*, 343 U.S. 579, 587 (1952)",
@@ -7886,7 +8345,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0438",
+    "id": "case-0464",
     "type": "case",
     "mode": "check",
     "input": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579, 587 (1952)",
@@ -7903,7 +8362,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0439",
+    "id": "case-0465",
     "type": "case",
     "mode": "check",
     "input": "*Youngstown Sheet & Tube Company v. Sawyer*, 343 U.S. 579, at 587 (1952)",
@@ -7922,7 +8381,7 @@
     "notes": "multi-error: institutional word not abbreviated per Indigo R11.3.1; superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0440",
+    "id": "case-0466",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
@@ -7938,7 +8397,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0441",
+    "id": "case-0467",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F. 3d 34, 46 (D.C. Cir. 2001)",
@@ -7957,7 +8416,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "case-0442",
+    "id": "case-0468",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Circuit 2001)",
@@ -7975,7 +8434,7 @@
     "notes": "court name not abbreviated per Indigo R12.2"
   },
   {
-    "id": "case-0443",
+    "id": "case-0469",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corporation*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
@@ -7993,7 +8452,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0444",
+    "id": "case-0470",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F.3d 34, at 46 (D.C. Cir. 2001)",
@@ -8012,7 +8471,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0445",
+    "id": "case-0471",
     "type": "case",
     "mode": "check",
     "input": "*United States vs. Microsoft Corp.*, 253 F.3d 34, 46 (D.C. Cir. 2001)",
@@ -8031,7 +8490,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0446",
+    "id": "case-0472",
     "type": "case",
     "mode": "check",
     "input": "United States v. Microsoft Corp., 253 F.3d 34, 46 (D.C. Cir. 2001)",
@@ -8049,7 +8508,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0447",
+    "id": "case-0473",
     "type": "case",
     "mode": "check",
     "input": "*United States v. Microsoft Corp.*, 253 F. 3d 34, 46 (D.C. Circuit 2001)",
@@ -8069,7 +8528,7 @@
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); court name not abbreviated per Indigo R12.2"
   },
   {
-    "id": "case-0448",
+    "id": "case-0474",
     "type": "case",
     "mode": "check",
     "input": "*Miranda v. Arizona*, 384 U.S. 436, 444 (1966)",
@@ -8083,7 +8542,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0449",
+    "id": "case-0475",
     "type": "case",
     "mode": "check",
     "input": "*Miranda v. Arizona*, 384 U.S. 436, at 444 (1966)",
@@ -8100,7 +8559,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0450",
+    "id": "case-0476",
     "type": "case",
     "mode": "check",
     "input": "*Miranda vs. Arizona*, 384 U.S. 436, 444 (1966)",
@@ -8117,7 +8576,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0451",
+    "id": "case-0477",
     "type": "case",
     "mode": "check",
     "input": "Miranda v. Arizona, 384 U.S. 436, 444 (1966)",
@@ -8133,7 +8592,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0452",
+    "id": "case-0478",
     "type": "case",
     "mode": "check",
     "input": "*Miranda vs. Arizona*, 384 U.S. 436, at 444 (1966)",
@@ -8152,7 +8611,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0453",
+    "id": "case-0479",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
@@ -8168,7 +8627,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0454",
+    "id": "case-0480",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P. 2d 334, 340 (Cal. 1976)",
@@ -8187,7 +8646,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "case-0455",
+    "id": "case-0481",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of University of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
@@ -8206,7 +8665,7 @@
     "notes": "institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0456",
+    "id": "case-0482",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of Univ. of Cal.*, 551 P.2d 334, at 340 (Cal. 1976)",
@@ -8225,7 +8684,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0457",
+    "id": "case-0483",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff vs. Regents of Univ. of Cal.*, 551 P.2d 334, 340 (Cal. 1976)",
@@ -8244,7 +8703,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0458",
+    "id": "case-0484",
     "type": "case",
     "mode": "check",
     "input": "Tarasoff v. Regents of Univ. of Cal., 551 P.2d 334, 340 (Cal. 1976)",
@@ -8262,7 +8721,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0459",
+    "id": "case-0485",
     "type": "case",
     "mode": "check",
     "input": "*Tarasoff v. Regents of University of Cal.*, 551 P. 2d 334, 340 (Cal. 1976)",
@@ -8283,7 +8742,7 @@
     "notes": "multi-error: erroneous space in reporter series (e.g. F.3d written F. 3d); institutional word not abbreviated per Indigo R11.3.1"
   },
   {
-    "id": "case-0460",
+    "id": "case-0486",
     "type": "case",
     "mode": "check",
     "input": "*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)",
@@ -8297,7 +8756,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0461",
+    "id": "case-0487",
     "type": "case",
     "mode": "check",
     "input": "*Ashcroft v. Iqbal*, 556 U.S. 662, at 678 (2009)",
@@ -8314,7 +8773,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0462",
+    "id": "case-0488",
     "type": "case",
     "mode": "check",
     "input": "*Ashcroft vs. Iqbal*, 556 U.S. 662, 678 (2009)",
@@ -8331,7 +8790,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0463",
+    "id": "case-0489",
     "type": "case",
     "mode": "check",
     "input": "Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)",
@@ -8347,7 +8806,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0464",
+    "id": "case-0490",
     "type": "case",
     "mode": "check",
     "input": "*Ashcroft vs. Iqbal*, 556 U.S. 662, at 678 (2009)",
@@ -8366,7 +8825,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0465",
+    "id": "case-0491",
     "type": "case",
     "mode": "check",
     "input": "*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)",
@@ -8380,7 +8839,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0466",
+    "id": "case-0492",
     "type": "case",
     "mode": "check",
     "input": "*Gideon v. Wainwright*, 372 U.S. 335, at 344 (1963)",
@@ -8397,7 +8856,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0467",
+    "id": "case-0493",
     "type": "case",
     "mode": "check",
     "input": "*Gideon vs. Wainwright*, 372 U.S. 335, 344 (1963)",
@@ -8414,7 +8873,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0468",
+    "id": "case-0494",
     "type": "case",
     "mode": "check",
     "input": "Gideon v. Wainwright, 372 U.S. 335, 344 (1963)",
@@ -8430,7 +8889,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0469",
+    "id": "case-0495",
     "type": "case",
     "mode": "check",
     "input": "*Gideon vs. Wainwright*, 372 U.S. 335, at 344 (1963)",
@@ -8449,7 +8908,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0470",
+    "id": "case-0496",
     "type": "case",
     "mode": "check",
     "input": "*Katz v. United States*, 389 U.S. 347, 351 (1967)",
@@ -8463,7 +8922,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "case-0471",
+    "id": "case-0497",
     "type": "case",
     "mode": "check",
     "input": "*Katz v. United States*, 389 U.S. 347, at 351 (1967)",
@@ -8480,7 +8939,7 @@
     "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
-    "id": "case-0472",
+    "id": "case-0498",
     "type": "case",
     "mode": "check",
     "input": "*Katz vs. United States*, 389 U.S. 347, 351 (1967)",
@@ -8497,7 +8956,7 @@
     "notes": "\"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0473",
+    "id": "case-0499",
     "type": "case",
     "mode": "check",
     "input": "Katz v. United States, 389 U.S. 347, 351 (1967)",
@@ -8513,7 +8972,7 @@
     "notes": "case name not italicized (practitioner style)"
   },
   {
-    "id": "case-0474",
+    "id": "case-0500",
     "type": "case",
     "mode": "check",
     "input": "*Katz vs. United States*, 389 U.S. 347, at 351 (1967)",
@@ -8532,7 +8991,7 @@
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; \"v.\" written as \"vs.\""
   },
   {
-    "id": "case-0475",
+    "id": "case-0501",
     "type": "case",
     "mode": "check",
     "input": "Grutter v. Bollinger, 288 F.3d 732, 740 (6th Cir. 2002), aff'd, 539 U.S. 306 (2003)",
@@ -8549,7 +9008,7 @@
     "notes": "adversarial: subsequent history (aff'd): refuse, do not silently mis-parse"
   },
   {
-    "id": "case-0476",
+    "id": "case-0502",
     "type": "case",
     "mode": "check",
     "input": "Doe v. Roe, 123 F.3d 456, 460 (7th Cir. 1999), cert. denied, 528 U.S. 1002 (1999)",
@@ -8566,7 +9025,7 @@
     "notes": "adversarial: subsequent history (cert. denied): refuse, do not silently mis-parse"
   },
   {
-    "id": "case-0477",
+    "id": "case-0503",
     "type": "case",
     "mode": "check",
     "input": "Smith v. Jones, 123 F.3d 456 (7th Cir. 1999); Doe v. Roe, 456 F.3d 789 (8th Cir. 2000)",
@@ -8582,7 +9041,7 @@
     "notes": "adversarial: string cite (two citations): refuse, check each separately"
   },
   {
-    "id": "case-0478",
+    "id": "case-0504",
     "type": "case",
     "mode": "check",
     "input": "United States v. Doe, 123 F.3d 456, 460 (7th Cir. 1999), rev'd, 530 U.S. 100 (2000)",
