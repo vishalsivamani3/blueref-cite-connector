@@ -1,0 +1,54 @@
+{
+  "name": "blueref",
+  "version": "0.1.0",
+  "description": "Deterministic legal citation checker and formatter, exposed over MCP. Academic (Indigo Book-derived) citation format.",
+  "license": "MIT",
+  "author": "Vishal Sivamani",
+  "type": "module",
+  "bin": {
+    "blueref": "dist/server.js"
+  },
+  "main": "dist/server.js",
+  "files": [
+    "dist",
+    "src/data",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node scripts/copy-data.mjs",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint . --ext .ts",
+    "corpus:gen": "tsx tests/generate.ts",
+    "test": "tsx tests/harness.ts",
+    "test:ci": "tsx tests/harness.ts --ci",
+    "smoke": "npm run build && tsx tests/smoke.ts"
+  },
+  "keywords": [
+    "legal",
+    "citation",
+    "mcp",
+    "model-context-protocol",
+    "law",
+    "law-review",
+    "cite-check",
+    "indigo-book"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": "^8.57.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.5"
+  }
+}

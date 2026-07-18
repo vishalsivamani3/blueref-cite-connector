@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Corpus is reproducible and committed
+        run: |
+          npm run corpus:gen
+          if ! git diff --quiet -- tests/corpus; then
+            echo "::error::Committed corpus differs from generator output. Run 'npm run corpus:gen' and commit."
+            git --no-pager diff --stat -- tests/corpus
+            exit 1
+          fi
+
+      - name: Corpus accuracy report (gate)
+        run: |
+          set -o pipefail
+          npm run test:ci 2>&1 | tee corpus-report.txt
+          {
+            echo '## BlueRef corpus accuracy'
+            echo ''
+            echo '```'
+            cat corpus-report.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: MCP server smoke test
+        run: npx tsx tests/smoke.ts

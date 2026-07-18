@@ -1,0 +1,13 @@
+{
+  "phase": 0,
+  "accuracyFloor": 0.0,
+  "note": "Phase 0 (PRD Section 7.1): the harness must run and report accuracy against the corpus before any rule module exists; there is no accuracy gate yet, so the floor is 0. Raise this as each phase lands (Phase 1 case slice -> 0.995, ...). The v1 release gate is 0.995 over >=1200 entries (PRD Sections 7.1, 7.2).",
+  "releaseMinCounts": {
+    "case": 500,
+    "statute": 300,
+    "periodical": 250,
+    "book": 150
+  },
+  "releaseTotal": 1200,
+  "releaseAccuracyFloor": 0.995
+}

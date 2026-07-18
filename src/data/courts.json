@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "source": "The Indigo Book (CC0), Table T7-style court abbreviations",
+    "note": "Seed set for Phase 0. `canonical` is the correct abbreviation; `variants` are common spelled-out or malformed forms.",
+    "provenance": "indigo-book-derived"
+  },
+  "courts": {
+    "1st Cir.": { "full": "United States Court of Appeals for the First Circuit", "variants": ["1st Circuit", "1 Cir.", "First Cir."] },
+    "2d Cir.": { "full": "United States Court of Appeals for the Second Circuit", "variants": ["2nd Cir.", "2d Circuit", "2nd Circuit", "Second Cir."] },
+    "3d Cir.": { "full": "United States Court of Appeals for the Third Circuit", "variants": ["3rd Cir.", "3d Circuit", "3rd Circuit", "Third Cir."] },
+    "4th Cir.": { "full": "United States Court of Appeals for the Fourth Circuit", "variants": ["4th Circuit", "Fourth Cir."] },
+    "5th Cir.": { "full": "United States Court of Appeals for the Fifth Circuit", "variants": ["5th Circuit", "Fifth Cir."] },
+    "6th Cir.": { "full": "United States Court of Appeals for the Sixth Circuit", "variants": ["6th Circuit", "Sixth Cir."] },
+    "7th Cir.": { "full": "United States Court of Appeals for the Seventh Circuit", "variants": ["7th Circuit", "Seventh Cir."] },
+    "8th Cir.": { "full": "United States Court of Appeals for the Eighth Circuit", "variants": ["8th Circuit", "Eighth Cir."] },
+    "9th Cir.": { "full": "United States Court of Appeals for the Ninth Circuit", "variants": ["9th Circuit", "Ninth Cir."] },
+    "10th Cir.": { "full": "United States Court of Appeals for the Tenth Circuit", "variants": ["10th Circuit", "Tenth Cir."] },
+    "11th Cir.": { "full": "United States Court of Appeals for the Eleventh Circuit", "variants": ["11th Circuit", "Eleventh Cir."] },
+    "D.C. Cir.": { "full": "United States Court of Appeals for the D.C. Circuit", "variants": ["DC Cir.", "D.C. Circuit", "D. C. Cir."] },
+    "Fed. Cir.": { "full": "United States Court of Appeals for the Federal Circuit", "variants": ["Federal Cir.", "Fed. Circuit"] },
+    "S.D.N.Y.": { "full": "United States District Court for the Southern District of New York", "variants": ["SDNY", "S.D. N.Y.", "S.D.N.Y"] },
+    "E.D. Pa.": { "full": "United States District Court for the Eastern District of Pennsylvania", "variants": ["E.D.Pa.", "E.D. Penn."] },
+    "N.D. Cal.": { "full": "United States District Court for the Northern District of California", "variants": ["N.D.Cal.", "N.D. Calif."] },
+    "D. Mass.": { "full": "United States District Court for the District of Massachusetts", "variants": ["D.Mass.", "D. Mass"] }
+  }
+}

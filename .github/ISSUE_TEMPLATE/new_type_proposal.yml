@@ -1,0 +1,40 @@
+name: New citation type proposal
+description: Propose support for a new citation type (routes scope-creep requests through a defined process).
+title: '[new-type] '
+labels: ['new-type']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A new citation type is one `RuleModule` file + data tables + a minimum
+        100-entry corpus slice at 99.5%, submitted as one PR (PRD Section 8). See
+        docs/ADDING_A_CITATION_TYPE.md. Bluepages / court-document formatting is a
+        v2 candidate and out of scope for v1 (PRD Section 3, 11.4).
+  - type: input
+    id: type
+    attributes:
+      label: Citation type
+      description: e.g. "regulation", "constitutional provision", "court filing".
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example citations
+      description: 3-5 canonical examples in academic format, with Indigo Book rule references.
+    validations:
+      required: true
+  - type: input
+    id: rules
+    attributes:
+      label: Governing Indigo Book rules
+      description: Which Indigo Book rule(s) and tables define this type?
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why this type
+      description: Roughly how common is it in academic footnotes? Who needs it?
+    validations:
+      required: false

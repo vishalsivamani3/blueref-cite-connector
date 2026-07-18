@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "source": "The Indigo Book (CC0), Table T6-style case-name and institutional word abbreviations",
+    "note": "Seed set for Phase 0. Keys are unabbreviated words (lowercase for matching); values are the canonical abbreviation. Applied to case names and institutional author names per Indigo Book rules.",
+    "provenance": "indigo-book-derived"
+  },
+  "words": {
+    "association": "Ass'n",
+    "brothers": "Bros.",
+    "company": "Co.",
+    "corporation": "Corp.",
+    "incorporated": "Inc.",
+    "limited": "Ltd.",
+    "and": "&",
+    "department": "Dep't",
+    "development": "Dev.",
+    "district": "Dist.",
+    "east": "E.",
+    "eastern": "E.",
+    "federal": "Fed.",
+    "government": "Gov't",
+    "international": "Int'l",
+    "manufacturing": "Mfg.",
+    "national": "Nat'l",
+    "north": "N.",
+    "northern": "N.",
+    "number": "No.",
+    "railroad": "R.R.",
+    "railway": "Ry.",
+    "south": "S.",
+    "southern": "S.",
+    "university": "Univ.",
+    "west": "W.",
+    "western": "W."
+  }
+}

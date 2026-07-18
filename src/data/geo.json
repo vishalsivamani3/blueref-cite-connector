@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "source": "The Indigo Book (CC0), Table T10-style geographic abbreviations",
+    "note": "Seed set for Phase 0. Keys are full geographic names; values are the canonical abbreviation used in citations (states, some countries).",
+    "provenance": "indigo-book-derived"
+  },
+  "states": {
+    "Alabama": "Ala.",
+    "Alaska": "Alaska",
+    "Arizona": "Ariz.",
+    "Arkansas": "Ark.",
+    "California": "Cal.",
+    "Colorado": "Colo.",
+    "Connecticut": "Conn.",
+    "Delaware": "Del.",
+    "Florida": "Fla.",
+    "Georgia": "Ga.",
+    "Illinois": "Ill.",
+    "Indiana": "Ind.",
+    "Massachusetts": "Mass.",
+    "Michigan": "Mich.",
+    "Minnesota": "Minn.",
+    "New York": "N.Y.",
+    "North Carolina": "N.C.",
+    "Ohio": "Ohio",
+    "Pennsylvania": "Pa.",
+    "Texas": "Tex.",
+    "Virginia": "Va.",
+    "Washington": "Wash.",
+    "Wisconsin": "Wis."
+  }
+}

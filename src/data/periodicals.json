@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "source": "The Indigo Book (CC0), Table T13-style periodical title abbreviations",
+    "note": "Seed set for Phase 0. `canonical` is the correct small-caps abbreviation (typeface applied by the formatter); `variants` are common spelled-out or malformed forms.",
+    "provenance": "indigo-book-derived"
+  },
+  "periodicals": {
+    "Harv. L. Rev.": { "full": "Harvard Law Review", "variants": ["Harvard Law Review", "Harv. L. Rev", "Harv L Rev"] },
+    "Yale L.J.": { "full": "Yale Law Journal", "variants": ["Yale Law Journal", "Yale L. J.", "Yale LJ"] },
+    "Stan. L. Rev.": { "full": "Stanford Law Review", "variants": ["Stanford Law Review", "Stan. L. Rev"] },
+    "Colum. L. Rev.": { "full": "Columbia Law Review", "variants": ["Columbia Law Review", "Colum. L. Rev"] },
+    "U. Chi. L. Rev.": { "full": "University of Chicago Law Review", "variants": ["University of Chicago Law Review", "U. Chi. L. Rev"] },
+    "Cal. L. Rev.": { "full": "California Law Review", "variants": ["California Law Review", "Cal. L. Rev"] },
+    "Mich. L. Rev.": { "full": "Michigan Law Review", "variants": ["Michigan Law Review", "Mich. L. Rev"] },
+    "Va. L. Rev.": { "full": "Virginia Law Review", "variants": ["Virginia Law Review", "Va. L. Rev"] },
+    "N.Y.U. L. Rev.": { "full": "New York University Law Review", "variants": ["New York University Law Review", "NYU L. Rev."] },
+    "Geo. L.J.": { "full": "Georgetown Law Journal", "variants": ["Georgetown Law Journal", "Geo. L. J."] },
+    "Cornell L. Rev.": { "full": "Cornell Law Review", "variants": ["Cornell Law Review", "Cornell L. Rev"] },
+    "U. Pa. L. Rev.": { "full": "University of Pennsylvania Law Review", "variants": ["University of Pennsylvania Law Review", "U. Pa. L. Rev"] }
+  }
+}

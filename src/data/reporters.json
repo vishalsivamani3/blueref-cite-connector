@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "source": "The Indigo Book (CC0), Table T1-style reporter abbreviations",
+    "note": "Seed set for Phase 0. The long tail of reporters is filled in per-phase, pinned by corpus entries (PRD Section 11.2). Keys are canonical reporter abbreviations; `full` is the reporter name; `variants` are common malformed/spelled-out forms that should be normalized to the key.",
+    "provenance": "indigo-book-derived"
+  },
+  "reporters": {
+    "U.S.": { "full": "United States Reports", "variants": ["US", "U. S.", "U.S"] },
+    "S. Ct.": { "full": "Supreme Court Reporter", "variants": ["S.Ct.", "S. Ct", "Sup. Ct."] },
+    "L. Ed.": { "full": "Lawyers' Edition", "variants": ["L.Ed.", "L. Ed"] },
+    "L. Ed. 2d": { "full": "Lawyers' Edition, Second Series", "variants": ["L.Ed.2d", "L. Ed. 2d.", "L.Ed. 2d"] },
+    "F.": { "full": "Federal Reporter", "variants": ["Fed.", "F"] },
+    "F.2d": { "full": "Federal Reporter, Second Series", "variants": ["F. 2d", "F.2d.", "F 2d"] },
+    "F.3d": { "full": "Federal Reporter, Third Series", "variants": ["F. 3d", "F.3d.", "F 3d"] },
+    "F. Supp.": { "full": "Federal Supplement", "variants": ["F.Supp.", "F. Supp"] },
+    "F. Supp. 2d": { "full": "Federal Supplement, Second Series", "variants": ["F.Supp.2d", "F. Supp. 2d."] },
+    "F. Supp. 3d": { "full": "Federal Supplement, Third Series", "variants": ["F.Supp.3d", "F. Supp. 3d."] },
+    "A.": { "full": "Atlantic Reporter", "variants": ["A"] },
+    "A.2d": { "full": "Atlantic Reporter, Second Series", "variants": ["A. 2d", "A.2d."] },
+    "A.3d": { "full": "Atlantic Reporter, Third Series", "variants": ["A. 3d", "A.3d."] },
+    "N.E.": { "full": "North Eastern Reporter", "variants": ["N. E.", "NE"] },
+    "N.E.2d": { "full": "North Eastern Reporter, Second Series", "variants": ["N.E. 2d", "N. E. 2d"] },
+    "N.E.3d": { "full": "North Eastern Reporter, Third Series", "variants": ["N.E. 3d", "N. E. 3d"] },
+    "N.W.": { "full": "North Western Reporter", "variants": ["N. W.", "NW"] },
+    "N.W.2d": { "full": "North Western Reporter, Second Series", "variants": ["N.W. 2d", "N. W. 2d"] },
+    "P.": { "full": "Pacific Reporter", "variants": ["P"] },
+    "P.2d": { "full": "Pacific Reporter, Second Series", "variants": ["P. 2d", "P.2d."] },
+    "P.3d": { "full": "Pacific Reporter, Third Series", "variants": ["P. 3d", "P.3d."] },
+    "S.E.": { "full": "South Eastern Reporter", "variants": ["S. E.", "SE"] },
+    "S.E.2d": { "full": "South Eastern Reporter, Second Series", "variants": ["S.E. 2d", "S. E. 2d"] },
+    "S.W.": { "full": "South Western Reporter", "variants": ["S. W.", "SW"] },
+    "S.W.2d": { "full": "South Western Reporter, Second Series", "variants": ["S.W. 2d", "S. W. 2d"] },
+    "S.W.3d": { "full": "South Western Reporter, Third Series", "variants": ["S.W. 3d", "S. W. 3d"] },
+    "So.": { "full": "Southern Reporter", "variants": ["So"] },
+    "So. 2d": { "full": "Southern Reporter, Second Series", "variants": ["So.2d", "So. 2d."] },
+    "So. 3d": { "full": "Southern Reporter, Third Series", "variants": ["So.3d", "So. 3d."] }
+  }
+}

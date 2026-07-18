@@ -1,0 +1,49 @@
+name: Bug report (a failing citation)
+description: Report a citation BlueRef checks or formats incorrectly. A complete report is a ready-made corpus entry.
+title: '[bug] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A bug report must contain everything needed to turn it into a corpus entry
+        (PRD Section 7.6: every bug becomes a corpus entry before the fix merges).
+  - type: input
+    id: input
+    attributes:
+      label: Input citation
+      description: The exact string you gave BlueRef (use `*italic*` / `%small caps%` markers if relevant).
+      placeholder: Smith v. Jones, 123 F. 3d 456, 460 (7th Circuit 1999)
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Expected output
+      description: The exact corrected citation you expected.
+      placeholder: Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)
+    validations:
+      required: true
+  - type: input
+    id: violations
+    attributes:
+      label: Expected violation codes
+      description: Codes from the §7.5 taxonomy (comma-separated). Empty if the input is already correct.
+      placeholder: SPACING, DATE_COURT
+    validations:
+      required: false
+  - type: input
+    id: rule
+    attributes:
+      label: Indigo Book rule reference
+      description: The rule(s) that govern this (e.g. IB R11.2, IB T7). Required — resolve against The Indigo Book, not from memory.
+      placeholder: IB R11.2, IB T7
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What BlueRef actually returned
+      description: Paste the tool output.
+    validations:
+      required: true
