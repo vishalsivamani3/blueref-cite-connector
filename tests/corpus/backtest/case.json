@@ -7,9 +7,831 @@
     "style": "academic",
     "expected_violations": [],
     "expected_output": "Brown v. Bd. of Educ. (Brown I), 347 U.S. 483 (1954)",
-    "rules": ["IB R11", "IB T1", "IB R11.3.1"],
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R11.3.1"
+    ],
     "provenance": "hand-verified",
     "source": "Owner-verified validated full line cite (2026-07-18): Brown v. Bd. of Educ. (Brown I), 347 U.S. 483 (1954)",
     "notes": "First hand-verified back-test entry. Exercises T6 (Bd./Educ.) and a name designation parenthetical (Brown I). Clean pass-through."
+  },
+  {
+    "id": "case-b0002",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Record on Appeal at 117, St. John v. Gen. Motors Corp. (St. John I), 13 N.W.2d 840 (Mich. 1944)",
+    "expected_violations": [],
+    "expected_output": "Record on Appeal at 117, St. John v. Gen. Motors Corp. (St. John I), 13 N.W.2d 840 (Mich. 1944)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.4 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0003",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "St. John v. Gen. Motors Corp. (St. John II), 17 N.W.2d 226, 226-27 (Mich. 1945)",
+    "expected_violations": [],
+    "expected_output": "St. John v. Gen. Motors Corp. (St. John II), 17 N.W.2d 226, 226-27 (Mich. 1945)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.5 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0004",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Hansberry v. Lee, 311 U.S. 32, 42-43 (1940)",
+    "expected_violations": [],
+    "expected_output": "Hansberry v. Lee, 311 U.S. 32, 42-43 (1940)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.8 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0005",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Lochner v. New York, 198 U.S. 45 (1905)",
+    "expected_violations": [],
+    "expected_output": "Lochner v. New York, 198 U.S. 45 (1905)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.8 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0006",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "W. Coast Hotel Co. v. Parrish, 300 U.S. 379 (1937)",
+    "expected_violations": [],
+    "expected_output": "W. Coast Hotel Co. v. Parrish, 300 U.S. 379 (1937)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.8 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0007",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "14 Penn Plaza LLC v. Pyett, 556 U.S. 247, 274 (2009)",
+    "expected_violations": [],
+    "expected_output": "14 Penn Plaza LLC v. Pyett, 556 U.S. 247, 274 (2009)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.11 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0008",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Anderson v. Mt. Clemens Pottery Co., 328 U.S. 680 (1946)",
+    "expected_violations": [],
+    "expected_output": "Anderson v. Mt. Clemens Pottery Co., 328 U.S. 680 (1946)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.12 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0009",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Lewis v. Epic Sys. Corp., 823 F.3d 1147, 1151 (7th Cir. 2016)",
+    "expected_violations": [],
+    "expected_output": "Lewis v. Epic Sys. Corp., 823 F.3d 1147, 1151 (7th Cir. 2016)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.12 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0010",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Murphy Oil USA, Inc. v. NLRB, 808 F.3d 1013, 1015 (5th Cir. 2015)",
+    "expected_violations": [],
+    "expected_output": "Murphy Oil USA, Inc. v. NLRB, 808 F.3d 1013, 1015 (5th Cir. 2015)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.12 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0011",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "W. Coast Hotel v. Parrish, 300 U.S. 379 (1937)",
+    "expected_violations": [],
+    "expected_output": "W. Coast Hotel v. Parrish, 300 U.S. 379 (1937)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.18 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0012",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Bolden v. Grand Rapids Operating Corp., 214 N.W. 241, 243 (Mich. 1927)",
+    "expected_violations": [],
+    "expected_output": "Bolden v. Grand Rapids Operating Corp., 214 N.W. 241, 243 (Mich. 1927)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.21 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0013",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Johnston v. Cornelius, 166 N.W. 983, 984 (Mich. 1918)",
+    "expected_violations": [],
+    "expected_output": "Johnston v. Cornelius, 166 N.W. 983, 984 (Mich. 1918)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.21 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0014",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "People v. W. Mfrs. Mut. Ins. Co., 40 Ill. App. 428, 429 (1891)",
+    "expected_violations": [],
+    "expected_output": "People v. W. Mfrs. Mut. Ins. Co., 40 Ill. App. 428, 429 (1891)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.21 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0015",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Wilson v. United States, 221 U.S. 361, 385 (1911)",
+    "expected_violations": [],
+    "expected_output": "Wilson v. United States, 221 U.S. 361, 385 (1911)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.24 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0016",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Bartenbach v. Smith, 256 N.W. 584, 586 (Mich. 1934)",
+    "expected_violations": [],
+    "expected_output": "Bartenbach v. Smith, 256 N.W. 584, 586 (Mich. 1934)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.25 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0017",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Willard v. Gaston, 53 N.W.2d 332, 335 (Mich. 1952)",
+    "expected_violations": [],
+    "expected_output": "Willard v. Gaston, 53 N.W.2d 332, 335 (Mich. 1952)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.25 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0018",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Hallett v. Mich. Consol. Gas Co., 299 N.W. 723, 726 (Mich. 1941)",
+    "expected_violations": [],
+    "expected_output": "Hallett v. Mich. Consol. Gas Co., 299 N.W. 723, 726 (Mich. 1941)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.25 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0019",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Magel v. Kulczynski, 267 N.W. 872, 873 (Mich. 1936)",
+    "expected_violations": [],
+    "expected_output": "Magel v. Kulczynski, 267 N.W. 872, 873 (Mich. 1936)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.25 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0020",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "A standard example is United States v. Aluminum Co. of America, 26 F. Supp. 711 (S.D.N.Y. 1939)",
+    "expected_violations": [],
+    "expected_output": "A standard example is United States v. Aluminum Co. of America, 26 F. Supp. 711 (S.D.N.Y. 1939)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.25 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0021",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Capital Co. v. Fox, 85 F.2d 97, 100 (2d Cir. 1936)",
+    "expected_violations": [],
+    "expected_output": "Capital Co. v. Fox, 85 F.2d 97, 100 (2d Cir. 1936)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.25 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0022",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Banks v. Conn. Ry. & Lighting Co., 64 A. 14, 15 (Conn. 1906)",
+    "expected_violations": [],
+    "expected_output": "Banks v. Conn. Ry. & Lighting Co., 64 A. 14, 15 (Conn. 1906)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.25 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0023",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Spelman v. Addison, 2 N.W.2d 883, 884 (Mich. 1942)",
+    "expected_violations": [],
+    "expected_output": "Spelman v. Addison, 2 N.W.2d 883, 884 (Mich. 1942)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.26 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0024",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Gemsa v. Dorner, 239 N.W. 332, 332-33 (Mich. 1931)",
+    "expected_violations": [],
+    "expected_output": "Gemsa v. Dorner, 239 N.W. 332, 332-33 (Mich. 1931)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.26 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0025",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "People v. Absher, 214 N.W. 954, 954 (Mich. 1927)",
+    "expected_violations": [],
+    "expected_output": "People v. Absher, 214 N.W. 954, 954 (Mich. 1927)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.29 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0026",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Gates Rubber Co. v. Kold-Hold Mfg. Co., 41 N.W.2d 324, 324 (Mich. 1950)",
+    "expected_violations": [],
+    "expected_output": "Gates Rubber Co. v. Kold-Hold Mfg. Co., 41 N.W.2d 324, 324 (Mich. 1950)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.29 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0027",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Mitchell-Morris & Co. v. Samaras, 38 N.W.2d 904, 904 (Mich. 1949)",
+    "expected_violations": [],
+    "expected_output": "Mitchell-Morris & Co. v. Samaras, 38 N.W.2d 904, 904 (Mich. 1949)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.29 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0028",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Kuhfal v. Kuhfal, 27 N.W.2d 512, 512 (Mich. 1947)",
+    "expected_violations": [],
+    "expected_output": "Kuhfal v. Kuhfal, 27 N.W.2d 512, 512 (Mich. 1947)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.29 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0029",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Mayes v. Cent. Tr. Co., 279 N.W. 923, 923 (Mich. 1938)",
+    "expected_violations": [],
+    "expected_output": "Mayes v. Cent. Tr. Co., 279 N.W. 923, 923 (Mich. 1938)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.29 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0030",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Heckathorn v. Heckathorn, 280 N.W. 79, 80 (Mich. 1938)",
+    "expected_violations": [],
+    "expected_output": "Heckathorn v. Heckathorn, 280 N.W. 79, 80 (Mich. 1938)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.29 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0031",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "For a more modern case, see Marshall v. St. John Valley Sec. Home, 560 F.2d 12, 16 (1st Cir. 1977)",
+    "expected_violations": [],
+    "expected_output": "For a more modern case, see Marshall v. St. John Valley Sec. Home, 560 F.2d 12, 16 (1st Cir. 1977)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.31 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0032",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "States v. Virginia, 518 U.S. 515, 532-33 (1996)",
+    "expected_violations": [],
+    "expected_output": "States v. Virginia, 518 U.S. 515, 532-33 (1996)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.32 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0033",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Univ. for Women v. Hogan, 458 U.S. 718, 724 (1982)",
+    "expected_violations": [],
+    "expected_output": "Univ. for Women v. Hogan, 458 U.S. 718, 724 (1982)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.32 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0034",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Gen. Motors Corp. v. Read, 293 N.W. 751, 754 (Mich. 1940)",
+    "expected_violations": [],
+    "expected_output": "Gen. Motors Corp. v. Read, 293 N.W. 751, 754 (Mich. 1940)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.35 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0035",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Murphy v. Sch. Comm., 73 N.E.2d 835, 835-36 (Mass. 1947)",
+    "expected_violations": [],
+    "expected_output": "Murphy v. Sch. Comm., 73 N.E.2d 835, 835-36 (Mass. 1947)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.42 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0036",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Calabrese v. Chiumento, 3 F.R.D. 435, 437 (D.N.J. 1944)",
+    "expected_violations": [],
+    "expected_output": "Calabrese v. Chiumento, 3 F.R.D. 435, 437 (D.N.J. 1944)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.58 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0037",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Shain v. Armour & Co., 40 F. Supp. 488, 489-90 (W.D. Ky. 1941)",
+    "expected_violations": [],
+    "expected_output": "Shain v. Armour & Co., 40 F. Supp. 488, 489-90 (W.D. Ky. 1941)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.58 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0038",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Circuit in Battaglia v. General Motors Corp., 169 F.2d 254, 259-60 (2d Cir. 1948)",
+    "expected_violations": [],
+    "expected_output": "Circuit in Battaglia v. General Motors Corp., 169 F.2d 254, 259-60 (2d Cir. 1948)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.59 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0039",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Wright v. U.S. Rubber Co., 69 F. Supp. 621, 624 (S.D. Iowa 1946)",
+    "expected_violations": [],
+    "expected_output": "Wright v. U.S. Rubber Co., 69 F. Supp. 621, 624 (S.D. Iowa 1946)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.60 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0040",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Fink v. Oliver Iron Mining Co., 65 F. Supp. 316, 317-18 (D. Minn. 1941)",
+    "expected_violations": [],
+    "expected_output": "Fink v. Oliver Iron Mining Co., 65 F. Supp. 316, 317-18 (D. Minn. 1941)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.60 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0041",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Saxton v. W.S. Askew Co., 35 F. Supp. 519, 521 (N.D. Ga. 1940)",
+    "expected_violations": [],
+    "expected_output": "Saxton v. W.S. Askew Co., 35 F. Supp. 519, 521 (N.D. Ga. 1940)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.60 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0042",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Amchem Prods., Inc. v. Windsor, 521 U.S. 591, 614-15 (1997)",
+    "expected_violations": [],
+    "expected_output": "Amchem Prods., Inc. v. Windsor, 521 U.S. 591, 614-15 (1997)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.60 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0043",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Fowkes v. Dravo Corp., 75 F. Supp. 514, 514 (E.D. Pa. 1946)",
+    "expected_violations": [],
+    "expected_output": "Fowkes v. Dravo Corp., 75 F. Supp. 514, 514 (E.D. Pa. 1946)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.61 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0044",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Supreme Court’s important antitrust decision in United States v. Continental Can Co., 378 U.S. 441 (1964)",
+    "expected_violations": [],
+    "expected_output": "Supreme Court’s important antitrust decision in United States v. Continental Can Co., 378 U.S. 441 (1964)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.74 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0045",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Stollar v. Cont’l Can Co., 180 A.2d 264, 273-74 (Pa. 1962)",
+    "expected_violations": [],
+    "expected_output": "Stollar v. Cont’l Can Co., 180 A.2d 264, 273-74 (Pa. 1962)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.75 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0046",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "City of Detroit v. Detroit United Ry., 197 N.W. 697, 702 (Mich. 1924)",
+    "expected_violations": [],
+    "expected_output": "City of Detroit v. Detroit United Ry., 197 N.W. 697, 702 (Mich. 1924)",
+    "rules": [
+      "IB R11",
+      "IB T3",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.87 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0047",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Express Inc. v. McMahon, 482 U.S. 220, 226-27 (1987)",
+    "expected_violations": [],
+    "expected_output": "Express Inc. v. McMahon, 482 U.S. 220, 226-27 (1987)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.92 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0048",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Corp. v. Greenwood, 565 U.S. 95, 98 (2012)",
+    "expected_violations": [],
+    "expected_output": "Corp. v. Greenwood, 565 U.S. 95, 98 (2012)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.92 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0049",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Moses H. Cone Mem’l Hosp. v. Mercury Constr. Corp., 460 U.S. 1, 24-25 (1983)",
+    "expected_violations": [],
+    "expected_output": "Moses H. Cone Mem’l Hosp. v. Mercury Constr. Corp., 460 U.S. 1, 24-25 (1983)",
+    "rules": [
+      "IB R11",
+      "IB T1"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.92 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
+  },
+  {
+    "id": "case-b0050",
+    "type": "case",
+    "mode": "check",
+    "style": "academic",
+    "input": "Horton, Inc. v. NLRB, 737 F.3d 344, 361 (5th Cir. 2013)",
+    "expected_violations": [],
+    "expected_output": "Horton, Inc. v. NLRB, 737 F.3d 344, 361 (5th Cir. 2013)",
+    "rules": [
+      "IB R11",
+      "IB T1",
+      "IB R12.2"
+    ],
+    "provenance": "hand-verified",
+    "source": "70 Stan. L. Rev. 1 (2018), PDF p.93 — owner-vouched human-drafted source; transcribed with typeface recovered from PDF fonts; independently agrees with Indigo (BlueRef clean-passes)",
+    "notes": "real-document back-test entry (double-confirmed: source and Indigo rule agree)"
   }
 ]

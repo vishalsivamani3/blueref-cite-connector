@@ -89,6 +89,31 @@ opinion, only **3** divergences remained — one missing historical state court
 (`Cal. Dist. Ct. App.`), and two where the **source** does not follow strict Bluebook
 abbreviation (`University of California`, `Board of Education`) and BlueRef is right.
 
+## Published ≠ strict Bluebook: do not promote deviations
+
+A trusted, well-drafted source is still not a conformity oracle. Three citations in
+these documents deviate from strict Indigo T6/R11.3.1:
+
+| As published | Indigo R11.3.1 requires |
+|---|---|
+| `Regents of the University of California v. Bakke` (1st Cir.) | `Regents of the Univ. of Cal. v. Bakke` |
+| `Mills v. Board of Education` (Stan. L. Rev.) | `Mills v. Bd. of Educ.` |
+| `Alston v. School Board` (Stan. L. Rev.) | `Alston v. Sch. Bd.` |
+
+This is not poor drafting — **courts routinely spell out party names in their own
+opinions**, and law reviews carry house styles. But it means a capture must clear
+*two* gates before becoming ground truth:
+
+1. the **source** is trustworthy (provenance), and
+2. the citation **agrees with the Indigo rule** (conformity).
+
+Promote only citations that clear both. Encoding a deviation as `expected_output`
+would teach the checker to stop flagging a real error — the same failure §12 forbids
+("never weaken a test to make it pass"). Deviations are still useful, as evidence of
+what real practice looks like, but they are recorded here, not in the corpus.
+
+Of 74 captures, **49 cleared both gates** and were promoted to `hand-verified`.
+
 It also **corroborated the academic typeface model**, which the Indigo Book explicitly
 does not cover: 46 of 56 academic full-cite case names were roman, with italics
 reserved for short forms (`Lochner`, `Anderson`), signals (`See`, `But see`), cross
