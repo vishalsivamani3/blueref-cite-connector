@@ -48,6 +48,20 @@ Two further traps found in practice:
    Ave. Diner Corp., 731 F.3d 184, 187–88 (2d Cir. 2013))` contains a citation inside
    an explanatory parenthetical. Capture the outer cite or skip; never capture the
    unbalanced fragment.
+9. **Reject names cut mid-phrase.** Non-greedy matching before ` v. ` takes the
+   *shortest* viable name: `American Civil Liberties Union v. Clapper` is captured as
+   `Union v. Clapper`. Guard by checking the character preceding the name in the
+   source is not a letter.
+10. **Strip leading function words.** A citation embedded in a sentence picks up the
+    preposition or conjunction in front of it — `Under Russello v. United States, 464
+    U.S. 16, 23 (1983)` yields a case name of `Under Russello`. Strip a leading
+    `Under|In|See|But|And|Because|Here|Thus|While|Although|Since|When|If|Compare|
+    Unlike|Following|Applying`.
+
+> Traps 9 and 10 are the dangerous ones: they do not fail loudly, they produce a
+> **plausible-looking but wrong citation**. Writing one of those into the
+> hand-verified corpus is worse than having no entry at all, because the gate then
+> teaches the checker something false. Eyeball every entry before promoting.
 
 ## Recovering typeface
 
