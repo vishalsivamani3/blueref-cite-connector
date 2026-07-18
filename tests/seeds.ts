@@ -186,6 +186,18 @@ export const SEEDS: Seed[] = [
   { type: 'case', citation: 'Garcia v. Doe, 11 F.4th 1113, 1118 (9th Cir. 2021)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
   { type: 'case', citation: 'In re Estate of Doe, 123 A.D.2d 456, 460 (N.Y. App. Div. 1986)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
 
+  // Regression seeds from the real-document benchmark (2026-07-18). Captured from
+  // pre-AI published sources; both defects below were invisible to the synthetic
+  // corpus and showed up immediately in real citations.
+  //   - pincite RANGES ("239-40") failed to parse at all
+  //   - federal district courts were missing, causing spurious DATE_COURT flags
+  { type: 'case', citation: 'Washington v. Davis, 426 U.S. 229, 239-40 (1976)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Hansberry v. Lee, 311 U.S. 32, 42-43 (1940)', rules: ['IB R11', 'IB T1'] },
+  { type: 'case', citation: 'Heap v. Carter, 112 F. Supp. 3d 402, 418 (E.D. Va. 2015)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'Calabrese v. Chiumento, 3 F.R.D. 435, 437 (D.N.J. 1944)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'case', citation: 'Cumpiano v. Banco Santander P.R., 902 F.2d 148, 158-59 (1st Cir. 1990)', rules: ['IB R11', 'IB T1', 'IB R12.2'] },
+  { type: 'shortform', citation: '*Anderson*, 328 U.S. at 687-88', rules: ['IB R15.2.2', 'IB R2.1'] },
+
   // Nominative reporters (Indigo T1.1): pre-1875 U.S. Reports carry the nominative
   // volume + reporter parenthetically between the reporter and the first page.
   { type: 'case', citation: 'Marbury v. Madison, 5 U.S. (1 Cranch) 137, 177 (1803)', rules: ['IB R11', 'IB T1'] },

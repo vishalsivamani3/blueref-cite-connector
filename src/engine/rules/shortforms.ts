@@ -67,11 +67,11 @@ TOKENS.sort((a, b) => b.length - a.length);
 const REPORTER_ALT = TOKENS.map(escapeRegExp).join('|');
 
 /** "Id." / "id." / "Ibid." optionally italicized, with an optional "at <pincite>". */
-const ID_RE = /^(\*)?\s*(Id|id|Ibid|ibid)(\.)?\s*(\*)?(?:\s+(?:(at)\s+)?(\d+))?\s*$/;
+const ID_RE = /^(\*)?\s*(Id|id|Ibid|ibid)(\.)?\s*(\*)?(?:\s+(?:(at)\s+)?(\d+(?:[-–]\d+)?))?\s*$/;
 
 /** "<Name>, <vol> <Reporter> [at ]<pincite>" — R15.2.2. */
 const CASE_SHORT_RE = new RegExp(
-  `^(.+?),\\s+(\\d+)\\s+(${REPORTER_ALT})\\s+(?:(at)\\s+)?(\\d+)\\s*$`,
+  `^(.+?),\\s+(\\d+)\\s+(${REPORTER_ALT})\\s+(?:(at)\\s+)?(\\d+(?:[-\\u2013]\\d+)?)\\s*$`,
 );
 
 /** A trailing (… year) parenthetical means this is a full citation, not a short form. */

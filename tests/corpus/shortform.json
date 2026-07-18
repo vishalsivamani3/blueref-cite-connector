@@ -3,6 +3,38 @@
     "id": "shortform-0001",
     "type": "shortform",
     "mode": "check",
+    "input": "*Anderson*, 328 U.S. at 687-88",
+    "expected_violations": [],
+    "expected_output": "*Anderson*, 328 U.S. at 687-88",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0002",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Anderson, 328 U.S. at 687-88",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "*Anderson*, 328 U.S. at 687-88",
+    "rules": [
+      "IB R15.2.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "case name / id. not italicized (Indigo R2.1)"
+  },
+  {
+    "id": "shortform-0003",
+    "type": "shortform",
+    "mode": "check",
     "input": "*Id.*",
     "expected_violations": [],
     "expected_output": "*Id.*",
@@ -15,7 +47,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0002",
+    "id": "shortform-0004",
     "type": "shortform",
     "mode": "check",
     "input": "*Id*",
@@ -32,7 +64,7 @@
     "notes": "\"Id.\" written without its period"
   },
   {
-    "id": "shortform-0003",
+    "id": "shortform-0005",
     "type": "shortform",
     "mode": "check",
     "input": "*Ibid.*",
@@ -49,7 +81,7 @@
     "notes": "\"Ibid.\" used instead of \"Id.\""
   },
   {
-    "id": "shortform-0004",
+    "id": "shortform-0006",
     "type": "shortform",
     "mode": "check",
     "input": "Id.",
@@ -66,7 +98,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0005",
+    "id": "shortform-0007",
     "type": "shortform",
     "mode": "check",
     "input": "Id",
@@ -84,7 +116,7 @@
     "notes": "multi-error: \"Id.\" written without its period; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0006",
+    "id": "shortform-0008",
     "type": "shortform",
     "mode": "check",
     "input": "*Id.* at 1200",
@@ -99,7 +131,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0007",
+    "id": "shortform-0009",
     "type": "shortform",
     "mode": "check",
     "input": "*Id.* 1200",
@@ -117,7 +149,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0008",
+    "id": "shortform-0010",
     "type": "shortform",
     "mode": "check",
     "input": "*Id* at 1200",
@@ -135,7 +167,7 @@
     "notes": "\"Id.\" written without its period"
   },
   {
-    "id": "shortform-0009",
+    "id": "shortform-0011",
     "type": "shortform",
     "mode": "check",
     "input": "*Ibid.* at 1200",
@@ -153,7 +185,7 @@
     "notes": "\"Ibid.\" used instead of \"Id.\""
   },
   {
-    "id": "shortform-0010",
+    "id": "shortform-0012",
     "type": "shortform",
     "mode": "check",
     "input": "Id. at 1200",
@@ -170,7 +202,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0011",
+    "id": "shortform-0013",
     "type": "shortform",
     "mode": "check",
     "input": "*Id* 1200",
@@ -190,7 +222,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; \"Id.\" written without its period"
   },
   {
-    "id": "shortform-0012",
+    "id": "shortform-0014",
     "type": "shortform",
     "mode": "check",
     "input": "*Id.* at 219",
@@ -205,7 +237,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0013",
+    "id": "shortform-0015",
     "type": "shortform",
     "mode": "check",
     "input": "*Id.* 219",
@@ -223,7 +255,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0014",
+    "id": "shortform-0016",
     "type": "shortform",
     "mode": "check",
     "input": "*Id* at 219",
@@ -241,7 +273,7 @@
     "notes": "\"Id.\" written without its period"
   },
   {
-    "id": "shortform-0015",
+    "id": "shortform-0017",
     "type": "shortform",
     "mode": "check",
     "input": "*Ibid.* at 219",
@@ -259,7 +291,7 @@
     "notes": "\"Ibid.\" used instead of \"Id.\""
   },
   {
-    "id": "shortform-0016",
+    "id": "shortform-0018",
     "type": "shortform",
     "mode": "check",
     "input": "Id. at 219",
@@ -276,7 +308,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0017",
+    "id": "shortform-0019",
     "type": "shortform",
     "mode": "check",
     "input": "*Id* 219",
@@ -296,7 +328,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; \"Id.\" written without its period"
   },
   {
-    "id": "shortform-0018",
+    "id": "shortform-0020",
     "type": "shortform",
     "mode": "check",
     "input": "*Fenton*, 233 N.E.2d at 219",
@@ -312,7 +344,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0019",
+    "id": "shortform-0021",
     "type": "shortform",
     "mode": "check",
     "input": "*Fenton*, 233 N.E.2d 219",
@@ -330,7 +362,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0020",
+    "id": "shortform-0022",
     "type": "shortform",
     "mode": "check",
     "input": "*Fenton*, 233 N.E. 2d at 219",
@@ -349,7 +381,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "shortform-0021",
+    "id": "shortform-0023",
     "type": "shortform",
     "mode": "check",
     "input": "Fenton, 233 N.E.2d at 219",
@@ -367,7 +399,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0022",
+    "id": "shortform-0024",
     "type": "shortform",
     "mode": "check",
     "input": "*Fenton*, 233 N.E. 2d 219",
@@ -387,7 +419,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "shortform-0023",
+    "id": "shortform-0025",
     "type": "shortform",
     "mode": "check",
     "input": "*Malletier*, 500 F. Supp. 2d at 281",
@@ -403,7 +435,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0024",
+    "id": "shortform-0026",
     "type": "shortform",
     "mode": "check",
     "input": "*Malletier*, 500 F. Supp. 2d 281",
@@ -421,7 +453,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0025",
+    "id": "shortform-0027",
     "type": "shortform",
     "mode": "check",
     "input": "Malletier, 500 F. Supp. 2d at 281",
@@ -439,7 +471,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0026",
+    "id": "shortform-0028",
     "type": "shortform",
     "mode": "check",
     "input": "Malletier, 500 F. Supp. 2d 281",
@@ -458,7 +490,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0027",
+    "id": "shortform-0029",
     "type": "shortform",
     "mode": "check",
     "input": "*Carmel*, 548 F.3d at 573",
@@ -474,7 +506,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0028",
+    "id": "shortform-0030",
     "type": "shortform",
     "mode": "check",
     "input": "*Carmel*, 548 F.3d 573",
@@ -493,7 +525,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0029",
+    "id": "shortform-0031",
     "type": "shortform",
     "mode": "check",
     "input": "*Carmel*, 548 F. 3d at 573",
@@ -512,7 +544,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "shortform-0030",
+    "id": "shortform-0032",
     "type": "shortform",
     "mode": "check",
     "input": "Carmel, 548 F.3d at 573",
@@ -530,7 +562,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0031",
+    "id": "shortform-0033",
     "type": "shortform",
     "mode": "check",
     "input": "*Carmel*, 548 F. 3d 573",
@@ -551,7 +583,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "shortform-0032",
+    "id": "shortform-0034",
     "type": "shortform",
     "mode": "check",
     "input": "*Raich*, 545 U.S. at 8",
@@ -567,7 +599,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0033",
+    "id": "shortform-0035",
     "type": "shortform",
     "mode": "check",
     "input": "*Raich*, 545 U.S. 8",
@@ -586,7 +618,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0034",
+    "id": "shortform-0036",
     "type": "shortform",
     "mode": "check",
     "input": "Raich, 545 U.S. at 8",
@@ -604,7 +636,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0035",
+    "id": "shortform-0037",
     "type": "shortform",
     "mode": "check",
     "input": "Raich, 545 U.S. 8",
@@ -624,7 +656,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0036",
+    "id": "shortform-0038",
     "type": "shortform",
     "mode": "check",
     "input": "*Home Depot*, 139 S. Ct. at 1744",
@@ -640,7 +672,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0037",
+    "id": "shortform-0039",
     "type": "shortform",
     "mode": "check",
     "input": "*Home Depot*, 139 S. Ct. 1744",
@@ -659,7 +691,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0038",
+    "id": "shortform-0040",
     "type": "shortform",
     "mode": "check",
     "input": "Home Depot, 139 S. Ct. at 1744",
@@ -677,7 +709,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0039",
+    "id": "shortform-0041",
     "type": "shortform",
     "mode": "check",
     "input": "Home Depot, 139 S. Ct. 1744",
@@ -697,7 +729,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0040",
+    "id": "shortform-0042",
     "type": "shortform",
     "mode": "check",
     "input": "*Memoirs*, 383 U.S. at 418",
@@ -713,7 +745,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0041",
+    "id": "shortform-0043",
     "type": "shortform",
     "mode": "check",
     "input": "*Memoirs*, 383 U.S. 418",
@@ -732,7 +764,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0042",
+    "id": "shortform-0044",
     "type": "shortform",
     "mode": "check",
     "input": "Memoirs, 383 U.S. at 418",
@@ -750,7 +782,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0043",
+    "id": "shortform-0045",
     "type": "shortform",
     "mode": "check",
     "input": "Memoirs, 383 U.S. 418",
@@ -770,7 +802,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0044",
+    "id": "shortform-0046",
     "type": "shortform",
     "mode": "check",
     "input": "*Brown*, 347 U.S. at 495",
@@ -786,7 +818,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0045",
+    "id": "shortform-0047",
     "type": "shortform",
     "mode": "check",
     "input": "*Brown*, 347 U.S. 495",
@@ -804,7 +836,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0046",
+    "id": "shortform-0048",
     "type": "shortform",
     "mode": "check",
     "input": "Brown, 347 U.S. at 495",
@@ -822,7 +854,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0047",
+    "id": "shortform-0049",
     "type": "shortform",
     "mode": "check",
     "input": "Brown, 347 U.S. 495",
@@ -841,7 +873,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0048",
+    "id": "shortform-0050",
     "type": "shortform",
     "mode": "check",
     "input": "*Miranda*, 384 U.S. at 444",
@@ -857,7 +889,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0049",
+    "id": "shortform-0051",
     "type": "shortform",
     "mode": "check",
     "input": "*Miranda*, 384 U.S. 444",
@@ -875,7 +907,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0050",
+    "id": "shortform-0052",
     "type": "shortform",
     "mode": "check",
     "input": "Miranda, 384 U.S. at 444",
@@ -893,7 +925,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0051",
+    "id": "shortform-0053",
     "type": "shortform",
     "mode": "check",
     "input": "Miranda, 384 U.S. 444",
@@ -912,7 +944,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0052",
+    "id": "shortform-0054",
     "type": "shortform",
     "mode": "check",
     "input": "*Erie*, 304 U.S. at 78",
@@ -928,7 +960,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0053",
+    "id": "shortform-0055",
     "type": "shortform",
     "mode": "check",
     "input": "*Erie*, 304 U.S. 78",
@@ -946,7 +978,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0054",
+    "id": "shortform-0056",
     "type": "shortform",
     "mode": "check",
     "input": "Erie, 304 U.S. at 78",
@@ -964,7 +996,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0055",
+    "id": "shortform-0057",
     "type": "shortform",
     "mode": "check",
     "input": "Erie, 304 U.S. 78",
@@ -983,7 +1015,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0056",
+    "id": "shortform-0058",
     "type": "shortform",
     "mode": "check",
     "input": "*Palsgraf*, 162 N.E. at 100",
@@ -999,7 +1031,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0057",
+    "id": "shortform-0059",
     "type": "shortform",
     "mode": "check",
     "input": "*Palsgraf*, 162 N.E. 100",
@@ -1017,7 +1049,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0058",
+    "id": "shortform-0060",
     "type": "shortform",
     "mode": "check",
     "input": "Palsgraf, 162 N.E. at 100",
@@ -1035,7 +1067,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0059",
+    "id": "shortform-0061",
     "type": "shortform",
     "mode": "check",
     "input": "Palsgraf, 162 N.E. 100",
@@ -1054,7 +1086,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0060",
+    "id": "shortform-0062",
     "type": "shortform",
     "mode": "check",
     "input": "*Twombly*, 550 U.S. at 570",
@@ -1070,7 +1102,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0061",
+    "id": "shortform-0063",
     "type": "shortform",
     "mode": "check",
     "input": "*Twombly*, 550 U.S. 570",
@@ -1088,7 +1120,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0062",
+    "id": "shortform-0064",
     "type": "shortform",
     "mode": "check",
     "input": "Twombly, 550 U.S. at 570",
@@ -1106,7 +1138,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0063",
+    "id": "shortform-0065",
     "type": "shortform",
     "mode": "check",
     "input": "Twombly, 550 U.S. 570",
@@ -1125,7 +1157,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0064",
+    "id": "shortform-0066",
     "type": "shortform",
     "mode": "check",
     "input": "*Iqbal*, 556 U.S. at 678",
@@ -1141,7 +1173,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0065",
+    "id": "shortform-0067",
     "type": "shortform",
     "mode": "check",
     "input": "*Iqbal*, 556 U.S. 678",
@@ -1159,7 +1191,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0066",
+    "id": "shortform-0068",
     "type": "shortform",
     "mode": "check",
     "input": "Iqbal, 556 U.S. at 678",
@@ -1177,7 +1209,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0067",
+    "id": "shortform-0069",
     "type": "shortform",
     "mode": "check",
     "input": "Iqbal, 556 U.S. 678",
@@ -1196,7 +1228,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0068",
+    "id": "shortform-0070",
     "type": "shortform",
     "mode": "check",
     "input": "*Tarasoff*, 551 P.2d at 340",
@@ -1212,7 +1244,7 @@
     "notes": "clean canonical"
   },
   {
-    "id": "shortform-0069",
+    "id": "shortform-0071",
     "type": "shortform",
     "mode": "check",
     "input": "*Tarasoff*, 551 P.2d 340",
@@ -1230,7 +1262,7 @@
     "notes": "short form missing \"at\" before the pincite"
   },
   {
-    "id": "shortform-0070",
+    "id": "shortform-0072",
     "type": "shortform",
     "mode": "check",
     "input": "*Tarasoff*, 551 P. 2d at 340",
@@ -1249,7 +1281,7 @@
     "notes": "erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "shortform-0071",
+    "id": "shortform-0073",
     "type": "shortform",
     "mode": "check",
     "input": "Tarasoff, 551 P.2d at 340",
@@ -1267,7 +1299,7 @@
     "notes": "case name / id. not italicized (Indigo R2.1)"
   },
   {
-    "id": "shortform-0072",
+    "id": "shortform-0074",
     "type": "shortform",
     "mode": "check",
     "input": "*Tarasoff*, 551 P. 2d 340",
@@ -1287,7 +1319,7 @@
     "notes": "multi-error: short form missing \"at\" before the pincite; erroneous space in reporter series (e.g. F.3d written F. 3d)"
   },
   {
-    "id": "shortform-0073",
+    "id": "shortform-0075",
     "type": "shortform",
     "mode": "check",
     "input": "*United States v. Carmel*, 548 F.3d at 573",
