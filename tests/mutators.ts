@@ -34,7 +34,7 @@ export interface Mutator {
 const reporterSpacing: Mutator = {
   key: 'reporterSpacing',
   code: 'SPACING',
-  rule: 'IB R11.2',
+  rule: 'IB R11.6.2',
   types: ['case'],
   note: 'erroneous space in reporter series (e.g. F.3d written F. 3d)',
   apply(clean) {
@@ -49,9 +49,9 @@ const reporterSpacing: Mutator = {
 const courtSpellOut: Mutator = {
   key: 'courtSpellOut',
   code: 'DATE_COURT',
-  rule: 'IB T7',
+  rule: 'IB R12.2',
   types: ['case'],
-  note: 'court name not abbreviated per table T7',
+  note: 'court name not abbreviated per Indigo R12.2',
   apply(clean) {
     for (const [canonical, info] of Object.entries(COURTS)) {
       if (clean.includes(canonical)) {
@@ -74,13 +74,30 @@ const WORD_EXPANSIONS: Record<string, string> = {
   'R.R.': 'Railroad',
   "Ass'n": 'Association',
   "Int'l": 'International',
+  "Dep't": 'Department',
+  'Servs.': 'Services',
+  'Soc.': 'Social',
+  "Comm'r": 'Commissioner',
+  "Gov't": 'Government',
+  'Bd.': 'Board',
+  'Educ.': 'Education',
+  'Cnty.': 'County',
+  'Auth.': 'Authority',
+  'Comm.': 'Committee',
+  'Mun.': 'Municipal',
+  'Mfg.': 'Manufacturing',
+  'Bros.': 'Brothers',
+  'Ins.': 'Insurance',
+  'Sys.': 'System',
+  'Dev.': 'Development',
+  "Nat'l": 'National',
 };
 const wordSpellOut: Mutator = {
   key: 'wordSpellOut',
   code: 'ABBREV',
-  rule: 'IB T6',
+  rule: 'IB R11.3.1',
   types: ['case', 'book'],
-  note: 'institutional word not abbreviated per table T6',
+  note: 'institutional word not abbreviated per Indigo R11.3.1',
   apply(clean) {
     for (const [abbrev, full] of Object.entries(WORD_EXPANSIONS)) {
       if (clean.includes(abbrev)) {
@@ -91,17 +108,23 @@ const wordSpellOut: Mutator = {
   },
 };
 
-/** Drop the required pincite: "456, 460 (" -> "456 (", or book "% 11 (" -> "% (". */
-const dropPincite: Mutator = {
-  key: 'dropPincite',
+/**
+ * Superfluous "at" before a pincite: "456, 460" -> "456, at 460".
+ *
+ * In a full citation the pincite follows the first page with just a comma; "at"
+ * is used only in short forms (id. at 460) and page-only sources. This is a pure,
+ * reversible format error (unlike a dropped pincite, which loses information the
+ * checker cannot reconstruct and is not always required — see SCHEMA.md).
+ */
+const pinciteAt: Mutator = {
+  key: 'pinciteAt',
   code: 'PINCITE',
-  rule: 'IB R11',
-  types: ['case', 'periodical', 'book'],
-  note: 'required pincite dropped',
+  rule: 'IB R11.6',
+  types: ['case', 'periodical'],
+  note: 'superfluous "at" before pincite in a full citation',
   apply(clean) {
-    if (/, \d+ \(/.test(clean)) return clean.replace(/, \d+ \(/, ' (');
-    if (/% \d+ \(/.test(clean)) return clean.replace(/% \d+ \(/, '% (');
-    return null;
+    if (!/, \d+ \(/.test(clean)) return null;
+    return clean.replace(/, (\d+) \(/, ', at $1 (');
   },
 };
 
@@ -109,7 +132,7 @@ const dropPincite: Mutator = {
 const vsPunctuation: Mutator = {
   key: 'vsPunctuation',
   code: 'PUNCTUATION',
-  rule: 'IB R10',
+  rule: 'IB R11.2',
   types: ['case'],
   note: '"v." written as "vs."',
   apply(clean) {
@@ -122,7 +145,7 @@ const vsPunctuation: Mutator = {
 const sectionSpacing: Mutator = {
   key: 'sectionSpacing',
   code: 'SPACING',
-  rule: 'IB R12',
+  rule: 'IB R16',
   types: ['statute'],
   note: 'missing space after section symbol',
   apply(clean) {
@@ -135,7 +158,7 @@ const sectionSpacing: Mutator = {
 const codeSpellOut: Mutator = {
   key: 'codeSpellOut',
   code: 'ABBREV',
-  rule: 'IB T1',
+  rule: 'IB R16.1.1',
   types: ['statute'],
   note: 'code name not abbreviated (U.S.C.)',
   apply(clean) {
@@ -144,11 +167,28 @@ const codeSpellOut: Mutator = {
   },
 };
 
+/**
+ * Remove the italic markers around a case name (practitioner style, Indigo R2.1).
+ * Only applies when the name is italicized (i.e. practitioner-style seeds); a
+ * no-op for academic seeds, which have no leading marker.
+ */
+const stripCaseNameItalic: Mutator = {
+  key: 'stripCaseNameItalic',
+  code: 'TYPEFACE',
+  rule: 'IB R2.1',
+  types: ['case'],
+  note: 'case name not italicized (practitioner style)',
+  apply(clean) {
+    if (!clean.startsWith('*')) return null;
+    return clean.replace(/^\*([^*]+)\*/, '$1');
+  },
+};
+
 /** Strip italics markers from the article title (missing required typeface). */
 const stripItalics: Mutator = {
   key: 'stripItalics',
   code: 'TYPEFACE',
-  rule: 'IB R13',
+  rule: 'IB R2.1',
   types: ['periodical'],
   note: 'article title not italicized',
   apply(clean) {
@@ -161,7 +201,7 @@ const stripItalics: Mutator = {
 const stripSmallCaps: Mutator = {
   key: 'stripSmallCaps',
   code: 'TYPEFACE',
-  rule: 'IB R13',
+  rule: 'IB R30',
   types: ['periodical', 'book'],
   note: 'journal/book text not in large-and-small caps',
   apply(clean) {
@@ -174,9 +214,9 @@ const stripSmallCaps: Mutator = {
 const journalSpellOut: Mutator = {
   key: 'journalSpellOut',
   code: 'ABBREV',
-  rule: 'IB T13',
+  rule: 'IB R30.3',
   types: ['periodical'],
-  note: 'journal title not abbreviated per table T13',
+  note: 'journal title not abbreviated per Indigo R30.3',
   apply(clean) {
     for (const [canonical, info] of Object.entries(PERIODICALS)) {
       if (clean.includes(canonical)) {
@@ -191,7 +231,7 @@ const journalSpellOut: Mutator = {
 const editionOrdinal: Mutator = {
   key: 'editionOrdinal',
   code: 'ABBREV',
-  rule: 'IB R15',
+  rule: 'IB R28',
   types: ['book'],
   note: 'ordinal edition abbreviation not in academic form (2d/3d)',
   apply(clean) {
@@ -206,8 +246,9 @@ export const MUTATORS: Mutator[] = [
   reporterSpacing,
   courtSpellOut,
   wordSpellOut,
-  dropPincite,
+  pinciteAt,
   vsPunctuation,
+  stripCaseNameItalic,
   sectionSpacing,
   codeSpellOut,
   stripItalics,

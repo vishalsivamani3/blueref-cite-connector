@@ -36,8 +36,8 @@ body:
     id: rule
     attributes:
       label: Indigo Book rule reference
-      description: The rule(s) that govern this (e.g. IB R11.2, IB T7). Required — resolve against The Indigo Book, not from memory.
-      placeholder: IB R11.2, IB T7
+      description: The rule(s) that govern this (e.g. IB R11.6.2, IB R12.2). Required — resolve against The Indigo Book, not from memory.
+      placeholder: IB R11.6.2, IB R12.2
     validations:
       required: true
   - type: textarea

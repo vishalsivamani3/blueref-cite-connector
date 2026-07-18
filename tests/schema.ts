@@ -4,7 +4,7 @@
  * Shared by the generator (tests/generate.ts) and the harness (tests/harness.ts)
  * so the corpus can never drift from the schema or the §7.5 error taxonomy.
  */
-import { ERROR_CODES, type ErrorCode, type CitationType } from '../src/engine/types.js';
+import { ERROR_CODES, STYLES, type ErrorCode, type CitationType, type Style } from '../src/engine/types.js';
 
 export type Provenance = 'hand-verified' | 'synthetic';
 export type Mode = 'check' | 'format';
@@ -19,11 +19,19 @@ export interface CorpusEntry {
   components?: Record<string, unknown>;
   /** Exact expected error-code set for `check` mode. Empty for a clean citation. */
   expected_violations: ErrorCode[];
+  /** Citation style for this entry. Omitted = the engine default (practitioner). */
+  style?: Style;
   /** Exact expected canonical citation (with typeface markers). */
   expected_output: string;
-  /** Indigo Book rule reference(s), e.g. ["IB R11.2", "IB T7"]. */
+  /** Indigo Book rule reference(s), e.g. ["IB R11.6.2", "IB R12.2"]. */
   rules: string[];
   provenance: Provenance;
+  /**
+   * Required for `hand-verified` entries: where the citation was verified against
+   * (e.g. "89 Harv. L. Rev. 1685 (1976), fn. 12"). Anchors the pre-AI back-test
+   * (PRD Section 7.3; see tests/corpus/backtest/README.md).
+   */
+  source?: string;
   notes?: string;
 }
 
@@ -40,8 +48,10 @@ const ERROR_CODE_SET = new Set<string>(ERROR_CODES);
 /** Validate a single entry. Returns a list of human-readable problems (empty = valid). */
 export function validateEntry(e: CorpusEntry): string[] {
   const problems: string[] = [];
-  if (!e.id || !/^[a-z]+-\d{4}$/.test(e.id)) {
-    problems.push(`id "${e.id}" must match <type>-<4 digits>`);
+  // <type>-<4 digits>, with an optional single-letter track prefix on the number
+  // (e.g. "case-0001" dev, "case-b0001" back-test).
+  if (!e.id || !/^[a-z]+-[a-z]?\d{4}$/.test(e.id)) {
+    problems.push(`id "${e.id}" must match <type>-[<letter>]<4 digits>`);
   }
   if (!CITATION_TYPES.includes(e.type)) {
     problems.push(`type "${e.type}" is not a supported citation type`);
@@ -72,6 +82,12 @@ export function validateEntry(e: CorpusEntry): string[] {
   }
   if (e.provenance !== 'hand-verified' && e.provenance !== 'synthetic') {
     problems.push(`provenance "${e.provenance}" must be "hand-verified" or "synthetic"`);
+  }
+  if (e.provenance === 'hand-verified' && (typeof e.source !== 'string' || e.source.length === 0)) {
+    problems.push('hand-verified entries require a non-empty `source` (where it was verified)');
+  }
+  if (e.style !== undefined && !(STYLES as readonly string[]).includes(e.style)) {
+    problems.push(`style "${e.style}" must be one of ${STYLES.join(', ')}`);
   }
   return problems;
 }

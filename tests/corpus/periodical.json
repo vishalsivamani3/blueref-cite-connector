@@ -7,28 +7,30 @@
     "expected_violations": [],
     "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, 1745 (1995)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0002",
     "type": "periodical",
     "mode": "check",
-    "input": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733 (1995)",
+    "input": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, at 1745 (1995)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, 1745 (1995)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0003",
@@ -40,10 +42,12 @@
     ],
     "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, 1745 (1995)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -56,10 +60,11 @@
     ],
     "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, 1745 (1995)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -72,29 +77,32 @@
     ],
     "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, 1745 (1995)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0006",
     "type": "periodical",
     "mode": "check",
-    "input": "Cass R. Sunstein, Incompletely Theorized Agreements, 108 %Harv. L. Rev.% 1733 (1995)",
+    "input": "Cass R. Sunstein, Incompletely Theorized Agreements, 108 %Harv. L. Rev.% 1733, at 1745 (1995)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, 1745 (1995)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0007",
@@ -104,28 +112,30 @@
     "expected_violations": [],
     "expected_output": "Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, 20 (1984)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0008",
     "type": "periodical",
     "mode": "check",
-    "input": "Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4 (1984)",
+    "input": "Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, at 20 (1984)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, 20 (1984)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0009",
@@ -137,10 +147,12 @@
     ],
     "expected_output": "Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, 20 (1984)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -153,10 +165,11 @@
     ],
     "expected_output": "Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, 20 (1984)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -169,29 +182,32 @@
     ],
     "expected_output": "Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, 20 (1984)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0012",
     "type": "periodical",
     "mode": "check",
-    "input": "Frank H. Easterbrook, The Court and the Economic System, 98 %Harv. L. Rev.% 4 (1984)",
+    "input": "Frank H. Easterbrook, The Court and the Economic System, 98 %Harv. L. Rev.% 4, at 20 (1984)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, 20 (1984)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0013",
@@ -201,28 +217,30 @@
     "expected_violations": [],
     "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 %Harv. L. Rev.% 193, 195 (1890)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0014",
     "type": "periodical",
     "mode": "check",
-    "input": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 %Harv. L. Rev.% 193 (1890)",
+    "input": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 %Harv. L. Rev.% 193, at 195 (1890)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 %Harv. L. Rev.% 193, 195 (1890)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0015",
@@ -234,10 +252,12 @@
     ],
     "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 %Harv. L. Rev.% 193, 195 (1890)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -250,10 +270,11 @@
     ],
     "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 %Harv. L. Rev.% 193, 195 (1890)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -266,29 +287,32 @@
     ],
     "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 %Harv. L. Rev.% 193, 195 (1890)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0018",
     "type": "periodical",
     "mode": "check",
-    "input": "Samuel D. Warren & Louis D. Brandeis, The Right to Privacy, 4 %Harv. L. Rev.% 193 (1890)",
+    "input": "Samuel D. Warren & Louis D. Brandeis, The Right to Privacy, 4 %Harv. L. Rev.% 193, at 195 (1890)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 %Harv. L. Rev.% 193, 195 (1890)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0019",
@@ -298,28 +322,30 @@
     "expected_violations": [],
     "expected_output": "Oliver Wendell Holmes, *The Path of the Law*, 10 %Harv. L. Rev.% 457, 461 (1897)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0020",
     "type": "periodical",
     "mode": "check",
-    "input": "Oliver Wendell Holmes, *The Path of the Law*, 10 %Harv. L. Rev.% 457 (1897)",
+    "input": "Oliver Wendell Holmes, *The Path of the Law*, 10 %Harv. L. Rev.% 457, at 461 (1897)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Oliver Wendell Holmes, *The Path of the Law*, 10 %Harv. L. Rev.% 457, 461 (1897)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0021",
@@ -331,10 +357,12 @@
     ],
     "expected_output": "Oliver Wendell Holmes, *The Path of the Law*, 10 %Harv. L. Rev.% 457, 461 (1897)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -347,10 +375,11 @@
     ],
     "expected_output": "Oliver Wendell Holmes, *The Path of the Law*, 10 %Harv. L. Rev.% 457, 461 (1897)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -363,29 +392,32 @@
     ],
     "expected_output": "Oliver Wendell Holmes, *The Path of the Law*, 10 %Harv. L. Rev.% 457, 461 (1897)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0024",
     "type": "periodical",
     "mode": "check",
-    "input": "Oliver Wendell Holmes, The Path of the Law, 10 %Harv. L. Rev.% 457 (1897)",
+    "input": "Oliver Wendell Holmes, The Path of the Law, 10 %Harv. L. Rev.% 457, at 461 (1897)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Oliver Wendell Holmes, *The Path of the Law*, 10 %Harv. L. Rev.% 457, 461 (1897)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0025",
@@ -395,28 +427,30 @@
     "expected_violations": [],
     "expected_output": "Charles A. Reich, *The New Property*, 73 %Yale L.J.% 733, 737 (1964)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0026",
     "type": "periodical",
     "mode": "check",
-    "input": "Charles A. Reich, *The New Property*, 73 %Yale L.J.% 733 (1964)",
+    "input": "Charles A. Reich, *The New Property*, 73 %Yale L.J.% 733, at 737 (1964)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Charles A. Reich, *The New Property*, 73 %Yale L.J.% 733, 737 (1964)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0027",
@@ -428,10 +462,12 @@
     ],
     "expected_output": "Charles A. Reich, *The New Property*, 73 %Yale L.J.% 733, 737 (1964)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -444,10 +480,11 @@
     ],
     "expected_output": "Charles A. Reich, *The New Property*, 73 %Yale L.J.% 733, 737 (1964)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -460,29 +497,32 @@
     ],
     "expected_output": "Charles A. Reich, *The New Property*, 73 %Yale L.J.% 733, 737 (1964)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0030",
     "type": "periodical",
     "mode": "check",
-    "input": "Charles A. Reich, The New Property, 73 %Yale L.J.% 733 (1964)",
+    "input": "Charles A. Reich, The New Property, 73 %Yale L.J.% 733, at 737 (1964)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Charles A. Reich, *The New Property*, 73 %Yale L.J.% 733, 737 (1964)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0031",
@@ -492,28 +532,30 @@
     "expected_violations": [],
     "expected_output": "Herbert Wechsler, *Toward Neutral Principles of Constitutional Law*, 73 %Harv. L. Rev.% 1, 19 (1959)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0032",
     "type": "periodical",
     "mode": "check",
-    "input": "Herbert Wechsler, *Toward Neutral Principles of Constitutional Law*, 73 %Harv. L. Rev.% 1 (1959)",
+    "input": "Herbert Wechsler, *Toward Neutral Principles of Constitutional Law*, 73 %Harv. L. Rev.% 1, at 19 (1959)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Herbert Wechsler, *Toward Neutral Principles of Constitutional Law*, 73 %Harv. L. Rev.% 1, 19 (1959)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0033",
@@ -525,10 +567,12 @@
     ],
     "expected_output": "Herbert Wechsler, *Toward Neutral Principles of Constitutional Law*, 73 %Harv. L. Rev.% 1, 19 (1959)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -541,10 +585,11 @@
     ],
     "expected_output": "Herbert Wechsler, *Toward Neutral Principles of Constitutional Law*, 73 %Harv. L. Rev.% 1, 19 (1959)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -557,29 +602,32 @@
     ],
     "expected_output": "Herbert Wechsler, *Toward Neutral Principles of Constitutional Law*, 73 %Harv. L. Rev.% 1, 19 (1959)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0036",
     "type": "periodical",
     "mode": "check",
-    "input": "Herbert Wechsler, Toward Neutral Principles of Constitutional Law, 73 %Harv. L. Rev.% 1 (1959)",
+    "input": "Herbert Wechsler, Toward Neutral Principles of Constitutional Law, 73 %Harv. L. Rev.% 1, at 19 (1959)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Herbert Wechsler, *Toward Neutral Principles of Constitutional Law*, 73 %Harv. L. Rev.% 1, 19 (1959)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0037",
@@ -589,28 +637,30 @@
     "expected_violations": [],
     "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 %U. Chi. L. Rev.% 1175, 1180 (1989)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0038",
     "type": "periodical",
     "mode": "check",
-    "input": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 %U. Chi. L. Rev.% 1175 (1989)",
+    "input": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 %U. Chi. L. Rev.% 1175, at 1180 (1989)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 %U. Chi. L. Rev.% 1175, 1180 (1989)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0039",
@@ -622,10 +672,12 @@
     ],
     "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 %U. Chi. L. Rev.% 1175, 1180 (1989)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -638,10 +690,11 @@
     ],
     "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 %U. Chi. L. Rev.% 1175, 1180 (1989)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -654,29 +707,32 @@
     ],
     "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 %U. Chi. L. Rev.% 1175, 1180 (1989)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0042",
     "type": "periodical",
     "mode": "check",
-    "input": "Antonin Scalia, The Rule of Law as a Law of Rules, 56 %U. Chi. L. Rev.% 1175 (1989)",
+    "input": "Antonin Scalia, The Rule of Law as a Law of Rules, 56 %U. Chi. L. Rev.% 1175, at 1180 (1989)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 %U. Chi. L. Rev.% 1175, 1180 (1989)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0043",
@@ -686,28 +742,30 @@
     "expected_violations": [],
     "expected_output": "Guido Calabresi & A. Douglas Melamed, *Property Rules, Liability Rules, and Inalienability*, 85 %Harv. L. Rev.% 1089, 1092 (1972)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0044",
     "type": "periodical",
     "mode": "check",
-    "input": "Guido Calabresi & A. Douglas Melamed, *Property Rules, Liability Rules, and Inalienability*, 85 %Harv. L. Rev.% 1089 (1972)",
+    "input": "Guido Calabresi & A. Douglas Melamed, *Property Rules, Liability Rules, and Inalienability*, 85 %Harv. L. Rev.% 1089, at 1092 (1972)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Guido Calabresi & A. Douglas Melamed, *Property Rules, Liability Rules, and Inalienability*, 85 %Harv. L. Rev.% 1089, 1092 (1972)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0045",
@@ -719,10 +777,12 @@
     ],
     "expected_output": "Guido Calabresi & A. Douglas Melamed, *Property Rules, Liability Rules, and Inalienability*, 85 %Harv. L. Rev.% 1089, 1092 (1972)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -735,10 +795,11 @@
     ],
     "expected_output": "Guido Calabresi & A. Douglas Melamed, *Property Rules, Liability Rules, and Inalienability*, 85 %Harv. L. Rev.% 1089, 1092 (1972)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -751,29 +812,32 @@
     ],
     "expected_output": "Guido Calabresi & A. Douglas Melamed, *Property Rules, Liability Rules, and Inalienability*, 85 %Harv. L. Rev.% 1089, 1092 (1972)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0048",
     "type": "periodical",
     "mode": "check",
-    "input": "Guido Calabresi & A. Douglas Melamed, Property Rules, Liability Rules, and Inalienability, 85 %Harv. L. Rev.% 1089 (1972)",
+    "input": "Guido Calabresi & A. Douglas Melamed, Property Rules, Liability Rules, and Inalienability, 85 %Harv. L. Rev.% 1089, at 1092 (1972)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Guido Calabresi & A. Douglas Melamed, *Property Rules, Liability Rules, and Inalienability*, 85 %Harv. L. Rev.% 1089, 1092 (1972)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0049",
@@ -783,28 +847,30 @@
     "expected_violations": [],
     "expected_output": "Wesley Newcomb Hohfeld, *Some Fundamental Legal Conceptions as Applied in Judicial Reasoning*, 23 %Yale L.J.% 16, 30 (1913)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0050",
     "type": "periodical",
     "mode": "check",
-    "input": "Wesley Newcomb Hohfeld, *Some Fundamental Legal Conceptions as Applied in Judicial Reasoning*, 23 %Yale L.J.% 16 (1913)",
+    "input": "Wesley Newcomb Hohfeld, *Some Fundamental Legal Conceptions as Applied in Judicial Reasoning*, 23 %Yale L.J.% 16, at 30 (1913)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Wesley Newcomb Hohfeld, *Some Fundamental Legal Conceptions as Applied in Judicial Reasoning*, 23 %Yale L.J.% 16, 30 (1913)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0051",
@@ -816,10 +882,12 @@
     ],
     "expected_output": "Wesley Newcomb Hohfeld, *Some Fundamental Legal Conceptions as Applied in Judicial Reasoning*, 23 %Yale L.J.% 16, 30 (1913)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -832,10 +900,11 @@
     ],
     "expected_output": "Wesley Newcomb Hohfeld, *Some Fundamental Legal Conceptions as Applied in Judicial Reasoning*, 23 %Yale L.J.% 16, 30 (1913)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -848,29 +917,32 @@
     ],
     "expected_output": "Wesley Newcomb Hohfeld, *Some Fundamental Legal Conceptions as Applied in Judicial Reasoning*, 23 %Yale L.J.% 16, 30 (1913)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0054",
     "type": "periodical",
     "mode": "check",
-    "input": "Wesley Newcomb Hohfeld, Some Fundamental Legal Conceptions as Applied in Judicial Reasoning, 23 %Yale L.J.% 16 (1913)",
+    "input": "Wesley Newcomb Hohfeld, Some Fundamental Legal Conceptions as Applied in Judicial Reasoning, 23 %Yale L.J.% 16, at 30 (1913)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Wesley Newcomb Hohfeld, *Some Fundamental Legal Conceptions as Applied in Judicial Reasoning*, 23 %Yale L.J.% 16, 30 (1913)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0055",
@@ -880,28 +952,30 @@
     "expected_violations": [],
     "expected_output": "Roscoe Pound, *The Path of the Law*, 24 %Colum. L. Rev.% 591, 600 (1924)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0056",
     "type": "periodical",
     "mode": "check",
-    "input": "Roscoe Pound, *The Path of the Law*, 24 %Colum. L. Rev.% 591 (1924)",
+    "input": "Roscoe Pound, *The Path of the Law*, 24 %Colum. L. Rev.% 591, at 600 (1924)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Roscoe Pound, *The Path of the Law*, 24 %Colum. L. Rev.% 591, 600 (1924)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0057",
@@ -913,10 +987,12 @@
     ],
     "expected_output": "Roscoe Pound, *The Path of the Law*, 24 %Colum. L. Rev.% 591, 600 (1924)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -929,10 +1005,11 @@
     ],
     "expected_output": "Roscoe Pound, *The Path of the Law*, 24 %Colum. L. Rev.% 591, 600 (1924)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -945,29 +1022,32 @@
     ],
     "expected_output": "Roscoe Pound, *The Path of the Law*, 24 %Colum. L. Rev.% 591, 600 (1924)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0060",
     "type": "periodical",
     "mode": "check",
-    "input": "Roscoe Pound, The Path of the Law, 24 %Colum. L. Rev.% 591 (1924)",
+    "input": "Roscoe Pound, The Path of the Law, 24 %Colum. L. Rev.% 591, at 600 (1924)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Roscoe Pound, *The Path of the Law*, 24 %Colum. L. Rev.% 591, 600 (1924)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0061",
@@ -977,28 +1057,30 @@
     "expected_violations": [],
     "expected_output": "Lon L. Fuller, *The Forms and Limits of Adjudication*, 92 %Harv. L. Rev.% 353, 360 (1978)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0062",
     "type": "periodical",
     "mode": "check",
-    "input": "Lon L. Fuller, *The Forms and Limits of Adjudication*, 92 %Harv. L. Rev.% 353 (1978)",
+    "input": "Lon L. Fuller, *The Forms and Limits of Adjudication*, 92 %Harv. L. Rev.% 353, at 360 (1978)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Lon L. Fuller, *The Forms and Limits of Adjudication*, 92 %Harv. L. Rev.% 353, 360 (1978)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0063",
@@ -1010,10 +1092,12 @@
     ],
     "expected_output": "Lon L. Fuller, *The Forms and Limits of Adjudication*, 92 %Harv. L. Rev.% 353, 360 (1978)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -1026,10 +1110,11 @@
     ],
     "expected_output": "Lon L. Fuller, *The Forms and Limits of Adjudication*, 92 %Harv. L. Rev.% 353, 360 (1978)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -1042,29 +1127,32 @@
     ],
     "expected_output": "Lon L. Fuller, *The Forms and Limits of Adjudication*, 92 %Harv. L. Rev.% 353, 360 (1978)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0066",
     "type": "periodical",
     "mode": "check",
-    "input": "Lon L. Fuller, The Forms and Limits of Adjudication, 92 %Harv. L. Rev.% 353 (1978)",
+    "input": "Lon L. Fuller, The Forms and Limits of Adjudication, 92 %Harv. L. Rev.% 353, at 360 (1978)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Lon L. Fuller, *The Forms and Limits of Adjudication*, 92 %Harv. L. Rev.% 353, 360 (1978)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0067",
@@ -1074,28 +1162,30 @@
     "expected_violations": [],
     "expected_output": "Owen M. Fiss, *The Forms of Justice*, 93 %Harv. L. Rev.% 1, 17 (1979)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0068",
     "type": "periodical",
     "mode": "check",
-    "input": "Owen M. Fiss, *The Forms of Justice*, 93 %Harv. L. Rev.% 1 (1979)",
+    "input": "Owen M. Fiss, *The Forms of Justice*, 93 %Harv. L. Rev.% 1, at 17 (1979)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Owen M. Fiss, *The Forms of Justice*, 93 %Harv. L. Rev.% 1, 17 (1979)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0069",
@@ -1107,10 +1197,12 @@
     ],
     "expected_output": "Owen M. Fiss, *The Forms of Justice*, 93 %Harv. L. Rev.% 1, 17 (1979)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -1123,10 +1215,11 @@
     ],
     "expected_output": "Owen M. Fiss, *The Forms of Justice*, 93 %Harv. L. Rev.% 1, 17 (1979)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -1139,29 +1232,32 @@
     ],
     "expected_output": "Owen M. Fiss, *The Forms of Justice*, 93 %Harv. L. Rev.% 1, 17 (1979)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0072",
     "type": "periodical",
     "mode": "check",
-    "input": "Owen M. Fiss, The Forms of Justice, 93 %Harv. L. Rev.% 1 (1979)",
+    "input": "Owen M. Fiss, The Forms of Justice, 93 %Harv. L. Rev.% 1, at 17 (1979)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Owen M. Fiss, *The Forms of Justice*, 93 %Harv. L. Rev.% 1, 17 (1979)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0073",
@@ -1171,28 +1267,30 @@
     "expected_violations": [],
     "expected_output": "Duncan Kennedy, *Form and Substance in Private Law Adjudication*, 89 %Harv. L. Rev.% 1685, 1690 (1976)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0074",
     "type": "periodical",
     "mode": "check",
-    "input": "Duncan Kennedy, *Form and Substance in Private Law Adjudication*, 89 %Harv. L. Rev.% 1685 (1976)",
+    "input": "Duncan Kennedy, *Form and Substance in Private Law Adjudication*, 89 %Harv. L. Rev.% 1685, at 1690 (1976)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Duncan Kennedy, *Form and Substance in Private Law Adjudication*, 89 %Harv. L. Rev.% 1685, 1690 (1976)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0075",
@@ -1204,10 +1302,12 @@
     ],
     "expected_output": "Duncan Kennedy, *Form and Substance in Private Law Adjudication*, 89 %Harv. L. Rev.% 1685, 1690 (1976)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -1220,10 +1320,11 @@
     ],
     "expected_output": "Duncan Kennedy, *Form and Substance in Private Law Adjudication*, 89 %Harv. L. Rev.% 1685, 1690 (1976)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -1236,29 +1337,32 @@
     ],
     "expected_output": "Duncan Kennedy, *Form and Substance in Private Law Adjudication*, 89 %Harv. L. Rev.% 1685, 1690 (1976)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0078",
     "type": "periodical",
     "mode": "check",
-    "input": "Duncan Kennedy, Form and Substance in Private Law Adjudication, 89 %Harv. L. Rev.% 1685 (1976)",
+    "input": "Duncan Kennedy, Form and Substance in Private Law Adjudication, 89 %Harv. L. Rev.% 1685, at 1690 (1976)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Duncan Kennedy, *Form and Substance in Private Law Adjudication*, 89 %Harv. L. Rev.% 1685, 1690 (1976)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0079",
@@ -1268,28 +1372,30 @@
     "expected_violations": [],
     "expected_output": "Mark A. Lemley, *The Myth of the Sole Inventor*, 110 %Mich. L. Rev.% 709, 715 (2012)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0080",
     "type": "periodical",
     "mode": "check",
-    "input": "Mark A. Lemley, *The Myth of the Sole Inventor*, 110 %Mich. L. Rev.% 709 (2012)",
+    "input": "Mark A. Lemley, *The Myth of the Sole Inventor*, 110 %Mich. L. Rev.% 709, at 715 (2012)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Mark A. Lemley, *The Myth of the Sole Inventor*, 110 %Mich. L. Rev.% 709, 715 (2012)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0081",
@@ -1301,10 +1407,12 @@
     ],
     "expected_output": "Mark A. Lemley, *The Myth of the Sole Inventor*, 110 %Mich. L. Rev.% 709, 715 (2012)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -1317,10 +1425,11 @@
     ],
     "expected_output": "Mark A. Lemley, *The Myth of the Sole Inventor*, 110 %Mich. L. Rev.% 709, 715 (2012)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -1333,29 +1442,32 @@
     ],
     "expected_output": "Mark A. Lemley, *The Myth of the Sole Inventor*, 110 %Mich. L. Rev.% 709, 715 (2012)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0084",
     "type": "periodical",
     "mode": "check",
-    "input": "Mark A. Lemley, The Myth of the Sole Inventor, 110 %Mich. L. Rev.% 709 (2012)",
+    "input": "Mark A. Lemley, The Myth of the Sole Inventor, 110 %Mich. L. Rev.% 709, at 715 (2012)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Mark A. Lemley, *The Myth of the Sole Inventor*, 110 %Mich. L. Rev.% 709, 715 (2012)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0085",
@@ -1365,28 +1477,30 @@
     "expected_violations": [],
     "expected_output": "Akhil Reed Amar, *Of Sovereignty and Federalism*, 96 %Yale L.J.% 1425, 1430 (1987)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0086",
     "type": "periodical",
     "mode": "check",
-    "input": "Akhil Reed Amar, *Of Sovereignty and Federalism*, 96 %Yale L.J.% 1425 (1987)",
+    "input": "Akhil Reed Amar, *Of Sovereignty and Federalism*, 96 %Yale L.J.% 1425, at 1430 (1987)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Akhil Reed Amar, *Of Sovereignty and Federalism*, 96 %Yale L.J.% 1425, 1430 (1987)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0087",
@@ -1398,10 +1512,12 @@
     ],
     "expected_output": "Akhil Reed Amar, *Of Sovereignty and Federalism*, 96 %Yale L.J.% 1425, 1430 (1987)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -1414,10 +1530,11 @@
     ],
     "expected_output": "Akhil Reed Amar, *Of Sovereignty and Federalism*, 96 %Yale L.J.% 1425, 1430 (1987)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -1430,29 +1547,32 @@
     ],
     "expected_output": "Akhil Reed Amar, *Of Sovereignty and Federalism*, 96 %Yale L.J.% 1425, 1430 (1987)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0090",
     "type": "periodical",
     "mode": "check",
-    "input": "Akhil Reed Amar, Of Sovereignty and Federalism, 96 %Yale L.J.% 1425 (1987)",
+    "input": "Akhil Reed Amar, Of Sovereignty and Federalism, 96 %Yale L.J.% 1425, at 1430 (1987)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Akhil Reed Amar, *Of Sovereignty and Federalism*, 96 %Yale L.J.% 1425, 1430 (1987)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0091",
@@ -1462,28 +1582,30 @@
     "expected_violations": [],
     "expected_output": "Richard A. Epstein, *The Social Consequences of Common Sense*, 60 %Cornell L. Rev.% 100, 110 (1975)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0092",
     "type": "periodical",
     "mode": "check",
-    "input": "Richard A. Epstein, *The Social Consequences of Common Sense*, 60 %Cornell L. Rev.% 100 (1975)",
+    "input": "Richard A. Epstein, *The Social Consequences of Common Sense*, 60 %Cornell L. Rev.% 100, at 110 (1975)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Richard A. Epstein, *The Social Consequences of Common Sense*, 60 %Cornell L. Rev.% 100, 110 (1975)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0093",
@@ -1495,10 +1617,12 @@
     ],
     "expected_output": "Richard A. Epstein, *The Social Consequences of Common Sense*, 60 %Cornell L. Rev.% 100, 110 (1975)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -1511,10 +1635,11 @@
     ],
     "expected_output": "Richard A. Epstein, *The Social Consequences of Common Sense*, 60 %Cornell L. Rev.% 100, 110 (1975)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -1527,29 +1652,32 @@
     ],
     "expected_output": "Richard A. Epstein, *The Social Consequences of Common Sense*, 60 %Cornell L. Rev.% 100, 110 (1975)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0096",
     "type": "periodical",
     "mode": "check",
-    "input": "Richard A. Epstein, The Social Consequences of Common Sense, 60 %Cornell L. Rev.% 100 (1975)",
+    "input": "Richard A. Epstein, The Social Consequences of Common Sense, 60 %Cornell L. Rev.% 100, at 110 (1975)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Richard A. Epstein, *The Social Consequences of Common Sense*, 60 %Cornell L. Rev.% 100, 110 (1975)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0097",
@@ -1559,28 +1687,30 @@
     "expected_violations": [],
     "expected_output": "Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241, 1250 (1991)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0098",
     "type": "periodical",
     "mode": "check",
-    "input": "Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241 (1991)",
+    "input": "Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241, at 1250 (1991)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241, 1250 (1991)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0099",
@@ -1592,10 +1722,12 @@
     ],
     "expected_output": "Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241, 1250 (1991)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -1608,10 +1740,11 @@
     ],
     "expected_output": "Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241, 1250 (1991)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -1624,29 +1757,32 @@
     ],
     "expected_output": "Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241, 1250 (1991)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0102",
     "type": "periodical",
     "mode": "check",
-    "input": "Kimberlé W. Crenshaw, Mapping the Margins, 43 %Stan. L. Rev.% 1241 (1991)",
+    "input": "Kimberlé W. Crenshaw, Mapping the Margins, 43 %Stan. L. Rev.% 1241, at 1250 (1991)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Kimberlé W. Crenshaw, *Mapping the Margins*, 43 %Stan. L. Rev.% 1241, 1250 (1991)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   },
   {
     "id": "periodical-0103",
@@ -1656,28 +1792,30 @@
     "expected_violations": [],
     "expected_output": "Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401, 410 (1958)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "clean canonical"
   },
   {
     "id": "periodical-0104",
     "type": "periodical",
     "mode": "check",
-    "input": "Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401 (1958)",
+    "input": "Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401, at 410 (1958)",
     "expected_violations": [
       "PINCITE"
     ],
     "expected_output": "Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401, 410 (1958)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6"
     ],
     "provenance": "synthetic",
-    "notes": "required pincite dropped"
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
   },
   {
     "id": "periodical-0105",
@@ -1689,10 +1827,12 @@
     ],
     "expected_output": "Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401, 410 (1958)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "article title not italicized"
   },
   {
@@ -1705,10 +1845,11 @@
     ],
     "expected_output": "Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401, 410 (1958)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
+    "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
   },
   {
@@ -1721,28 +1862,31 @@
     ],
     "expected_output": "Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401, 410 (1958)",
     "rules": [
-      "IB R13",
-      "IB T13"
+      "IB R30",
+      "IB R30.3"
     ],
     "provenance": "synthetic",
-    "notes": "journal title not abbreviated per table T13"
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
   },
   {
     "id": "periodical-0108",
     "type": "periodical",
     "mode": "check",
-    "input": "Louis L. Jaffe, The Right to Judicial Review, 71 %Harv. L. Rev.% 401 (1958)",
+    "input": "Louis L. Jaffe, The Right to Judicial Review, 71 %Harv. L. Rev.% 401, at 410 (1958)",
     "expected_violations": [
       "PINCITE",
       "TYPEFACE"
     ],
     "expected_output": "Louis L. Jaffe, *The Right to Judicial Review*, 71 %Harv. L. Rev.% 401, 410 (1958)",
     "rules": [
-      "IB R13",
-      "IB T13",
-      "IB R11"
+      "IB R30",
+      "IB R30.3",
+      "IB R11.6",
+      "IB R2.1"
     ],
     "provenance": "synthetic",
-    "notes": "multi-error: required pincite dropped; article title not italicized"
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   }
 ]

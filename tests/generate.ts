@@ -13,7 +13,8 @@
 import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import type { CitationType, ErrorCode } from '../src/engine/types.js';
+import type { CitationType, ErrorCode, Style } from '../src/engine/types.js';
+import { DEFAULT_STYLE } from '../src/engine/types.js';
 import { SEEDS, type Seed } from './seeds.js';
 import { mutatorsFor } from './mutators.js';
 import { validateEntry, type CorpusEntry } from './schema.js';
@@ -40,6 +41,10 @@ function generateForType(type: CitationType): CorpusEntry[] {
 
   for (const seed of seeds) {
     const clean = seed.citation;
+    // A seed with no explicit style is academic (that is how the untagged seeds
+    // are written). Emit `style` only when it differs from the engine default,
+    // so the harness (which defaults to DEFAULT_STYLE) checks each entry correctly.
+    const entryStyle: Style = seed.style ?? 'academic';
 
     // 50% bucket: the clean canonical citation, checked as a pass-through.
     entries.push({
@@ -51,6 +56,7 @@ function generateForType(type: CitationType): CorpusEntry[] {
       expected_output: clean,
       rules: seed.rules,
       provenance: 'synthetic',
+      ...(entryStyle !== DEFAULT_STYLE ? { style: entryStyle } : {}),
       notes: 'clean canonical',
     });
 
@@ -70,6 +76,7 @@ function generateForType(type: CitationType): CorpusEntry[] {
         expected_output: clean,
         rules: mergeRules(seed.rules, mut.rule),
         provenance: 'synthetic',
+      ...(entryStyle !== DEFAULT_STYLE ? { style: entryStyle } : {}),
         notes: mut.note,
       });
     }
@@ -94,6 +101,7 @@ function generateForType(type: CitationType): CorpusEntry[] {
           expected_output: clean,
           rules: mergeRules(mergeRules(seed.rules, muts[i]!.rule), muts[j]!.rule),
           provenance: 'synthetic',
+      ...(entryStyle !== DEFAULT_STYLE ? { style: entryStyle } : {}),
           notes: `multi-error: ${muts[i]!.note}; ${muts[j]!.note}`,
         };
         break outer;

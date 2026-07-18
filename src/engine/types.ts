@@ -44,6 +44,28 @@ export const ERROR_CODES: readonly ErrorCode[] = [
 export type Confidence = 'deterministic' | 'unsupported';
 
 /**
+ * Citation style / typeface convention.
+ *
+ * - `practitioner`: standard legal documents (briefs, motions, memoranda). This
+ *   is the convention The Indigo Book (CC0) actually specifies: case names and
+ *   titles italicized, journals in roman (Indigo R2.1). Fully CC0-derivable.
+ * - `academic`: law-review articles (large-and-small caps for journals/books,
+ *   roman full-cite case names). The Indigo Book puts a full treatment of this
+ *   OUT OF SCOPE (Indigo R1.2), so academic typeface details are not derivable
+ *   from our CC0 source and are treated as a secondary style.
+ */
+export type Style = 'academic' | 'practitioner';
+
+export const STYLES: readonly Style[] = ['academic', 'practitioner'];
+
+/**
+ * Default style. Practitioner is the primary style: it is the convention The
+ * Indigo Book (our CC0 source) actually specifies (R2.1), and academic typeface
+ * is out of Indigo scope (R1.2). Owner-confirmed 2026-07-18.
+ */
+export const DEFAULT_STYLE: Style = 'practitioner';
+
+/**
  * A structured citation. Component fields are type-specific and intentionally
  * open; each RuleModule documents and populates the fields it uses. `raw` is the
  * original input; `type` is the detected/declared citation type.
@@ -66,7 +88,7 @@ export interface Violation {
   code: ErrorCode;
   /** Human-readable explanation of what is wrong. */
   message: string;
-  /** Indigo Book rule reference(s), e.g. "IB R11.2", "IB T7". */
+  /** Indigo Book rule reference(s), e.g. "IB R11", "IB R12.2". */
   rule: string;
   /** The corrected fragment for this specific violation. */
   fix: string;
@@ -96,8 +118,8 @@ export interface RuleModule {
   detect(input: string): number;
   /** Parse into structured components or a typed failure. */
   parse(input: string): ParseResult;
-  /** Check a parsed citation, returning violations with rule refs and fixes. */
-  check(parsed: Citation): CheckResult;
-  /** Build a canonical citation string from structured components. */
-  format(components: CitationInput): string;
+  /** Check a parsed citation under the given style, returning violations. */
+  check(parsed: Citation, style: Style): CheckResult;
+  /** Build a canonical citation string from components under the given style. */
+  format(components: CitationInput, style: Style): string;
 }

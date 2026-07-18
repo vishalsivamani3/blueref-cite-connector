@@ -8,7 +8,7 @@ Thanks for helping make legal citation checking deterministic and testable.
    format path (PRD §6.2). The whole value proposition is that BlueRef does not
    hallucinate.
 2. **Rules derive from The Indigo Book (CC0)**, never from The Bluebook. Cite
-   Indigo Book rule numbers (e.g. `IB R11.2`, `IB T7`) in code comments and in
+   Indigo Book rule numbers (e.g. `IB R11`, `IB R12.2`) in code comments and in
    every corpus entry. Do not put the word "Bluebook" in package/repo/tool names.
 3. **Never weaken a test to make it pass.** If you believe an expected output is
    wrong, open an issue with the Indigo Book rule reference and flag it for human

@@ -8,12 +8,14 @@
  */
 import { DISCLAIMER } from './disclaimer.js';
 import * as registry from './registry.js';
+import { DEFAULT_STYLE, STYLES } from './types.js';
 import type {
   Citation,
   CitationInput,
   CitationType,
   Confidence,
   ParseResult,
+  Style,
   Violation,
 } from './types.js';
 
@@ -28,6 +30,7 @@ export interface ParseOutcome {
 export interface CheckOutcome {
   confidence: Confidence;
   detectedType: CitationType | null;
+  style: Style;
   pass: boolean;
   violations: Violation[];
   corrected: string;
@@ -36,18 +39,21 @@ export interface CheckOutcome {
 
 export interface FormatOutcome {
   confidence: Confidence;
+  style: Style;
   output: string | null;
   disclaimer: string;
 }
 
 export interface SupportedOutcome {
   supportedTypes: CitationType[];
+  styles: Style[];
+  defaultStyle: Style;
   limitations: string[];
   disclaimer: string;
 }
 
 const LIMITATIONS: string[] = [
-  'Academic (Indigo Book-derived) citation format only; not Bluepages/court-document format.',
+  'Two styles: "practitioner" (standard legal documents; the convention The Indigo Book specifies) and "academic" (law-review). Academic typeface is not fully derivable from the CC0 Indigo Book (Indigo R1.2 puts it out of scope) and is treated as secondary.',
   'No foreign, international, or treaty citations.',
   'No legislative history, regulations, or administrative materials beyond basic statutory codes.',
   'Format checking only: does not verify that a source exists, is quoted accurately, or supports the proposition cited.',
@@ -74,12 +80,17 @@ export function parseCitation(input: string): ParseOutcome {
   };
 }
 
-export function checkCitation(input: string, _context?: string[]): CheckOutcome {
+export function checkCitation(
+  input: string,
+  _context?: string[],
+  style: Style = DEFAULT_STYLE,
+): CheckOutcome {
   const d = registry.detect(input);
   if (!d.supported || !d.module) {
     return {
       confidence: 'unsupported',
       detectedType: null,
+      style,
       pass: false,
       violations: [],
       corrected: input,
@@ -91,6 +102,7 @@ export function checkCitation(input: string, _context?: string[]): CheckOutcome 
     return {
       confidence: 'deterministic',
       detectedType: d.type,
+      style,
       pass: false,
       violations: [
         { code: parsed.code, message: parsed.message, rule: '', fix: '' },
@@ -100,10 +112,11 @@ export function checkCitation(input: string, _context?: string[]): CheckOutcome 
     };
   }
   const citation: Citation = parsed.citation;
-  const result = d.module.check(citation);
+  const result = d.module.check(citation, style);
   return {
     confidence: 'deterministic',
     detectedType: d.type,
+    style,
     pass: result.pass,
     violations: result.violations,
     corrected: result.corrected,
@@ -111,19 +124,25 @@ export function checkCitation(input: string, _context?: string[]): CheckOutcome 
   };
 }
 
-export function formatCitation(components: CitationInput, type: string): FormatOutcome {
+export function formatCitation(
+  components: CitationInput,
+  type: string,
+  style: Style = DEFAULT_STYLE,
+): FormatOutcome {
   const out = registry.hasType(type as CitationType)
-    ? registry.format(type as CitationType, components)
+    ? registry.format(type as CitationType, components, style)
     : null;
   if (out === null) {
-    return { confidence: 'unsupported', output: null, disclaimer: DISCLAIMER };
+    return { confidence: 'unsupported', style, output: null, disclaimer: DISCLAIMER };
   }
-  return { confidence: 'deterministic', output: out, disclaimer: DISCLAIMER };
+  return { confidence: 'deterministic', style, output: out, disclaimer: DISCLAIMER };
 }
 
 export function listSupported(): SupportedOutcome {
   return {
     supportedTypes: registry.supportedTypes(),
+    styles: [...STYLES],
+    defaultStyle: DEFAULT_STYLE,
     limitations: LIMITATIONS,
     disclaimer: DISCLAIMER,
   };

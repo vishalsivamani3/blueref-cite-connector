@@ -13,7 +13,7 @@ is one test (PRD Section 7.2). The corpus only grows (PRD Section 7.6).
   "input": "Smith v. Jones, 123 F. 3d 456, 460 (7th Circuit 1999)",
   "expected_violations": ["SPACING", "DATE_COURT"],
   "expected_output": "Smith v. Jones, 123 F.3d 456, 460 (7th Cir. 1999)",
-  "rules": ["IB R11.2", "IB T7"],
+  "rules": ["IB R11.6.2", "IB R12.2"],
   "provenance": "synthetic",
   "notes": "spacing in F.3d; court abbreviation"
 }
@@ -30,7 +30,7 @@ is one test (PRD Section 7.2). The corpus only grows (PRD Section 7.6).
 | `components` | format | Structured fields for the formatter. |
 | `expected_violations` | check | Exact set of error codes expected (order-insensitive). `[]` for a clean citation. |
 | `expected_output` | yes | Exact expected canonical citation, with typeface markers (below). |
-| `rules` | yes | Indigo Book rule reference(s) the entry exercises, e.g. `["IB R11.2", "IB T7"]`. |
+| `rules` | yes | Indigo Book rule reference(s) the entry exercises, e.g. `["IB R11.6.2", "IB R12.2"]`. |
 | `provenance` | yes | `hand-verified` (human only) or `synthetic` (scripted/Claude). |
 | `notes` | no | Free text. |
 
@@ -69,6 +69,35 @@ rejects any other string, so the corpus cannot drift from the taxonomy.
    reserved for reporter/word/periodical/geographic table abbreviations. This is a
    deliberate, reviewable convention, documented here so corpus authors stay
    consistent.
+
+3. **`PINCITE` coverage is a superfluous-`at`, not a dropped pincite.** A dropped
+   pincite is *lossy* — the checker cannot reconstruct the page number, so
+   `expected_output` would be unsatisfiable — and, more fundamentally, a missing
+   pincite is not a pure format error (pincites are not always required; that
+   depends on whether the author points to specific material, which is context,
+   not format). So the `PINCITE` class is exercised by a reversible error instead:
+   a superfluous `at` in a full-cite pincite (`456, 460` → `456, at 460`). "Missing
+   required pincite" is left to the human-verified back-test and short-form work,
+   where context is available. Flagged per PRD Section 12.
+
+## Corpus tracks: dev vs. pre-AI back-test
+
+To guard against a corpus poisoned by AI-hallucinated conventions, entries are
+split by `provenance` into two tracks with different trust levels:
+
+- **`synthetic` (development set).** Seeds + scripted mutations authored by Claude
+  Code. Tests the engine's *internal consistency*. Regenerable via
+  `npm run corpus:gen`. Lives in `tests/corpus/<type>.json`.
+- **`hand-verified` (pre-AI back-test / held-out set).** Citations a human curates
+  from **published law-review footnotes that predate generative AI** (roughly
+  pre-2022), which were cite-checked by human editors. Tests the engine's
+  *correctness against reality* — it catches cases where the synthetic ground
+  truth itself encodes a wrong convention. Lives in `tests/corpus/backtest/`.
+  Populated by humans only (PRD Section 12); each entry records its `source`.
+
+Run the held-out back-test with `npm test -- --backtest` (see
+`tests/corpus/backtest/README.md`). The dev set proves the module self-consistent;
+the back-test proves it is not memorizing hallucinated formats.
 
 ## Provenance rule (PRD Section 12)
 

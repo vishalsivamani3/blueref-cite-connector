@@ -1,0 +1,15 @@
+[
+  {
+    "id": "case-b0001",
+    "type": "case",
+    "mode": "check",
+    "input": "Brown v. Bd. of Educ. (Brown I), 347 U.S. 483 (1954)",
+    "style": "academic",
+    "expected_violations": [],
+    "expected_output": "Brown v. Bd. of Educ. (Brown I), 347 U.S. 483 (1954)",
+    "rules": ["IB R11", "IB T1", "IB R11.3.1"],
+    "provenance": "hand-verified",
+    "source": "Owner-verified validated full line cite (2026-07-18): Brown v. Bd. of Educ. (Brown I), 347 U.S. 483 (1954)",
+    "notes": "First hand-verified back-test entry. Exercises T6 (Bd./Educ.) and a name designation parenthetical (Brown I). Clean pass-through."
+  }
+]

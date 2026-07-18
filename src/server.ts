@@ -52,9 +52,13 @@ server.registerTool(
         .array(z.string())
         .optional()
         .describe('Ordered preceding footnotes, for id./supra resolution.'),
+      style: z
+        .enum(['academic', 'practitioner'])
+        .optional()
+        .describe('Citation style: "practitioner" (Indigo Book, italic case names) or "academic". Defaults to academic.'),
     },
   },
-  async ({ input, context }) => json(checkCitation(input, context)),
+  async ({ input, context, style }) => json(checkCitation(input, context, style)),
 );
 
 server.registerTool(
@@ -67,9 +71,13 @@ server.registerTool(
     inputSchema: {
       components: z.record(z.unknown()).describe('Structured citation fields.'),
       type: z.string().describe('Citation type id, e.g. "case" | "statute".'),
+      style: z
+        .enum(['academic', 'practitioner'])
+        .optional()
+        .describe('Citation style. Defaults to academic.'),
     },
   },
-  async ({ components, type }) => json(formatCitation(components, type)),
+  async ({ components, type, style }) => json(formatCitation(components, type, style)),
 );
 
 server.registerTool(
@@ -81,12 +89,16 @@ server.registerTool(
       'across the sequence. Returns per-footnote results plus a summary.',
     inputSchema: {
       footnotes: z.array(z.string()).describe('Ordered list of footnote strings.'),
+      style: z
+        .enum(['academic', 'practitioner'])
+        .optional()
+        .describe('Citation style. Defaults to academic.'),
     },
   },
-  async ({ footnotes }) => {
+  async ({ footnotes, style }) => {
     const perFootnote = footnotes.map((fn, i) => ({
       index: i + 1,
-      ...checkCitation(fn, footnotes.slice(0, i)),
+      ...checkCitation(fn, footnotes.slice(0, i), style),
     }));
     const supported = perFootnote.filter((r) => r.confidence === 'deterministic');
     const summary = {
