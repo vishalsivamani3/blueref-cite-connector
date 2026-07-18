@@ -37,12 +37,36 @@ which is exactly why the held-out track exists.
 
 After the fix: dev corpus `case 388/388 = 100%`, candidates `13 MATCH / 0 DIVERGE / 3 REFUSED`.
 
+### Fixed: c0014, via direct extraction of Indigo tables T1/T3 (2026-07-18)
+
+The reporter/court tables were expanded by extracting **Tables T1 (Federal
+Materials) and T3 (U.S. States and Other Jurisdictions)** directly from the CC0
+Indigo Book 2.0 PDF: **reporters 29 → 303**, **courts 67 → 172**. Existing entries
+and their hand-curated `variants` were preserved.
+
+Two things this surfaced:
+
+1. **The draft was wrong, not the module.** c0014 originally used the bare court
+   abbreviation `App. Div.`. Indigo T3 (New York) shows the correct form is
+   **`N.Y. App. Div.`** — so the module was right to reject it. The candidate has
+   been corrected against the source. A good illustration of why the held-out
+   track verifies *both* sides.
+2. **Spacing had to become generic.** Reporter spacing errors previously only
+   worked for reporters with a hand-listed variant. With 274 new reporters, the
+   checker now derives misspacings generically (a whitespace-insensitive index
+   plus generated parse tokens), so `470 N.Y.S. 2d 987` is recognized and
+   corrected to `N.Y.S.2d` rather than failing to parse.
+
+Regression seeds added (`N.Y.S.2d` + `N.Y. App. Div.`, `A.D.2d`, `F.4th`). State
+reporter entries now cite **T3**; federal stay **T1**. After: dev case slice
+`474/474 = 100%`, candidates `14 MATCH / 0 DIVERGE / 2 REFUSED`.
+
 ### Open (triaged, not yet fixed)
 
 | ID | Probe | Code | Disposition |
 |---|---|---|---|
 | c0010 | Nominative reporter `5 U.S. (1 Cranch) 137` | `PARSE_FAIL` | Phase 1 hardening: parser must accept an optional nominative-reporter parenthetical. Affects pre-1875 U.S. Reports cites. |
-| c0014 | `N.Y.S.2d` reporter + `App. Div.` court | `PARSE_FAIL` | Table completeness (§11.2): add state reporters and intermediate appellate courts. Long-tail data work, pinned by corpus entries as they arise. |
+| ~~c0014~~ | ~~`N.Y.S.2d` reporter + `App. Div.` court~~ | ~~`PARSE_FAIL`~~ | **FIXED 2026-07-18** — see below. |
 | c0015 | Case short form `Brown, 347 U.S. at 495` | `SHORTFORM_CONTEXT` | Phase 3 (short-forms module). Correctly refused (unsupported) rather than guessed. |
 | c0016 | Subsequent history (multiple parentheticals) | `ORDERING` / parse structure | Latent: the parser treats everything before the last parenthetical as the case name, so a clean history cite round-trips (looks like a pass) but is mis-structured and would mishandle an error inside the history. Phase 1 hardening or a documented limitation. |
 

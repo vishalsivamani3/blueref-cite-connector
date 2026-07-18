@@ -172,14 +172,14 @@
     "id": "case-c0014",
     "type": "case",
     "mode": "check",
-    "input": "People v. Smith, 470 N.Y.S.2d 987, 990 (App. Div. 1984)",
+    "input": "People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
     "expected_violations": [],
-    "expected_output": "People v. Smith, 470 N.Y.S.2d 987, 990 (App. Div. 1984)",
-    "rules": ["IB R10", "IB T1", "IB T7"],
+    "expected_output": "People v. Smith, 470 N.Y.S.2d 987, 990 (N.Y. App. Div. 1984)",
+    "rules": ["IB R11", "IB T3", "IB R12.2"],
     "provenance": "synthetic",
     "candidate_for": "hand-verified",
-    "source": "constructed; verify N.Y.S.2d + App. Div. conventions",
-    "notes": "probe: reporter N.Y.S.2d and court 'App. Div.' both missing from tables. Confidence: med. Expect module DIVERGE (parser/table gap)."
+    "source": "Indigo T3 (New York): Supreme Court, Appellate Division = 'N.Y. App. Div.'; cite to N.Y.S., N.Y.S.2d, N.Y.S.3d",
+    "notes": "probe: state reporter N.Y.S.2d + state intermediate court. CORRECTED 2026-07-18 — this draft originally used bare 'App. Div.', which Indigo T3 shows is wrong (it is 'N.Y. App. Div.'). Now closed by the T1/T3 table expansion."
   },
   {
     "id": "case-c0015",

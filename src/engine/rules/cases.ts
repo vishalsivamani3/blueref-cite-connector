@@ -65,6 +65,42 @@ function buildLookup(table: Record<string, TableEntry>): {
 const REPORTER_LOOKUP = buildLookup(REPORTERS);
 const COURT_LOOKUP = buildLookup(COURTS);
 
+/**
+ * Whitespace-insensitive index of canonical reporters ("N.Y.S. 2d" -> "N.Y.S.2d").
+ * This catches spacing errors generically for every reporter in T1/T3, rather than
+ * only those with a hand-listed spacing variant.
+ */
+const REPORTER_BY_DESPACED = new Map<string, string>();
+for (const canonical of REPORTER_LOOKUP.canonical) {
+  REPORTER_BY_DESPACED.set(canonical.replace(/\s/g, ''), canonical);
+}
+
+/**
+ * Common misspacings of a reporter: fully de-spaced, and a space inserted before a
+ * trailing series designator ("N.Y.S.2d" -> "N.Y.S. 2d"). Registered as parse
+ * tokens so the parser can *recognize* a misspaced reporter and the checker can
+ * then correct it, rather than failing to parse.
+ */
+function spacingForms(canonical: string): string[] {
+  const out = new Set<string>();
+  out.add(canonical.replace(/\s/g, ''));
+  const m = /^(.*?)\s*(\d(?:d|th|st|nd))$/.exec(canonical);
+  if (m && m[1]) out.add(`${m[1].trim()} ${m[2]}`);
+  out.delete(canonical);
+  return [...out].filter((s) => s.length > 0);
+}
+
+for (const canonical of [...REPORTER_LOOKUP.canonical]) {
+  for (const form of spacingForms(canonical)) {
+    if (REPORTER_LOOKUP.canonical.has(form)) continue; // never shadow a real reporter
+    if (!REPORTER_LOOKUP.variantToCanonical.has(form)) {
+      REPORTER_LOOKUP.variantToCanonical.set(form, canonical);
+      REPORTER_LOOKUP.tokens.push(form);
+    }
+  }
+}
+REPORTER_LOOKUP.tokens.sort((a, b) => b.length - a.length);
+
 const REPORTER_ALT = REPORTER_LOOKUP.tokens.map(escapeRegExp).join('|');
 
 /**
@@ -240,13 +276,25 @@ function check(parsed: Citation, style: Style): CheckResult {
       });
       reporter = canonical;
     } else {
-      // Unrecognized reporter: flag, do not guess (PRD Section 11.2).
-      violations.push({
-        code: 'ABBREV',
-        message: `Unrecognized reporter "${reporter}"; cannot verify against tables T1/T3.`,
-        rule: 'IB T1',
-        fix: reporter,
-      });
+      // Generic spacing check: does it match a canonical reporter ignoring spaces?
+      const despaced = REPORTER_BY_DESPACED.get(reporter.replace(/\s/g, ''));
+      if (despaced && despaced !== reporter) {
+        violations.push({
+          code: 'SPACING',
+          message: `Reporter spacing: "${reporter}" should be "${despaced}".`,
+          rule: 'IB R11.6.2',
+          fix: despaced,
+        });
+        reporter = despaced;
+      } else {
+        // Unrecognized reporter: flag, do not guess (PRD Section 11.2).
+        violations.push({
+          code: 'ABBREV',
+          message: `Unrecognized reporter "${reporter}"; cannot verify against tables T1/T3.`,
+          rule: 'IB T1',
+          fix: reporter,
+        });
+      }
     }
   }
 
