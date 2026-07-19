@@ -93,6 +93,26 @@ export const ADVERSARIAL: Adversarial[] = [
     notes: 'Federal Register: out of v1 scope, must be refused',
   },
 
+  // Indigo R11.5.13 lists these as Incorrect for the Commissioner of Internal Revenue.
+  {
+    type: 'case',
+    input: 'Smith v. CIR, 133 T.C. 424, 429 (2009)',
+    style: 'practitioner',
+    expected_violations: ['ABBREV', 'TYPEFACE'],
+    expected_output: "*Smith v. Comm'r*, 133 T.C. 424, 429 (2009)",
+    rules: ['IB R11.5.13'],
+    notes: 'R11.5.13: "CIR" is Incorrect; cite the Commissioner as Comm\'r',
+  },
+  {
+    type: 'case',
+    input: 'Smith v. IRS, 133 T.C. 424, 429 (2009)',
+    style: 'practitioner',
+    expected_violations: ['ABBREV', 'TYPEFACE'],
+    expected_output: "*Smith v. Comm'r*, 133 T.C. 424, 429 (2009)",
+    rules: ['IB R11.5.13'],
+    notes: 'R11.5.13: "IRS" is Incorrect; cite the Commissioner as Comm\'r',
+  },
+
   // R15.2.3: the first party is a governmental unit, so the correct short form uses
   // the OTHER party. We flag the structural error but refuse to fabricate the fix.
   {
@@ -246,6 +266,14 @@ export const SEEDS: Seed[] = [
   { type: 'case', style: 'practitioner', citation: '*Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009)', rules: ['IB R2.1', 'IB R11'] },
   { type: 'case', style: 'practitioner', citation: '*Gideon v. Wainwright*, 372 U.S. 335, 344 (1963)', rules: ['IB R2.1', 'IB R11'] },
   { type: 'case', style: 'practitioner', citation: '*Katz v. United States*, 389 U.S. 347, 351 (1967)', rules: ['IB R2.1', 'IB R11'] },
+
+  // Found by ~490pp of SCOTUS/appellate merits briefs (2026-07-19): reporter and
+  // court gaps, plus Indigo R11.5.13 (Commissioner of Internal Revenue).
+  { type: 'case', citation: 'People v. On Sight Mobile Opticians, 24 N.Y.3d 1107, 1109 (2014)', rules: ['IB R11', 'IB T3'] },
+  { type: 'case', citation: 'Nicolls v. Ingersoll, 7 Johns. 145, 155 (N.Y. Sup. Ct. 1810)', rules: ['IB R11', 'IB T3', 'IB R12.2'] },
+  { type: 'case', citation: 'Farhy v. Comm\'r, 100 F.4th 223, 226 (D.C. Cir. 2024)', rules: ['IB R11.5.13', 'IB T1'] },
+  { type: 'case', citation: 'Plainfield-Union Water Co. v. Comm\'r, 39 T.C. 333, 337 (1962)', rules: ['IB R11.5.13', 'IB T1'] },
+  { type: 'case', citation: 'Golsen v. Comm\'r, 54 T.C. 742, 747 (1970)', rules: ['IB R11.5.13', 'IB T1'] },
 
   // ------------------------------------------------------------ short forms
   // Indigo R15: case short forms (R15.2.2) and id. (R15.3). The case name is

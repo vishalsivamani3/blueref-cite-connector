@@ -2506,6 +2506,14 @@
     "D.V.I.": {
       "full": "United States District Court (D.V.I.)",
       "variants": []
+    },
+    "N.Y. Sup. Ct.": {
+      "full": "New York Supreme Court",
+      "variants": []
+    },
+    "N.Y. App. Term": {
+      "full": "New York Supreme Court, Appellate Term",
+      "variants": []
     }
   }
 }
