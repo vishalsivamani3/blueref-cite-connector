@@ -58,7 +58,17 @@ Two further traps found in practice:
     `Under|In|See|But|And|Because|Here|Thus|While|Although|Since|When|If|Compare|
     Unlike|Following|Applying`.
 
-> Traps 9 and 10 are the dangerous ones: they do not fail loudly, they produce a
+11. **Strip leading footnote numbers.** Body text carries footnote markers that sit
+    immediately before a citation — `25 case is readily distinguishable from Waco
+    Independent School District v. Gibson, 22 S.W.3d …` — and the digits plus the
+    trailing words of the previous sentence land in the case name.
+12. **Subsection parentheses are not a year parenthetical.** Statutes are cited with
+    subsections in parens (`Tex. Fam. Code § 261.001(4)(A)(ii)`). A capture (or a
+    parser) that treats the last parenthetical as the date will mis-read the
+    subsection. Require a 4-digit year or a publisher name before treating a
+    parenthetical as the date.
+
+> Traps 9, 10 and 11 are the dangerous ones: they do not fail loudly, they produce a
 > **plausible-looking but wrong citation**. Writing one of those into the
 > hand-verified corpus is worse than having no entry at all, because the gate then
 > teaches the checker something false. Eyeball every entry before promoting.

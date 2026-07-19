@@ -6,3 +6,7 @@ coverage/
 *.tsbuildinfo
 .env
 .claude/settings.local.json
+
+# Source documents used for back-testing are NEVER committed. They are often
+# personal work product or unpublished submissions, and this repo is public.
+*.pdf
