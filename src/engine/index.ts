@@ -9,6 +9,7 @@
 import { DISCLAIMER } from './disclaimer.js';
 import * as registry from './registry.js';
 import { DEFAULT_STYLE, STYLES } from './types.js';
+import { validateIdContext } from './document.js';
 import type {
   Citation,
   CitationInput,
@@ -44,6 +45,53 @@ export interface FormatOutcome {
   disclaimer: string;
 }
 
+export interface DocumentOutcome {
+  summary: {
+    total: number;
+    supported: number;
+    unsupported: number;
+    passed: number;
+    failed: number;
+    contextIssues: number;
+  };
+  perFootnote: Array<CheckOutcome & { index: number }>;
+  disclaimer: string;
+}
+
+/**
+ * Batch-check an ordered footnote list, then validate short-form context across
+ * the sequence (Indigo R15.3.3) — the half a per-citation check cannot see.
+ */
+export function checkDocument(footnotes: string[], style: Style = DEFAULT_STYLE): DocumentOutcome {
+  const perFootnote = footnotes.map((fn, i) => ({
+    index: i + 1,
+    ...checkCitation(fn, footnotes.slice(0, i), style),
+  }));
+
+  // Context violations attach to the footnote that used `id.` incorrectly.
+  const issues = validateIdContext(footnotes);
+  for (const { index, violation } of issues) {
+    const row = perFootnote[index - 1];
+    if (!row) continue;
+    row.violations = [...row.violations, violation];
+    row.pass = false;
+  }
+
+  const supported = perFootnote.filter((r) => r.confidence === 'deterministic');
+  return {
+    summary: {
+      total: perFootnote.length,
+      supported: supported.length,
+      unsupported: perFootnote.length - supported.length,
+      passed: supported.filter((r) => r.pass).length,
+      failed: supported.filter((r) => !r.pass).length,
+      contextIssues: issues.length,
+    },
+    perFootnote,
+    disclaimer: DISCLAIMER,
+  };
+}
+
 export interface SupportedOutcome {
   supportedTypes: CitationType[];
   styles: Style[];
@@ -54,7 +102,7 @@ export interface SupportedOutcome {
 
 const LIMITATIONS: string[] = [
   'Two styles: "practitioner" (standard legal documents; the convention The Indigo Book specifies) and "academic" (law-review). Academic typeface is not fully derivable from the CC0 Indigo Book (Indigo R1.2 puts it out of scope) and is treated as secondary.',
-  'Short forms (id., case short cites) are checked for FORMAT only (Indigo R15). Whether an "id." actually refers to the right authority is a context question (R15.3.3 forbids id. after a string cite or an ambiguous reference) and needs the ordered preceding footnotes — that is check_document, not yet implemented. A short-form format pass does NOT mean the reference is contextually valid.',
+  'Short-form CONTEXT is validated only by check_document, which sees the ordered footnotes (Indigo R15.3.3: id. must follow a single-source citation, never a string cite). check_citation alone checks format only, so a short-form pass from check_citation does NOT mean the reference is contextually valid.',
   'Multi-citation input (string cites, subsequent history such as aff\'d or cert. denied) is refused rather than parsed; check each citation separately.',
   '"supra" short forms are not yet handled (they attach mostly to books/periodicals, which have no module yet).',
   'Journal-article support covers consecutively paginated journals (Indigo R30.1.1) and student-written material (R30.1.3). Magazines and newspapers with standard pagination (R30.1.2 — full date and "at <page>" instead of a volume) are not yet handled.',

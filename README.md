@@ -81,7 +81,8 @@ guessed.
 | Periodicals (journal articles) | ✅ Phase 2 | R30, R2.1 |
 | Books & non-periodicals | ✅ Phase 3 | R28, R7.2 |
 | Short forms — `id.`, case short cites | ✅ Phase 1 (format only) | R15, R2.1 |
-| Short forms — `supra`, `id.` **context** | 🚧 Phase 3 | R15.3.3 |
+| `id.` **context** validation (`check_document`) | ✅ Phase 3 | R15.3.3 |
+| Short forms — `supra` | 🚧 | R29.2 |
 
 Both `practitioner` (default) and `academic` styles; see above.
 
@@ -127,7 +128,7 @@ as one PR. The hard part should be knowing the citation rules, not the codebase.
 | 0 | Foundations: MCP server, corpus schema, harness, CI. ✅ |
 | 1 | Cases at 99.5%. ✅ module done (460-entry slice at 100%, both styles; growing to 500, short forms pending). |
 | 2 | Statutes + periodicals at 99.5%. |
-| 3 | Books + `check_document` id./supra resolution. |
+| 3 | Books ✅ + `check_document` id. context ✅ (`supra` pending). |
 | 4 | Field test on real law-review footnotes; harden. |
 | 5 | Ship: npm publish, docs, stranger-install test. |
 

@@ -50,6 +50,9 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Document context tests (Indigo R15.3.3)
+        run: npm run test:document
+
       - name: Pre-AI back-test (held-out, hand-verified)
         run: npx tsx tests/harness.ts --backtest --ci
 
