@@ -1,11 +1,12 @@
 {
-  "phase": 2,
+  "phase": 3,
   "accuracyFloor": 0.0,
   "typeFloors": {
     "case": 0.995,
     "shortform": 0.995,
     "statute": 0.995,
-    "periodical": 0.995
+    "periodical": 0.995,
+    "book": 0.995
   },
   "note": "Phase 2 (PRD Section 9): statutes + periodicals. `typeFloors` gates each implemented type independently so unimplemented types do not block CI. Cases, short forms and statutes are enforced at 99.5%; periodicals follow. The v1 release gate is 0.995 over the whole >=1200-entry corpus (PRD Sections 7.1, 7.2).",
   "releaseMinCounts": {

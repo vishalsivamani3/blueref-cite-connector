@@ -101,9 +101,10 @@ async function main(): Promise<void> {
   assert(stat.confidence === 'deterministic', 'check_citation handles a statute (Phase 2)');
   assert(stat.pass === true, 'a yearless U.S.C. cite passes (Indigo R16.1.2: year optional)');
 
-  // An out-of-scope input (a book — no module yet) is refused, not guessed.
+  // Out-of-scope input (a foreign citation, PRD 3 non-goal) is refused, not guessed.
+  // All five citation types are implemented, so this checks a genuine non-goal.
   const unsupported = textOf(
-    await client.callTool({ name: 'check_citation', arguments: { input: '%John Rawls, A Theory of Justice% 11 (1971)' } }),
+    await client.callTool({ name: 'check_citation', arguments: { input: 'Donoghue v Stevenson [1932] UKHL 100' } }),
   ) as { confidence: string };
   assert(unsupported.confidence === 'unsupported', 'out-of-scope input is refused (unsupported)');
 
