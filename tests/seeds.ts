@@ -281,6 +281,16 @@ export const SEEDS: Seed[] = [
   { type: 'statute', citation: '29 U.S.C. § 158', rules: ['IB R16.1.1'] },
   { type: 'statute', citation: '28 U.S.C. § 1331', rules: ['IB R16.1.1'] },
 
+  // Chapter-based state codes (Indigo T3 statutory compilations). Massachusetts is
+  // "Mass. Gen. Laws ch.<chapter>, § <section>" — the comma between chapter and
+  // section is part of the form and was previously dropped on correction.
+  { type: 'statute', citation: 'Mass. Gen. Laws ch. 268, § 40 (2020)', rules: ['IB R17.2.1', 'IB T3'] },
+  { type: 'statute', citation: 'Mass. Gen. Laws ch. 149, § 148 (2020)', rules: ['IB R17.2.1', 'IB T3'] },
+  { type: 'statute', citation: 'Mass. Gen. Laws Ann. ch. 268, § 40 (West 2020)', rules: ['IB R17.2.2', 'IB T3'] },
+  { type: 'statute', citation: 'Fla. Stat. Ann. § 90.506 (West 2020)', rules: ['IB R17.2.2', 'IB T3'] },
+  { type: 'statute', citation: 'Fla. Stat. Ann. § 90.506 (LexisNexis 2020)', rules: ['IB R17.2.2', 'IB T3'] },
+  { type: 'statute', citation: 'Ill. Comp. Stat. ch. 5, § 140 (2020)', rules: ['IB R17.2.1', 'IB T3'] },
+
   // ------------------------------------------------------------ periodicals
   { type: 'periodical', citation: 'Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 %Harv. L. Rev.% 1733, 1745 (1995)', rules: ['IB R30', 'IB R30.3'] },
   { type: 'periodical', citation: 'Frank H. Easterbrook, *The Court and the Economic System*, 98 %Harv. L. Rev.% 4, 20 (1984)', rules: ['IB R30', 'IB R30.3'] },
