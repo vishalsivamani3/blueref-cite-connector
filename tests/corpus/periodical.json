@@ -1888,5 +1888,575 @@
     "provenance": "synthetic",
     "style": "academic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0109",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Liz Brown, *Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, 351 (2014)",
+    "expected_violations": [],
+    "expected_output": "Liz Brown, *Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, 351 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0110",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Liz Brown, *Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, at 351 (2014)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Liz Brown, *Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, 351 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0111",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Liz Brown, Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, 351 (2014)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Liz Brown, *Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, 351 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0112",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Liz Brown, Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, at 351 (2014)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Liz Brown, *Bridging the Gap: Improving Intellectual Property Protection for the Look and Feel of Websites*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 310, 351 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0113",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harv. L. Rev. 540, 544 (2014)",
+    "expected_violations": [],
+    "expected_output": "Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harv. L. Rev. 540, 544 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0114",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harv. L. Rev. 540, at 544 (2014)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harv. L. Rev. 540, 544 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0115",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard Lazarus, The (Non)Finality of Supreme Court Opinions, 128 Harv. L. Rev. 540, 544 (2014)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harv. L. Rev. 540, 544 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0116",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harvard Law Review 540, 544 (2014)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harv. L. Rev. 540, 544 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0117",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard Lazarus, The (Non)Finality of Supreme Court Opinions, 128 Harv. L. Rev. 540, at 544 (2014)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Richard Lazarus, *The (Non)Finality of Supreme Court Opinions*, 128 Harv. L. Rev. 540, 544 (2014)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0118",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422 (2014)",
+    "expected_violations": [],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0119",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, Using Copyright to Combat Revenge Porn, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422 (2014)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0120",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Victoria Nemiah, Note, *License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, 361 (2014)",
+    "expected_violations": [],
+    "expected_output": "Victoria Nemiah, Note, *License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, 361 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0121",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Victoria Nemiah, Note, *License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, at 361 (2014)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Victoria Nemiah, Note, *License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, 361 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0122",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Victoria Nemiah, Note, License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, 361 (2014)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Victoria Nemiah, Note, *License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, 361 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0123",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Victoria Nemiah, Note, License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, at 361 (2014)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Victoria Nemiah, Note, *License and Registration, Please: Using Copyright Conditions To Protect Free/Open Source Software*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 358, 361 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0124",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harv. L. Rev. 1733, 1745 (1995)",
+    "expected_violations": [],
+    "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harv. L. Rev. 1733, 1745 (1995)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0125",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harv. L. Rev. 1733, at 1745 (1995)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harv. L. Rev. 1733, 1745 (1995)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0126",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, Incompletely Theorized Agreements, 108 Harv. L. Rev. 1733, 1745 (1995)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harv. L. Rev. 1733, 1745 (1995)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0127",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harvard Law Review 1733, 1745 (1995)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harv. L. Rev. 1733, 1745 (1995)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0128",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, Incompletely Theorized Agreements, 108 Harv. L. Rev. 1733, at 1745 (1995)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Incompletely Theorized Agreements*, 108 Harv. L. Rev. 1733, 1745 (1995)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0129",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles A. Reich, *The New Property*, 73 Yale L.J. 733, 737 (1964)",
+    "expected_violations": [],
+    "expected_output": "Charles A. Reich, *The New Property*, 73 Yale L.J. 733, 737 (1964)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0130",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles A. Reich, *The New Property*, 73 Yale L.J. 733, at 737 (1964)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Charles A. Reich, *The New Property*, 73 Yale L.J. 733, 737 (1964)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0131",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles A. Reich, The New Property, 73 Yale L.J. 733, 737 (1964)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Charles A. Reich, *The New Property*, 73 Yale L.J. 733, 737 (1964)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0132",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles A. Reich, *The New Property*, 73 Yale Law Journal 733, 737 (1964)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Charles A. Reich, *The New Property*, 73 Yale L.J. 733, 737 (1964)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0133",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles A. Reich, The New Property, 73 Yale L.J. 733, at 737 (1964)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Charles A. Reich, *The New Property*, 73 Yale L.J. 733, 737 (1964)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0134",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harv. L. Rev. 193, 195 (1890)",
+    "expected_violations": [],
+    "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harv. L. Rev. 193, 195 (1890)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0135",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harv. L. Rev. 193, at 195 (1890)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harv. L. Rev. 193, 195 (1890)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0136",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Samuel D. Warren & Louis D. Brandeis, The Right to Privacy, 4 Harv. L. Rev. 193, 195 (1890)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harv. L. Rev. 193, 195 (1890)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0137",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harvard Law Review 193, 195 (1890)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harv. L. Rev. 193, 195 (1890)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0138",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Samuel D. Warren & Louis D. Brandeis, The Right to Privacy, 4 Harv. L. Rev. 193, at 195 (1890)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Samuel D. Warren & Louis D. Brandeis, *The Right to Privacy*, 4 Harv. L. Rev. 193, 195 (1890)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0139",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 U. Chi. L. Rev. 1175, 1180 (1989)",
+    "expected_violations": [],
+    "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 U. Chi. L. Rev. 1175, 1180 (1989)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0140",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 U. Chi. L. Rev. 1175, at 1180 (1989)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 U. Chi. L. Rev. 1175, 1180 (1989)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0141",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Antonin Scalia, The Rule of Law as a Law of Rules, 56 U. Chi. L. Rev. 1175, 1180 (1989)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 U. Chi. L. Rev. 1175, 1180 (1989)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0142",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 University of Chicago Law Review 1175, 1180 (1989)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 U. Chi. L. Rev. 1175, 1180 (1989)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0143",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Antonin Scalia, The Rule of Law as a Law of Rules, 56 U. Chi. L. Rev. 1175, at 1180 (1989)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Antonin Scalia, *The Rule of Law as a Law of Rules*, 56 U. Chi. L. Rev. 1175, 1180 (1989)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   }
 ]
