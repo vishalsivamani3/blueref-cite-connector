@@ -62,6 +62,14 @@ const AMBIGUOUS_HYPHEN = /[-–]/;
 
 const CANONICAL_FEDERAL = /^U\.S\.C\.(A\.|S\.)?$/;
 
+/**
+ * Regulations and administrative materials are an explicit v1 non-goal (PRD 3).
+ * Their shape ("29 C.F.R. § 1910.132 (2020)") is close enough to a state code that
+ * the generic pattern would otherwise ACCEPT them and report a clean pass — a
+ * false accept on a citation type we have no rules for. Refuse instead (PRD 6.5).
+ */
+const REGULATION = /(?:^|\s)(C\.F\.R\.|Fed\.\s?Reg\.|Admin\.\s?Code)(?=\s|$)/i;
+
 interface StatuteComponents {
   kind: 'federal' | 'state';
   act?: string;
@@ -83,6 +91,7 @@ interface StatuteComponents {
 function detect(input: string): number {
   const s = input.trim();
   if (/\sv\.\s|\svs\.\s/.test(s)) return 0.05; // a case, not a statute
+  if (REGULATION.test(s)) return 0.05; // regulation: out of v1 scope (PRD 3)
   if (!/§/.test(s) && !/\bU\.?\s?S\.?\s?C\b|United States Code/i.test(s)) return 0.05;
   if (FEDERAL_RE.test(s) || /United States Code/i.test(s)) return 0.96;
   if (STATE_RE.test(s)) return 0.9;

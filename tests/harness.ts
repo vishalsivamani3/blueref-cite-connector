@@ -94,6 +94,11 @@ function runEntry(entry: CorpusEntry): Result {
 
   // check mode
   const res = checkCitation(entry.input ?? '', undefined, entry.style);
+  if (entry.expect === 'unsupported') {
+    return res.confidence === 'unsupported'
+      ? { entry, passed: true, reason: 'ok (refused, as required)' }
+      : { entry, passed: false, reason: `expected refusal, got ${res.confidence}` };
+  }
   if (res.confidence === 'unsupported') {
     // Refusing on an in-scope corpus entry is a failure, not a pass. This keeps
     // Phase 0 honest: clean entries do not "pass" just because the engine punted.

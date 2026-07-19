@@ -21,6 +21,12 @@ export interface CorpusEntry {
   expected_violations: ErrorCode[];
   /** Citation style for this entry. Omitted = the engine default (practitioner). */
   style?: Style;
+  /**
+   * Assert that the engine REFUSES this input (confidence "unsupported") rather
+   * than checking it. Refusal is correct behaviour for a v1 non-goal, and PRD 6.5
+   * makes it a first-class outcome, so the corpus must be able to require it.
+   */
+  expect?: 'unsupported';
   /** Exact expected canonical citation (with typeface markers). */
   expected_output: string;
   /** Indigo Book rule reference(s), e.g. ["IB R11.6.2", "IB R12.2"]. */

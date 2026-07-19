@@ -124,6 +124,7 @@ function generateForType(type: CitationType): CorpusEntry[] {
       rules: adv.rules,
       provenance: 'synthetic',
       ...(advStyle !== DEFAULT_STYLE ? { style: advStyle } : {}),
+      ...(adv.expect ? { expect: adv.expect } : {}),
       notes: `adversarial: ${adv.notes}`,
     });
   }

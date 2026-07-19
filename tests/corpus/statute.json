@@ -2105,5 +2105,35 @@
     "provenance": "synthetic",
     "style": "academic",
     "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0127",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 C.F.R. § 1910.132 (2020)",
+    "expected_violations": [],
+    "expected_output": "29 C.F.R. § 1910.132 (2020)",
+    "rules": [
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "expect": "unsupported",
+    "notes": "adversarial: regulation: out of v1 scope, must be refused not accepted"
+  },
+  {
+    "id": "statute-0128",
+    "type": "statute",
+    "mode": "check",
+    "input": "40 Fed. Reg. 1234 (Jan. 1, 1975)",
+    "expected_violations": [],
+    "expected_output": "40 Fed. Reg. 1234 (Jan. 1, 1975)",
+    "rules": [
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "expect": "unsupported",
+    "notes": "adversarial: Federal Register: out of v1 scope, must be refused"
   }
 ]

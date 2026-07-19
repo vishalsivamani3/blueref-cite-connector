@@ -37,6 +37,8 @@ export interface Adversarial {
   expected_output: string;
   rules: string[];
   style?: Style;
+  /** Assert the engine refuses this input (a v1 non-goal). */
+  expect?: 'unsupported';
   notes: string;
 }
 
@@ -68,6 +70,29 @@ export const ADVERSARIAL: Adversarial[] = [
     rules: ['IB R11'],
     notes: 'string cite (two citations): refuse, check each separately',
   },
+  // v1 non-goals (PRD 3): regulations and foreign citations must be REFUSED, not
+  // accepted. The regulation shape is close enough to a state code that the generic
+  // pattern accepted it and reported a clean pass — a false accept on a citation
+  // type we have no rules for.
+  {
+    type: 'statute',
+    input: '29 C.F.R. § 1910.132 (2020)',
+    expected_violations: [],
+    expected_output: '29 C.F.R. § 1910.132 (2020)',
+    expect: 'unsupported',
+    rules: ['IB R16'],
+    notes: 'regulation: out of v1 scope, must be refused not accepted',
+  },
+  {
+    type: 'statute',
+    input: '40 Fed. Reg. 1234 (Jan. 1, 1975)',
+    expected_violations: [],
+    expected_output: '40 Fed. Reg. 1234 (Jan. 1, 1975)',
+    expect: 'unsupported',
+    rules: ['IB R16'],
+    notes: 'Federal Register: out of v1 scope, must be refused',
+  },
+
   // R15.2.3: the first party is a governmental unit, so the correct short form uses
   // the OTHER party. We flag the structural error but refuse to fabricate the fix.
   {
@@ -344,4 +369,15 @@ export const SEEDS: Seed[] = [
   { type: 'book', citation: '%Cass R. Sunstein, Legal Reasoning and Political Conflict% 62 (1996)', rules: ['IB R28'] },
   { type: 'book', citation: '%William L. Prosser, Handbook of the Law of Torts% 145 (4th ed. 1971)', rules: ['IB R28'] },
   { type: 'book', citation: '%Wesley Newcomb Hohfeld, Fundamental Legal Conceptions% 23 (1919)', rules: ['IB R28'] },
+  // --- Indigo R28 worked examples + practitioner style (author roman R28.2,
+  // title italic R28.2.3). The pre-existing book seeds above are academic
+  // (%small caps%) and are tagged style:"academic" by the generator.
+  { type: 'book', style: 'practitioner', citation: 'Matthew Reidsma, *Masked by Trust: Bias in Library Discovery* (2019)', rules: ['IB R28.1', 'IB R28.2.3'] },
+  { type: 'book', style: 'practitioner', citation: 'Joseph Williams & Joseph Bizup, *Style: Ten Lessons in Clarity and Grace* (12th ed. 2016)', rules: ['IB R28.1', 'IB R28.2.5'] },
+  { type: 'book', style: 'practitioner', citation: '*Lawyers in Practice: Ethical Decision Making in Context* (Leslie C. Levin & Lynn Mather eds., 2012)', rules: ['IB R28.1', 'IB R28.2.5'] },
+  { type: 'book', style: 'practitioner', citation: 'Marc A. Franklin et al., *Mass Media Law Cases and Materials* 472 (8th ed. 2011)', rules: ['IB R28.2.4', 'IB R28.2.2'] },
+  { type: 'book', style: 'practitioner', citation: 'John Rawls, *A Theory of Justice* 11 (1971)', rules: ['IB R28.1', 'IB R28.2.3'] },
+  { type: 'book', style: 'practitioner', citation: 'H.L.A. Hart, *The Concept of Law* 79 (2d ed. 1994)', rules: ['IB R28.2.5', 'IB R7.2'] },
+  { type: 'book', style: 'practitioner', citation: 'Ronald Dworkin, *Taking Rights Seriously* 22 (1977)', rules: ['IB R28.1'] },
+  { type: 'book', style: 'practitioner', citation: 'Richard A. Posner, *Economic Analysis of Law* 45 (9th ed. 2014)', rules: ['IB R28.2.5'] },
 ];

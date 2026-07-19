@@ -686,5 +686,132 @@
     "provenance": "synthetic",
     "style": "academic",
     "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0045",
+    "type": "book",
+    "mode": "check",
+    "input": "Matthew Reidsma, *Masked by Trust: Bias in Library Discovery* (2019)",
+    "expected_violations": [],
+    "expected_output": "Matthew Reidsma, *Masked by Trust: Bias in Library Discovery* (2019)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0046",
+    "type": "book",
+    "mode": "check",
+    "input": "Joseph Williams & Joseph Bizup, *Style: Ten Lessons in Clarity and Grace* (12th ed. 2016)",
+    "expected_violations": [],
+    "expected_output": "Joseph Williams & Joseph Bizup, *Style: Ten Lessons in Clarity and Grace* (12th ed. 2016)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.5"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0047",
+    "type": "book",
+    "mode": "check",
+    "input": "*Lawyers in Practice: Ethical Decision Making in Context* (Leslie C. Levin & Lynn Mather eds., 2012)",
+    "expected_violations": [],
+    "expected_output": "*Lawyers in Practice: Ethical Decision Making in Context* (Leslie C. Levin & Lynn Mather eds., 2012)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.5"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0048",
+    "type": "book",
+    "mode": "check",
+    "input": "Marc A. Franklin et al., *Mass Media Law Cases and Materials* 472 (8th ed. 2011)",
+    "expected_violations": [],
+    "expected_output": "Marc A. Franklin et al., *Mass Media Law Cases and Materials* 472 (8th ed. 2011)",
+    "rules": [
+      "IB R28.2.4",
+      "IB R28.2.2"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0049",
+    "type": "book",
+    "mode": "check",
+    "input": "John Rawls, *A Theory of Justice* 11 (1971)",
+    "expected_violations": [],
+    "expected_output": "John Rawls, *A Theory of Justice* 11 (1971)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0050",
+    "type": "book",
+    "mode": "check",
+    "input": "H.L.A. Hart, *The Concept of Law* 79 (2d ed. 1994)",
+    "expected_violations": [],
+    "expected_output": "H.L.A. Hart, *The Concept of Law* 79 (2d ed. 1994)",
+    "rules": [
+      "IB R28.2.5",
+      "IB R7.2"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0051",
+    "type": "book",
+    "mode": "check",
+    "input": "H.L.A. Hart, *The Concept of Law* 79 (2nd ed. 1994)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "H.L.A. Hart, *The Concept of Law* 79 (2d ed. 1994)",
+    "rules": [
+      "IB R28.2.5",
+      "IB R7.2",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0052",
+    "type": "book",
+    "mode": "check",
+    "input": "Ronald Dworkin, *Taking Rights Seriously* 22 (1977)",
+    "expected_violations": [],
+    "expected_output": "Ronald Dworkin, *Taking Rights Seriously* 22 (1977)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0053",
+    "type": "book",
+    "mode": "check",
+    "input": "Richard A. Posner, *Economic Analysis of Law* 45 (9th ed. 2014)",
+    "expected_violations": [],
+    "expected_output": "Richard A. Posner, *Economic Analysis of Law* 45 (9th ed. 2014)",
+    "rules": [
+      "IB R28.2.5"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
   }
 ]
