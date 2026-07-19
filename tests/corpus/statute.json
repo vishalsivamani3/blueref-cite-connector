@@ -1907,5 +1907,203 @@
     "provenance": "synthetic",
     "style": "academic",
     "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0115",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws ch. 268, § 40 (2020)",
+    "expected_violations": [],
+    "expected_output": "Mass. Gen. Laws ch. 268, § 40 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0116",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws ch. 268, §40 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mass. Gen. Laws ch. 268, § 40 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0117",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws ch. 149, § 148 (2020)",
+    "expected_violations": [],
+    "expected_output": "Mass. Gen. Laws ch. 149, § 148 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0118",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws ch. 149, §148 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mass. Gen. Laws ch. 149, § 148 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0119",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws Ann. ch. 268, § 40 (West 2020)",
+    "expected_violations": [],
+    "expected_output": "Mass. Gen. Laws Ann. ch. 268, § 40 (West 2020)",
+    "rules": [
+      "IB R17.2.2",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0120",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws Ann. ch. 268, §40 (West 2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mass. Gen. Laws Ann. ch. 268, § 40 (West 2020)",
+    "rules": [
+      "IB R17.2.2",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0121",
+    "type": "statute",
+    "mode": "check",
+    "input": "Fla. Stat. Ann. § 90.506 (West 2020)",
+    "expected_violations": [],
+    "expected_output": "Fla. Stat. Ann. § 90.506 (West 2020)",
+    "rules": [
+      "IB R17.2.2",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0122",
+    "type": "statute",
+    "mode": "check",
+    "input": "Fla. Stat. Ann. §90.506 (West 2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Fla. Stat. Ann. § 90.506 (West 2020)",
+    "rules": [
+      "IB R17.2.2",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0123",
+    "type": "statute",
+    "mode": "check",
+    "input": "Fla. Stat. Ann. § 90.506 (LexisNexis 2020)",
+    "expected_violations": [],
+    "expected_output": "Fla. Stat. Ann. § 90.506 (LexisNexis 2020)",
+    "rules": [
+      "IB R17.2.2",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0124",
+    "type": "statute",
+    "mode": "check",
+    "input": "Fla. Stat. Ann. §90.506 (LexisNexis 2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Fla. Stat. Ann. § 90.506 (LexisNexis 2020)",
+    "rules": [
+      "IB R17.2.2",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0125",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ill. Comp. Stat. ch. 5, § 140 (2020)",
+    "expected_violations": [],
+    "expected_output": "Ill. Comp. Stat. ch. 5, § 140 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0126",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ill. Comp. Stat. ch. 5, §140 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ill. Comp. Stat. ch. 5, § 140 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
   }
 ]

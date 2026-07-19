@@ -72,6 +72,12 @@ interface StatuteComponents {
   paren?: string;
   /** true when the input had no space after the section symbol */
   tightSymbol: boolean;
+  /**
+   * true when a comma separates the code/chapter from the section symbol, as in
+   * the chapter-based state formats: "Mass. Gen. Laws ch. 268, § 40 (2020)"
+   * (Indigo T3). Dropping it silently corrupts the citation.
+   */
+  chapterComma?: boolean;
 }
 
 function detect(input: string): number {
@@ -108,7 +114,9 @@ function parse(input: string): ParseResult {
 
   const st = STATE_RE.exec(s);
   if (st) {
-    const code = st[1]!.replace(/\s+/g, ' ').trim().replace(/,$/, '');
+    const rawCode = st[1]!.replace(/\s+/g, ' ').trim();
+    const chapterComma = /,$/.test(rawCode);
+    const code = rawCode.replace(/,$/, '');
     if (!code) return { ok: false, code: 'PARSE_FAIL', message: 'Missing statutory code name.' };
     const components: StatuteComponents = {
       kind: 'state',
@@ -116,6 +124,7 @@ function parse(input: string): ParseResult {
       symbol: st[2]!,
       sections: st[3]!.replace(/\s+/g, ' ').trim(),
       tightSymbol,
+      chapterComma,
       ...(st[4] ? { paren: st[4].trim() } : {}),
     };
     return { ok: true, citation: { type: 'statute', raw: input, components: components as unknown as Record<string, unknown> } };
@@ -126,7 +135,7 @@ function parse(input: string): ParseResult {
 
 function assemble(c: StatuteComponents): string {
   const paren = c.paren ? ` (${c.paren})` : '';
-  const head = c.kind === 'federal' ? `${c.title} ${c.code}` : c.code;
+  const head = c.kind === 'federal' ? `${c.title} ${c.code}` : `${c.code}${c.chapterComma ? ',' : ''}`;
   const act = c.act ? `${c.act}, ` : '';
   return `${act}${head} ${c.symbol} ${c.sections}${paren}`;
 }
