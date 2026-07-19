@@ -10,13 +10,41 @@
     "provenance": "indigo-book-derived"
   },
   "nominatives": {
-    "Wall.": { "full": "Wallace", "dates": "1863-1874", "variants": [] },
-    "Black": { "full": "Black", "dates": "1861-1862", "variants": [] },
-    "How.": { "full": "Howard", "dates": "1843-1860", "variants": [] },
-    "Pet.": { "full": "Peters", "dates": "1828-1842", "variants": [] },
-    "Wheat.": { "full": "Wheaton", "dates": "1816-1827", "variants": [] },
-    "Cranch": { "full": "Cranch", "dates": "1801-1815", "variants": [] },
-    "Dall.": { "full": "Dallas", "dates": "1790-1800", "variants": [] }
+    "Wall.": {
+      "full": "Wallace",
+      "dates": "1863-1874",
+      "variants": []
+    },
+    "Black": {
+      "full": "Black",
+      "dates": "1861-1862",
+      "variants": []
+    },
+    "How.": {
+      "full": "Howard",
+      "dates": "1843-1860",
+      "variants": []
+    },
+    "Pet.": {
+      "full": "Peters",
+      "dates": "1828-1842",
+      "variants": []
+    },
+    "Wheat.": {
+      "full": "Wheaton",
+      "dates": "1816-1827",
+      "variants": []
+    },
+    "Cranch": {
+      "full": "Cranch",
+      "dates": "1801-1815",
+      "variants": []
+    },
+    "Dall.": {
+      "full": "Dallas",
+      "dates": "1790-1800",
+      "variants": []
+    }
   },
   "reporters": {
     "U.S.": {
@@ -1318,6 +1346,10 @@
     },
     "V.I.": {
       "full": "Virgin Islands Reports",
+      "variants": []
+    },
+    "N.Y.3d": {
+      "full": "New York Reports, Third Series",
       "variants": []
     }
   }

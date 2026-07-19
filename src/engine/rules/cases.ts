@@ -160,7 +160,13 @@ const WORD_ABBREV: Array<{ full: RegExp; abbrev: string }> = [
   { full: /\bServices\b/g, abbrev: 'Servs.' },
   { full: /\bService\b/g, abbrev: 'Serv.' },
   { full: /\bSocial\b/g, abbrev: 'Soc.' },
+  // R11.5.13: the Commissioner of Internal Revenue is cited as "Commissioner",
+  // "abbreviated as 'Comm'r' in citation sentences and clauses". The rule also
+  // lists "Commissioner of Internal Revenue", "CIR" and "IRS" as Incorrect.
+  { full: /\bCommissioner of Internal Revenue\b/g, abbrev: "Comm'r" },
   { full: /\bCommissioner(s?)\b/g, abbrev: "Comm'r$1" },
+  { full: /(?<=\sv\. )CIR\b/g, abbrev: "Comm'r" },
+  { full: /(?<=\sv\. )IRS\b/g, abbrev: "Comm'r" },
   { full: /\bGovernment(s?)\b/g, abbrev: "Gov't$1" },
   // Owner-directed strict-T6 pass (2026-07-18). Standard Indigo/Bluebook T6
   // case-name abbreviations; each is verifiable against T6 and awaits back-test
@@ -313,8 +319,10 @@ function check(parsed: Citation, style: Style): CheckResult {
       const fixed = name.replace(full, abbrev);
       violations.push({
         code: 'ABBREV',
-        message: 'Abbreviate the institutional word in the case name per Indigo R11.3.1.',
-        rule: 'IB R11.3.1',
+        message: /Comm/.test(fixed)
+          ? 'Cite the Commissioner of Internal Revenue as "Comm\'r" in a citation (Indigo R11.5.13).'
+          : 'Abbreviate the institutional word in the case name per Indigo R11.3.1.',
+        rule: /Comm/.test(fixed) ? 'IB R11.5.13' : 'IB R11.3.1',
         fix: fixed,
       });
       name = fixed;
