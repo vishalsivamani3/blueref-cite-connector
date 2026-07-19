@@ -12,6 +12,7 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { z } from 'zod';
 import {
   checkCitation,
+  checkDocument,
   formatCitation,
   listSupported,
   parseCitation,
@@ -95,21 +96,7 @@ server.registerTool(
         .describe('Citation style. Defaults to academic.'),
     },
   },
-  async ({ footnotes, style }) => {
-    const perFootnote = footnotes.map((fn, i) => ({
-      index: i + 1,
-      ...checkCitation(fn, footnotes.slice(0, i), style),
-    }));
-    const supported = perFootnote.filter((r) => r.confidence === 'deterministic');
-    const summary = {
-      total: perFootnote.length,
-      supported: supported.length,
-      unsupported: perFootnote.length - supported.length,
-      passed: supported.filter((r) => r.pass).length,
-      failed: supported.filter((r) => !r.pass).length,
-    };
-    return json({ summary, perFootnote, disclaimer: perFootnote[0]?.disclaimer });
-  },
+  async ({ footnotes, style }) => json(checkDocument(footnotes, style)),
 );
 
 server.registerTool(

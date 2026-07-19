@@ -28,7 +28,8 @@
     "test": "tsx tests/harness.ts",
     "test:ci": "tsx tests/harness.ts --ci",
     "smoke": "npm run build && tsx tests/smoke.ts",
-    "candidates": "tsx tests/backtest-candidates/run.ts"
+    "candidates": "tsx tests/backtest-candidates/run.ts",
+    "test:document": "tsx tests/document.ts"
   },
   "keywords": [
     "legal",
