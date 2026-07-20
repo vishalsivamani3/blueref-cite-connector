@@ -2110,6 +2110,3808 @@
     "id": "statute-0127",
     "type": "statute",
     "mode": "check",
+    "input": "Ala. Code § 51-3-22 (2018)",
+    "expected_violations": [],
+    "expected_output": "Ala. Code § 51-3-22 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0128",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ala. Code §51-3-22 (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ala. Code § 51-3-22 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0129",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ala. Code § 51-3-22 (LexisNexis 2019)",
+    "expected_violations": [],
+    "expected_output": "Ala. Code § 51-3-22 (LexisNexis 2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0130",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ala. Code §51-3-22 (LexisNexis 2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ala. Code § 51-3-22 (LexisNexis 2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0131",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ariz. Rev. Stat. § 12-341 (LexisNexis 2020)",
+    "expected_violations": [],
+    "expected_output": "Ariz. Rev. Stat. § 12-341 (LexisNexis 2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0132",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ariz. Rev. Stat. §12-341 (LexisNexis 2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ariz. Rev. Stat. § 12-341 (LexisNexis 2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0133",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ark. Code Ann. § 51-3-22 (2021)",
+    "expected_violations": [],
+    "expected_output": "Ark. Code Ann. § 51-3-22 (2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0134",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ark. Code Ann. §51-3-22 (2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ark. Code Ann. § 51-3-22 (2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0135",
+    "type": "statute",
+    "mode": "check",
+    "input": "Colo. Rev. Stat. Ann. § 51-3-22 (West 2022)",
+    "expected_violations": [],
+    "expected_output": "Colo. Rev. Stat. Ann. § 51-3-22 (West 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0136",
+    "type": "statute",
+    "mode": "check",
+    "input": "Colo. Rev. Stat. Ann. §51-3-22 (West 2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Colo. Rev. Stat. Ann. § 51-3-22 (West 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0137",
+    "type": "statute",
+    "mode": "check",
+    "input": "Conn. Gen. Stat. Ann. § 12-341 (West 2018)",
+    "expected_violations": [],
+    "expected_output": "Conn. Gen. Stat. Ann. § 12-341 (West 2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0138",
+    "type": "statute",
+    "mode": "check",
+    "input": "Conn. Gen. Stat. Ann. §12-341 (West 2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Conn. Gen. Stat. Ann. § 12-341 (West 2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0139",
+    "type": "statute",
+    "mode": "check",
+    "input": "Del. Code Ann. tit. x, § 1550 (2019)",
+    "expected_violations": [],
+    "expected_output": "Del. Code Ann. tit. x, § 1550 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0140",
+    "type": "statute",
+    "mode": "check",
+    "input": "Del. Code Ann. tit. x, §1550 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Del. Code Ann. tit. x, § 1550 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0141",
+    "type": "statute",
+    "mode": "check",
+    "input": "D.C. Code § 12-341 (2020)",
+    "expected_violations": [],
+    "expected_output": "D.C. Code § 12-341 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0142",
+    "type": "statute",
+    "mode": "check",
+    "input": "D.C. Code §12-341 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "D.C. Code § 12-341 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0143",
+    "type": "statute",
+    "mode": "check",
+    "input": "D.C. Code Ann. § 12-341 (West 2021)",
+    "expected_violations": [],
+    "expected_output": "D.C. Code Ann. § 12-341 (West 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0144",
+    "type": "statute",
+    "mode": "check",
+    "input": "D.C. Code Ann. §12-341 (West 2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "D.C. Code Ann. § 12-341 (West 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0145",
+    "type": "statute",
+    "mode": "check",
+    "input": "Fla. Stat. Florida Statutes Fla. Stat. § 90.506 (2022)",
+    "expected_violations": [],
+    "expected_output": "Fla. Stat. Florida Statutes Fla. Stat. § 90.506 (2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0146",
+    "type": "statute",
+    "mode": "check",
+    "input": "Fla. Stat. Florida Statutes Fla. Stat. §90.506 (2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Fla. Stat. Florida Statutes Fla. Stat. § 90.506 (2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0147",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ga. Code Ann. § 51-3-22 (2018)",
+    "expected_violations": [],
+    "expected_output": "Ga. Code Ann. § 51-3-22 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0148",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ga. Code Ann. §51-3-22 (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ga. Code Ann. § 51-3-22 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0149",
+    "type": "statute",
+    "mode": "check",
+    "input": "Haw. Rev. Stat. Ann. § 12-341 (LexisNexis 2019)",
+    "expected_violations": [],
+    "expected_output": "Haw. Rev. Stat. Ann. § 12-341 (LexisNexis 2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0150",
+    "type": "statute",
+    "mode": "check",
+    "input": "Haw. Rev. Stat. Ann. §12-341 (LexisNexis 2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Haw. Rev. Stat. Ann. § 12-341 (LexisNexis 2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0151",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ind. Code. Indiana Code Ind. Code § 101 (2020)",
+    "expected_violations": [],
+    "expected_output": "Ind. Code. Indiana Code Ind. Code § 101 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0152",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ind. Code. Indiana Code Ind. Code §101 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ind. Code. Indiana Code Ind. Code § 101 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0153",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ind. Code Ann. § 101 (LexisNexis 2021)",
+    "expected_violations": [],
+    "expected_output": "Ind. Code Ann. § 101 (LexisNexis 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0154",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ind. Code Ann. §101 (LexisNexis 2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ind. Code Ann. § 101 (LexisNexis 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0155",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ky. Rev. Stat. Ann. § 90.506 (West 2022)",
+    "expected_violations": [],
+    "expected_output": "Ky. Rev. Stat. Ann. § 90.506 (West 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0156",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ky. Rev. Stat. Ann. §90.506 (West 2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ky. Rev. Stat. Ann. § 90.506 (West 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0157",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ky. Rev. Stat. Ann. § 90.506 (LexisNexis 2018)",
+    "expected_violations": [],
+    "expected_output": "Ky. Rev. Stat. Ann. § 90.506 (LexisNexis 2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0158",
+    "type": "statute",
+    "mode": "check",
+    "input": "Ky. Rev. Stat. Ann. §90.506 (LexisNexis 2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Ky. Rev. Stat. Ann. § 90.506 (LexisNexis 2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0159",
+    "type": "statute",
+    "mode": "check",
+    "input": "Me. Rev. Stat. Ann. tit. x, § 1550 (2019)",
+    "expected_violations": [],
+    "expected_output": "Me. Rev. Stat. Ann. tit. x, § 1550 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0160",
+    "type": "statute",
+    "mode": "check",
+    "input": "Me. Rev. Stat. Ann. tit. x, §1550 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Me. Rev. Stat. Ann. tit. x, § 1550 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0161",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws ch. x, § 1550 (2020)",
+    "expected_violations": [],
+    "expected_output": "Mass. Gen. Laws ch. x, § 1550 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0162",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws ch. x, §1550 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mass. Gen. Laws ch. x, § 1550 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0163",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws Ann. ch. x, § 1550 (West 2021)",
+    "expected_violations": [],
+    "expected_output": "Mass. Gen. Laws Ann. ch. x, § 1550 (West 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0164",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Gen. Laws Ann. ch. x, §1550 (West 2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mass. Gen. Laws Ann. ch. x, § 1550 (West 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0165",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Ann. Laws ch. x, § 1550 (LexisNexis 2022)",
+    "expected_violations": [],
+    "expected_output": "Mass. Ann. Laws ch. x, § 1550 (LexisNexis 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0166",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mass. Ann. Laws ch. x, §1550 (LexisNexis 2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mass. Ann. Laws ch. x, § 1550 (LexisNexis 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0167",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mich. Comp. Laws § 90.506 (2018)",
+    "expected_violations": [],
+    "expected_output": "Mich. Comp. Laws § 90.506 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0168",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mich. Comp. Laws §90.506 (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mich. Comp. Laws § 90.506 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0169",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mich. Comp. Laws Ann. § 90.506 (West 2019)",
+    "expected_violations": [],
+    "expected_output": "Mich. Comp. Laws Ann. § 90.506 (West 2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0170",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mich. Comp. Laws Ann. §90.506 (West 2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mich. Comp. Laws Ann. § 90.506 (West 2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0171",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mich. Comp. Laws Serv. § 90.506 (LexisNexis 2020)",
+    "expected_violations": [],
+    "expected_output": "Mich. Comp. Laws Serv. § 90.506 (LexisNexis 2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0172",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mich. Comp. Laws Serv. §90.506 (LexisNexis 2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mich. Comp. Laws Serv. § 90.506 (LexisNexis 2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0173",
+    "type": "statute",
+    "mode": "check",
+    "input": "Minn. Stat. Minnesota Statutes Minn. Stat. § 90.506 (2021)",
+    "expected_violations": [],
+    "expected_output": "Minn. Stat. Minnesota Statutes Minn. Stat. § 90.506 (2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0174",
+    "type": "statute",
+    "mode": "check",
+    "input": "Minn. Stat. Minnesota Statutes Minn. Stat. §90.506 (2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Minn. Stat. Minnesota Statutes Minn. Stat. § 90.506 (2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0175",
+    "type": "statute",
+    "mode": "check",
+    "input": "Minn. Stat. Ann. § 90.506 (West 2022)",
+    "expected_violations": [],
+    "expected_output": "Minn. Stat. Ann. § 90.506 (West 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0176",
+    "type": "statute",
+    "mode": "check",
+    "input": "Minn. Stat. Ann. §90.506 (West 2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Minn. Stat. Ann. § 90.506 (West 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0177",
+    "type": "statute",
+    "mode": "check",
+    "input": "Miss. Code Ann. § 51-3-22 (2018)",
+    "expected_violations": [],
+    "expected_output": "Miss. Code Ann. § 51-3-22 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0178",
+    "type": "statute",
+    "mode": "check",
+    "input": "Miss. Code Ann. §51-3-22 (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Miss. Code Ann. § 51-3-22 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0179",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mo. Ann. Stat. § 90.506 (West 2019)",
+    "expected_violations": [],
+    "expected_output": "Mo. Ann. Stat. § 90.506 (West 2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0180",
+    "type": "statute",
+    "mode": "check",
+    "input": "Mo. Ann. Stat. §90.506 (West 2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Mo. Ann. Stat. § 90.506 (West 2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0181",
+    "type": "statute",
+    "mode": "check",
+    "input": "Nev. Rev. Stat. Ann. § 90.506 (LexisNexis 2020)",
+    "expected_violations": [],
+    "expected_output": "Nev. Rev. Stat. Ann. § 90.506 (LexisNexis 2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0182",
+    "type": "statute",
+    "mode": "check",
+    "input": "Nev. Rev. Stat. Ann. §90.506 (LexisNexis 2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Nev. Rev. Stat. Ann. § 90.506 (LexisNexis 2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0183",
+    "type": "statute",
+    "mode": "check",
+    "input": "N.M. Stat. Ann. § 51-3-22 (2021)",
+    "expected_violations": [],
+    "expected_output": "N.M. Stat. Ann. § 51-3-22 (2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0184",
+    "type": "statute",
+    "mode": "check",
+    "input": "N.M. Stat. Ann. §51-3-22 (2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "N.M. Stat. Ann. § 51-3-22 (2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0185",
+    "type": "statute",
+    "mode": "check",
+    "input": "N.M. Stat. Ann. § 51-3-22 (LexisNexis 2022)",
+    "expected_violations": [],
+    "expected_output": "N.M. Stat. Ann. § 51-3-22 (LexisNexis 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0186",
+    "type": "statute",
+    "mode": "check",
+    "input": "N.M. Stat. Ann. §51-3-22 (LexisNexis 2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "N.M. Stat. Ann. § 51-3-22 (LexisNexis 2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0187",
+    "type": "statute",
+    "mode": "check",
+    "input": "N.C. Gen. Stat. § 12-341 (2018)",
+    "expected_violations": [],
+    "expected_output": "N.C. Gen. Stat. § 12-341 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0188",
+    "type": "statute",
+    "mode": "check",
+    "input": "N.C. Gen. Stat. §12-341 (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "N.C. Gen. Stat. § 12-341 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0189",
+    "type": "statute",
+    "mode": "check",
+    "input": "N.D. Cent. Code § 51-3-22 (2019)",
+    "expected_violations": [],
+    "expected_output": "N.D. Cent. Code § 51-3-22 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0190",
+    "type": "statute",
+    "mode": "check",
+    "input": "N.D. Cent. Code §51-3-22 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "N.D. Cent. Code § 51-3-22 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0191",
+    "type": "statute",
+    "mode": "check",
+    "input": "Okla. Stat. tit. x, § 1550 (2020)",
+    "expected_violations": [],
+    "expected_output": "Okla. Stat. tit. x, § 1550 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0192",
+    "type": "statute",
+    "mode": "check",
+    "input": "Okla. Stat. tit. x, §1550 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Okla. Stat. tit. x, § 1550 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0193",
+    "type": "statute",
+    "mode": "check",
+    "input": "Okla. Stat. Ann. tit. x, § 1550 (West 2021)",
+    "expected_violations": [],
+    "expected_output": "Okla. Stat. Ann. tit. x, § 1550 (West 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0194",
+    "type": "statute",
+    "mode": "check",
+    "input": "Okla. Stat. Ann. tit. x, §1550 (West 2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Okla. Stat. Ann. tit. x, § 1550 (West 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0195",
+    "type": "statute",
+    "mode": "check",
+    "input": "Pa. Cons. Stat. § 1550 (2022)",
+    "expected_violations": [],
+    "expected_output": "Pa. Cons. Stat. § 1550 (2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0196",
+    "type": "statute",
+    "mode": "check",
+    "input": "Pa. Cons. Stat. §1550 (2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Pa. Cons. Stat. § 1550 (2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0197",
+    "type": "statute",
+    "mode": "check",
+    "input": "Cons. Stat. Ann. § 1550 (West 2018)",
+    "expected_violations": [],
+    "expected_output": "Cons. Stat. Ann. § 1550 (West 2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0198",
+    "type": "statute",
+    "mode": "check",
+    "input": "Cons. Stat. Ann. §1550 (West 2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Cons. Stat. Ann. § 1550 (West 2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0199",
+    "type": "statute",
+    "mode": "check",
+    "input": "Pa. Code § 90.506 (2019)",
+    "expected_violations": [],
+    "expected_output": "Pa. Code § 90.506 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0200",
+    "type": "statute",
+    "mode": "check",
+    "input": "Pa. Code §90.506 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Pa. Code § 90.506 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0201",
+    "type": "statute",
+    "mode": "check",
+    "input": "R.I. Gen. Laws § 51-3-22 (2020)",
+    "expected_violations": [],
+    "expected_output": "R.I. Gen. Laws § 51-3-22 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0202",
+    "type": "statute",
+    "mode": "check",
+    "input": "R.I. Gen. Laws §51-3-22 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "R.I. Gen. Laws § 51-3-22 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0203",
+    "type": "statute",
+    "mode": "check",
+    "input": "R.I. Gen. Laws Ann. § 51-3-22 (West 2021)",
+    "expected_violations": [],
+    "expected_output": "R.I. Gen. Laws Ann. § 51-3-22 (West 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0204",
+    "type": "statute",
+    "mode": "check",
+    "input": "R.I. Gen. Laws Ann. §51-3-22 (West 2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "R.I. Gen. Laws Ann. § 51-3-22 (West 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0205",
+    "type": "statute",
+    "mode": "check",
+    "input": "Tenn. Code Ann. § 51-3-22 (2022)",
+    "expected_violations": [],
+    "expected_output": "Tenn. Code Ann. § 51-3-22 (2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0206",
+    "type": "statute",
+    "mode": "check",
+    "input": "Tenn. Code Ann. §51-3-22 (2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Tenn. Code Ann. § 51-3-22 (2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0207",
+    "type": "statute",
+    "mode": "check",
+    "input": "Tex. Prob. Code Ann. § 1550 (West 2018)",
+    "expected_violations": [],
+    "expected_output": "Tex. Prob. Code Ann. § 1550 (West 2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0208",
+    "type": "statute",
+    "mode": "check",
+    "input": "Tex. Prob. Code Ann. §1550 (West 2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Tex. Prob. Code Ann. § 1550 (West 2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0209",
+    "type": "statute",
+    "mode": "check",
+    "input": "Vt. Stat. Ann. tit. x, § 1550 (2019)",
+    "expected_violations": [],
+    "expected_output": "Vt. Stat. Ann. tit. x, § 1550 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0210",
+    "type": "statute",
+    "mode": "check",
+    "input": "Vt. Stat. Ann. tit. x, §1550 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Vt. Stat. Ann. tit. x, § 1550 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0211",
+    "type": "statute",
+    "mode": "check",
+    "input": "Va. Code Ann. § 12-341 (2020)",
+    "expected_violations": [],
+    "expected_output": "Va. Code Ann. § 12-341 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0212",
+    "type": "statute",
+    "mode": "check",
+    "input": "Va. Code Ann. §12-341 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Va. Code Ann. § 12-341 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0213",
+    "type": "statute",
+    "mode": "check",
+    "input": "Wash. Rev. Code Ann. § 101 (LexisNexis 2021)",
+    "expected_violations": [],
+    "expected_output": "Wash. Rev. Code Ann. § 101 (LexisNexis 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0214",
+    "type": "statute",
+    "mode": "check",
+    "input": "Wash. Rev. Code Ann. §101 (LexisNexis 2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Wash. Rev. Code Ann. § 101 (LexisNexis 2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0215",
+    "type": "statute",
+    "mode": "check",
+    "input": "Wis. Stat. Wisconsin Statutes Wis. Stat. § 90.506 (2022)",
+    "expected_violations": [],
+    "expected_output": "Wis. Stat. Wisconsin Statutes Wis. Stat. § 90.506 (2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0216",
+    "type": "statute",
+    "mode": "check",
+    "input": "Wis. Stat. Wisconsin Statutes Wis. Stat. §90.506 (2022)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Wis. Stat. Wisconsin Statutes Wis. Stat. § 90.506 (2022)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0217",
+    "type": "statute",
+    "mode": "check",
+    "input": "Wyo. Stat. Ann. § 51-3-22 (2018)",
+    "expected_violations": [],
+    "expected_output": "Wyo. Stat. Ann. § 51-3-22 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0218",
+    "type": "statute",
+    "mode": "check",
+    "input": "Wyo. Stat. Ann. §51-3-22 (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Wyo. Stat. Ann. § 51-3-22 (2018)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0219",
+    "type": "statute",
+    "mode": "check",
+    "input": "Guam Code Ann. § 1550 (2019)",
+    "expected_violations": [],
+    "expected_output": "Guam Code Ann. § 1550 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0220",
+    "type": "statute",
+    "mode": "check",
+    "input": "Guam Code Ann. §1550 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Guam Code Ann. § 1550 (2019)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0221",
+    "type": "statute",
+    "mode": "check",
+    "input": "N. Mar. I. Code § 1550 (2020)",
+    "expected_violations": [],
+    "expected_output": "N. Mar. I. Code § 1550 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0222",
+    "type": "statute",
+    "mode": "check",
+    "input": "N. Mar. I. Code §1550 (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "N. Mar. I. Code § 1550 (2020)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0223",
+    "type": "statute",
+    "mode": "check",
+    "input": "P.R. Laws Ann. tit. x, § 1550 (2021)",
+    "expected_violations": [],
+    "expected_output": "P.R. Laws Ann. tit. x, § 1550 (2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0224",
+    "type": "statute",
+    "mode": "check",
+    "input": "P.R. Laws Ann. tit. x, §1550 (2021)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "P.R. Laws Ann. tit. x, § 1550 (2021)",
+    "rules": [
+      "IB R17.2.1",
+      "IB T3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0225",
+    "type": "statute",
+    "mode": "check",
+    "input": "5 U.S.C. § 552",
+    "expected_violations": [],
+    "expected_output": "5 U.S.C. § 552",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0226",
+    "type": "statute",
+    "mode": "check",
+    "input": "5 U.S.C. §552",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "5 U.S.C. § 552",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0227",
+    "type": "statute",
+    "mode": "check",
+    "input": "5 United States Code § 552",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "5 U.S.C. § 552",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0228",
+    "type": "statute",
+    "mode": "check",
+    "input": "5 United States Code §552",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "5 U.S.C. § 552",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0229",
+    "type": "statute",
+    "mode": "check",
+    "input": "7 U.S.C. § 136 (2016)",
+    "expected_violations": [],
+    "expected_output": "7 U.S.C. § 136 (2016)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0230",
+    "type": "statute",
+    "mode": "check",
+    "input": "7 U.S.C. §136 (2016)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "7 U.S.C. § 136 (2016)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0231",
+    "type": "statute",
+    "mode": "check",
+    "input": "7 United States Code § 136 (2016)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "7 U.S.C. § 136 (2016)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0232",
+    "type": "statute",
+    "mode": "check",
+    "input": "7 United States Code §136 (2016)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "7 U.S.C. § 136 (2016)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0233",
+    "type": "statute",
+    "mode": "check",
+    "input": "8 U.S.C. § 1101(a)(1) (2017)",
+    "expected_violations": [],
+    "expected_output": "8 U.S.C. § 1101(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0234",
+    "type": "statute",
+    "mode": "check",
+    "input": "8 U.S.C. §1101(a)(1) (2017)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "8 U.S.C. § 1101(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0235",
+    "type": "statute",
+    "mode": "check",
+    "input": "8 United States Code § 1101(a)(1) (2017)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "8 U.S.C. § 1101(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0236",
+    "type": "statute",
+    "mode": "check",
+    "input": "8 United States Code §1101(a)(1) (2017)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "8 U.S.C. § 1101(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0237",
+    "type": "statute",
+    "mode": "check",
+    "input": "11 U.S.C. § 362",
+    "expected_violations": [],
+    "expected_output": "11 U.S.C. § 362",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0238",
+    "type": "statute",
+    "mode": "check",
+    "input": "11 U.S.C. §362",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "11 U.S.C. § 362",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0239",
+    "type": "statute",
+    "mode": "check",
+    "input": "11 United States Code § 362",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "11 U.S.C. § 362",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0240",
+    "type": "statute",
+    "mode": "check",
+    "input": "11 United States Code §362",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "11 U.S.C. § 362",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0241",
+    "type": "statute",
+    "mode": "check",
+    "input": "12 U.S.C. § 5301 (2019)",
+    "expected_violations": [],
+    "expected_output": "12 U.S.C. § 5301 (2019)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0242",
+    "type": "statute",
+    "mode": "check",
+    "input": "12 U.S.C. §5301 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "12 U.S.C. § 5301 (2019)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0243",
+    "type": "statute",
+    "mode": "check",
+    "input": "12 United States Code § 5301 (2019)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "12 U.S.C. § 5301 (2019)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0244",
+    "type": "statute",
+    "mode": "check",
+    "input": "12 United States Code §5301 (2019)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "12 U.S.C. § 5301 (2019)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0245",
+    "type": "statute",
+    "mode": "check",
+    "input": "15 U.S.C. § 78j(a)(1) (2020)",
+    "expected_violations": [],
+    "expected_output": "15 U.S.C. § 78j(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0246",
+    "type": "statute",
+    "mode": "check",
+    "input": "15 U.S.C. §78j(a)(1) (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "15 U.S.C. § 78j(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0247",
+    "type": "statute",
+    "mode": "check",
+    "input": "15 United States Code § 78j(a)(1) (2020)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "15 U.S.C. § 78j(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0248",
+    "type": "statute",
+    "mode": "check",
+    "input": "15 United States Code §78j(a)(1) (2020)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "15 U.S.C. § 78j(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0249",
+    "type": "statute",
+    "mode": "check",
+    "input": "16 U.S.C. § 1531",
+    "expected_violations": [],
+    "expected_output": "16 U.S.C. § 1531",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0250",
+    "type": "statute",
+    "mode": "check",
+    "input": "16 U.S.C. §1531",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "16 U.S.C. § 1531",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0251",
+    "type": "statute",
+    "mode": "check",
+    "input": "16 United States Code § 1531",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "16 U.S.C. § 1531",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0252",
+    "type": "statute",
+    "mode": "check",
+    "input": "16 United States Code §1531",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "16 U.S.C. § 1531",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0253",
+    "type": "statute",
+    "mode": "check",
+    "input": "17 U.S.C. § 106 (2016)",
+    "expected_violations": [],
+    "expected_output": "17 U.S.C. § 106 (2016)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0254",
+    "type": "statute",
+    "mode": "check",
+    "input": "17 U.S.C. §106 (2016)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "17 U.S.C. § 106 (2016)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0255",
+    "type": "statute",
+    "mode": "check",
+    "input": "17 United States Code § 106 (2016)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "17 U.S.C. § 106 (2016)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0256",
+    "type": "statute",
+    "mode": "check",
+    "input": "17 United States Code §106 (2016)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "17 U.S.C. § 106 (2016)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0257",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 U.S.C. § 1512(a)(1) (2017)",
+    "expected_violations": [],
+    "expected_output": "18 U.S.C. § 1512(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0258",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 U.S.C. §1512(a)(1) (2017)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "18 U.S.C. § 1512(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0259",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 United States Code § 1512(a)(1) (2017)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "18 U.S.C. § 1512(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0260",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 United States Code §1512(a)(1) (2017)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "18 U.S.C. § 1512(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0261",
+    "type": "statute",
+    "mode": "check",
+    "input": "20 U.S.C. § 1681",
+    "expected_violations": [],
+    "expected_output": "20 U.S.C. § 1681",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0262",
+    "type": "statute",
+    "mode": "check",
+    "input": "20 U.S.C. §1681",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "20 U.S.C. § 1681",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0263",
+    "type": "statute",
+    "mode": "check",
+    "input": "20 United States Code § 1681",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "20 U.S.C. § 1681",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0264",
+    "type": "statute",
+    "mode": "check",
+    "input": "20 United States Code §1681",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "20 U.S.C. § 1681",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0265",
+    "type": "statute",
+    "mode": "check",
+    "input": "21 U.S.C. § 841 (2019)",
+    "expected_violations": [],
+    "expected_output": "21 U.S.C. § 841 (2019)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0266",
+    "type": "statute",
+    "mode": "check",
+    "input": "21 U.S.C. §841 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "21 U.S.C. § 841 (2019)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0267",
+    "type": "statute",
+    "mode": "check",
+    "input": "21 United States Code § 841 (2019)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "21 U.S.C. § 841 (2019)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0268",
+    "type": "statute",
+    "mode": "check",
+    "input": "21 United States Code §841 (2019)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "21 U.S.C. § 841 (2019)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0269",
+    "type": "statute",
+    "mode": "check",
+    "input": "22 U.S.C. § 2656(a)(1) (2020)",
+    "expected_violations": [],
+    "expected_output": "22 U.S.C. § 2656(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0270",
+    "type": "statute",
+    "mode": "check",
+    "input": "22 U.S.C. §2656(a)(1) (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "22 U.S.C. § 2656(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0271",
+    "type": "statute",
+    "mode": "check",
+    "input": "22 United States Code § 2656(a)(1) (2020)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "22 U.S.C. § 2656(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0272",
+    "type": "statute",
+    "mode": "check",
+    "input": "22 United States Code §2656(a)(1) (2020)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "22 U.S.C. § 2656(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0273",
+    "type": "statute",
+    "mode": "check",
+    "input": "25 U.S.C. § 1302",
+    "expected_violations": [],
+    "expected_output": "25 U.S.C. § 1302",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0274",
+    "type": "statute",
+    "mode": "check",
+    "input": "25 U.S.C. §1302",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "25 U.S.C. § 1302",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0275",
+    "type": "statute",
+    "mode": "check",
+    "input": "25 United States Code § 1302",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "25 U.S.C. § 1302",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0276",
+    "type": "statute",
+    "mode": "check",
+    "input": "25 United States Code §1302",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "25 U.S.C. § 1302",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0277",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 U.S.C. § 501 (2016)",
+    "expected_violations": [],
+    "expected_output": "26 U.S.C. § 501 (2016)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0278",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 U.S.C. §501 (2016)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "26 U.S.C. § 501 (2016)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0279",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 United States Code § 501 (2016)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "26 U.S.C. § 501 (2016)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0280",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 United States Code §501 (2016)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "26 U.S.C. § 501 (2016)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0281",
+    "type": "statute",
+    "mode": "check",
+    "input": "28 U.S.C. § 1332(a)(1) (2017)",
+    "expected_violations": [],
+    "expected_output": "28 U.S.C. § 1332(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0282",
+    "type": "statute",
+    "mode": "check",
+    "input": "28 U.S.C. §1332(a)(1) (2017)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "28 U.S.C. § 1332(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0283",
+    "type": "statute",
+    "mode": "check",
+    "input": "28 United States Code § 1332(a)(1) (2017)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "28 U.S.C. § 1332(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0284",
+    "type": "statute",
+    "mode": "check",
+    "input": "28 United States Code §1332(a)(1) (2017)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "28 U.S.C. § 1332(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0285",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 U.S.C. § 623",
+    "expected_violations": [],
+    "expected_output": "29 U.S.C. § 623",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0286",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 U.S.C. §623",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "29 U.S.C. § 623",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0287",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 United States Code § 623",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "29 U.S.C. § 623",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0288",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 United States Code §623",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "29 U.S.C. § 623",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0289",
+    "type": "statute",
+    "mode": "check",
+    "input": "31 U.S.C. § 3729 (2019)",
+    "expected_violations": [],
+    "expected_output": "31 U.S.C. § 3729 (2019)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0290",
+    "type": "statute",
+    "mode": "check",
+    "input": "31 U.S.C. §3729 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "31 U.S.C. § 3729 (2019)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0291",
+    "type": "statute",
+    "mode": "check",
+    "input": "31 United States Code § 3729 (2019)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "31 U.S.C. § 3729 (2019)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0292",
+    "type": "statute",
+    "mode": "check",
+    "input": "31 United States Code §3729 (2019)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "31 U.S.C. § 3729 (2019)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0293",
+    "type": "statute",
+    "mode": "check",
+    "input": "33 U.S.C. § 1251(a)(1) (2020)",
+    "expected_violations": [],
+    "expected_output": "33 U.S.C. § 1251(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0294",
+    "type": "statute",
+    "mode": "check",
+    "input": "33 U.S.C. §1251(a)(1) (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "33 U.S.C. § 1251(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0295",
+    "type": "statute",
+    "mode": "check",
+    "input": "33 United States Code § 1251(a)(1) (2020)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "33 U.S.C. § 1251(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0296",
+    "type": "statute",
+    "mode": "check",
+    "input": "33 United States Code §1251(a)(1) (2020)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "33 U.S.C. § 1251(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0297",
+    "type": "statute",
+    "mode": "check",
+    "input": "35 U.S.C. § 103",
+    "expected_violations": [],
+    "expected_output": "35 U.S.C. § 103",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0298",
+    "type": "statute",
+    "mode": "check",
+    "input": "35 U.S.C. §103",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "35 U.S.C. § 103",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0299",
+    "type": "statute",
+    "mode": "check",
+    "input": "35 United States Code § 103",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "35 U.S.C. § 103",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0300",
+    "type": "statute",
+    "mode": "check",
+    "input": "35 United States Code §103",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "35 U.S.C. § 103",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0301",
+    "type": "statute",
+    "mode": "check",
+    "input": "38 U.S.C. § 1110 (2016)",
+    "expected_violations": [],
+    "expected_output": "38 U.S.C. § 1110 (2016)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0302",
+    "type": "statute",
+    "mode": "check",
+    "input": "38 U.S.C. §1110 (2016)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "38 U.S.C. § 1110 (2016)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0303",
+    "type": "statute",
+    "mode": "check",
+    "input": "38 United States Code § 1110 (2016)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "38 U.S.C. § 1110 (2016)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0304",
+    "type": "statute",
+    "mode": "check",
+    "input": "38 United States Code §1110 (2016)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "38 U.S.C. § 1110 (2016)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0305",
+    "type": "statute",
+    "mode": "check",
+    "input": "41 U.S.C. § 6503(a)(1) (2017)",
+    "expected_violations": [],
+    "expected_output": "41 U.S.C. § 6503(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0306",
+    "type": "statute",
+    "mode": "check",
+    "input": "41 U.S.C. §6503(a)(1) (2017)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "41 U.S.C. § 6503(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0307",
+    "type": "statute",
+    "mode": "check",
+    "input": "41 United States Code § 6503(a)(1) (2017)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "41 U.S.C. § 6503(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0308",
+    "type": "statute",
+    "mode": "check",
+    "input": "41 United States Code §6503(a)(1) (2017)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "41 U.S.C. § 6503(a)(1) (2017)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0309",
+    "type": "statute",
+    "mode": "check",
+    "input": "42 U.S.C. § 12101",
+    "expected_violations": [],
+    "expected_output": "42 U.S.C. § 12101",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0310",
+    "type": "statute",
+    "mode": "check",
+    "input": "42 U.S.C. §12101",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "42 U.S.C. § 12101",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0311",
+    "type": "statute",
+    "mode": "check",
+    "input": "42 United States Code § 12101",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "42 U.S.C. § 12101",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0312",
+    "type": "statute",
+    "mode": "check",
+    "input": "42 United States Code §12101",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "42 U.S.C. § 12101",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16.1.2",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0313",
+    "type": "statute",
+    "mode": "check",
+    "input": "47 U.S.C. § 230 (2019)",
+    "expected_violations": [],
+    "expected_output": "47 U.S.C. § 230 (2019)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0314",
+    "type": "statute",
+    "mode": "check",
+    "input": "47 U.S.C. §230 (2019)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "47 U.S.C. § 230 (2019)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0315",
+    "type": "statute",
+    "mode": "check",
+    "input": "47 United States Code § 230 (2019)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "47 U.S.C. § 230 (2019)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0316",
+    "type": "statute",
+    "mode": "check",
+    "input": "47 United States Code §230 (2019)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "47 U.S.C. § 230 (2019)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0317",
+    "type": "statute",
+    "mode": "check",
+    "input": "49 U.S.C. § 40103(a)(1) (2020)",
+    "expected_violations": [],
+    "expected_output": "49 U.S.C. § 40103(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0318",
+    "type": "statute",
+    "mode": "check",
+    "input": "49 U.S.C. §40103(a)(1) (2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "49 U.S.C. § 40103(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0319",
+    "type": "statute",
+    "mode": "check",
+    "input": "49 United States Code § 40103(a)(1) (2020)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "49 U.S.C. § 40103(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0320",
+    "type": "statute",
+    "mode": "check",
+    "input": "49 United States Code §40103(a)(1) (2020)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "49 U.S.C. § 40103(a)(1) (2020)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0321",
+    "type": "statute",
+    "mode": "check",
+    "input": "42 U.S.C. §§ 2000e to 2000e-17",
+    "expected_violations": [],
+    "expected_output": "42 U.S.C. §§ 2000e to 2000e-17",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0322",
+    "type": "statute",
+    "mode": "check",
+    "input": "42 U.S.C. §§2000e to 2000e-17",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "42 U.S.C. §§ 2000e to 2000e-17",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0323",
+    "type": "statute",
+    "mode": "check",
+    "input": "42 United States Code §§ 2000e to 2000e-17",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "42 U.S.C. §§ 2000e to 2000e-17",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0324",
+    "type": "statute",
+    "mode": "check",
+    "input": "42 United States Code §§2000e to 2000e-17",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "42 U.S.C. §§ 2000e to 2000e-17",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0325",
+    "type": "statute",
+    "mode": "check",
+    "input": "15 U.S.C. §§ 78a through 78pp (2018)",
+    "expected_violations": [],
+    "expected_output": "15 U.S.C. §§ 78a through 78pp (2018)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0326",
+    "type": "statute",
+    "mode": "check",
+    "input": "15 U.S.C. §§78a through 78pp (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "15 U.S.C. §§ 78a through 78pp (2018)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0327",
+    "type": "statute",
+    "mode": "check",
+    "input": "15 United States Code §§ 78a through 78pp (2018)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "15 U.S.C. §§ 78a through 78pp (2018)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0328",
+    "type": "statute",
+    "mode": "check",
+    "input": "15 United States Code §§78a through 78pp (2018)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "15 U.S.C. §§ 78a through 78pp (2018)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0329",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 U.S.C. §§ 3583, 3624 (2018)",
+    "expected_violations": [],
+    "expected_output": "18 U.S.C. §§ 3583, 3624 (2018)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0330",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 U.S.C. §§3583, 3624 (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "18 U.S.C. §§ 3583, 3624 (2018)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0331",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 United States Code §§ 3583, 3624 (2018)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "18 U.S.C. §§ 3583, 3624 (2018)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0332",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 United States Code §§3583, 3624 (2018)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "18 U.S.C. §§ 3583, 3624 (2018)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0333",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 U.S.C. §§ 151 and 169",
+    "expected_violations": [],
+    "expected_output": "29 U.S.C. §§ 151 and 169",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0334",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 U.S.C. §§151 and 169",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "29 U.S.C. §§ 151 and 169",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0335",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 United States Code §§ 151 and 169",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "29 U.S.C. §§ 151 and 169",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0336",
+    "type": "statute",
+    "mode": "check",
+    "input": "29 United States Code §§151 and 169",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "29 U.S.C. §§ 151 and 169",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0337",
+    "type": "statute",
+    "mode": "check",
+    "input": "Communications Act of 1934, 47 U.S.C. § 223 (2012 & Supp. I 2013)",
+    "expected_violations": [],
+    "expected_output": "Communications Act of 1934, 47 U.S.C. § 223 (2012 & Supp. I 2013)",
+    "rules": [
+      "IB R16.1.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0338",
+    "type": "statute",
+    "mode": "check",
+    "input": "Communications Act of 1934, 47 U.S.C. §223 (2012 & Supp. I 2013)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Communications Act of 1934, 47 U.S.C. § 223 (2012 & Supp. I 2013)",
+    "rules": [
+      "IB R16.1.3",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0339",
+    "type": "statute",
+    "mode": "check",
+    "input": "Communications Act of 1934, 47 United States Code § 223 (2012 & Supp. I 2013)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Communications Act of 1934, 47 U.S.C. § 223 (2012 & Supp. I 2013)",
+    "rules": [
+      "IB R16.1.3",
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0340",
+    "type": "statute",
+    "mode": "check",
+    "input": "Communications Act of 1934, 47 United States Code §223 (2012 & Supp. I 2013)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "Communications Act of 1934, 47 U.S.C. § 223 (2012 & Supp. I 2013)",
+    "rules": [
+      "IB R16.1.3",
+      "IB R16",
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0341",
+    "type": "statute",
+    "mode": "check",
+    "input": "Americans with Disabilities Act, 42 U.S.C. §§ 12101-12213 (2018)",
+    "expected_violations": [],
+    "expected_output": "Americans with Disabilities Act, 42 U.S.C. §§ 12101-12213 (2018)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0342",
+    "type": "statute",
+    "mode": "check",
+    "input": "Americans with Disabilities Act, 42 U.S.C. §§12101-12213 (2018)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "Americans with Disabilities Act, 42 U.S.C. §§ 12101-12213 (2018)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0343",
+    "type": "statute",
+    "mode": "check",
+    "input": "Americans with Disabilities Act, 42 United States Code §§ 12101-12213 (2018)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Americans with Disabilities Act, 42 U.S.C. §§ 12101-12213 (2018)",
+    "rules": [
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0344",
+    "type": "statute",
+    "mode": "check",
+    "input": "Americans with Disabilities Act, 42 United States Code §§12101-12213 (2018)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "Americans with Disabilities Act, 42 U.S.C. §§ 12101-12213 (2018)",
+    "rules": [
+      "IB R16.1.1",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0345",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 U.S.C.A. § 501 (West)",
+    "expected_violations": [],
+    "expected_output": "26 U.S.C.A. § 501 (West)",
+    "rules": [
+      "IB R16.1.4"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0346",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 U.S.C.A. §501 (West)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "26 U.S.C.A. § 501 (West)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0347",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 United States CodeA. § 501 (West)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "26 U.S.C.A. § 501 (West)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0348",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 United States CodeA. §501 (West)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "26 U.S.C.A. § 501 (West)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16",
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0349",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 U.S.C.S. § 501 (LexisNexis)",
+    "expected_violations": [],
+    "expected_output": "26 U.S.C.S. § 501 (LexisNexis)",
+    "rules": [
+      "IB R16.1.4"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0350",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 U.S.C.S. §501 (LexisNexis)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "26 U.S.C.S. § 501 (LexisNexis)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0351",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 United States CodeS. § 501 (LexisNexis)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "26 U.S.C.S. § 501 (LexisNexis)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0352",
+    "type": "statute",
+    "mode": "check",
+    "input": "26 United States CodeS. §501 (LexisNexis)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "26 U.S.C.S. § 501 (LexisNexis)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16",
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0353",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 U.S.C.A. § 1512(c)(2) (West 2020)",
+    "expected_violations": [],
+    "expected_output": "18 U.S.C.A. § 1512(c)(2) (West 2020)",
+    "rules": [
+      "IB R16.1.4"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "statute-0354",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 U.S.C.A. §1512(c)(2) (West 2020)",
+    "expected_violations": [
+      "SPACING"
+    ],
+    "expected_output": "18 U.S.C.A. § 1512(c)(2) (West 2020)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "missing space after section symbol"
+  },
+  {
+    "id": "statute-0355",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 United States CodeA. § 1512(c)(2) (West 2020)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "18 U.S.C.A. § 1512(c)(2) (West 2020)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0356",
+    "type": "statute",
+    "mode": "check",
+    "input": "18 United States CodeA. §1512(c)(2) (West 2020)",
+    "expected_violations": [
+      "SPACING",
+      "ABBREV"
+    ],
+    "expected_output": "18 U.S.C.A. § 1512(c)(2) (West 2020)",
+    "rules": [
+      "IB R16.1.4",
+      "IB R16",
+      "IB R16.1.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: missing space after section symbol; code name not abbreviated (U.S.C.)"
+  },
+  {
+    "id": "statute-0357",
+    "type": "statute",
+    "mode": "check",
     "input": "29 C.F.R. § 1910.132 (2020)",
     "expected_violations": [],
     "expected_output": "29 C.F.R. § 1910.132 (2020)",
@@ -2122,7 +5924,7 @@
     "notes": "adversarial: regulation: out of v1 scope, must be refused not accepted"
   },
   {
-    "id": "statute-0128",
+    "id": "statute-0358",
     "type": "statute",
     "mode": "check",
     "input": "40 Fed. Reg. 1234 (Jan. 1, 1975)",

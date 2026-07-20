@@ -51,6 +51,14 @@ for (const [abbrev, entry] of Object.entries(PERIODICALS)) {
   for (const v of entry.variants) SPELLED_OUT.set(v.toLowerCase(), abbrev);
 }
 
+/**
+ * Name suffixes belong to the author, not the title. Indigo R28.2.1: "Use titles
+ * that follow an author's name (Sr.) but not titles that precede them (Hon.)".
+ * Without this, "Richard H. Fallon, Jr., Judicially Manageable Standards" splits
+ * into author "Richard H. Fallon" and title "Jr., Judicially Manageable Standards".
+ */
+const NAME_SUFFIX = /^(Jr\.|Sr\.|I{2,3}|IV|V|Ph\.?D\.?|M\.?D\.?|Esq\.|J\.?D\.?)$/i;
+
 /** Student-work designations (R30.1.3). */
 const DESIGNATION = /^(Note|Comment|Essay|Book Note|Book Review|Recent Case|Recent Development)$/i;
 
@@ -119,6 +127,9 @@ function parse(input: string): ParseResult {
       author = '';
     } else {
       author = (parts.shift() ?? '').trim();
+      while (parts.length > 1 && NAME_SUFFIX.test((parts[0] ?? '').trim())) {
+        author += `, ${(parts.shift() ?? '').trim()}`;
+      }
       if (parts.length > 1 && DESIGNATION.test(parts[0] ?? '')) designation = parts.shift();
     }
     title = parts.join(', ').trim();

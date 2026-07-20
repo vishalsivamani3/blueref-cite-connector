@@ -813,5 +813,1700 @@
     ],
     "provenance": "synthetic",
     "notes": "clean canonical"
+  },
+  {
+    "id": "book-0054",
+    "type": "book",
+    "mode": "check",
+    "input": "John Rawls, *Political Liberalism* 133 (1993)",
+    "expected_violations": [],
+    "expected_output": "John Rawls, *Political Liberalism* 133 (1993)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0055",
+    "type": "book",
+    "mode": "check",
+    "input": "%John Rawls, Political Liberalism% 133 (1993)",
+    "expected_violations": [],
+    "expected_output": "%John Rawls, Political Liberalism% 133 (1993)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0056",
+    "type": "book",
+    "mode": "check",
+    "input": "John Rawls, Political Liberalism 133 (1993)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%John Rawls, Political Liberalism% 133 (1993)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0057",
+    "type": "book",
+    "mode": "check",
+    "input": "Ronald Dworkin, *Law's Empire* 225 (1986)",
+    "expected_violations": [],
+    "expected_output": "Ronald Dworkin, *Law's Empire* 225 (1986)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0058",
+    "type": "book",
+    "mode": "check",
+    "input": "%Ronald Dworkin, Law's Empire% 225 (1986)",
+    "expected_violations": [],
+    "expected_output": "%Ronald Dworkin, Law's Empire% 225 (1986)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0059",
+    "type": "book",
+    "mode": "check",
+    "input": "Ronald Dworkin, Law's Empire 225 (1986)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Ronald Dworkin, Law's Empire% 225 (1986)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0060",
+    "type": "book",
+    "mode": "check",
+    "input": "H.L.A. Hart, *The Concept of Law* 79 (2d ed. 1994)",
+    "expected_violations": [],
+    "expected_output": "H.L.A. Hart, *The Concept of Law* 79 (2d ed. 1994)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0061",
+    "type": "book",
+    "mode": "check",
+    "input": "H.L.A. Hart, *The Concept of Law* 79 (2nd ed. 1994)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "H.L.A. Hart, *The Concept of Law* 79 (2d ed. 1994)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0062",
+    "type": "book",
+    "mode": "check",
+    "input": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
+    "expected_violations": [],
+    "expected_output": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0063",
+    "type": "book",
+    "mode": "check",
+    "input": "H.L.A. Hart, The Concept of Law 79 (2d ed. 1994)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0064",
+    "type": "book",
+    "mode": "check",
+    "input": "%H.L.A. Hart, The Concept of Law% 79 (2nd ed. 1994)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
+    "rules": [
+      "IB R28.1",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0065",
+    "type": "book",
+    "mode": "check",
+    "input": "H.L.A. Hart, The Concept of Law 79 (2nd ed. 1994)",
+    "expected_violations": [
+      "TYPEFACE",
+      "ABBREV"
+    ],
+    "expected_output": "%H.L.A. Hart, The Concept of Law% 79 (2d ed. 1994)",
+    "rules": [
+      "IB R28.1",
+      "IB R30",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: journal/book text not in large-and-small caps; ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0066",
+    "type": "book",
+    "mode": "check",
+    "input": "Richard A. Posner, *The Problems of Jurisprudence* 114 (1990)",
+    "expected_violations": [],
+    "expected_output": "Richard A. Posner, *The Problems of Jurisprudence* 114 (1990)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0067",
+    "type": "book",
+    "mode": "check",
+    "input": "%Richard A. Posner, The Problems of Jurisprudence% 114 (1990)",
+    "expected_violations": [],
+    "expected_output": "%Richard A. Posner, The Problems of Jurisprudence% 114 (1990)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0068",
+    "type": "book",
+    "mode": "check",
+    "input": "Richard A. Posner, The Problems of Jurisprudence 114 (1990)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Richard A. Posner, The Problems of Jurisprudence% 114 (1990)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0069",
+    "type": "book",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *After the Rights Revolution* 47 (1990)",
+    "expected_violations": [],
+    "expected_output": "Cass R. Sunstein, *After the Rights Revolution* 47 (1990)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0070",
+    "type": "book",
+    "mode": "check",
+    "input": "%Cass R. Sunstein, After the Rights Revolution% 47 (1990)",
+    "expected_violations": [],
+    "expected_output": "%Cass R. Sunstein, After the Rights Revolution% 47 (1990)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0071",
+    "type": "book",
+    "mode": "check",
+    "input": "Cass R. Sunstein, After the Rights Revolution 47 (1990)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Cass R. Sunstein, After the Rights Revolution% 47 (1990)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0072",
+    "type": "book",
+    "mode": "check",
+    "input": "Bruce Ackerman, *We the People: Foundations* 88 (1991)",
+    "expected_violations": [],
+    "expected_output": "Bruce Ackerman, *We the People: Foundations* 88 (1991)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0073",
+    "type": "book",
+    "mode": "check",
+    "input": "%Bruce Ackerman, We the People: Foundations% 88 (1991)",
+    "expected_violations": [],
+    "expected_output": "%Bruce Ackerman, We the People: Foundations% 88 (1991)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0074",
+    "type": "book",
+    "mode": "check",
+    "input": "Bruce Ackerman, We the People: Foundations 88 (1991)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Bruce Ackerman, We the People: Foundations% 88 (1991)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0075",
+    "type": "book",
+    "mode": "check",
+    "input": "Akhil Reed Amar, *America's Constitution: A Biography* 302 (2005)",
+    "expected_violations": [],
+    "expected_output": "Akhil Reed Amar, *America's Constitution: A Biography* 302 (2005)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0076",
+    "type": "book",
+    "mode": "check",
+    "input": "%Akhil Reed Amar, America's Constitution: A Biography% 302 (2005)",
+    "expected_violations": [],
+    "expected_output": "%Akhil Reed Amar, America's Constitution: A Biography% 302 (2005)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0077",
+    "type": "book",
+    "mode": "check",
+    "input": "Akhil Reed Amar, America's Constitution: A Biography 302 (2005)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Akhil Reed Amar, America's Constitution: A Biography% 302 (2005)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0078",
+    "type": "book",
+    "mode": "check",
+    "input": "Laurence H. Tribe, *American Constitutional Law* 1210 (2d ed. 1988)",
+    "expected_violations": [],
+    "expected_output": "Laurence H. Tribe, *American Constitutional Law* 1210 (2d ed. 1988)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0079",
+    "type": "book",
+    "mode": "check",
+    "input": "Laurence H. Tribe, *American Constitutional Law* 1210 (2nd ed. 1988)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Laurence H. Tribe, *American Constitutional Law* 1210 (2d ed. 1988)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0080",
+    "type": "book",
+    "mode": "check",
+    "input": "%Laurence H. Tribe, American Constitutional Law% 1210 (2d ed. 1988)",
+    "expected_violations": [],
+    "expected_output": "%Laurence H. Tribe, American Constitutional Law% 1210 (2d ed. 1988)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0081",
+    "type": "book",
+    "mode": "check",
+    "input": "Laurence H. Tribe, American Constitutional Law 1210 (2d ed. 1988)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Laurence H. Tribe, American Constitutional Law% 1210 (2d ed. 1988)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0082",
+    "type": "book",
+    "mode": "check",
+    "input": "%Laurence H. Tribe, American Constitutional Law% 1210 (2nd ed. 1988)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "%Laurence H. Tribe, American Constitutional Law% 1210 (2d ed. 1988)",
+    "rules": [
+      "IB R28.1",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0083",
+    "type": "book",
+    "mode": "check",
+    "input": "Laurence H. Tribe, American Constitutional Law 1210 (2nd ed. 1988)",
+    "expected_violations": [
+      "TYPEFACE",
+      "ABBREV"
+    ],
+    "expected_output": "%Laurence H. Tribe, American Constitutional Law% 1210 (2d ed. 1988)",
+    "rules": [
+      "IB R28.1",
+      "IB R30",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: journal/book text not in large-and-small caps; ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0084",
+    "type": "book",
+    "mode": "check",
+    "input": "Charles Alan Wright, *Federal Practice and Procedure* 412 (3d ed. 2008)",
+    "expected_violations": [],
+    "expected_output": "Charles Alan Wright, *Federal Practice and Procedure* 412 (3d ed. 2008)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0085",
+    "type": "book",
+    "mode": "check",
+    "input": "Charles Alan Wright, *Federal Practice and Procedure* 412 (3rd ed. 2008)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Charles Alan Wright, *Federal Practice and Procedure* 412 (3d ed. 2008)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0086",
+    "type": "book",
+    "mode": "check",
+    "input": "%Charles Alan Wright, Federal Practice and Procedure% 412 (3d ed. 2008)",
+    "expected_violations": [],
+    "expected_output": "%Charles Alan Wright, Federal Practice and Procedure% 412 (3d ed. 2008)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0087",
+    "type": "book",
+    "mode": "check",
+    "input": "Charles Alan Wright, Federal Practice and Procedure 412 (3d ed. 2008)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Charles Alan Wright, Federal Practice and Procedure% 412 (3d ed. 2008)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0088",
+    "type": "book",
+    "mode": "check",
+    "input": "%Charles Alan Wright, Federal Practice and Procedure% 412 (3rd ed. 2008)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "%Charles Alan Wright, Federal Practice and Procedure% 412 (3d ed. 2008)",
+    "rules": [
+      "IB R28.1",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0089",
+    "type": "book",
+    "mode": "check",
+    "input": "Charles Alan Wright, Federal Practice and Procedure 412 (3rd ed. 2008)",
+    "expected_violations": [
+      "TYPEFACE",
+      "ABBREV"
+    ],
+    "expected_output": "%Charles Alan Wright, Federal Practice and Procedure% 412 (3d ed. 2008)",
+    "rules": [
+      "IB R28.1",
+      "IB R30",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: journal/book text not in large-and-small caps; ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0090",
+    "type": "book",
+    "mode": "check",
+    "input": "Melvin A. Eisenberg, *The Nature of the Common Law* 14 (1988)",
+    "expected_violations": [],
+    "expected_output": "Melvin A. Eisenberg, *The Nature of the Common Law* 14 (1988)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0091",
+    "type": "book",
+    "mode": "check",
+    "input": "%Melvin A. Eisenberg, The Nature of the Common Law% 14 (1988)",
+    "expected_violations": [],
+    "expected_output": "%Melvin A. Eisenberg, The Nature of the Common Law% 14 (1988)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0092",
+    "type": "book",
+    "mode": "check",
+    "input": "Melvin A. Eisenberg, The Nature of the Common Law 14 (1988)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Melvin A. Eisenberg, The Nature of the Common Law% 14 (1988)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0093",
+    "type": "book",
+    "mode": "check",
+    "input": "Frederick Schauer, *Thinking Like a Lawyer* 61 (2009)",
+    "expected_violations": [],
+    "expected_output": "Frederick Schauer, *Thinking Like a Lawyer* 61 (2009)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0094",
+    "type": "book",
+    "mode": "check",
+    "input": "%Frederick Schauer, Thinking Like a Lawyer% 61 (2009)",
+    "expected_violations": [],
+    "expected_output": "%Frederick Schauer, Thinking Like a Lawyer% 61 (2009)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0095",
+    "type": "book",
+    "mode": "check",
+    "input": "Frederick Schauer, Thinking Like a Lawyer 61 (2009)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Frederick Schauer, Thinking Like a Lawyer% 61 (2009)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0096",
+    "type": "book",
+    "mode": "check",
+    "input": "Jeremy Waldron, *Law and Disagreement* 203 (1999)",
+    "expected_violations": [],
+    "expected_output": "Jeremy Waldron, *Law and Disagreement* 203 (1999)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0097",
+    "type": "book",
+    "mode": "check",
+    "input": "%Jeremy Waldron, Law and Disagreement% 203 (1999)",
+    "expected_violations": [],
+    "expected_output": "%Jeremy Waldron, Law and Disagreement% 203 (1999)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0098",
+    "type": "book",
+    "mode": "check",
+    "input": "Jeremy Waldron, Law and Disagreement 203 (1999)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Jeremy Waldron, Law and Disagreement% 203 (1999)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0099",
+    "type": "book",
+    "mode": "check",
+    "input": "Antonin Scalia, *A Matter of Interpretation* 23 (1997)",
+    "expected_violations": [],
+    "expected_output": "Antonin Scalia, *A Matter of Interpretation* 23 (1997)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0100",
+    "type": "book",
+    "mode": "check",
+    "input": "%Antonin Scalia, A Matter of Interpretation% 23 (1997)",
+    "expected_violations": [],
+    "expected_output": "%Antonin Scalia, A Matter of Interpretation% 23 (1997)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0101",
+    "type": "book",
+    "mode": "check",
+    "input": "Antonin Scalia, A Matter of Interpretation 23 (1997)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Antonin Scalia, A Matter of Interpretation% 23 (1997)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0102",
+    "type": "book",
+    "mode": "check",
+    "input": "William N. Eskridge, Jr., *Dynamic Statutory Interpretation* 145 (1994)",
+    "expected_violations": [],
+    "expected_output": "William N. Eskridge, Jr., *Dynamic Statutory Interpretation* 145 (1994)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0103",
+    "type": "book",
+    "mode": "check",
+    "input": "%William N. Eskridge, Jr., Dynamic Statutory Interpretation% 145 (1994)",
+    "expected_violations": [],
+    "expected_output": "%William N. Eskridge, Jr., Dynamic Statutory Interpretation% 145 (1994)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0104",
+    "type": "book",
+    "mode": "check",
+    "input": "William N. Eskridge, Jr., Dynamic Statutory Interpretation 145 (1994)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%William N. Eskridge, Jr., Dynamic Statutory Interpretation% 145 (1994)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0105",
+    "type": "book",
+    "mode": "check",
+    "input": "Guido Calabresi, *A Common Law for the Age of Statutes* 82 (1982)",
+    "expected_violations": [],
+    "expected_output": "Guido Calabresi, *A Common Law for the Age of Statutes* 82 (1982)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0106",
+    "type": "book",
+    "mode": "check",
+    "input": "%Guido Calabresi, A Common Law for the Age of Statutes% 82 (1982)",
+    "expected_violations": [],
+    "expected_output": "%Guido Calabresi, A Common Law for the Age of Statutes% 82 (1982)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0107",
+    "type": "book",
+    "mode": "check",
+    "input": "Guido Calabresi, A Common Law for the Age of Statutes 82 (1982)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Guido Calabresi, A Common Law for the Age of Statutes% 82 (1982)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0108",
+    "type": "book",
+    "mode": "check",
+    "input": "Duncan Kennedy, *A Critique of Adjudication* 176 (1997)",
+    "expected_violations": [],
+    "expected_output": "Duncan Kennedy, *A Critique of Adjudication* 176 (1997)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0109",
+    "type": "book",
+    "mode": "check",
+    "input": "%Duncan Kennedy, A Critique of Adjudication% 176 (1997)",
+    "expected_violations": [],
+    "expected_output": "%Duncan Kennedy, A Critique of Adjudication% 176 (1997)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0110",
+    "type": "book",
+    "mode": "check",
+    "input": "Duncan Kennedy, A Critique of Adjudication 176 (1997)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Duncan Kennedy, A Critique of Adjudication% 176 (1997)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0111",
+    "type": "book",
+    "mode": "check",
+    "input": "Catharine A. MacKinnon, *Toward a Feminist Theory of the State* 237 (1989)",
+    "expected_violations": [],
+    "expected_output": "Catharine A. MacKinnon, *Toward a Feminist Theory of the State* 237 (1989)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0112",
+    "type": "book",
+    "mode": "check",
+    "input": "%Catharine A. MacKinnon, Toward a Feminist Theory of the State% 237 (1989)",
+    "expected_violations": [],
+    "expected_output": "%Catharine A. MacKinnon, Toward a Feminist Theory of the State% 237 (1989)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0113",
+    "type": "book",
+    "mode": "check",
+    "input": "Catharine A. MacKinnon, Toward a Feminist Theory of the State 237 (1989)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Catharine A. MacKinnon, Toward a Feminist Theory of the State% 237 (1989)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0114",
+    "type": "book",
+    "mode": "check",
+    "input": "Derrick A. Bell, *Race, Racism, and American Law* 55 (6th ed. 2008)",
+    "expected_violations": [],
+    "expected_output": "Derrick A. Bell, *Race, Racism, and American Law* 55 (6th ed. 2008)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0115",
+    "type": "book",
+    "mode": "check",
+    "input": "%Derrick A. Bell, Race, Racism, and American Law% 55 (6th ed. 2008)",
+    "expected_violations": [],
+    "expected_output": "%Derrick A. Bell, Race, Racism, and American Law% 55 (6th ed. 2008)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0116",
+    "type": "book",
+    "mode": "check",
+    "input": "Derrick A. Bell, Race, Racism, and American Law 55 (6th ed. 2008)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Derrick A. Bell, Race, Racism, and American Law% 55 (6th ed. 2008)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0117",
+    "type": "book",
+    "mode": "check",
+    "input": "*Lawyers in Practice: Ethical Decision Making in Context* (Leslie C. Levin & Lynn Mather eds., 2012)",
+    "expected_violations": [],
+    "expected_output": "*Lawyers in Practice: Ethical Decision Making in Context* (Leslie C. Levin & Lynn Mather eds., 2012)",
+    "rules": [
+      "IB R28.2.5"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0118",
+    "type": "book",
+    "mode": "check",
+    "input": "*The Federalist Papers* (Clinton Rossiter ed., 1961)",
+    "expected_violations": [],
+    "expected_output": "*The Federalist Papers* (Clinton Rossiter ed., 1961)",
+    "rules": [
+      "IB R28.2.5"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0119",
+    "type": "book",
+    "mode": "check",
+    "input": "Fyodor Dostoevsky, *Crime and Punishment* 210 (Constance Garnett trans., 1917)",
+    "expected_violations": [],
+    "expected_output": "Fyodor Dostoevsky, *Crime and Punishment* 210 (Constance Garnett trans., 1917)",
+    "rules": [
+      "IB R28.2.5"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0120",
+    "type": "book",
+    "mode": "check",
+    "input": "Max Weber, *Economy and Society* 311 (Guenther Roth & Claus Wittich eds., 1978)",
+    "expected_violations": [],
+    "expected_output": "Max Weber, *Economy and Society* 311 (Guenther Roth & Claus Wittich eds., 1978)",
+    "rules": [
+      "IB R28.2.5"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0121",
+    "type": "book",
+    "mode": "check",
+    "input": "Alexis de Tocqueville, *Democracy in America* 287 (Harvey C. Mansfield trans., 2d ed. 2002)",
+    "expected_violations": [],
+    "expected_output": "Alexis de Tocqueville, *Democracy in America* 287 (Harvey C. Mansfield trans., 2d ed. 2002)",
+    "rules": [
+      "IB R28.2.5"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0122",
+    "type": "book",
+    "mode": "check",
+    "input": "Alexis de Tocqueville, *Democracy in America* 287 (Harvey C. Mansfield trans., 2nd ed. 2002)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Alexis de Tocqueville, *Democracy in America* 287 (Harvey C. Mansfield trans., 2d ed. 2002)",
+    "rules": [
+      "IB R28.2.5",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0123",
+    "type": "book",
+    "mode": "check",
+    "input": "2 *Collected Works of Oliver Wendell Holmes* 44 (Sheldon M. Novick ed., 1995)",
+    "expected_violations": [],
+    "expected_output": "2 *Collected Works of Oliver Wendell Holmes* 44 (Sheldon M. Novick ed., 1995)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0124",
+    "type": "book",
+    "mode": "check",
+    "input": "3 Melville B. Nimmer & David Nimmer, *Nimmer on Copyright* § 12.02 (2019)",
+    "expected_violations": [],
+    "expected_output": "3 Melville B. Nimmer & David Nimmer, *Nimmer on Copyright* § 12.02 (2019)",
+    "rules": [
+      "IB R28.2.4"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0125",
+    "type": "book",
+    "mode": "check",
+    "input": "1 William Blackstone, *Commentaries* 69 (1765)",
+    "expected_violations": [],
+    "expected_output": "1 William Blackstone, *Commentaries* 69 (1765)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0126",
+    "type": "book",
+    "mode": "check",
+    "input": "5 Charles Alan Wright & Arthur R. Miller, *Federal Practice and Procedure* § 1202 (4th ed. 2015)",
+    "expected_violations": [],
+    "expected_output": "5 Charles Alan Wright & Arthur R. Miller, *Federal Practice and Procedure* § 1202 (4th ed. 2015)",
+    "rules": [
+      "IB R28.2.4"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0127",
+    "type": "book",
+    "mode": "check",
+    "input": "Owen M. Fiss, *The Civil Rights Injunction* 93 (1978)",
+    "expected_violations": [],
+    "expected_output": "Owen M. Fiss, *The Civil Rights Injunction* 93 (1978)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0128",
+    "type": "book",
+    "mode": "check",
+    "input": "%Owen M. Fiss, The Civil Rights Injunction% 93 (1978)",
+    "expected_violations": [],
+    "expected_output": "%Owen M. Fiss, The Civil Rights Injunction% 93 (1978)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0129",
+    "type": "book",
+    "mode": "check",
+    "input": "Owen M. Fiss, The Civil Rights Injunction 93 (1978)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Owen M. Fiss, The Civil Rights Injunction% 93 (1978)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0130",
+    "type": "book",
+    "mode": "check",
+    "input": "Lon L. Fuller, *The Morality of Law* 39 (rev. ed. 1969)",
+    "expected_violations": [],
+    "expected_output": "Lon L. Fuller, *The Morality of Law* 39 (rev. ed. 1969)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0131",
+    "type": "book",
+    "mode": "check",
+    "input": "%Lon L. Fuller, The Morality of Law% 39 (rev. ed. 1969)",
+    "expected_violations": [],
+    "expected_output": "%Lon L. Fuller, The Morality of Law% 39 (rev. ed. 1969)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0132",
+    "type": "book",
+    "mode": "check",
+    "input": "Lon L. Fuller, The Morality of Law 39 (rev. ed. 1969)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Lon L. Fuller, The Morality of Law% 39 (rev. ed. 1969)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0133",
+    "type": "book",
+    "mode": "check",
+    "input": "Karl N. Llewellyn, *The Common Law Tradition* 178 (1960)",
+    "expected_violations": [],
+    "expected_output": "Karl N. Llewellyn, *The Common Law Tradition* 178 (1960)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0134",
+    "type": "book",
+    "mode": "check",
+    "input": "%Karl N. Llewellyn, The Common Law Tradition% 178 (1960)",
+    "expected_violations": [],
+    "expected_output": "%Karl N. Llewellyn, The Common Law Tradition% 178 (1960)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0135",
+    "type": "book",
+    "mode": "check",
+    "input": "Karl N. Llewellyn, The Common Law Tradition 178 (1960)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Karl N. Llewellyn, The Common Law Tradition% 178 (1960)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0136",
+    "type": "book",
+    "mode": "check",
+    "input": "Grant Gilmore, *The Ages of American Law* 67 (1977)",
+    "expected_violations": [],
+    "expected_output": "Grant Gilmore, *The Ages of American Law* 67 (1977)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0137",
+    "type": "book",
+    "mode": "check",
+    "input": "%Grant Gilmore, The Ages of American Law% 67 (1977)",
+    "expected_violations": [],
+    "expected_output": "%Grant Gilmore, The Ages of American Law% 67 (1977)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0138",
+    "type": "book",
+    "mode": "check",
+    "input": "Grant Gilmore, The Ages of American Law 67 (1977)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Grant Gilmore, The Ages of American Law% 67 (1977)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0139",
+    "type": "book",
+    "mode": "check",
+    "input": "Morton J. Horwitz, *The Transformation of American Law* 142 (1977)",
+    "expected_violations": [],
+    "expected_output": "Morton J. Horwitz, *The Transformation of American Law* 142 (1977)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0140",
+    "type": "book",
+    "mode": "check",
+    "input": "%Morton J. Horwitz, The Transformation of American Law% 142 (1977)",
+    "expected_violations": [],
+    "expected_output": "%Morton J. Horwitz, The Transformation of American Law% 142 (1977)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0141",
+    "type": "book",
+    "mode": "check",
+    "input": "Morton J. Horwitz, The Transformation of American Law 142 (1977)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Morton J. Horwitz, The Transformation of American Law% 142 (1977)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0142",
+    "type": "book",
+    "mode": "check",
+    "input": "Robert C. Ellickson, *Order Without Law* 54 (1991)",
+    "expected_violations": [],
+    "expected_output": "Robert C. Ellickson, *Order Without Law* 54 (1991)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0143",
+    "type": "book",
+    "mode": "check",
+    "input": "%Robert C. Ellickson, Order Without Law% 54 (1991)",
+    "expected_violations": [],
+    "expected_output": "%Robert C. Ellickson, Order Without Law% 54 (1991)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0144",
+    "type": "book",
+    "mode": "check",
+    "input": "Robert C. Ellickson, Order Without Law 54 (1991)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Robert C. Ellickson, Order Without Law% 54 (1991)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0145",
+    "type": "book",
+    "mode": "check",
+    "input": "Amartya Sen, *The Idea of Justice* 221 (2009)",
+    "expected_violations": [],
+    "expected_output": "Amartya Sen, *The Idea of Justice* 221 (2009)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0146",
+    "type": "book",
+    "mode": "check",
+    "input": "%Amartya Sen, The Idea of Justice% 221 (2009)",
+    "expected_violations": [],
+    "expected_output": "%Amartya Sen, The Idea of Justice% 221 (2009)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0147",
+    "type": "book",
+    "mode": "check",
+    "input": "Amartya Sen, The Idea of Justice 221 (2009)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Amartya Sen, The Idea of Justice% 221 (2009)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0148",
+    "type": "book",
+    "mode": "check",
+    "input": "Martha C. Nussbaum, *Frontiers of Justice* 96 (2006)",
+    "expected_violations": [],
+    "expected_output": "Martha C. Nussbaum, *Frontiers of Justice* 96 (2006)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0149",
+    "type": "book",
+    "mode": "check",
+    "input": "%Martha C. Nussbaum, Frontiers of Justice% 96 (2006)",
+    "expected_violations": [],
+    "expected_output": "%Martha C. Nussbaum, Frontiers of Justice% 96 (2006)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0150",
+    "type": "book",
+    "mode": "check",
+    "input": "Martha C. Nussbaum, Frontiers of Justice 96 (2006)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Martha C. Nussbaum, Frontiers of Justice% 96 (2006)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0151",
+    "type": "book",
+    "mode": "check",
+    "input": "Joseph Raz, *The Authority of Law* 153 (1979)",
+    "expected_violations": [],
+    "expected_output": "Joseph Raz, *The Authority of Law* 153 (1979)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0152",
+    "type": "book",
+    "mode": "check",
+    "input": "%Joseph Raz, The Authority of Law% 153 (1979)",
+    "expected_violations": [],
+    "expected_output": "%Joseph Raz, The Authority of Law% 153 (1979)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0153",
+    "type": "book",
+    "mode": "check",
+    "input": "Joseph Raz, The Authority of Law 153 (1979)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Joseph Raz, The Authority of Law% 153 (1979)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0154",
+    "type": "book",
+    "mode": "check",
+    "input": "John Finnis, *Natural Law and Natural Rights* 88 (2d ed. 2011)",
+    "expected_violations": [],
+    "expected_output": "John Finnis, *Natural Law and Natural Rights* 88 (2d ed. 2011)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0155",
+    "type": "book",
+    "mode": "check",
+    "input": "John Finnis, *Natural Law and Natural Rights* 88 (2nd ed. 2011)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "John Finnis, *Natural Law and Natural Rights* 88 (2d ed. 2011)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0156",
+    "type": "book",
+    "mode": "check",
+    "input": "%John Finnis, Natural Law and Natural Rights% 88 (2d ed. 2011)",
+    "expected_violations": [],
+    "expected_output": "%John Finnis, Natural Law and Natural Rights% 88 (2d ed. 2011)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0157",
+    "type": "book",
+    "mode": "check",
+    "input": "John Finnis, Natural Law and Natural Rights 88 (2d ed. 2011)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%John Finnis, Natural Law and Natural Rights% 88 (2d ed. 2011)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0158",
+    "type": "book",
+    "mode": "check",
+    "input": "%John Finnis, Natural Law and Natural Rights% 88 (2nd ed. 2011)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "%John Finnis, Natural Law and Natural Rights% 88 (2d ed. 2011)",
+    "rules": [
+      "IB R28.1",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0159",
+    "type": "book",
+    "mode": "check",
+    "input": "John Finnis, Natural Law and Natural Rights 88 (2nd ed. 2011)",
+    "expected_violations": [
+      "TYPEFACE",
+      "ABBREV"
+    ],
+    "expected_output": "%John Finnis, Natural Law and Natural Rights% 88 (2d ed. 2011)",
+    "rules": [
+      "IB R28.1",
+      "IB R30",
+      "IB R28"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: journal/book text not in large-and-small caps; ordinal edition abbreviation not in academic form (2d/3d)"
+  },
+  {
+    "id": "book-0160",
+    "type": "book",
+    "mode": "check",
+    "input": "Neil MacCormick, *Legal Reasoning and Legal Theory* 101 (1978)",
+    "expected_violations": [],
+    "expected_output": "Neil MacCormick, *Legal Reasoning and Legal Theory* 101 (1978)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0161",
+    "type": "book",
+    "mode": "check",
+    "input": "%Neil MacCormick, Legal Reasoning and Legal Theory% 101 (1978)",
+    "expected_violations": [],
+    "expected_output": "%Neil MacCormick, Legal Reasoning and Legal Theory% 101 (1978)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0162",
+    "type": "book",
+    "mode": "check",
+    "input": "Neil MacCormick, Legal Reasoning and Legal Theory 101 (1978)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Neil MacCormick, Legal Reasoning and Legal Theory% 101 (1978)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "book-0163",
+    "type": "book",
+    "mode": "check",
+    "input": "Brian Z. Tamanaha, *Law as a Means to an End* 75 (2006)",
+    "expected_violations": [],
+    "expected_output": "Brian Z. Tamanaha, *Law as a Means to an End* 75 (2006)",
+    "rules": [
+      "IB R28.1",
+      "IB R28.2.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0164",
+    "type": "book",
+    "mode": "check",
+    "input": "%Brian Z. Tamanaha, Law as a Means to an End% 75 (2006)",
+    "expected_violations": [],
+    "expected_output": "%Brian Z. Tamanaha, Law as a Means to an End% 75 (2006)",
+    "rules": [
+      "IB R28.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "book-0165",
+    "type": "book",
+    "mode": "check",
+    "input": "Brian Z. Tamanaha, Law as a Means to an End 75 (2006)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "%Brian Z. Tamanaha, Law as a Means to an End% 75 (2006)",
+    "rules": [
+      "IB R28.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
   }
 ]
