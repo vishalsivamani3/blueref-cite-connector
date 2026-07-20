@@ -296,6 +296,20 @@ export const SEEDS: Seed[] = [
   { type: 'shortform', citation: '*Iqbal*, 556 U.S. at 678', rules: ['IB R15.2.2', 'IB R2.1', 'IB T1'] },
   { type: 'shortform', citation: '*Tarasoff*, 551 P.2d at 340', rules: ['IB R15.2.2', 'IB R2.1', 'IB T3'] },
 
+  // --- supra (R29.2 books/non-periodicals, R31.2 journals). R29.2: "an unitalicized
+  // comma followed by italicized supra and followed by another unitalicized comma",
+  // then "the word 'at' and the specific page". Section pincites take no "at".
+  { type: 'shortform', citation: 'Skinner, *supra*, at 21', rules: ['IB R29.2', 'IB R2.1'] },
+  { type: 'shortform', citation: 'Nimmer & Nimmer, *supra*, § 14.02', rules: ['IB R29.2'] },
+  { type: 'shortform', citation: 'Vats, *supra* note 5, at 100', rules: ['IB R29.2'] },
+  { type: 'shortform', citation: 'Robbins, *Painting with Print*, *supra*, at 112', rules: ['IB R31.2'] },
+  { type: 'shortform', citation: 'Baumeister et al., *Bad Is Stronger than Good*, *supra* note 5, at 325', rules: ['IB R31.2'] },
+  { type: 'shortform', citation: 'Rawls, *supra*, at 133', rules: ['IB R29.2'] },
+  { type: 'shortform', citation: 'Hart, *supra* note 12, at 79', rules: ['IB R29.2'] },
+  { type: 'shortform', citation: 'Sunstein, *Incompletely Theorized Agreements*, *supra* note 8, at 1745', rules: ['IB R31.2'] },
+  { type: 'shortform', citation: 'Calabresi & Melamed, *supra* note 3, at 1092', rules: ['IB R31.2'] },
+  { type: 'shortform', citation: 'Wright & Miller, *supra*, § 1202', rules: ['IB R29.2'] },
+
   // --------------------------------------------------------------- statutes
   { type: 'statute', citation: '42 U.S.C. § 1983 (2018)', rules: ['IB R16', 'IB T1'] },
   { type: 'statute', citation: '15 U.S.C. § 78j(b) (2018)', rules: ['IB R16', 'IB T1'] },

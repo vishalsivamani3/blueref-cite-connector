@@ -104,7 +104,7 @@ const LIMITATIONS: string[] = [
   'Two styles: "practitioner" (standard legal documents; the convention The Indigo Book specifies) and "academic" (law-review). Academic typeface is not fully derivable from the CC0 Indigo Book (Indigo R1.2 puts it out of scope) and is treated as secondary.',
   'Short-form CONTEXT is validated only by check_document, which sees the ordered footnotes (Indigo R15.3.3: id. must follow a single-source citation, never a string cite). check_citation alone checks format only, so a short-form pass from check_citation does NOT mean the reference is contextually valid.',
   'Multi-citation input (string cites, subsequent history such as aff\'d or cert. denied) is refused rather than parsed; check each citation separately.',
-  '"supra" short forms are not yet handled (they attach mostly to books/periodicals, which have no module yet).',
+  '"supra" back-references are checked for format (Indigo R29.2/R31.2) and, in check_document, for direction — a "supra note N" must point at an earlier footnote. Whether footnote N actually contains the cited authority is not verified.',
   'Journal-article support covers consecutively paginated journals (Indigo R30.1.1) and student-written material (R30.1.3). Magazines and newspapers with standard pagination (R30.1.2 — full date and "at <page>" instead of a volume) are not yet handled.',
   'Journal title abbreviations are open-ended: R30.3.1 abbreviates by rule and R30.2.2 allows discretion where a journal names its own abbreviation, so an unrecognized journal abbreviation is accepted rather than flagged. Only a known spelled-out title is flagged.',
   'No foreign, international, or treaty citations.',

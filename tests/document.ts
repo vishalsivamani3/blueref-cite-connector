@@ -63,6 +63,21 @@ const SCENARIOS: Scenario[] = [
     ],
     expectContextIssuesAt: [2],
   },
+  {
+    label: 'R29.2 supra pointing back to an earlier footnote',
+    footnotes: ['a', 'b', 'c', 'd', NAKED_COWBOY, 'f', 'g', 'Cowboy, *supra* note 5, at 517'],
+    expectContextIssuesAt: [],
+  },
+  {
+    label: 'R29.2 supra pointing at its own footnote number',
+    footnotes: ['a', 'b', 'Skinner, *supra* note 3, at 541'],
+    expectContextIssuesAt: [3],
+  },
+  {
+    label: 'R29.2 supra pointing forward to a later footnote',
+    footnotes: ['a', 'Skinner, *supra* note 9, at 541'],
+    expectContextIssuesAt: [2],
+  },
 ];
 
 let failures = 0;
