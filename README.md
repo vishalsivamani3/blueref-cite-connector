@@ -129,7 +129,7 @@ as one PR. The hard part should be knowing the citation rules, not the codebase.
 | 1 | Cases at 99.5%. ✅ module done (460-entry slice at 100%, both styles; growing to 500, short forms pending). |
 | 2 | Statutes + periodicals at 99.5%. |
 | 3 | Books ✅ + `check_document` id. context ✅ (`supra` pending). |
-| 4 | Field test on real law-review footnotes; harden. |
+| 4 | Field test ✅ — 340 ordered citation units through `check_document`, all discrepancies triaged (`docs/FIELD-TEST.md`). |
 | 5 | Ship: npm publish, docs, stranger-install test. |
 
 ## License
