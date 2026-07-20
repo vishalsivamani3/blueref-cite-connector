@@ -38,6 +38,14 @@ import type {
   Violation,
 } from '../types.js';
 
+/**
+ * Name suffixes belong to the author, not the title. Indigo R28.2.1: "Use titles
+ * that follow an author's name (Sr.) but not titles that precede them (Hon.)".
+ * Without this, "Richard H. Fallon, Jr., Judicially Manageable Standards" splits
+ * into author "Richard H. Fallon" and title "Jr., Judicially Manageable Standards".
+ */
+const NAME_SUFFIX = /^(Jr\.|Sr\.|I{2,3}|IV|V|Ph\.?D\.?|M\.?D\.?|Esq\.|J\.?D\.?)$/i;
+
 /** Regulations/administrative materials are a v1 non-goal (PRD 3) — refuse them. */
 const REGULATION = /(?:^|\s)(C\.F\.R\.|Fed\.\s?Reg\.|Admin\.\s?Code)(?=\s|$)/i;
 
@@ -117,7 +125,15 @@ function parse(input: string): ParseResult {
   const acad = ACADEMIC_RE.exec(s);
   if (acad) {
     const run = acad[2]!.trim();
-    const comma = run.indexOf(', ');
+    let comma = run.indexOf(', ');
+    // A suffix after the first comma belongs to the author (R28.2.1).
+    while (comma > 0) {
+      const next = run.slice(comma + 2).split(', ')[0]?.trim() ?? '';
+      if (!NAME_SUFFIX.test(next)) break;
+      const nxt = run.indexOf(', ', comma + 2);
+      if (nxt < 0) break;
+      comma = nxt;
+    }
     const components: BookComponents = {
       author: comma > 0 ? run.slice(0, comma).trim() : '',
       title: comma > 0 ? run.slice(comma + 2).trim() : run,

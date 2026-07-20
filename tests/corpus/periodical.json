@@ -2458,5 +2458,2974 @@
     ],
     "provenance": "synthetic",
     "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0144",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stan. L. Rev. 1899, 1905 (2006)",
+    "expected_violations": [],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stan. L. Rev. 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0145",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stan. L. Rev. 1899, at 1905 (2006)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stan. L. Rev. 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0146",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, Problems with Minimalism, 58 Stan. L. Rev. 1899, 1905 (2006)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stan. L. Rev. 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0147",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stanford Law Review 1899, 1905 (2006)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stan. L. Rev. 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0148",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, Problems with Minimalism, 58 Stan. L. Rev. 1899, at 1905 (2006)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stan. L. Rev. 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0149",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stan. L. Rev.% 1899, 1905 (2006)",
+    "expected_violations": [],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stan. L. Rev.% 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0150",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stan. L. Rev.% 1899, at 1905 (2006)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stan. L. Rev.% 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0151",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, Problems with Minimalism, 58 %Stan. L. Rev.% 1899, 1905 (2006)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stan. L. Rev.% 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0152",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Problems with Minimalism*, 58 Stan. L. Rev. 1899, 1905 (2006)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stan. L. Rev.% 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0153",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stanford Law Review% 1899, 1905 (2006)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stan. L. Rev.% 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0154",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Cass R. Sunstein, Problems with Minimalism, 58 %Stan. L. Rev.% 1899, at 1905 (2006)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Cass R. Sunstein, *Problems with Minimalism*, 58 %Stan. L. Rev.% 1899, 1905 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0155",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Va. L. Rev. 1275, 1290 (2010)",
+    "expected_violations": [],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Va. L. Rev. 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0156",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Va. L. Rev. 1275, at 1290 (2010)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Va. L. Rev. 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0157",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., Judicially Manageable Standards, 96 Va. L. Rev. 1275, 1290 (2010)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Va. L. Rev. 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0158",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Virginia Law Review 1275, 1290 (2010)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Va. L. Rev. 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0159",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., Judicially Manageable Standards, 96 Va. L. Rev. 1275, at 1290 (2010)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Va. L. Rev. 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0160",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Va. L. Rev.% 1275, 1290 (2010)",
+    "expected_violations": [],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Va. L. Rev.% 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0161",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Va. L. Rev.% 1275, at 1290 (2010)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Va. L. Rev.% 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0162",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., Judicially Manageable Standards, 96 %Va. L. Rev.% 1275, 1290 (2010)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Va. L. Rev.% 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0163",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 Va. L. Rev. 1275, 1290 (2010)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Va. L. Rev.% 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0164",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Virginia Law Review% 1275, 1290 (2010)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Va. L. Rev.% 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0165",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Richard H. Fallon, Jr., Judicially Manageable Standards, 96 %Va. L. Rev.% 1275, at 1290 (2010)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Richard H. Fallon, Jr., *Judicially Manageable Standards*, 96 %Va. L. Rev.% 1275, 1290 (2010)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0166",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale L.J. 1131, 1145 (1991)",
+    "expected_violations": [],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale L.J. 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0167",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale L.J. 1131, at 1145 (1991)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale L.J. 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0168",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, The Bill of Rights as a Constitution, 100 Yale L.J. 1131, 1145 (1991)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale L.J. 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0169",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale Law Journal 1131, 1145 (1991)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale L.J. 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0170",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, The Bill of Rights as a Constitution, 100 Yale L.J. 1131, at 1145 (1991)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale L.J. 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0171",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale L.J.% 1131, 1145 (1991)",
+    "expected_violations": [],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale L.J.% 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0172",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale L.J.% 1131, at 1145 (1991)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale L.J.% 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0173",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, The Bill of Rights as a Constitution, 100 %Yale L.J.% 1131, 1145 (1991)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale L.J.% 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0174",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 Yale L.J. 1131, 1145 (1991)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale L.J.% 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0175",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale Law Journal% 1131, 1145 (1991)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale L.J.% 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0176",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Akhil Reed Amar, The Bill of Rights as a Constitution, 100 %Yale L.J.% 1131, at 1145 (1991)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Akhil Reed Amar, *The Bill of Rights as a Constitution*, 100 %Yale L.J.% 1131, 1145 (1991)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0177",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Mich. L. Rev. 336, 350 (1993)",
+    "expected_violations": [],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Mich. L. Rev. 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0178",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Mich. L. Rev. 336, at 350 (1993)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Mich. L. Rev. 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0179",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, Bankruptcy Policymaking in an Imperfect World, 92 Mich. L. Rev. 336, 350 (1993)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Mich. L. Rev. 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0180",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Michigan Law Review 336, 350 (1993)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Mich. L. Rev. 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0181",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, Bankruptcy Policymaking in an Imperfect World, 92 Mich. L. Rev. 336, at 350 (1993)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Mich. L. Rev. 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0182",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Mich. L. Rev.% 336, 350 (1993)",
+    "expected_violations": [],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Mich. L. Rev.% 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0183",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Mich. L. Rev.% 336, at 350 (1993)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Mich. L. Rev.% 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0184",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, Bankruptcy Policymaking in an Imperfect World, 92 %Mich. L. Rev.% 336, 350 (1993)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Mich. L. Rev.% 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0185",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 Mich. L. Rev. 336, 350 (1993)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Mich. L. Rev.% 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0186",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Michigan Law Review% 336, 350 (1993)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Mich. L. Rev.% 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0187",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Elizabeth Warren, Bankruptcy Policymaking in an Imperfect World, 92 %Mich. L. Rev.% 336, at 350 (1993)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Elizabeth Warren, *Bankruptcy Policymaking in an Imperfect World*, 92 %Mich. L. Rev.% 336, 350 (1993)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0188",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, *The New Chicago School*, 27 J. Legal Stud. 661, 670 (1998)",
+    "expected_violations": [],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 J. Legal Stud. 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0189",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, *The New Chicago School*, 27 J. Legal Stud. 661, at 670 (1998)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 J. Legal Stud. 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0190",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, The New Chicago School, 27 J. Legal Stud. 661, 670 (1998)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 J. Legal Stud. 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0191",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, The New Chicago School, 27 J. Legal Stud. 661, at 670 (1998)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 J. Legal Stud. 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0192",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, *The New Chicago School*, 27 %J. Legal Stud.% 661, 670 (1998)",
+    "expected_violations": [],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 %J. Legal Stud.% 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0193",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, *The New Chicago School*, 27 %J. Legal Stud.% 661, at 670 (1998)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 %J. Legal Stud.% 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0194",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, The New Chicago School, 27 %J. Legal Stud.% 661, 670 (1998)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 %J. Legal Stud.% 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0195",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, *The New Chicago School*, 27 J. Legal Stud. 661, 670 (1998)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 %J. Legal Stud.% 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0196",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Lawrence Lessig, The New Chicago School, 27 %J. Legal Stud.% 661, at 670 (1998)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Lawrence Lessig, *The New Chicago School*, 27 %J. Legal Stud.% 661, 670 (1998)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0197",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 U. Chi. Legal F. 207, 216 (1996)",
+    "expected_violations": [],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 U. Chi. Legal F. 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0198",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 U. Chi. Legal F. 207, at 216 (1996)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 U. Chi. Legal F. 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0199",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, Cyberspace and the Law of the Horse, 1996 U. Chi. Legal F. 207, 216 (1996)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 U. Chi. Legal F. 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0200",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, Cyberspace and the Law of the Horse, 1996 U. Chi. Legal F. 207, at 216 (1996)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 U. Chi. Legal F. 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0201",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 %U. Chi. Legal F.% 207, 216 (1996)",
+    "expected_violations": [],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 %U. Chi. Legal F.% 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0202",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 %U. Chi. Legal F.% 207, at 216 (1996)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 %U. Chi. Legal F.% 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0203",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, Cyberspace and the Law of the Horse, 1996 %U. Chi. Legal F.% 207, 216 (1996)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 %U. Chi. Legal F.% 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0204",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 U. Chi. Legal F. 207, 216 (1996)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 %U. Chi. Legal F.% 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0205",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Frank H. Easterbrook, Cyberspace and the Law of the Horse, 1996 %U. Chi. Legal F.% 207, at 216 (1996)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Frank H. Easterbrook, *Cyberspace and the Law of the Horse*, 1996 %U. Chi. Legal F.% 207, 216 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0206",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale L.J. 499, 510 (1961)",
+    "expected_violations": [],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale L.J. 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0207",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale L.J. 499, at 510 (1961)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale L.J. 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0208",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, Some Thoughts on Risk Distribution, 70 Yale L.J. 499, 510 (1961)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale L.J. 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0209",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale Law Journal 499, 510 (1961)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale L.J. 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0210",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, Some Thoughts on Risk Distribution, 70 Yale L.J. 499, at 510 (1961)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale L.J. 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0211",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale L.J.% 499, 510 (1961)",
+    "expected_violations": [],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale L.J.% 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0212",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale L.J.% 499, at 510 (1961)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale L.J.% 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0213",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, Some Thoughts on Risk Distribution, 70 %Yale L.J.% 499, 510 (1961)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale L.J.% 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0214",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 Yale L.J. 499, 510 (1961)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale L.J.% 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0215",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale Law Journal% 499, 510 (1961)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale L.J.% 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0216",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Guido Calabresi, Some Thoughts on Risk Distribution, 70 %Yale L.J.% 499, at 510 (1961)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Guido Calabresi, *Some Thoughts on Risk Distribution*, 70 %Yale L.J.% 499, 510 (1961)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0217",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 Fordham L. Rev. 575, 590 (2006)",
+    "expected_violations": [],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 Fordham L. Rev. 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0218",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 Fordham L. Rev. 575, at 590 (2006)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 Fordham L. Rev. 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0219",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, Critical Constitutionalism Now, 75 Fordham L. Rev. 575, 590 (2006)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 Fordham L. Rev. 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0220",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, Critical Constitutionalism Now, 75 Fordham L. Rev. 575, at 590 (2006)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 Fordham L. Rev. 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0221",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 %Fordham L. Rev.% 575, 590 (2006)",
+    "expected_violations": [],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 %Fordham L. Rev.% 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0222",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 %Fordham L. Rev.% 575, at 590 (2006)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 %Fordham L. Rev.% 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0223",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, Critical Constitutionalism Now, 75 %Fordham L. Rev.% 575, 590 (2006)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 %Fordham L. Rev.% 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0224",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 Fordham L. Rev. 575, 590 (2006)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 %Fordham L. Rev.% 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0225",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Louis Michael Seidman, Critical Constitutionalism Now, 75 %Fordham L. Rev.% 575, at 590 (2006)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Louis Michael Seidman, *Critical Constitutionalism Now*, 75 %Fordham L. Rev.% 575, 590 (2006)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0226",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, *The Copyright Grab*, 4 Wired 134, 138 (1996)",
+    "expected_violations": [],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 Wired 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0227",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, *The Copyright Grab*, 4 Wired 134, at 138 (1996)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 Wired 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0228",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, The Copyright Grab, 4 Wired 134, 138 (1996)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 Wired 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0229",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, The Copyright Grab, 4 Wired 134, at 138 (1996)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 Wired 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0230",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, *The Copyright Grab*, 4 %Wired% 134, 138 (1996)",
+    "expected_violations": [],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 %Wired% 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0231",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, *The Copyright Grab*, 4 %Wired% 134, at 138 (1996)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 %Wired% 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0232",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, The Copyright Grab, 4 %Wired% 134, 138 (1996)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 %Wired% 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0233",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, *The Copyright Grab*, 4 Wired 134, 138 (1996)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 %Wired% 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0234",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Pamela Samuelson, The Copyright Grab, 4 %Wired% 134, at 138 (1996)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Pamela Samuelson, *The Copyright Grab*, 4 %Wired% 134, 138 (1996)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0235",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 N.Y.U. L. Rev. 1, 20 (2004)",
+    "expected_violations": [],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 N.Y.U. L. Rev. 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0236",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 N.Y.U. L. Rev. 1, at 20 (2004)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 N.Y.U. L. Rev. 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0237",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, Digital Speech and Democratic Culture, 79 N.Y.U. L. Rev. 1, 20 (2004)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 N.Y.U. L. Rev. 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0238",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 New York University Law Review 1, 20 (2004)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 N.Y.U. L. Rev. 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0239",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, Digital Speech and Democratic Culture, 79 N.Y.U. L. Rev. 1, at 20 (2004)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 N.Y.U. L. Rev. 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0240",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %N.Y.U. L. Rev.% 1, 20 (2004)",
+    "expected_violations": [],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %N.Y.U. L. Rev.% 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0241",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %N.Y.U. L. Rev.% 1, at 20 (2004)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %N.Y.U. L. Rev.% 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0242",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, Digital Speech and Democratic Culture, 79 %N.Y.U. L. Rev.% 1, 20 (2004)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %N.Y.U. L. Rev.% 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0243",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 N.Y.U. L. Rev. 1, 20 (2004)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %N.Y.U. L. Rev.% 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0244",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %New York University Law Review% 1, 20 (2004)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %N.Y.U. L. Rev.% 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0245",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jack M. Balkin, Digital Speech and Democratic Culture, 79 %N.Y.U. L. Rev.% 1, at 20 (2004)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Jack M. Balkin, *Digital Speech and Democratic Culture*, 79 %N.Y.U. L. Rev.% 1, 20 (2004)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0246",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stan. L. Rev. 1111, 1130 (1997)",
+    "expected_violations": [],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stan. L. Rev. 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0247",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stan. L. Rev. 1111, at 1130 (1997)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stan. L. Rev. 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0248",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, Why Equal Protection No Longer Protects, 49 Stan. L. Rev. 1111, 1130 (1997)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stan. L. Rev. 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0249",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stanford Law Review 1111, 1130 (1997)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stan. L. Rev. 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0250",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, Why Equal Protection No Longer Protects, 49 Stan. L. Rev. 1111, at 1130 (1997)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stan. L. Rev. 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0251",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stan. L. Rev.% 1111, 1130 (1997)",
+    "expected_violations": [],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stan. L. Rev.% 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0252",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stan. L. Rev.% 1111, at 1130 (1997)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stan. L. Rev.% 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0253",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, Why Equal Protection No Longer Protects, 49 %Stan. L. Rev.% 1111, 1130 (1997)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stan. L. Rev.% 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0254",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 Stan. L. Rev. 1111, 1130 (1997)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stan. L. Rev.% 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0255",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stanford Law Review% 1111, 1130 (1997)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stan. L. Rev.% 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0256",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Reva B. Siegel, Why Equal Protection No Longer Protects, 49 %Stan. L. Rev.% 1111, at 1130 (1997)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Reva B. Siegel, *Why Equal Protection No Longer Protects*, 49 %Stan. L. Rev.% 1111, 1130 (1997)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0257",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harv. L. Rev. 713, 725 (1985)",
+    "expected_violations": [],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harv. L. Rev. 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0258",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harv. L. Rev. 713, at 725 (1985)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harv. L. Rev. 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0259",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, Beyond Carolene Products, 98 Harv. L. Rev. 713, 725 (1985)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harv. L. Rev. 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0260",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harvard Law Review 713, 725 (1985)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harv. L. Rev. 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0261",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, Beyond Carolene Products, 98 Harv. L. Rev. 713, at 725 (1985)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harv. L. Rev. 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0262",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harv. L. Rev.% 713, 725 (1985)",
+    "expected_violations": [],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harv. L. Rev.% 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0263",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harv. L. Rev.% 713, at 725 (1985)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harv. L. Rev.% 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0264",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, Beyond Carolene Products, 98 %Harv. L. Rev.% 713, 725 (1985)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harv. L. Rev.% 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0265",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 Harv. L. Rev. 713, 725 (1985)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harv. L. Rev.% 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0266",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harvard Law Review% 713, 725 (1985)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harv. L. Rev.% 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0267",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Bruce A. Ackerman, Beyond Carolene Products, 98 %Harv. L. Rev.% 713, at 725 (1985)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Bruce A. Ackerman, *Beyond Carolene Products*, 98 %Harv. L. Rev.% 713, 725 (1985)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0268",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 Ind. L.J. 1, 20 (1971)",
+    "expected_violations": [],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 Ind. L.J. 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0269",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 Ind. L.J. 1, at 20 (1971)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 Ind. L.J. 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0270",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, Neutral Principles and Some First Amendment Problems, 47 Ind. L.J. 1, 20 (1971)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 Ind. L.J. 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0271",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, Neutral Principles and Some First Amendment Problems, 47 Ind. L.J. 1, at 20 (1971)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 Ind. L.J. 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0272",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 %Ind. L.J.% 1, 20 (1971)",
+    "expected_violations": [],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 %Ind. L.J.% 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0273",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 %Ind. L.J.% 1, at 20 (1971)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 %Ind. L.J.% 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0274",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, Neutral Principles and Some First Amendment Problems, 47 %Ind. L.J.% 1, 20 (1971)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 %Ind. L.J.% 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0275",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 Ind. L.J. 1, 20 (1971)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 %Ind. L.J.% 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0276",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Robert H. Bork, Neutral Principles and Some First Amendment Problems, 47 %Ind. L.J.% 1, at 20 (1971)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Robert H. Bork, *Neutral Principles and Some First Amendment Problems*, 47 %Ind. L.J.% 1, 20 (1971)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0277",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale L.J. 421, 430 (1960)",
+    "expected_violations": [],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale L.J. 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0278",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale L.J. 421, at 430 (1960)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale L.J. 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0279",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., The Lawfulness of the Segregation Decisions, 69 Yale L.J. 421, 430 (1960)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale L.J. 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0280",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale Law Journal 421, 430 (1960)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale L.J. 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0281",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., The Lawfulness of the Segregation Decisions, 69 Yale L.J. 421, at 430 (1960)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale L.J. 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0282",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale L.J.% 421, 430 (1960)",
+    "expected_violations": [],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale L.J.% 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0283",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale L.J.% 421, at 430 (1960)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale L.J.% 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0284",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., The Lawfulness of the Segregation Decisions, 69 %Yale L.J.% 421, 430 (1960)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale L.J.% 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0285",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 Yale L.J. 421, 430 (1960)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale L.J.% 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0286",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale Law Journal% 421, 430 (1960)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale L.J.% 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0287",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Charles L. Black, Jr., The Lawfulness of the Segregation Decisions, 69 %Yale L.J.% 421, at 430 (1960)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Charles L. Black, Jr., *The Lawfulness of the Segregation Decisions*, 69 %Yale L.J.% 421, 430 (1960)",
+    "rules": [
+      "IB R30.1.1",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0288",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, 430 (2014)",
+    "expected_violations": [],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0289",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, at 430 (2014)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0290",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, Using Copyright to Combat Revenge Porn, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, 430 (2014)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0291",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, Using Copyright to Combat Revenge Porn, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, at 430 (2014)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0292",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, 430 (2014)",
+    "expected_violations": [],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0293",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, at 430 (2014)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0294",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, Using Copyright to Combat Revenge Porn, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, 430 (2014)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0295",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 N.Y.U. J. Intell. Prop. & Ent. L. 422, 430 (2014)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0296",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Amanda Levendowski, Note, Using Copyright to Combat Revenge Porn, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, at 430 (2014)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Amanda Levendowski, Note, *Using Copyright to Combat Revenge Porn*, 3 %N.Y.U. J. Intell. Prop. & Ent. L.% 422, 430 (2014)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0297",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 U. Chi. L. Rev. 1201, 1210 (2017)",
+    "expected_violations": [],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 U. Chi. L. Rev. 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0298",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 U. Chi. L. Rev. 1201, at 1210 (2017)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 U. Chi. L. Rev. 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0299",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, Standing After Spokeo, 84 U. Chi. L. Rev. 1201, 1210 (2017)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 U. Chi. L. Rev. 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0300",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 University of Chicago Law Review 1201, 1210 (2017)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 U. Chi. L. Rev. 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0301",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, Standing After Spokeo, 84 U. Chi. L. Rev. 1201, at 1210 (2017)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 U. Chi. L. Rev. 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0302",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %U. Chi. L. Rev.% 1201, 1210 (2017)",
+    "expected_violations": [],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %U. Chi. L. Rev.% 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0303",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %U. Chi. L. Rev.% 1201, at 1210 (2017)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %U. Chi. L. Rev.% 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0304",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, Standing After Spokeo, 84 %U. Chi. L. Rev.% 1201, 1210 (2017)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %U. Chi. L. Rev.% 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0305",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 U. Chi. L. Rev. 1201, 1210 (2017)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %U. Chi. L. Rev.% 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0306",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %University of Chicago Law Review% 1201, 1210 (2017)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %U. Chi. L. Rev.% 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0307",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Jane R. Doe, Comment, Standing After Spokeo, 84 %U. Chi. L. Rev.% 1201, at 1210 (2017)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Jane R. Doe, Comment, *Standing After Spokeo*, 84 %U. Chi. L. Rev.% 1201, 1210 (2017)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0308",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 Cal. L. Rev. 999, 1010 (2018)",
+    "expected_violations": [],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 Cal. L. Rev. 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0309",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 Cal. L. Rev. 999, at 1010 (2018)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 Cal. L. Rev. 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0310",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, Qualified Immunity Reconsidered, 106 Cal. L. Rev. 999, 1010 (2018)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 Cal. L. Rev. 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0311",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 California Law Review 999, 1010 (2018)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 Cal. L. Rev. 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0312",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, Qualified Immunity Reconsidered, 106 Cal. L. Rev. 999, at 1010 (2018)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 Cal. L. Rev. 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
+  },
+  {
+    "id": "periodical-0313",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %Cal. L. Rev.% 999, 1010 (2018)",
+    "expected_violations": [],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %Cal. L. Rev.% 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "periodical-0314",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %Cal. L. Rev.% 999, at 1010 (2018)",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %Cal. L. Rev.% 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "superfluous \"at\" before pincite in a full citation"
+  },
+  {
+    "id": "periodical-0315",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, Qualified Immunity Reconsidered, 106 %Cal. L. Rev.% 999, 1010 (2018)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %Cal. L. Rev.% 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "article title not italicized"
+  },
+  {
+    "id": "periodical-0316",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 Cal. L. Rev. 999, 1010 (2018)",
+    "expected_violations": [
+      "TYPEFACE"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %Cal. L. Rev.% 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R30"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal/book text not in large-and-small caps"
+  },
+  {
+    "id": "periodical-0317",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %California Law Review% 999, 1010 (2018)",
+    "expected_violations": [
+      "ABBREV"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %Cal. L. Rev.% 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R30.3"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "journal title not abbreviated per Indigo R30.3"
+  },
+  {
+    "id": "periodical-0318",
+    "type": "periodical",
+    "mode": "check",
+    "input": "Michael A. Roe, Note, Qualified Immunity Reconsidered, 106 %Cal. L. Rev.% 999, at 1010 (2018)",
+    "expected_violations": [
+      "PINCITE",
+      "TYPEFACE"
+    ],
+    "expected_output": "Michael A. Roe, Note, *Qualified Immunity Reconsidered*, 106 %Cal. L. Rev.% 999, 1010 (2018)",
+    "rules": [
+      "IB R30.1.3",
+      "IB R2.1",
+      "IB R11.6"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "multi-error: superfluous \"at\" before pincite in a full citation; article title not italicized"
   }
 ]
