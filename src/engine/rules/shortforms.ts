@@ -17,8 +17,13 @@
  * (`check_document`); this module never asserts contextual validity, and
  * SHORTFORM_CONTEXT is reserved for it.
  *
- * `supra` is deliberately not handled yet: it attaches mostly to books/periodicals,
- * which have no module, so it lands with Phase 3 document mode.
+ *   supra        R29.2/R31.2  "Skinner, *supra*, at 21"
+ *                              "Baumeister et al., *Bad Is Stronger than Good*, *supra* note 5, at 325"
+ *
+ * R29.2 spells out the marker placement: "an unitalicized comma followed by
+ * italicized supra and followed by another unitalicized comma", then "the word
+ * 'at' and the specific page being pincited". So the commas stay roman and only
+ * `supra` is italicized — the same principle as the case-name comma in R15.2.2.
  *
  * Self-contained per PRD Section 12: imports only shared types and data tables.
  */
@@ -86,10 +91,23 @@ const YEAR_PAREN_RE = /\((?:[^)]*\s)?\d{4}\)\s*$/;
 const AMBIGUOUS_FIRST_PARTY =
   /^(United States|State|People|Commonwealth|City|County|Cnty\.|Town|Village|Dep't|Board|Bd\.|In re|Ex parte|SEC|NLRB|FTC|EPA|FCC)\b/i;
 
-type ShortKind = 'id' | 'case-short';
+/**
+ * supra: <Author>[, <Shortened Title>], *supra*[ note <N>][, at <pincite>]
+ * A section pincite ("§ 14.02") is permitted and does not take "at" (R29.2 example
+ * "See Nimmer & Nimmer, supra, § 14.02").
+ */
+const SUPRA_RE =
+  /^(.+?),\s*(\*)?\s*supra\s*(\*)?(?:\s+note\s+(\d+))?(?:\s*,\s*(?:(at)\s+)?(§+\s*[\dA-Za-z.()\][–-]+|\d+(?:[-–]\d+)?))?\s*\.?\s*$/i;
+
+type ShortKind = 'id' | 'case-short' | 'supra';
 
 interface ShortComponents {
   kind: ShortKind;
+  /** supra forms */
+  lead?: string;
+  supraItalic?: boolean;
+  note?: string;
+  sectionPincite?: boolean;
   /** id. forms */
   word?: string;
   hasPeriod?: boolean;
@@ -108,6 +126,7 @@ function detect(input: string): number {
   const s = input.trim();
   if (YEAR_PAREN_RE.test(s)) return 0.05; // full citation
   if (ID_RE.test(s)) return 0.97;
+  if (/\bsupra\b/i.test(s) && SUPRA_RE.test(s)) return 0.96;
   if (CASE_SHORT_RE.test(s)) return 0.95;
   return 0.05;
 }
@@ -143,6 +162,26 @@ function parse(input: string): ParseResult {
     };
   }
 
+  const sup = /\bsupra\b/i.test(s) ? SUPRA_RE.exec(s) : null;
+  if (sup) {
+    const lead = sup[1]!.trim();
+    if (!lead) return { ok: false, code: 'PARSE_FAIL', message: 'supra reference has no author.' };
+    const pin = sup[6]?.trim();
+    const components: ShortComponents = {
+      kind: 'supra',
+      lead,
+      supraItalic: Boolean(sup[2] && sup[3]),
+      hasAt: Boolean(sup[5]),
+      sectionPincite: Boolean(pin && /^§/.test(pin)),
+      ...(sup[4] ? { note: sup[4] } : {}),
+      ...(pin ? { pincite: pin } : {}),
+    };
+    return {
+      ok: true,
+      citation: { type: 'shortform', raw: input, components: components as unknown as Record<string, unknown> },
+    };
+  }
+
   const cs = CASE_SHORT_RE.exec(s);
   if (cs) {
     const { text: name, italic } = stripItalic(cs[1]!.trim());
@@ -170,6 +209,12 @@ function parse(input: string): ParseResult {
 }
 
 function assemble(c: ShortComponents): string {
+  if (c.kind === 'supra') {
+    const note = c.note ? ` note ${c.note}` : '';
+    // R29.2: section pincites do not take "at"; page pincites do.
+    const pin = c.pincite ? (c.sectionPincite ? `, ${c.pincite}` : `, at ${c.pincite}`) : '';
+    return `${c.lead}, *supra*${note}${pin}`;
+  }
   if (c.kind === 'id') {
     const word = `*${c.word}.*`;
     return c.pincite ? `${word} at ${c.pincite}` : word;
@@ -219,6 +264,27 @@ function check(parsed: Citation, _style: Style): CheckResult {
     }
     const corrected = assemble({ ...c, word, ...(c.pincite ? { pincite: c.pincite } : {}) });
     return { pass: violations.length === 0, violations, corrected };
+  }
+
+  if (c.kind === 'supra') {
+    if (!c.supraItalic) {
+      violations.push({
+        code: 'TYPEFACE',
+        message:
+          'Italicize "supra"; the commas around it stay roman (Indigo R29.2, R2.1).',
+        rule: 'IB R29.2',
+        fix: '*supra*',
+      });
+    }
+    if (c.pincite && !c.sectionPincite && !c.hasAt) {
+      violations.push({
+        code: 'PINCITE',
+        message: 'A supra reference gives "at" and the page pincited (R29.2).',
+        rule: 'IB R29.2',
+        fix: `at ${c.pincite}`,
+      });
+    }
+    return { pass: violations.length === 0, violations, corrected: assemble(c) };
   }
 
   // --- case short form (R15.2.2) ---

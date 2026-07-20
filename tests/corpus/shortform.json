@@ -1322,6 +1322,284 @@
     "id": "shortform-0075",
     "type": "shortform",
     "mode": "check",
+    "input": "Skinner, *supra*, at 21",
+    "expected_violations": [],
+    "expected_output": "Skinner, *supra*, at 21",
+    "rules": [
+      "IB R29.2",
+      "IB R2.1"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0076",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Skinner, *supra*, 21",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Skinner, *supra*, at 21",
+    "rules": [
+      "IB R29.2",
+      "IB R2.1",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0077",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Nimmer & Nimmer, *supra*, § 14.02",
+    "expected_violations": [],
+    "expected_output": "Nimmer & Nimmer, *supra*, § 14.02",
+    "rules": [
+      "IB R29.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0078",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Vats, *supra* note 5, at 100",
+    "expected_violations": [],
+    "expected_output": "Vats, *supra* note 5, at 100",
+    "rules": [
+      "IB R29.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0079",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Vats, *supra* note 5, 100",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Vats, *supra* note 5, at 100",
+    "rules": [
+      "IB R29.2",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0080",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Robbins, *Painting with Print*, *supra*, at 112",
+    "expected_violations": [],
+    "expected_output": "Robbins, *Painting with Print*, *supra*, at 112",
+    "rules": [
+      "IB R31.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0081",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Robbins, *Painting with Print*, *supra*, 112",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Robbins, *Painting with Print*, *supra*, at 112",
+    "rules": [
+      "IB R31.2",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0082",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Baumeister et al., *Bad Is Stronger than Good*, *supra* note 5, at 325",
+    "expected_violations": [],
+    "expected_output": "Baumeister et al., *Bad Is Stronger than Good*, *supra* note 5, at 325",
+    "rules": [
+      "IB R31.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0083",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Baumeister et al., *Bad Is Stronger than Good*, *supra* note 5, 325",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Baumeister et al., *Bad Is Stronger than Good*, *supra* note 5, at 325",
+    "rules": [
+      "IB R31.2",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0084",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Rawls, *supra*, at 133",
+    "expected_violations": [],
+    "expected_output": "Rawls, *supra*, at 133",
+    "rules": [
+      "IB R29.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0085",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Rawls, *supra*, 133",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Rawls, *supra*, at 133",
+    "rules": [
+      "IB R29.2",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0086",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Hart, *supra* note 12, at 79",
+    "expected_violations": [],
+    "expected_output": "Hart, *supra* note 12, at 79",
+    "rules": [
+      "IB R29.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0087",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Hart, *supra* note 12, 79",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Hart, *supra* note 12, at 79",
+    "rules": [
+      "IB R29.2",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0088",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Sunstein, *Incompletely Theorized Agreements*, *supra* note 8, at 1745",
+    "expected_violations": [],
+    "expected_output": "Sunstein, *Incompletely Theorized Agreements*, *supra* note 8, at 1745",
+    "rules": [
+      "IB R31.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0089",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Sunstein, *Incompletely Theorized Agreements*, *supra* note 8, 1745",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Sunstein, *Incompletely Theorized Agreements*, *supra* note 8, at 1745",
+    "rules": [
+      "IB R31.2",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0090",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Calabresi & Melamed, *supra* note 3, at 1092",
+    "expected_violations": [],
+    "expected_output": "Calabresi & Melamed, *supra* note 3, at 1092",
+    "rules": [
+      "IB R31.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0091",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Calabresi & Melamed, *supra* note 3, 1092",
+    "expected_violations": [
+      "PINCITE"
+    ],
+    "expected_output": "Calabresi & Melamed, *supra* note 3, at 1092",
+    "rules": [
+      "IB R31.2",
+      "IB R15.2.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "short form missing \"at\" before the pincite"
+  },
+  {
+    "id": "shortform-0092",
+    "type": "shortform",
+    "mode": "check",
+    "input": "Wright & Miller, *supra*, § 1202",
+    "expected_violations": [],
+    "expected_output": "Wright & Miller, *supra*, § 1202",
+    "rules": [
+      "IB R29.2"
+    ],
+    "provenance": "synthetic",
+    "style": "academic",
+    "notes": "clean canonical"
+  },
+  {
+    "id": "shortform-0093",
+    "type": "shortform",
+    "mode": "check",
     "input": "*United States v. Carmel*, 548 F.3d at 573",
     "expected_violations": [
       "ORDERING"

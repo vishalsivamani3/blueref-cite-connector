@@ -82,7 +82,7 @@ guessed.
 | Books & non-periodicals | ✅ Phase 3 | R28, R7.2 |
 | Short forms — `id.`, case short cites | ✅ Phase 1 (format only) | R15, R2.1 |
 | `id.` **context** validation (`check_document`) | ✅ Phase 3 | R15.3.3 |
-| Short forms — `supra` | 🚧 | R29.2 |
+| Short forms — `supra` | ✅ | R29.2, R31.2 |
 
 Both `practitioner` (default) and `academic` styles; see above.
 

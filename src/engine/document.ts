@@ -17,6 +17,9 @@
  *     ("… (citing X)") does NOT become the immediately preceding citation, so it
  *     does not foreclose `id.`.
  *
+ * It also validates `supra` back-references (R29.2): "use supra when you've used the
+ * full citation before", so a `supra note N` must point at an EARLIER footnote.
+ *
  * Violations use SHORTFORM_CONTEXT, the taxonomy code reserved for exactly this.
  */
 import type { ErrorCode, Violation } from './types.js';
@@ -58,6 +61,9 @@ export function topLevelSourceCount(footnote: string): number {
   return n === 0 ? (parts.length ? 1 : 0) : n;
 }
 
+/** "… supra note 5 …" — captures the referenced footnote number. */
+const SUPRA_NOTE = /\bsupra\b[^,.;]{0,12}?\bnote\s+(\d+)/i;
+
 export interface ContextIssue {
   /** 1-based index of the footnote the issue belongs to. */
   index: number;
@@ -76,6 +82,37 @@ export function validateIdContext(footnotes: string[]): ContextIssue[] {
   for (let i = 0; i < footnotes.length; i++) {
     const fn = (footnotes[i] ?? '').trim();
     if (!fn) continue;
+
+    // --- supra back-reference (R29.2) ---
+    const sup = SUPRA_NOTE.exec(fn);
+    if (sup) {
+      const target = Number(sup[1]);
+      const self = i + 1;
+      if (target >= self) {
+        issues.push({
+          index: self,
+          violation: {
+            code: 'SHORTFORM_CONTEXT',
+            message:
+              `"supra note ${target}" must refer to an EARLIER citation; this is footnote ${self} ` +
+              '(R29.2: supra is used where the full citation was given before).',
+            rule: 'IB R29.2',
+            fix: '',
+          },
+        });
+      } else if (target < 1) {
+        issues.push({
+          index: self,
+          violation: {
+            code: 'SHORTFORM_CONTEXT',
+            message: `"supra note ${target}" is not a valid footnote reference (R29.2).`,
+            rule: 'IB R29.2',
+            fix: '',
+          },
+        });
+      }
+      continue; // a supra footnote is not an id. footnote
+    }
     const usesId = IS_ID.test(fn) || HAS_ID.test(fn);
     if (!usesId) continue;
 
