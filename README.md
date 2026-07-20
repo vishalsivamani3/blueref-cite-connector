@@ -39,7 +39,8 @@ human before use in academic or legal work. **This is not legal advice.**
 Requires Node 20+.
 
 ```bash
-npx blueref
+npx blueref                                        # once published to npm
+npx github:vishalsivamani3/blueref-cite-connector  # works today, builds on install
 ```
 
 This runs the MCP server on stdio. Add it to an MCP client, e.g. Claude Desktop
